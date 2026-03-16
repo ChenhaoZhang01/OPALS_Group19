@@ -100,12 +100,12 @@ For interns starting Paper 1 now:
 
 ## Research Build Status
 
-Heavy build steps (environment/tool setup, read download, assembly, ARG calling, and matrix aggregation) are handled by maintainers, not interns.
+Heavy build steps (environment/tool setup, read download, assembly, ARG calling, and matrix aggregation) can be run by interns in WSL/Linux using `environment-linux.yml`.
 
 In this workspace run:
 
 - metadata filter step is complete (`metadata_final.csv` and `download_list.txt` were generated)
-- core matrix rebuild requires ARG hit files under `results/*/arg_hits.tsv` and Linux-first tools/data not present in this repo snapshot
+- core matrix rebuild requires ARG hit files under `results/*/arg_hits.tsv`; generate these with the Paper 1 workflow (`projects/paper1/START_HERE.md`)
 
 `master_metadata.csv` columns:
 

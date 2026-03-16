@@ -37,6 +37,22 @@ source .venv/bin/activate
 	- `prodigal`
 	- `diamond`
 
+If tools are missing, self-install in WSL/Linux:
+
+```powershell
+wsl --install
+```
+
+Then in Linux shell from repository root:
+
+```bash
+conda env create -f environment-linux.yml
+conda activate resistome
+which prefetch fastq-dump fastqc megahit prodigal diamond
+```
+
+If commands print valid paths, continue with Step 1 below.
+
 ## Step 1: Download reads
 
 ```bash

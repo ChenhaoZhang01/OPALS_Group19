@@ -1,14 +1,13 @@
 # Intern Quick Start (No Build Needed)
 
-Goal: start analysis immediately with included files.
+Goal: start your assigned paper safely on a new computer.
 
 ## Default path (recommended)
 
 1. Pull or clone the repository.
 2. Use `metadata/master_metadata.csv` for metadata.
-3. Use `results/ARG_matrix.csv` for ARG analysis.
-
-You do not need to run setup for this step.
+3. Open your assigned paper folder under `projects/`.
+4. Follow that folder's `START_HERE.md`.
 
 ## Start a New Paper Project (example: Paper 1)
 
@@ -25,6 +24,95 @@ Then:
 3. Save all outputs only under `projects/paper1/`.
 4. Follow `projects/paper1/README.md` checklist.
 
+## Paper 1 on a New Computer
+
+1. Clone and enter the repository.
+
+```powershell
+git clone <repo-url>
+cd OPALS_Group19
+```
+
+2. Create local Python environment and metadata bootstrap.
+
+Windows:
+
+```powershell
+./START_PHASE1.bat
+```
+
+Linux/WSL/macOS:
+
+```bash
+bash scripts/quickstart_phase1.sh
+```
+
+3. Activate local environment.
+
+Windows PowerShell:
+
+```powershell
+./.venv/Scripts/Activate.ps1
+```
+
+Linux/WSL/macOS:
+
+```bash
+source .venv/bin/activate
+```
+
+4. Verify Paper 1 starter files exist.
+
+```powershell
+Test-Path projects/paper1/metadata/metadata_final.csv
+Test-Path projects/paper1/metadata/download_list.txt
+```
+
+Both should return `True`.
+
+5. Start Paper 1 workflow.
+
+```text
+Open projects/paper1/START_HERE.md and run steps in order.
+```
+
+6. Run one sample first (from repository root) before any full batch run.
+
+```bash
+bash scripts/run_arg_pipeline.sh SRR13853495 projects/paper1/raw_reads/SRR13853495_1.fastq projects/paper1/raw_reads/SRR13853495_2.fastq db/CARD.fasta db/CARD projects/paper1/results
+```
+
+7. Build Paper 1 matrix after arg_hits files exist.
+
+```bash
+python scripts/build_arg_matrix.py --hits-glob "projects/paper1/results/*/arg_hits.tsv" --output projects/paper1/results/ARG_matrix_pipelineA.csv
+```
+
+If your machine is missing `megahit`, `prodigal`, `diamond`, `prefetch`, or `fastq-dump`, install the pipeline tools yourself in WSL/Linux:
+
+1. Install WSL (Windows only, one time):
+
+```powershell
+wsl --install
+```
+
+2. Open your Linux shell (Ubuntu), go to the repository, and create the conda environment from this repo file:
+
+```bash
+conda env create -f environment-linux.yml
+conda activate resistome
+```
+
+3. Verify required tools:
+
+```bash
+which prefetch fastq-dump fastqc megahit prodigal diamond
+```
+
+4. If all tools print paths, re-run Step 6 and Step 7 from this guide in the Linux shell.
+
+Note: if `db/CARD.fasta` is missing, download the CARD protein FASTA and place it at `db/CARD.fasta`, then re-run the pipeline command.
+
 
 ## Rebuild option A (Windows, only if asked)
 
@@ -37,8 +125,6 @@ Then:
 - creates `.venv` if missing
 - builds `metadata/master_metadata.csv`
 - does not run heavy assembly or ARG detection tools
-
-To rebuild `results/ARG_matrix.csv`, your team must first generate sample ARG hit files (`results/*/arg_hits.tsv`) via the full pipeline.
 
 ## Common issues
 

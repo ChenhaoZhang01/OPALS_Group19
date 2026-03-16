@@ -1,0 +1,19 @@
+# Python virtual env and caches
+.venv/
+__pycache__/
+*.pyc
+
+# Generated analysis artifacts
+analysis/figures/
+results/ARG_dataset.csv
+results/ARG_matrix_normalized.csv
+results/dataset_quality_report.txt
+metadata_final.csv
+download_list.txt
+
+# Per-paper generated artifacts
+projects/*/raw_reads/
+projects/*/assemblies/
+projects/*/proteins/
+projects/*/results/arg_hits/
+projects/*/analysis/figures/

@@ -1,0 +1,13 @@
+metric,value
+formula_forward,arg_t1 ~ mge_abundance + C(study) + sequencing_depth
+slope_mge_to_arg_t1,18.553611
+std_error_mge_to_arg_t1,0.589673
+p_value_mge_to_arg_t1,0.00000000
+ci_low_mge_to_arg_t1,17.345719
+ci_high_mge_to_arg_t1,19.761502
+r_squared,0.998303
+adjusted_r_squared,0.998060
+rows_used,33
+sequencing_depth_transform,raw_read_count
+recommended_interpretation,predictive_signal_test
+sample_size_flag,adequate_n

@@ -1,149 +1,94 @@
-# Paper 2 Intern Start Guide (Detailed)
+# Paper 2 Intern Start Guide
 
-Read this file top to bottom. Copy and paste commands exactly.
+Follow these steps from the repository root (`OPALS_Group19`).
 
-## Project goal
+## Goal
 
-Test whether embedding-based machine learning detects ARGs better than alignment.
+Run a reproducible ARG benchmark that compares:
 
-## Where to run commands
+- Embedding model (`RandomForest_embeddings`)
+- BLAST baseline (`BLAST_alignment`)
+- Low-identity subset performance (`<40%` identity)
+- Identity-binned recall gap (`BLAST recall - embedding recall`)
 
-Always run commands from the repository root folder (`OPALS_Group19`) on your own computer.
-
-Activate your local virtual environment first.
+## 0) Activate environment
 
 Windows PowerShell:
 
 ```powershell
-./.venv/Scripts/Activate.ps1
+./.venv-1/Scripts/Activate.ps1
 ```
 
-Linux/WSL/macOS:
-
-```bash
-source .venv/bin/activate
-```
-
-## Before you start
-
-1. Understand what a protein FASTA file is.
-
-Protein FASTA files usually end with `.faa`. They contain protein sequences in text format.
-
-Each protein entry looks like this:
-
-```text
->protein_name_or_id
-MKTIIALSYIFCLVFADYKDDDDK
-```
-
-Important:
-
-- Each protein starts with a line beginning with `>`.
-- The next lines are amino-acid letters (`A, C, D, E, ...`).
-
-2. Put protein FASTA files in `projects/paper2/proteins/`.
-
-Option A (fastest): copy existing `.faa` files from another project.
+## 1) Download CARD archive payload
 
 ```powershell
-Copy-Item projects/paper1/proteins/*.faa projects/paper2/proteins/ -Force
+python -c "import urllib.request, pathlib; p=pathlib.Path('tmp_card_latest_data.bin'); p.write_bytes(urllib.request.urlopen('https://card.mcmaster.ca/latest/data', timeout=120).read()); print(p, p.stat().st_size)"
 ```
 
-Option B (if you do not already have `.faa` files): generate one from an assembly with Prodigal.
+This creates `tmp_card_latest_data.bin` (a `.tar.bz2` payload).
 
-```bash
-prodigal -i projects/paper1/assemblies/SRR13853495/final.contigs.fa -a projects/paper2/proteins/SRR13853495.faa -p meta
-```
-
-3. Check that at least one `.faa` file exists.
+## 2) Build benchmark inputs from CARD
 
 ```powershell
-Get-ChildItem projects/paper2/proteins/*.faa
+python projects/paper2/analysis/prepare_card_benchmark_data.py `
+	--card-archive tmp_card_latest_data.bin `
+	--query-member ./protein_fasta_protein_homolog_model.fasta `
+	--db-member ./protein_fasta_protein_homolog_model.fasta `
+	--label-category "Resistance Mechanism" `
+	--max-query 220 `
+	--max-db 2200 `
+	--min-class-count 10 `
+	--out-query-fasta projects/paper2/proteins/card_query_homolog.faa `
+	--out-db-fasta projects/paper2/proteins/card_db_homolog_train.faa `
+	--out-query-labels projects/paper2/results/query_labels_card.csv `
+	--out-db-labels projects/paper2/results/db_labels_card.csv `
+	--out-embeddings projects/paper2/results/embeddings/protein_embeddings.npy `
+	--out-training-labels projects/paper2/results/training_labels_template.csv
 ```
 
-4. Make sure `projects/paper2/results/embeddings/` exists.
+Expected output includes counts by class and an embedding shape line.
+
+## 3) Run full Paper 2 pipeline
 
 ```powershell
-New-Item -ItemType Directory -Force -Path projects/paper2/results/embeddings | Out-Null
+Set-ExecutionPolicy -Scope Process -ExecutionPolicy Bypass -Force
+./projects/paper2/analysis/run_paper2_full_pipeline.ps1 `
+	-PythonExe ./.venv-1/Scripts/python.exe `
+	-RunLowIdentity `
+	-QueryFasta projects/paper2/proteins/card_query_homolog.faa `
+	-DbFasta projects/paper2/proteins/card_db_homolog_train.faa `
+	-QueryLabels projects/paper2/results/query_labels_card.csv `
+	-DbLabels projects/paper2/results/db_labels_card.csv
 ```
 
-5. Install required Python packages (one time):
+## 4) Validate outputs
 
-```powershell
-python -m pip install fair-esm numpy pandas scikit-learn
-```
-
-## Step 1: Generate embeddings
-
-Create or run your embedding extraction workflow and save output to:
-
-- `projects/paper2/results/embeddings/protein_embeddings.npy`
-
-Success check:
-
-- File exists and is not empty.
-
-Quick check command:
-
-```powershell
-Get-Item projects/paper2/results/embeddings/protein_embeddings.npy
-```
-
-## Step 2: Label training rows
-
-Edit:
-
-- `projects/paper2/results/training_labels_template.csv`
-
-Required columns:
-
-- `row_index` (integer index in embeddings array)
-- `label` (ARG class)
-
-Add at least 10 labeled rows before training.
-
-## Step 3: Train baseline classifier
-
-```powershell
-python projects/paper2/analysis/train_arg_classifier.py --embeddings projects/paper2/results/embeddings/protein_embeddings.npy --labels projects/paper2/results/training_labels_template.csv --metrics-out projects/paper2/results/blast_vs_ml_metrics.csv
-```
-
-Success check:
-
-- `projects/paper2/results/blast_vs_ml_metrics.csv` is created.
-
-## Step 4: Compare against alignment baseline
-
-Run BLAST/DIAMOND workflow and record baseline metrics in:
+Check these files:
 
 - `projects/paper2/results/blast_vs_ml_metrics.csv`
+- `projects/paper2/results/low_identity_comparison.csv`
+- `projects/paper2/results/identity_bin_recall.csv`
+- `projects/paper2/results/recall_gap_by_identity.csv`
+- `projects/paper2/results/low_identity_per_query.csv`
 
-Columns:
+Check these figures:
 
-- `method`
-- `precision`
-- `recall`
-- `f1`
-- `roc_auc`
+- `projects/paper2/analysis/figures/embedding_pca.png`
+- `projects/paper2/analysis/figures/method_comparison_bar.png`
+- `projects/paper2/analysis/figures/identity_bin_recall.png`
+- `projects/paper2/analysis/figures/recall_gap_vs_identity.png`
 
-## Step 5: Make figures
+## 5) Demo mode (optional)
 
-Produce and save under `projects/paper2/analysis/figures/`:
+Use this only for smoke tests:
 
-1. Embedding clustering plot (UMAP).
-2. ROC curve.
-3. BLAST vs ML comparison.
-4. Novel predicted ARG clusters.
+```powershell
+Set-ExecutionPolicy -Scope Process -ExecutionPolicy Bypass -Force
+./projects/paper2/analysis/run_paper2_full_pipeline.ps1 -UseDemoBaselineData -RunLowIdentity
+```
 
-## Files to submit
+## Notes
 
-- `projects/paper2/results/embeddings/protein_embeddings.npy`
-- `projects/paper2/results/training_labels_template.csv`
-- `projects/paper2/results/blast_vs_ml_metrics.csv`
-
-## Common mistakes
-
-- Using row indexes that do not exist in the `.npy` array.
-- Training with too few labeled rows.
-- Mixing class names (for example `beta_lactam` and `beta-lactam`) in the same label column.
+- The current benchmark embeddings are generated by hashed sequence k-mers in `prepare_card_benchmark_data.py` and should be treated as proxy embeddings.
+- This benchmark is therefore feature-based model vs alignment, not full protein foundation-model vs alignment.
+- Future upgrade target is full protein language-model embeddings (1280 dimensions).

@@ -1,1 +1,221 @@
 row_index,label
+0,antibiotic efflux
+1,antibiotic efflux
+2,antibiotic efflux
+3,antibiotic efflux
+4,antibiotic efflux
+5,antibiotic efflux
+6,antibiotic efflux
+7,antibiotic efflux
+8,antibiotic efflux
+9,antibiotic efflux
+10,antibiotic efflux
+11,antibiotic efflux
+12,antibiotic efflux
+13,antibiotic efflux
+14,antibiotic efflux
+15,antibiotic efflux
+16,antibiotic efflux
+17,antibiotic efflux
+18,antibiotic efflux
+19,antibiotic efflux
+20,antibiotic efflux
+21,antibiotic efflux
+22,antibiotic efflux
+23,antibiotic efflux
+24,antibiotic efflux
+25,antibiotic efflux
+26,antibiotic efflux
+27,antibiotic efflux
+28,antibiotic efflux
+29,antibiotic efflux
+30,antibiotic efflux
+31,antibiotic efflux
+32,antibiotic efflux
+33,antibiotic efflux
+34,antibiotic efflux
+35,antibiotic efflux
+36,antibiotic efflux
+37,antibiotic efflux
+38,antibiotic efflux
+39,antibiotic efflux
+40,antibiotic efflux
+41,antibiotic efflux
+42,antibiotic efflux
+43,antibiotic efflux
+44,antibiotic inactivation
+45,antibiotic inactivation
+46,antibiotic inactivation
+47,antibiotic inactivation
+48,antibiotic inactivation
+49,antibiotic inactivation
+50,antibiotic inactivation
+51,antibiotic inactivation
+52,antibiotic inactivation
+53,antibiotic inactivation
+54,antibiotic inactivation
+55,antibiotic inactivation
+56,antibiotic inactivation
+57,antibiotic inactivation
+58,antibiotic inactivation
+59,antibiotic inactivation
+60,antibiotic inactivation
+61,antibiotic inactivation
+62,antibiotic inactivation
+63,antibiotic inactivation
+64,antibiotic inactivation
+65,antibiotic inactivation
+66,antibiotic inactivation
+67,antibiotic inactivation
+68,antibiotic inactivation
+69,antibiotic inactivation
+70,antibiotic inactivation
+71,antibiotic inactivation
+72,antibiotic inactivation
+73,antibiotic inactivation
+74,antibiotic inactivation
+75,antibiotic inactivation
+76,antibiotic inactivation
+77,antibiotic inactivation
+78,antibiotic inactivation
+79,antibiotic inactivation
+80,antibiotic inactivation
+81,antibiotic inactivation
+82,antibiotic inactivation
+83,antibiotic inactivation
+84,antibiotic inactivation
+85,antibiotic inactivation
+86,antibiotic inactivation
+87,antibiotic inactivation
+88,antibiotic target alteration
+89,antibiotic target alteration
+90,antibiotic target alteration
+91,antibiotic target alteration
+92,antibiotic target alteration
+93,antibiotic target alteration
+94,antibiotic target alteration
+95,antibiotic target alteration
+96,antibiotic target alteration
+97,antibiotic target alteration
+98,antibiotic target alteration
+99,antibiotic target alteration
+100,antibiotic target alteration
+101,antibiotic target alteration
+102,antibiotic target alteration
+103,antibiotic target alteration
+104,antibiotic target alteration
+105,antibiotic target alteration
+106,antibiotic target alteration
+107,antibiotic target alteration
+108,antibiotic target alteration
+109,antibiotic target alteration
+110,antibiotic target alteration
+111,antibiotic target alteration
+112,antibiotic target alteration
+113,antibiotic target alteration
+114,antibiotic target alteration
+115,antibiotic target alteration
+116,antibiotic target alteration
+117,antibiotic target alteration
+118,antibiotic target alteration
+119,antibiotic target alteration
+120,antibiotic target alteration
+121,antibiotic target alteration
+122,antibiotic target alteration
+123,antibiotic target alteration
+124,antibiotic target alteration
+125,antibiotic target alteration
+126,antibiotic target alteration
+127,antibiotic target alteration
+128,antibiotic target alteration
+129,antibiotic target alteration
+130,antibiotic target alteration
+131,antibiotic target alteration
+132,antibiotic target protection
+133,antibiotic target protection
+134,antibiotic target protection
+135,antibiotic target protection
+136,antibiotic target protection
+137,antibiotic target protection
+138,antibiotic target protection
+139,antibiotic target protection
+140,antibiotic target protection
+141,antibiotic target protection
+142,antibiotic target protection
+143,antibiotic target protection
+144,antibiotic target protection
+145,antibiotic target protection
+146,antibiotic target protection
+147,antibiotic target protection
+148,antibiotic target protection
+149,antibiotic target protection
+150,antibiotic target protection
+151,antibiotic target protection
+152,antibiotic target protection
+153,antibiotic target protection
+154,antibiotic target protection
+155,antibiotic target protection
+156,antibiotic target protection
+157,antibiotic target protection
+158,antibiotic target protection
+159,antibiotic target protection
+160,antibiotic target protection
+161,antibiotic target protection
+162,antibiotic target protection
+163,antibiotic target protection
+164,antibiotic target protection
+165,antibiotic target protection
+166,antibiotic target protection
+167,antibiotic target protection
+168,antibiotic target protection
+169,antibiotic target protection
+170,antibiotic target protection
+171,antibiotic target protection
+172,antibiotic target protection
+173,antibiotic target protection
+174,antibiotic target protection
+175,antibiotic target protection
+176,antibiotic target replacement
+177,antibiotic target replacement
+178,antibiotic target replacement
+179,antibiotic target replacement
+180,antibiotic target replacement
+181,antibiotic target replacement
+182,antibiotic target replacement
+183,antibiotic target replacement
+184,antibiotic target replacement
+185,antibiotic target replacement
+186,antibiotic target replacement
+187,antibiotic target replacement
+188,antibiotic target replacement
+189,antibiotic target replacement
+190,antibiotic target replacement
+191,antibiotic target replacement
+192,antibiotic target replacement
+193,antibiotic target replacement
+194,antibiotic target replacement
+195,antibiotic target replacement
+196,antibiotic target replacement
+197,antibiotic target replacement
+198,antibiotic target replacement
+199,antibiotic target replacement
+200,antibiotic target replacement
+201,antibiotic target replacement
+202,antibiotic target replacement
+203,antibiotic target replacement
+204,antibiotic target replacement
+205,antibiotic target replacement
+206,antibiotic target replacement
+207,antibiotic target replacement
+208,antibiotic target replacement
+209,antibiotic target replacement
+210,antibiotic target replacement
+211,antibiotic target replacement
+212,antibiotic target replacement
+213,antibiotic target replacement
+214,antibiotic target replacement
+215,antibiotic target replacement
+216,antibiotic target replacement
+217,antibiotic target replacement
+218,antibiotic target replacement
+219,antibiotic target replacement

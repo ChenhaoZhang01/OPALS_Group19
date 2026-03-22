@@ -1,0 +1,2 @@
+base_formula,full_formula,base_r_squared,base_adjusted_r_squared,full_r_squared,full_adjusted_r_squared,delta_r_squared,added_value_f_stat,added_value_p_value,full_model_mge_coefficient,full_model_mge_p_value,n
+arg_t1 ~ arg_total + C(study) + sequencing_depth,arg_t1 ~ arg_total + mge_abundance + C(study) + sequencing_depth,0.999097,0.998968,0.999124,0.998961,0.000027,0.823097,0.37230257,2.857905,0.37230257,33

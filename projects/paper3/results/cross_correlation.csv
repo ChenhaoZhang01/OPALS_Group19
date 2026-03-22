@@ -1,0 +1,4 @@
+lag,correlation,n
+t_to_t,0.996761,36
+t_to_t_plus_1,0.995173,33
+t_to_t_plus_2,0.992825,30

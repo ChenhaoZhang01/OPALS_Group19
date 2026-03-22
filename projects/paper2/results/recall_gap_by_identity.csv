@@ -1,0 +1,5 @@
+identity_bin,blast_recall,embedding_recall,delta_recall_blast_minus_embedding
+90_to_100,1.000000,0.659091,0.340909
+70_to_90,1.000000,0.659091,0.340909
+40_to_70,0.981818,0.659091,0.322727
+lt_40,0.705882,0.659091,0.046791

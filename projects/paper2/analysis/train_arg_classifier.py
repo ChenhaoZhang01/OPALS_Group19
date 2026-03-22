@@ -64,10 +64,48 @@ def main() -> int:
     f1 = f1_score(y_test, y_pred, average="weighted", zero_division=0)
 
     os.makedirs(os.path.dirname(args.metrics_out), exist_ok=True)
+
+    fieldnames = ["method", "precision", "recall", "f1", "roc_auc"]
+    rows = []
+    if os.path.exists(args.metrics_out):
+        with open(args.metrics_out, "r", encoding="utf-8", newline="") as handle:
+            reader = csv.DictReader(handle)
+            for row in reader:
+                method = (row.get("method") or "").strip()
+                if not method:
+                    continue
+                rows.append(
+                    {
+                        "method": method,
+                        "precision": (row.get("precision") or "").strip(),
+                        "recall": (row.get("recall") or "").strip(),
+                        "f1": (row.get("f1") or "").strip(),
+                        "roc_auc": (row.get("roc_auc") or "").strip(),
+                    }
+                )
+
+    rf_row = {
+        "method": "RandomForest_embeddings",
+        "precision": f"{precision:.6f}",
+        "recall": f"{recall:.6f}",
+        "f1": f"{f1:.6f}",
+        "roc_auc": "NA",
+    }
+
+    updated = False
+    for idx, row in enumerate(rows):
+        if row["method"] == rf_row["method"]:
+            rows[idx] = rf_row
+            updated = True
+            break
+    if not updated:
+        rows.append(rf_row)
+
     with open(args.metrics_out, "w", encoding="utf-8", newline="") as handle:
-        writer = csv.writer(handle)
-        writer.writerow(["method", "precision", "recall", "f1", "roc_auc"])
-        writer.writerow(["RandomForest_embeddings", f"{precision:.6f}", f"{recall:.6f}", f"{f1:.6f}", "NA"])
+        writer = csv.DictWriter(handle, fieldnames=fieldnames)
+        writer.writeheader()
+        for row in rows:
+            writer.writerow(row)
 
     print(f"Labeled proteins used: {len(indices)}")
     print(f"Wrote metrics: {args.metrics_out}")

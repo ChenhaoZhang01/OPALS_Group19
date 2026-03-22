@@ -1,0 +1,221 @@
+query_id,db_id,pident,identity_bin,true_label,pred_label_blast,blast_correct
+gb|AAL19308.1|ARO:3000504|golS,gb|BAE06008.1|ARO:3003699|mexQ,43.333,40_to_70,antibiotic efflux,antibiotic efflux,1
+gb|BAE78082.1|ARO:3003550|mdtP,gb|EGP45230.2|ARO:3004142|OprZ,28.416,lt_40,antibiotic efflux,antibiotic efflux,1
+gb|BAE77778.1|ARO:3000508|gadX,gb|ANK04027.1|ARO:3003838|gadW,31.579,lt_40,antibiotic efflux,antibiotic efflux,1
+gb|AAC76539.1|ARO:3000796|mdtF,gb|AAC73564.1|ARO:3000216|acrB,71.148,70_to_90,antibiotic efflux,antibiotic efflux,1
+gb|BAB38260.1|ARO:3000830|cpxA,gb|AAL27446.1|ARO:3002935|vanS_in_vanE_cl,26.736,lt_40,antibiotic efflux,antibiotic target alteration,0
+gb|CAJ77856.1|ARO:3000777|adeF,gb|AAB58161.1|ARO:3003010|ceoB,80.507,70_to_90,antibiotic efflux,antibiotic efflux,1
+gb|BAB41874.1|ARO:3000815|mgrA,gb|AAC75731.1|ARO:3000516|emrR,25.984,lt_40,antibiotic efflux,antibiotic efflux,1
+gb|ACD35503.1|ARO:3000572|tet(42),gb|AAK97755.1|ARO:3000167|tet(C),34.465,lt_40,antibiotic efflux,antibiotic efflux,1
+gb|AEM62948.1|ARO:3003196|tet(45),gb|AAA22851.1|ARO:3000179|tet(L),76.586,70_to_90,antibiotic efflux,antibiotic efflux,1
+gb|AAA71915.1|ARO:3000173|tet(E),gb|AMP42492.1|ARO:3004441|tet(59),54.0,40_to_70,antibiotic efflux,antibiotic efflux,1
+gb|CAA42594.1|ARO:3002690|Sliv_cmlR,gb|AAG03380.1|ARO:3002703|cmx,63.01,40_to_70,antibiotic efflux,antibiotic efflux,1
+gb|ABD30512.1|ARO:3000839|arlS,gb|MBY8651250.1|ARO:3007192|vanS_in_vanP_cl,23.529,lt_40,antibiotic efflux,antibiotic target alteration,0
+gb|ADM92606.1|ARO:3000549|adeS,gb|ABX54692.1|ARO:3002938|vanS_in_vanL_cl,30.986,lt_40,antibiotic efflux,antibiotic target alteration,0
+gb|AAL20862.1|ARO:3000826|sdiA,gb|BAB36671.1|ARO:3000832|evgA,27.907,lt_40,antibiotic efflux,antibiotic efflux,1
+gb|AAM77075.1|ARO:3002695|cmlA5,gb|AAK52606.1|ARO:3002696|cmlA6,99.284,90_to_100,antibiotic efflux,antibiotic efflux,1
+gb|CAC14594.1|ARO:3003055|smeD,gb|ABG77965.1|ARO:3004042|Eclo_acrA,53.109,40_to_70,antibiotic efflux,antibiotic efflux,1
+gb|AAG05883.1|ARO:3000805|OprN,gb|BAE06009.1|ARO:3003700|opmE,35.193,lt_40,antibiotic efflux,antibiotic efflux,1
+gb|CAA78046.1|ARO:3002701|Rfas_cmr,gb|AAC45805.1|ARO:3002702|cmrA,86.154,70_to_90,antibiotic efflux,antibiotic efflux,1
+gb|BAA34299.1|ARO:3003034|mexX,gb|CAH35803.1|ARO:3002982|amrA,57.377,40_to_70,antibiotic efflux,antibiotic efflux,1
+gb|ALX99516.1|ARO:3003811|adeC,gb|AAX14803.1|ARO:3000782|adeK,69.935,40_to_70,antibiotic efflux,antibiotic efflux,1
+gb|AAD51347.1|ARO:3003067|smeS,gb|ACL82958.1|ARO:3002939|vanS_in_vanM_cl,27.174,lt_40,antibiotic efflux,antibiotic target alteration,0
+gb|AAA99504.1|ARO:3002987|bcrA,gb|APB03214.1|ARO:3003980|tetA(58),33.333,lt_40,antibiotic efflux,antibiotic efflux,1
+gb|CAB13167.1|ARO:3003064|ykkD,gb|AAG08375.1|ARO:3004038|Paer_emrE,30.556,lt_40,antibiotic efflux,antibiotic efflux,1
+gb|BAJ09383.1|ARO:3003046|qacA,gb|AAC43550.1|ARO:3003967|lfrA,35.579,lt_40,antibiotic efflux,antibiotic efflux,1
+gb|AAC74149.2|ARO:3001216|mdtH,gb|AAW66497.1|ARO:3000566|tet(39),28.916,lt_40,antibiotic efflux,antibiotic efflux,1
+gb|AAU95768.1|ARO:3000026|mepA,gb|CAE00499.1|ARO:3003835|cdeA,26.292,lt_40,antibiotic efflux,antibiotic efflux,1
+gb|AAC75135.2|ARO:3000792|mdtA,gb|AAG05916.1|ARO:3004073|MuxA,47.507,40_to_70,antibiotic efflux,antibiotic efflux,1
+gb|AAL19306.1|ARO:3000789|mdsA,gb|BAE06007.1|ARO:3003698|mexP,51.94,40_to_70,antibiotic efflux,antibiotic efflux,1
+gb|CAA64891.1|ARO:3000812|mtrE,gb|AAG03816.1|ARO:3000379|OprM,41.365,40_to_70,antibiotic efflux,antibiotic efflux,1
+gb|ADM92605.1|ARO:3000553|adeR,gb|ACL82957.1|ARO:3002928|vanR_in_vanM_cl,37.229,lt_40,antibiotic efflux,antibiotic target alteration,0
+gb|CAH35802.1|ARO:3002983|amrB,gb|EGP45231.1|ARO:3004144|AxyY,70.663,70_to_90,antibiotic efflux,antibiotic efflux,1
+gb|AAG03814.1|ARO:3000377|MexA,gb|AAC73565.1|ARO:3004043|Ecol_acrA,57.951,40_to_70,antibiotic efflux,antibiotic efflux,1
+gb|BAC67143.1|ARO:3000166|tet(B),gb|AMP42492.1|ARO:3004441|tet(59),61.44,40_to_70,antibiotic efflux,antibiotic efflux,1
+gb|AAC72341.1|ARO:3000182|tet(Y),gb|AAD25538.1|ARO:3000174|tet(G),63.377,40_to_70,antibiotic efflux,antibiotic efflux,1
+gb|AAD22144.1|ARO:3002698|cmlB,gb|AAK52606.1|ARO:3002696|cmlA6,85.504,70_to_90,antibiotic efflux,antibiotic efflux,1
+gb|AAV85982.1|ARO:3000535|macB,gb|ADZ12699.1|ARO:3005091|RanA,31.05,lt_40,antibiotic efflux,antibiotic efflux,1
+gb|AAG07595.1|ARO:3000809|OpmD,gb|BAE06009.1|ARO:3003700|opmE,35.635,lt_40,antibiotic efflux,antibiotic efflux,1
+gb|AAC60780.1|ARO:3003049|rosB,gb|AFH35853.1|ARO:3001328|Ecol_mdfA,26.531,lt_40,antibiotic efflux,antibiotic efflux,1
+gb|AAA20116.1|ARO:3000180|tetA(P),gb|CAM12479.1|ARO:3000567|tet(40),43.307,40_to_70,antibiotic efflux,antibiotic efflux,1
+gb|BAA11237.1|ARO:3000254|emrY,gb|EOU56998.1|ARO:3004597|Kpne_KpnH,62.374,40_to_70,antibiotic efflux,antibiotic efflux,1
+gb|CAJ77855.1|ARO:3000779|adeH,gb|AAC43969.1|ARO:3003037|opcM,51.62,40_to_70,antibiotic efflux,antibiotic efflux,1
+gb|AAQ10694.1|ARO:3003047|qacB,gb|AAC43550.1|ARO:3003967|lfrA,35.789,lt_40,antibiotic efflux,antibiotic efflux,1
+gb|KIX81495.1|ARO:3002813|lmrB,gb|AAW38464.1|ARO:3004572|Saur_LmrS,39.474,lt_40,antibiotic efflux,antibiotic efflux,1
+gb|ACJ59254.1|ARO:3000768|abeS,gb|AAZ42322.1|ARO:3005098|qacL,54.808,40_to_70,antibiotic efflux,antibiotic efflux,1
+gb|ACT97415.1|ARO:3002999|CblA-1,gb|AAD37403.1|ARO:3003202|TLA-1,41.077,40_to_70,antibiotic inactivation,antibiotic inactivation,1
+gb|AEJ08681.1|ARO:3001109|SHV-52,gb|ABH04327.1|ARO:3001144|SHV-92,99.65,90_to_100,antibiotic inactivation,antibiotic inactivation,1
+gb|AFJ59957.1|ARO:3001989|CTX-M-130,gb|AAN38836.1|ARO:3001886|CTX-M-24,99.656,90_to_100,antibiotic inactivation,antibiotic inactivation,1
+gb|AEX08599.1|ARO:3002356|NDM-6,gb|AWU66462.1|ARO:3004866|NDM-23,99.259,90_to_100,antibiotic inactivation,antibiotic inactivation,1
+gb|BAP68758.1|ARO:3001855|ACT-35,gb|AHL39338.1|ARO:3001845|ACT-25,97.9,90_to_100,antibiotic inactivation,antibiotic inactivation,1
+gb|AAF61417.1|ARO:3002244|CARB-5,gb|CCW43444.1|ARO:3002255|CARB-16,99.664,90_to_100,antibiotic inactivation,antibiotic inactivation,1
+gb|AAT45742.1|ARO:3000988|TEM-126,gb|AAM52207.1|ARO:3000969|TEM-106,99.301,90_to_100,antibiotic inactivation,antibiotic inactivation,1
+gb|ACH58990.1|ARO:3002511|LRA-12,gb|ACH58989.1|ARO:3002488|LRA-9,39.623,lt_40,antibiotic inactivation,antibiotic inactivation,1
+gb|AAF19151.1|ARO:3000938|TEM-72,gb|AAL03985.1|ARO:3000937|TEM-71,99.301,90_to_100,antibiotic inactivation,antibiotic inactivation,1
+gb|AAD45935.1|ARO:3000928|TEM-59,gb|CAA38429.1|ARO:3000874|TEM-2,99.639,90_to_100,antibiotic inactivation,antibiotic inactivation,1
+gb|ACS35345.1|ARO:3002320|KPC-10,gb|ACA34343.1|ARO:3002314|KPC-4,99.317,90_to_100,antibiotic inactivation,antibiotic inactivation,1
+gb|AEV91551.1|ARO:3001711|OXA-212,gb|AEV91550.1|ARO:3001710|OXA-211,95.62,90_to_100,antibiotic inactivation,antibiotic inactivation,1
+gb|CAB94707.1|ARO:3002193|IMP-2,gb|ABM67078.1|ARO:3002210|IMP-19,99.593,90_to_100,antibiotic inactivation,antibiotic inactivation,1
+gb|CAA63264.1|ARO:3002012|CMY-1,gb|AAD50818.2|ARO:3002019|CMY-8,97.906,90_to_100,antibiotic inactivation,antibiotic inactivation,1
+gb|AGW16411.1|ARO:3001517|OXA-329,gb|AGW16414.1|ARO:3001520|OXA-332,97.802,90_to_100,antibiotic inactivation,antibiotic inactivation,1
+gb|AEV91214.1|ARO:3001832|ACT-10,gb|AIT76085.1|ARO:3001849|ACT-29,98.163,90_to_100,antibiotic inactivation,antibiotic inactivation,1
+gb|BAO09635.1|ARO:3001557|OXA-371,gb|CCJ32595.1|ARO:3001672|OXA-120,98.54,90_to_100,antibiotic inactivation,antibiotic inactivation,1
+gb|AFA51699.1|ARO:3001980|CTX-M-121,gb|BAP18874.1|ARO:3003167|CTX-M-159,99.313,90_to_100,antibiotic inactivation,antibiotic inactivation,1
+gb|AAS48620.1|ARO:3002372|VEB-3,gb|ABM54868.1|ARO:3002373|VEB-4,98.662,90_to_100,antibiotic inactivation,antibiotic inactivation,1
+gb|AAA26652.1|ARO:3002835|lnuA,gb|AAY32951.1|ARO:3002837|lnuC,29.252,lt_40,antibiotic inactivation,antibiotic inactivation,1
+gb|CAD58780.1|ARO:3001794|OXA-45,gb|AAA98406.1|ARO:3001404|OXA-9,43.846,40_to_70,antibiotic inactivation,antibiotic inactivation,1
+gb|ACM67635.1|ARO:3001800|OXA-226,gb|AAK58418.1|ARO:3001426|OXA-32,99.273,90_to_100,antibiotic inactivation,antibiotic inactivation,1
+gb|AIS67611.1|ARO:3003163|CTX-M-155,gb|WP_063860086.1|ARO:3001948|CTX-M-88,98.969,90_to_100,antibiotic inactivation,antibiotic inactivation,1
+gb|AIT76106.1|ARO:3002146|DHA-15,gb|ADQ00385.1|ARO:3002136|DHA-7,99.472,90_to_100,antibiotic inactivation,antibiotic inactivation,1
+gb|CAI43424.1|ARO:3002415|OXY-6-3,gb|CAI43423.1|ARO:3002414|OXY-6-2,99.313,90_to_100,antibiotic inactivation,antibiotic inactivation,1
+gb|ACC85616.1|ARO:3002804|FosA2,gb|AJE60855.1|ARO:3003209|fosA5,69.065,40_to_70,antibiotic inactivation,antibiotic inactivation,1
+gb|AAA26699.1|ARO:3002649|APH(3')-Va,gb|CAE51638.1|ARO:3002641|APH(3')-Ia,38.783,lt_40,antibiotic inactivation,antibiotic inactivation,1
+gb|AAG15269.1|ARO:3002528|AAC(3)-Ia,gb|AAA88422.1|ARO:3002530|AAC(3)-Ib,71.429,70_to_90,antibiotic inactivation,antibiotic inactivation,1
+gb|CAI43422.1|ARO:3002413|OXY-6-1,gb|CAI43423.1|ARO:3002414|OXY-6-2,99.656,90_to_100,antibiotic inactivation,antibiotic inactivation,1
+gb|AIT76099.1|ARO:3002125|CMY-114,gb|AEI52842.1|ARO:3002078|CMY-65,99.475,90_to_100,antibiotic inactivation,antibiotic inactivation,1
+gb|AAQ08905.1|ARO:3001808|OXA-60,gb|AAK49460.1|ARO:3001429|OXA-35,36.576,lt_40,antibiotic inactivation,antibiotic inactivation,1
+gb|CAJ77809.1|ARO:3001650|OXA-90,gb|ACD84988.1|ARO:3001651|OXA-130,99.27,90_to_100,antibiotic inactivation,antibiotic inactivation,1
+gb|AAG29813.1|ARO:3002380|SME-2,gb|AHV85514.1|ARO:3002383|SME-5,99.32,90_to_100,antibiotic inactivation,antibiotic inactivation,1
+gb|AAA25683.1|ARO:3002538|AAC(3)-IIIc,gb|KSC15183.1|ARO:3002537|AAC(3)-IIIb,88.302,70_to_90,antibiotic inactivation,antibiotic inactivation,1
+gb|AAL79541.1|ARO:3002397|OXY-2-2,gb|CAA88908.1|ARO:3002402|OXY-2-7,99.655,90_to_100,antibiotic inactivation,antibiotic inactivation,1
+gb|ACS44783.1|ARO:3002188|MOX-5,gb|AAD50818.2|ARO:3002019|CMY-8,79.319,70_to_90,antibiotic inactivation,antibiotic inactivation,1
+gb|AGE11905.1|ARO:3000904|TEM-34,gb|ADL13944.1|ARO:3000903|TEM-33,99.65,90_to_100,antibiotic inactivation,antibiotic inactivation,1
+gb|CAM86994.1|ARO:3001617|OXA-69,gb|CCJ32595.1|ARO:3001672|OXA-120,98.905,90_to_100,antibiotic inactivation,antibiotic inactivation,1
+gb|AAO33760.1|ARO:3000879|TEM-7,gb|ABG77582.1|ARO:3001021|TEM-155,99.617,90_to_100,antibiotic inactivation,antibiotic inactivation,1
+gb|BAA84973.1|ARO:3001082|SHV-24,gb|HBX2855210.1|ARO:3001065|SHV-6,99.65,90_to_100,antibiotic inactivation,antibiotic inactivation,1
+gb|CCE94500.1|ARO:3001502|OXA-256,gb|AAK49460.1|ARO:3001429|OXA-35,96.617,90_to_100,antibiotic inactivation,antibiotic inactivation,1
+gb|AGW16412.1|ARO:3001518|OXA-330,gb|AGW16414.1|ARO:3001520|OXA-332,97.802,90_to_100,antibiotic inactivation,antibiotic inactivation,1
+gb|ADM21467.1|ARO:3002053|CMY-42,gb|CAA62957.1|ARO:3002013|CMY-2,99.738,90_to_100,antibiotic inactivation,antibiotic inactivation,1
+gb|AFJ11384.1|ARO:3002546|AAC(6')-Ib,gb|ABU55430.1|ARO:3002591|AAC_6_IB_Su,98.256,90_to_100,antibiotic inactivation,antibiotic inactivation,1
+gb|AAP74657.1|ARO:3000600|Erm(34),gb|WP_010896559.1|ARO:3004643|Erm(K),61.21,40_to_70,antibiotic target alteration,antibiotic target alteration,1
+gb|AGH19769.1|ARO:3003198|rmtH,gb|BAC20579.1|ARO:3000859|rmtA,63.6,40_to_70,antibiotic target alteration,antibiotic target alteration,1
+gb|CAB60001.1|ARO:3000326|ErmE,gb|AAU93796.1|ARO:3000594|ErmR,57.764,40_to_70,antibiotic target alteration,antibiotic target alteration,1
+gb|BAH45481.1|ARO:3002815|clbB,gb|ACX65640.1|ARO:3003907|cipA,71.637,70_to_90,antibiotic target alteration,antibiotic target alteration,1
+gb|BAA03674.1|ARO:3001300|myrA,gb|CAB37345.2|ARO:3004592|erm(32),49.831,40_to_70,antibiotic target alteration,antibiotic target alteration,1
+gb|AEP40500.1|ARO:3002912|vanN,gb|AAL27442.1|ARO:3002907|vanE,53.529,40_to_70,antibiotic target alteration,antibiotic target alteration,1
+gb|AAA99931.1|ARO:3003060|tsnR,gb|BAP34782.1|ARO:3002008|CTX-M-151,41.667,40_to_70,antibiotic target alteration,antibiotic inactivation,0
+gb|AAB05622.1|ARO:3002921|vanR_in_vanB_cl,gb|ATC67679.1|ARO:3000838|arlR,37.674,lt_40,antibiotic target alteration,antibiotic efflux,0
+gb|AAA99503.1|ARO:3003250|bcrC,gb|BAG33043.1|ARO:3003920|pgpB,33.824,lt_40,antibiotic target alteration,antibiotic target alteration,1
+gb|BAF80809.1|ARO:3002665|npmA,gb|WP_063964000.1|ARO:3004102|kamB,29.268,lt_40,antibiotic target alteration,antibiotic target alteration,1
+gb|CAM96571.1|ARO:3004605|ermZ,gb|AAR92235.1|ARO:3000602|Erm(39),35.115,lt_40,antibiotic target alteration,antibiotic target alteration,1
+gb|CAA66307.2|ARO:3000592|ErmN,gb|AAC69328.1|ARO:3001265|Erm(30),35.338,lt_40,antibiotic target alteration,antibiotic target alteration,1
+gb|AAC36915.1|ARO:3000593|ErmQ,gb|AAF86219.1|ARO:3000375|ErmB,38.912,lt_40,antibiotic target alteration,antibiotic target alteration,1
+gb|AAS79458.1|ARO:3001302|chrB,gb|CAB37345.2|ARO:3004592|erm(32),58.845,40_to_70,antibiotic target alteration,antibiotic target alteration,1
+gb|AAR84672.1|ARO:3002925|vanR_in_vanF_cl,gb|ACL82957.1|ARO:3002928|vanR_in_vanM_cl,76.293,70_to_90,antibiotic target alteration,antibiotic target alteration,1
+gb|ABA71732.1|ARO:3003069|vanXY_in_vanG,gb|AEP40501.1|ARO:3002969|vanXY_in_vanN,42.935,40_to_70,antibiotic target alteration,antibiotic target alteration,1
+gb|ABX54687.1|ARO:3002910|vanL,gb|AAL27442.1|ARO:3002907|vanE,52.035,40_to_70,antibiotic target alteration,antibiotic target alteration,1
+gb|CAA44667.1|ARO:3001305|ErmU,gb|AAC69327.1|ARO:3000598|Erm(31),57.661,40_to_70,antibiotic target alteration,antibiotic target alteration,1
+gb|AAA24786.1|ARO:3000368|vanC,gb|AAL27442.1|ARO:3002907|vanE,51.014,40_to_70,antibiotic target alteration,antibiotic target alteration,1
+gb|CCP44758.1|ARO:3000392|Erm(37),gb|ABW06859.1|ARO:3000603|Erm(41),60.145,40_to_70,antibiotic target alteration,antibiotic target alteration,1
+gb|AAD12162.1|ARO:3001299|Sfra_tlrB_TYL,gb|CAB37345.2|ARO:3004592|erm(32),99.643,90_to_100,antibiotic target alteration,antibiotic target alteration,1
+gb|ABX54691.1|ARO:3002927|vanR_in_vanL_cl,gb|AEP40503.1|ARO:3002929|vanR_in_vanN_cl,75.109,70_to_90,antibiotic target alteration,antibiotic target alteration,1
+gb|AGZ55247.1|ARO:3002814|clbA,gb|CDF47262.1|ARO:3004649|cfr(B),87.393,70_to_90,antibiotic target alteration,antibiotic target alteration,1
+gb|AAA88675.1|ARO:3000498|ErmF,gb|AAK07612.2|ARO:3000604|Erm(35),74.436,70_to_90,antibiotic target alteration,antibiotic target alteration,1
+gb|BAE78116.1|ARO:3003576|eptA,gb|QIF88262.1|ARO:3007229|MCR-8.2,42.545,40_to_70,antibiotic target alteration,antibiotic target alteration,1
+gb|AAB05624.1|ARO:3002956|vanY_in_vanB_cl,gb|ABA71729.1|ARO:3002959|vanY_in_vanG_cl,51.905,40_to_70,antibiotic target alteration,antibiotic target alteration,1
+gb|AAL27443.1|ARO:3002967|vanXY_in_vanE,gb|AAF61331.1|ARO:3002966|vanXY_in_vanC,47.619,40_to_70,antibiotic target alteration,antibiotic target alteration,1
+gb|AAO82019.1|ARO:3004254|vanV_in_vanB_cl,gb|QIF88262.1|ARO:3007229|MCR-8.2,37.5,lt_40,antibiotic target alteration,antibiotic target alteration,1
+gb|CAL64019.1|ARO:3003441|cfrA,gb|CDF47262.1|ARO:3004649|cfr(B),75.145,70_to_90,antibiotic target alteration,antibiotic target alteration,1
+gb|CBY77552.1|ARO:3003106|Erm(42),gb|OPG86592.1|ARO:3004626|Erm(49),47.535,40_to_70,antibiotic target alteration,antibiotic target alteration,1
+gb|AAA26742.1|ARO:3001304|ErmS,gb|AAA26779.1|ARO:3004652|Erm(O)-lrm,64.591,40_to_70,antibiotic target alteration,antibiotic target alteration,1
+gb|AAA65953.1|ARO:3002919|vanR_in_vanA_cl,gb|BAE85478.1|ARO:3003728|vanR_in_vanI_cl,69.828,40_to_70,antibiotic target alteration,antibiotic target alteration,1
+gb|AAM09849.1|ARO:3000005|vanD,gb|AAA65956.1|ARO:3000010|vanA,68.421,40_to_70,antibiotic target alteration,antibiotic target alteration,1
+gb|AHA41499.1|ARO:3002948|vanH_in_vanO_cl,gb|AAF36802.1|ARO:3002945|vanH_in_vanF_cl,59.615,40_to_70,antibiotic target alteration,antibiotic target alteration,1
+gb|AAA98296.1|ARO:3000250|ErmC,gb|AAA98096.1|ARO:3000595|ErmT,76.639,70_to_90,antibiotic target alteration,antibiotic target alteration,1
+gb|AAL68827.1|ARO:3000605|Erm(36),gb|AJF36617.1|ARO:3004596|erm(46),54.118,40_to_70,antibiotic target alteration,antibiotic target alteration,1
+gb|CAP07796.1|ARO:3000860|rmtB,gb|BAC20579.1|ARO:3000859|rmtA,82.0,70_to_90,antibiotic target alteration,antibiotic target alteration,1
+gb|AAA98484.1|ARO:3000596|ErmX,gb|WGG63489.1|ARO:3007654|erm(56),55.894,40_to_70,antibiotic target alteration,antibiotic target alteration,1
+gb|AAC75089.1|ARO:3003577|ugd,gb|AAA73865.1|ARO:3002674|Cbut_catB,32.632,lt_40,antibiotic target alteration,antibiotic inactivation,0
+gb|AAF86642.1|ARO:3002933|vanS_in_vanC_cl,gb|AEP40504.1|ARO:3002940|vanS_in_vanN_cl,54.017,40_to_70,antibiotic target alteration,antibiotic target alteration,1
+gb|CAA26964.1|ARO:3000347|ErmA,gb|AAB60941.1|ARO:3005099|Spyo_ErmA_MLSb,81.07,70_to_90,antibiotic target alteration,antibiotic target alteration,1
+gb|AAC37034.1|ARO:3000522|ErmG,gb|AAA98096.1|ARO:3000595|ErmT,73.251,70_to_90,antibiotic target alteration,antibiotic target alteration,1
+gb|AAN86837.2|ARO:3000601|Erm(38),gb|AAR92235.1|ARO:3000602|Erm(39),72.656,70_to_90,antibiotic target alteration,antibiotic target alteration,1
+gb|AHH83938.1|ARO:3000013|vanB,gb|AAA65956.1|ARO:3000010|vanA,76.316,70_to_90,antibiotic target alteration,antibiotic target alteration,1
+gb|AAL12234.1|ARO:3003552|fusB,gb|AVL76727.1|ARO:3004663|FusF,52.83,40_to_70,antibiotic target protection,antibiotic target protection,1
+gb|ACB05808.1|ARO:3003109|msrE,gb|QHW12375.1|ARO:3005087|msrF,44.606,40_to_70,antibiotic target protection,antibiotic target protection,1
+gb|AFR46589.1|ARO:3002771|QnrB58,gb|BBW41109.1|ARO:3003188|QnrB76,99.558,90_to_100,antibiotic target protection,antibiotic target protection,1
+gb|AFU25658.1|ARO:3002762|QnrB47,gb|AFY16910.1|ARO:3002775|QnrB62,99.065,90_to_100,antibiotic target protection,antibiotic target protection,1
+gb|AEG74318.1|ARO:3002795|QnrS6,gb|ABF47470.1|ARO:3002791|QnrS2,99.541,90_to_100,antibiotic target protection,antibiotic target protection,1
+gb|AGL43627.1|ARO:3002778|QnrB66,gb|BBW41109.1|ARO:3003188|QnrB76,98.598,90_to_100,antibiotic target protection,antibiotic target protection,1
+gb|AEL00461.1|ARO:3002753|QnrB38,gb|BAN04743.1|ARO:3002773|QnrB60,99.533,90_to_100,antibiotic target protection,antibiotic target protection,1
+gb|CAP45903.1|ARO:3002733|QnrB18,gb|BBW41109.1|ARO:3003188|QnrB76,99.115,90_to_100,antibiotic target protection,antibiotic target protection,1
+gb|CAA45050.1|ARO:3002828|srmB,gb|AAC32027.1|ARO:3002817|carA,75.455,70_to_90,antibiotic target protection,antibiotic target protection,1
+gb|ABG56269.1|ARO:3002724|QnrB10,gb|AFY16910.1|ARO:3002775|QnrB62,98.673,90_to_100,antibiotic target protection,antibiotic target protection,1
+gb|ABH10964.1|ARO:3002830|vgaALC,gb|CBL58195.1|ARO:3002831|vgaC,63.776,40_to_70,antibiotic target protection,antibiotic target protection,1
+gb|AAZ04784.1|ARO:3002711|QnrA5,gb|ACV83303.2|ARO:3002713|QnrA7,99.541,90_to_100,antibiotic target protection,antibiotic target protection,1
+gb|AHE41345.1|ARO:3002797|QnrS8,gb|AHE41344.1|ARO:3002796|QnrS7,99.083,90_to_100,antibiotic target protection,antibiotic target protection,1
+gb|AAL05553.1|ARO:3003206|lsaE,gb|CAE18141.1|ARO:3003111|lsaB,61.382,40_to_70,antibiotic target protection,antibiotic target protection,1
+gb|ABX72042.1|ARO:3002727|QnrB13,gb|BAG55487.1|ARO:3002735|QnrB20,99.115,90_to_100,antibiotic target protection,antibiotic target protection,1
+gb|AEL00458.1|ARO:3002751|QnrB36,gb|AFY16910.1|ARO:3002775|QnrB62,99.065,90_to_100,antibiotic target protection,antibiotic target protection,1
+gb|CCI51002.2|ARO:3002767|QnrB54,gb|ABV66096.1|ARO:3002731|QnrB16,99.533,90_to_100,antibiotic target protection,antibiotic target protection,1
+gb|ACS71747.1|ARO:3002738|QnrB23,gb|BBW41109.1|ARO:3003188|QnrB76,99.558,90_to_100,antibiotic target protection,antibiotic target protection,1
+gb|ABO93588.1|ARO:3002715|QnrB2,gb|BAG55487.1|ARO:3002735|QnrB20,99.065,90_to_100,antibiotic target protection,antibiotic target protection,1
+gb|ADI46626.1|ARO:3002739|QnrB24,gb|ADM52193.1|ARO:3002744|QnrB29,99.558,90_to_100,antibiotic target protection,antibiotic target protection,1
+gb|AEQ94272.1|ARO:3002757|QnrB42,gb|ABC86904.2|ARO:3002714|QnrB1,98.598,90_to_100,antibiotic target protection,antibiotic target protection,1
+gb|ABF47469.1|ARO:3002790|QnrS1,gb|AFM45990.1|ARO:3004624|QnrS11,99.541,90_to_100,antibiotic target protection,antibiotic target protection,1
+gb|BAN04737.1|ARO:3002774|QnrB61,gb|AFY16910.1|ARO:3002775|QnrB62,99.065,90_to_100,antibiotic target protection,antibiotic target protection,1
+gb|AGL43632.1|ARO:3002783|QnrB71,gb|AFY16910.1|ARO:3002775|QnrB62,99.065,90_to_100,antibiotic target protection,antibiotic target protection,1
+gb|AEG74319.1|ARO:3002794|QnrS5,gb|AFM45990.1|ARO:3004624|QnrS11,95.872,90_to_100,antibiotic target protection,antibiotic target protection,1
+gb|ABS30107.1|ARO:3002725|QnrB11,gb|CAO82104.1|ARO:3002726|QnrB12,99.535,90_to_100,antibiotic target protection,antibiotic target protection,1
+gb|ABP87778.1|ARO:3002720|QnrB6,gb|BBW41109.1|ARO:3003188|QnrB76,99.558,90_to_100,antibiotic target protection,antibiotic target protection,1
+gb|ADI55014.1|ARO:3002801|QnrVC4,gb|AEM62764.1|ARO:3002802|QnrVC5,99.541,90_to_100,antibiotic target protection,antibiotic target protection,1
+gb|AFD54601.1|ARO:3002764|QnrB49,gb|BAG55487.1|ARO:3002735|QnrB20,98.673,90_to_100,antibiotic target protection,antibiotic target protection,1
+gb|CAA10975.1|ARO:3000194|tet(W),gb|AAR29969.1|ARO:3007121|tet(O/W),95.775,90_to_100,antibiotic target protection,antibiotic target protection,1
+gb|CAP45902.1|ARO:3002732|QnrB17,gb|BBW41109.1|ARO:3003188|QnrB76,99.115,90_to_100,antibiotic target protection,antibiotic target protection,1
+gb|AHY03238.1|ARO:3002789|QnrD2,gb|ACG70184.1|ARO:3002788|QnrD1,99.065,90_to_100,antibiotic target protection,antibiotic target protection,1
+gb|AFR46590.1|ARO:3002772|QnrB59,gb|AFY16910.1|ARO:3002775|QnrB62,98.673,90_to_100,antibiotic target protection,antibiotic target protection,1
+gb|ABC17629.1|ARO:3002716|QnrB3,gb|BBW41109.1|ARO:3003188|QnrB76,98.673,90_to_100,antibiotic target protection,antibiotic target protection,1
+gb|ADM52188.1|ARO:3002743|QnrB28,gb|ADM52186.1|ARO:3002742|QnrB27,99.533,90_to_100,antibiotic target protection,antibiotic target protection,1
+gb|AGL43626.1|ARO:3002777|QnrB65,gb|ABC17630.3|ARO:3002718|QnrB4,99.533,90_to_100,antibiotic target protection,antibiotic target protection,1
+gb|AAA26684.1|ARO:3002829|vgaA,gb|CBL58195.1|ARO:3002831|vgaC,63.969,40_to_70,antibiotic target protection,antibiotic target protection,1
+gb|AGK90303.1|ARO:3002734|QnrB19,gb|ABC17628.1|ARO:3002719|QnrB5,99.533,90_to_100,antibiotic target protection,antibiotic target protection,1
+gb|AEL31272.1|ARO:3002756|QnrB41,gb|BBW41109.1|ARO:3003188|QnrB76,98.673,90_to_100,antibiotic target protection,antibiotic target protection,1
+gb|ADW54092.1|ARO:3002761|QnrB46,gb|BAG55487.1|ARO:3002735|QnrB20,98.673,90_to_100,antibiotic target protection,antibiotic target protection,1
+gb|ACJ24509.1|ARO:3002793|QnrS4,gb|AFM45990.1|ARO:3004624|QnrS11,99.083,90_to_100,antibiotic target protection,antibiotic target protection,1
+gb|AHF20043.1|ARO:3002798|QnrS9,gb|AFM45990.1|ARO:3004624|QnrS11,99.083,90_to_100,antibiotic target protection,antibiotic target protection,1
+gb|AEL00450.1|ARO:3002747|QnrB32,gb|BBW41109.1|ARO:3003188|QnrB76,99.533,90_to_100,antibiotic target protection,antibiotic target protection,1
+gb|ACM50952.1|ARO:3002736|QnrB21,gb|ABW03157.2|ARO:3002722|QnrB8,99.533,90_to_100,antibiotic target protection,antibiotic target protection,1
+gb|AAD01868.1|ARO:3002867|dfrF,gb|WP_149100971.1|ARO:3005351|DfrA39,42.675,40_to_70,antibiotic target replacement,antibiotic target replacement,1
+gb|CAA90683.1|ARO:3003012|dfrA13,gb|CAF31623.1|ARO:3005354|dfr22,88.485,70_to_90,antibiotic target replacement,antibiotic target replacement,1
+gb|CAP69659.1|ARO:3003017|dfrA21,gb|CAF31623.1|ARO:3005354|dfr22,92.727,90_to_100,antibiotic target replacement,antibiotic target replacement,1
+gb|CAI99385.1|ARO:3002856|dfrA24,gb|ASF80997.1|ARO:3005164|dfrA35,38.806,lt_40,antibiotic target replacement,antibiotic target replacement,1
+gb|ACJ63260.1|ARO:3000413|sul3,gb|AAD51345.1|ARO:3003052|smeB,22.222,lt_40,antibiotic target replacement,antibiotic efflux,0
+gb|AHV80711.1|ARO:3002863|dfrA8,gb|AAK64581.1|ARO:3004568|dfrA18,37.58,lt_40,antibiotic target replacement,antibiotic target replacement,1
+gb|BAE15963.1|ARO:3002868|dfrG,gb|CAF31623.1|ARO:3005354|dfr22,33.742,lt_40,antibiotic target replacement,antibiotic target replacement,1
+gb|AAA85213.1|ARO:3002866|dfrD,gb|WP_000949574.1|ARO:3005348|DfrA36,43.75,40_to_70,antibiotic target replacement,antibiotic target replacement,1
+gb|AAA25550.1|ARO:3003105|dfrA3,gb|WP_149100971.1|ARO:3005351|DfrA39,40.136,40_to_70,antibiotic target replacement,antibiotic target replacement,1
+gb|ABB71176.1|ARO:3003020|dfrA25,gb|ANN23980.1|ARO:3004554|dfrA29,99.342,90_to_100,antibiotic target replacement,antibiotic target replacement,1
+gb|AAK60186.1|ARO:3003014|dfrA16,gb|WP_132586462.1|ARO:3005347|DfrA37,80.769,70_to_90,antibiotic target replacement,antibiotic target replacement,1
+gb|CAE53424.1|ARO:3003016|dfrA20,gb|WP_197749399.1|ARO:3005349|DfrA38,64.634,40_to_70,antibiotic target replacement,antibiotic target replacement,1
+gb|ABQ47844.1|ARO:3000215|mecR1,gb|AGR55864.1|ARO:3001793|OXA-320,33.607,lt_40,antibiotic target replacement,antibiotic inactivation,0
+gb|CAL48457.1|ARO:3002857|dfrA26,gb|CAF31623.1|ARO:3005354|dfr22,42.361,40_to_70,antibiotic target replacement,antibiotic target replacement,1
+gb|ADO00942.1|ARO:3003023|dfrB6,gb|AAX46054.1|ARO:3004549|dfrB5,91.026,90_to_100,antibiotic target replacement,antibiotic target replacement,1
+gb|AAA82255.1|ARO:3002864|dfrB1,gb|AAX46054.1|ARO:3004549|dfrB5,88.462,70_to_90,antibiotic target replacement,antibiotic target replacement,1
+gb|CAG34233.2|ARO:3003019|dfrA23,gb|WP_058652112.1|ARO:3005346|DfrA34,25.146,lt_40,antibiotic target replacement,antibiotic target replacement,1
+gb|CCC86795.1|ARO:3001209|mecC,gb|AFH36332.1|ARO:3001677|OXA-236,22.84,lt_40,antibiotic target replacement,antibiotic inactivation,0
+gb|CAC81324.1|ARO:3003015|dfrA19,gb|WP_058652112.1|ARO:3005346|DfrA34,26.471,lt_40,antibiotic target replacement,antibiotic target replacement,1
+gb|BAB41258.1|ARO:3000124|mecI,gb|CCC86797.1|ARO:3005046|MecI_rep,66.667,40_to_70,antibiotic target replacement,antibiotic target replacement,1
+gb|AAL59753.1|ARO:3000412|sul2,gb|BAA16547.1|ARO:3000027|emrA,24.074,lt_40,antibiotic target replacement,antibiotic efflux,0
+gb|ACR57831.1|ARO:3003022|dfrB3,gb|ALZ46148.1|ARO:3007489|dfrB10,92.308,90_to_100,antibiotic target replacement,antibiotic target replacement,1
+gb|AEJ33969.1|ARO:3000410|sul1,gb|AAB58161.1|ARO:3003010|ceoB,28.358,lt_40,antibiotic target replacement,antibiotic efflux,0
+gb|ADG84870.1|ARO:3002858|dfrA12,gb|CAF31623.1|ARO:3005354|dfr22,83.636,70_to_90,antibiotic target replacement,antibiotic target replacement,1
+gb|ABG91835.1|ARO:3002860|dfrA17,gb|ACZ52983.1|ARO:3004555|dfrA32,92.994,90_to_100,antibiotic target replacement,antibiotic target replacement,1
+gb|AGC51118.1|ARO:3000617|mecA,gb|ABW76138.1|ARO:3001767|OXA-137,23.2,lt_40,antibiotic target replacement,antibiotic inactivation,0
+gb|AGY30828.1|ARO:3003018|dfrA22,gb|CAF31623.1|ARO:3005354|dfr22,95.152,90_to_100,antibiotic target replacement,antibiotic target replacement,1
+gb|AAO04716.1|ARO:3002865|dfrC,gb|WP_197749399.1|ARO:3005349|DfrA38,43.478,40_to_70,antibiotic target replacement,antibiotic target replacement,1
+gb|AHG97174.1|ARO:3003011|dfrA10,gb|WP_188331861.1|ARO:3005345|DfrA43_TMP,31.847,lt_40,antibiotic target replacement,antibiotic target replacement,1
+gb|EOD99669.1|ARO:3002875|dfrE,gb|CAC8536249.1|ARO:3007456|dfrL,43.827,40_to_70,antibiotic target replacement,antibiotic target replacement,1
+gb|ABB89122.1|ARO:3002861|dfrA5,gb|CAQ53849.2|ARO:3004552|dfrA30,92.994,90_to_100,antibiotic target replacement,antibiotic target replacement,1
+gb|AHK10285.1|ARO:3002859|dfrA14,gb|CAQ53849.2|ARO:3004552|dfrA30,89.809,70_to_90,antibiotic target replacement,antibiotic target replacement,1
+gb|BAI83385.1|ARO:3003440|mecB,gb|ABW76138.1|ARO:3001767|OXA-137,30.0,lt_40,antibiotic target replacement,antibiotic inactivation,0
+gb|CBL80435.1|ARO:3002869|dfrK,gb|WP_197749399.1|ARO:3005349|DfrA38,39.157,lt_40,antibiotic target replacement,antibiotic target replacement,1
+gb|ABI20482.1|ARO:3003021|dfrB2,gb|ALZ46148.1|ARO:3007489|dfrB10,92.308,90_to_100,antibiotic target replacement,antibiotic target replacement,1
+gb|AAP74961.2|ARO:3002854|dfrA1,gb|WP_132586462.1|ARO:3005347|DfrA37,88.535,70_to_90,antibiotic target replacement,antibiotic target replacement,1
+gb|AHB39758.1|ARO:3003013|dfrA15,gb|WP_132586462.1|ARO:3005347|DfrA37,88.535,70_to_90,antibiotic target replacement,antibiotic target replacement,1
+gb|ACS44716.1|ARO:3002862|dfrA7,gb|ACZ52983.1|ARO:3004555|dfrA32,89.809,70_to_90,antibiotic target replacement,antibiotic target replacement,1
+gb|CAI29521.1|ARO:3004640|dfrA15b,gb|WP_132586462.1|ARO:3005347|DfrA37,86.624,70_to_90,antibiotic target replacement,antibiotic target replacement,1
+gb|CAB06660.1|ARO:3004644|Pmir_dfrA6,gb|BAD88719.1|ARO:3005084|dfrA31,89.809,70_to_90,antibiotic target replacement,antibiotic target replacement,1
+gb|ABO40886.1|ARO:3004645|dfrI,gb|ASF80997.1|ARO:3005164|dfrA35,39.716,lt_40,antibiotic target replacement,antibiotic target replacement,1
+gb|AAN85115.1|ARO:3004642|dfrA3b,gb|ACY06082.1|ARO:3004547|dfrA6,28.906,lt_40,antibiotic target replacement,antibiotic target replacement,1
+gb|AQX82857.1|ARO:3004185|mecD,gb|ABW76138.1|ARO:3001767|OXA-137,21.091,lt_40,antibiotic target replacement,antibiotic inactivation,0
+gb|WP_102607457.1|ARO:3004361|sul4,gb|WP_045475347.1|ARO:3005334|DfrA42_TMP,23.333,lt_40,antibiotic target replacement,antibiotic target replacement,1

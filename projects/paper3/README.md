@@ -1,101 +1,65 @@
-# Paper 3: Early Warning Signals for ARG Expansion
+# Paper 3: ARG Detection Failure Under Sequence Divergence
 
 For interns with limited coding experience: start with `START_HERE.md` in this folder.
 
 ## Objective
 
-Evaluate whether MGEs contain predictive information for future ARG change while controlling for temporal confounding.
+Quantify where ARG detection fails as sequence divergence increases.
 
-Core contribution: naive lag-based predictive models can produce near-perfect fit under strong temporal coupling, even when independent predictive signal is minimal.
+Core contribution:
 
-Primary hypothesis:
+- identify divergence-driven failure regimes, not just average method ranking
+- enforce identity-aware evaluation to reduce train/test leakage
+- report stratified recall (30-50, 50-70, 70-90 identity bins)
 
-`MGE(t)` predicts `ARG(t+1)`
+Hypotheses:
 
-Robustness hypotheses:
-
-- First-difference signal: `dMGE(t)` predicts `dARG(t+1)`
-- Added-value signal: `MGE(t)` improves prediction beyond `ARG(t)` history
-
-Despite this being known in time-series statistics, these checks are rarely made explicit in environmental AMR lag-analysis workflows.
+- H1: BLAST performance drops with divergence
+- H2: embeddings are more robust
+- H3: standard evaluation overestimates performance
 
 ## Inputs
 
-- results/ARG_dataset.csv
-- assemblies/
-- proteins/
-- metadata/metadata_final.csv
+- ../paper2/results/low_identity_per_query.csv
+- ../paper2/results/query_labels_card.csv
+- ../paper2/results/db_labels_card.csv
+- ../paper2/proteins/card_query_homolog.faa
+- ../paper2/proteins/card_db_homolog.faa
 
 ## Outputs
 
-- results/features/mge_abundance.csv
-- results/features/kmer_entropy.csv
-- results/features/time_ordered_table.csv
-- results/models/lag_regression_results.csv
-- results/models/cross_correlation.csv
-- results/difference_model.csv
-- results/granger_test.csv
-- analysis/figures/
+- results/identity_bin_recall.csv
+- results/benchmark_table.csv
+- results/embedding_per_query.csv
+- analysis/figures/recall_vs_identity.png
+- results/split_assignments.csv (from identity-clustered split)
+- results/split_summary.csv (from identity-clustered split)
 
 ## Workflow
 
-1. Detect mobile element markers.
+1. Build identity-clustered split assignments (to prevent leakage):
 
-Target genes include:
-
-- transposase
-- integrase
-- plasmid replication proteins
-
-Use mobileOG reference with DIAMOND:
-
-```bash
-diamond blastp -d mobileog -q proteins/SRRXXXX.faa -o results/features/SRRXXXX_mobileog.tsv
+```powershell
+python projects/paper3/analysis/identity_cluster_split.py --pairwise-identity-csv projects/paper3/results/query_query_identity.csv --labels-csv projects/paper2/results/query_labels_card.csv --identity-threshold 70 --test-fraction 0.2 --out-assignments projects/paper3/results/split_assignments.csv --out-summary projects/paper3/results/split_summary.csv
 ```
 
-2. Compute sequence complexity metrics.
+2. Generate divergence benchmark outputs and main figure (ESM2):
 
-Python entropy example:
-
-```python
-from scipy.stats import entropy
+```powershell
+python projects/paper3/analysis/build_divergence_results.py --blast-per-query projects/paper2/results/low_identity_per_query.csv --query-labels projects/paper2/results/query_labels_card.csv --db-labels projects/paper2/results/db_labels_card.csv --query-fasta projects/paper2/proteins/card_query_homolog.faa --db-fasta projects/paper2/proteins/card_db_homolog.faa --embedding-model esm2 --hf-model-id facebook/esm2_t6_8M_UR50D --batch-size 16 --max-length 192 --identity-bin-out projects/paper3/results/identity_bin_recall.csv --benchmark-table-out projects/paper3/results/benchmark_table.csv --figure-out projects/paper3/analysis/figures/recall_vs_identity.png --embedding-per-query-out projects/paper3/results/embedding_per_query.csv
 ```
 
-Write entropy and diversity features per sample.
+3. Optional real embedding run (requires torch + transformers):
 
-3. Align time series by study and sampling order.
-
-Priority example cohort:
-
-- PRJNA1149575
-
-4. Run lag analysis with robustness tests.
-
-Regression example:
-
-```python
-ARG_t1 ~ MGE_t
+```powershell
+python projects/paper3/analysis/build_divergence_results.py --blast-per-query projects/paper2/results/low_identity_per_query.csv --query-labels projects/paper2/results/query_labels_card.csv --db-labels projects/paper2/results/db_labels_card.csv --query-fasta projects/paper2/proteins/card_query_homolog.faa --db-fasta projects/paper2/proteins/card_db_homolog.faa --embedding-model protbert --identity-bin-out projects/paper3/results/identity_bin_recall_protbert.csv --benchmark-table-out projects/paper3/results/benchmark_table_protbert.csv --figure-out projects/paper3/analysis/figures/recall_vs_identity_protbert.png --embedding-per-query-out projects/paper3/results/embedding_per_query_protbert.csv
 ```
-
-Also compute:
-
-- first-difference model: `dARG(t+1) ~ dMGE(t)`
-- Granger-style comparison:
-	- base: `ARG(t+1) ~ ARG(t)`
-	- full: `ARG(t+1) ~ ARG(t) + MGE(t)`
-- cross-correlation across lag values
-
-Model outputs now include both `r_squared` and `adjusted_r_squared`.
-Sequencing depth is modeled on the raw read-count scale when available (`sequencing_depth_transform = raw_read_count`).
 
 ## Figures
 
-1. ARG time series.
-2. MGE time series.
-3. Lag correlation plot.
-4. Differenced scatter plot (`dMGE(t)` vs `dARG(t+1)`).
+1. Recall vs sequence identity (BLAST line + embedding line).
 
 ## Expected signal
 
-Naive lag associations can appear strong under shared temporal dynamics. A valid leading-indicator claim should persist after differencing and history-conditioned testing.
+If divergence failure exists, BLAST recall decreases by a measurable percentage as identity drops. Aggregate-only reporting can mask these low-identity failure modes.
 

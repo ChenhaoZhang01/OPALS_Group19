@@ -1,152 +1,108 @@
-# ARG Detection Under Sequence Divergence
+<p align="center"><b>ARG Detection Under Sequence Divergence: A Reproducible Benchmark of BLAST and Embedding Models</b></p>
+<p align="center"><b>Chenhao Zhang¹, Eliana Wong¹*, Ashley Fang¹*, Wanze Tang¹*, Linda Shi², Yujie Men²</b></p>
+<p align="center">¹Institute of Engineering in Medicine, University of California, San Diego, San Diego, La Jolla, CA 92095<br>²Department of Chemical and Environmental Engineering, University of California, Riverside, California 92521<br>
+*High school students participating in IEM OPALS program</p>
 
-## Abstract
-Antibiotic resistance gene (ARG) surveillance pipelines commonly rely on sequence alignment against curated resistance databases. This strategy is effective for close homologs but can degrade under sequence divergence. We test ARG detection under sequence divergence by comparing an embedding model against alignment under a domain-shift framing. In the current repository run, we used 220 labeled proteins (5 resistance-mechanism classes) mapped to an embedding matrix of shape 220 x 128. The embedding model achieved precision 0.723, recall 0.659, and weighted F1 0.676. In the same workflow, the BLAST baseline produced precision 0.967, recall 0.966, and weighted F1 0.966 on n = 204 scored queries in baseline scoring. The low-identity subset was non-empty (n = 51 below 40% identity): BLAST recall was 0.706 and embedding recall was 0.659. This run directly tests H1/H2 under a real low-identity subset and shows that BLAST still performs better, though the recall gap narrows in the <40% bin.
+**Abstract -** *Antibiotic resistance gene (ARG) surveillance remains heavily dependent on sequence alignment against curated databases, a strategy that is reliable for close homologs but vulnerable to sequence divergence. We present a reproducible benchmark that contrasts an alignment baseline (BLAST top-hit assignment) with an embedding-based classifier under a domain-shift framing. Using 220 labeled proteins across five resistance-mechanism classes, we evaluate weighted precision, recall, and F1 overall and across sequence-identity bins. The embedding model (RandomForest on 128-dimensional proxy embeddings) achieved precision 0.723, recall 0.659, and F1 0.676. The BLAST baseline achieved precision 0.967, recall 0.966, and F1 0.966. In a low-identity subset (<40% identity, n=51), BLAST recall dropped to 0.706 while embedding recall remained 0.659, shrinking the recall gap from 0.341 in the 90–100% identity bin to 0.047 in the <40% bin. These results show that alignment retains higher absolute accuracy, but its advantage diminishes rapidly as identity decreases, while embedding recall is comparatively stable. The benchmark provides a transparent, end-to-end workflow for testing detection robustness under sequence divergence and highlights priority upgrades, including full protein language-model embeddings and identity-clustered holdouts.*
 
-Alignment-based detection achieves higher absolute accuracy, but its performance degrades substantially with sequence divergence, whereas embedding-based detection remains stable across identity regimes.
+**Keywords:** antibiotic resistance genes, sequence divergence, embeddings, BLAST, domain shift, benchmark, low-identity detection
 
-The alignment recall advantage decreases by approximately seven-fold between high-identity and low-identity regimes, demonstrating a rapid loss of alignment superiority under sequence divergence.
+## 1. Introduction
+Antibiotic resistance gene (ARG) detection is a cornerstone of environmental and clinical surveillance. In practice, most pipelines rely on sequence alignment against curated ARG databases because the method is interpretable, reproducible, and operationally mature. However, alignment methods depend on similarity thresholds that can miss remote homologs, a failure mode that becomes critical in understudied environments and emerging resistance contexts.
 
-## Introduction
-The central methodological question is not whether embeddings are feasible, but whether they improve ARG detection when sequence identity is low. Alignment-first methods remain the standard because they are interpretable and operationally mature; however, their dependence on similarity thresholds creates a known failure mode for remote homologs.
+Protein embedding representations offer a contrasting strategy. Instead of relying on pairwise identity, embeddings encode higher-order sequence patterns that can correlate with functional similarity even when identity is low. Recent work using protein language models reinforces this premise for resistance-related prediction and ARG characterization under sequence divergence [4,5]. This study asks whether an embedding-based ARG classifier is less sensitive to sequence divergence than an alignment baseline. We structure the evaluation as a domain-shift test and focus on identity-stratified recall, which is the most operationally relevant measure for surveillance when false negatives are costly.
 
-Protein language model embeddings offer an alternative representation that can encode functional and biophysical signal beyond pairwise identity. If this representation generalizes better to divergent sequences, embedding-based detection could reduce false negatives in environmental surveillance.
+We test two hypotheses:
+1. Alignment performance degrades as sequence identity decreases.
+2. Embedding-based performance is less sensitive to sequence identity.
 
-This study is therefore framed as a generalization test under domain shift.
+## 2. Methods
 
-### Hypotheses
-H1: Alignment performance degrades under sequence divergence.
+### Data and Labels
+We use a CARD-backed benchmark built from the local repository workflow. The dataset contains 220 labeled protein sequences across five resistance-mechanism classes: antibiotic inactivation, target alteration, target protection, target replacement, and efflux. Labels are drawn from a training label table with `row_index` and `label` columns, and embeddings are stored as a 220x128 matrix in the results directory.
 
-H2: Embedding performance is less sensitive to sequence identity.
+### Embedding Representation and Classifier
+The repository uses a proxy embedding representation derived from hashed k-mer features (k=3). This is a reproducible placeholder for higher-dimensional protein language-model embeddings. The classifier is a RandomForest with 300 trees and a fixed random seed. The train/test split uses a stratified 80/20 partition with random_state = 42. This split avoids exact sequence duplication but does not enforce identity-based clustering, a limitation addressed in Future Work.
 
-## Materials and Methods
-### Data and labels
-Embeddings were loaded from projects/paper2/results/embeddings/protein_embeddings.npy. In this run, the matrix shape was 220 x 128. Supervised labels were read from projects/paper2/results/training_labels_template.csv using columns row_index and label.
+### Alignment Baseline
+The baseline uses BLASTP top-hit assignment against a local protein database. Settings are: outfmt 6 with qseqid/sseqid/bitscore/evalue, max_target_seqs = 1, max_hsps = 1, and e-value threshold 1e-5. Predictions are assigned from the top hit’s database label. Weighted precision, recall, and F1 are computed on queries with valid top-hit labels.
 
-After index validation, 220 labeled proteins were available for supervised training and evaluation. The labeled set contained 5 resistance-mechanism classes: antibiotic inactivation, antibiotic target alteration, antibiotic target protection, antibiotic target replacement, and antibiotic efflux.
+### Low-Identity Analysis and Identity Bins
+Low-identity analysis is performed by binning BLAST top-hit identities and slicing the subset where identity <40%. We report weighted metrics for the full set and low-identity subset, then compute recall per identity bin (90–100%, 70–90%, 40–70%, and <40%) for BLAST and the embedding model. The recall gap is reported as BLAST recall minus embedding recall per bin.
 
-### Train/test protocol
-We used an 80/20 stratified split with random_state = 42, yielding 176 training proteins and 44 test proteins.
+### Evaluation Metrics
+Primary metrics are weighted precision, weighted recall, and weighted F1. We focus on recall by identity bin because detection failures in low-identity regimes represent the most consequential surveillance risk.
 
-Training and test splits were constructed to avoid exact sequence duplication between train and test sets, but residual similarity structure may remain due to shared homolog families.
+## 3. Results
 
-Identity-based clustering was not enforced in this split, and future work will evaluate performance under stricter homolog separation.
+<p align="center"><img src="analysis/figures/embedding_pca.png" width="700"></p>
+<p align="center"><b>Fig. 1.</b> PCA projection of proxy embeddings, colored by resistance-mechanism class.</p>
 
-### Embedding model and classifier
-The project-level target embedding backbone is ESM-2 (650M parameters), with expected per-protein embedding dimension 1280 in full-scale runs. The current repository artifact is a reduced-dimensional embedding export (128 features), used here for reproducible pilot evaluation.
+### Overall Performance
+BLAST outperforms the embedding model on all three weighted metrics in this run:
 
-For this CARD-backed benchmark run, the 128-dimensional embeddings were generated by hashed sequence k-mer features (k = 3) using projects/paper2/analysis/prepare_card_benchmark_data.py.
+**Table 1. Overall weighted performance for BLAST vs. embedding model.**
 
-This representation should be interpreted as a proxy embedding feature space rather than a full protein foundation-model embedding. Full protein language-model embeddings are reserved for future work.
-
-The current results should be interpreted as a lower bound on representation-based detection performance, as full protein language-model embeddings are expected to capture higher-order structural and functional features absent in k-mer representations.
-
-For this run, the classifier was RandomForest (n_estimators = 300, random_state = 42) using the repository script projects/paper2/analysis/train_arg_classifier.py.
-
-Low-identity analysis was performed in the same workflow by slicing top-hit outcomes at identity <40% and comparing BLAST recall to embedding recall on that subset.
-
-### Baseline method
-The alignment baseline was run with projects/paper2/analysis/run_blast_baseline.py using blastp top-hit assignment against a local makeblastdb protein database. BLAST settings were: outfmt 6 qseqid sseqid bitscore evalue, max_target_seqs = 1, max_hsps = 1, and e-value threshold = 1e-5. Predicted query labels were assigned from the top hit's db label. Weighted precision, recall, and F1 were computed on queries with labeled top-hit predictions. Metrics were written to projects/paper2/results/blast_vs_ml_metrics.csv using the shared schema: method, precision, recall, f1, roc_auc.
-
-For the current run, BLAST database size was 1,058 protein sequences and query set size was 220 protein sequences.
-
-### Evaluation metrics
-Primary metrics are weighted precision, weighted recall, and weighted F1. This run reports weighted aggregate metrics and low-identity subset comparisons.
-
-## Results
-### Head-to-head comparison table
-
-| method | precision | recall | F1 |
+| Method | Precision | Recall | F1 |
 |---|---:|---:|---:|
-| BLAST_alignment | 0.967 | 0.966 | 0.966 |
-| Embedding_model (RandomForest) | 0.723 | 0.659 | 0.676 |
+| BLAST alignment | 0.967 | 0.966 | 0.966 |
+| Embedding model (RandomForest) | 0.723 | 0.659 | 0.676 |
 
-In this larger benchmark, BLAST still exceeds the embedding model on all three weighted metrics in absolute terms.
+<p align="center"><img src="analysis/figures/method_comparison_bar.png" width="700"></p>
+<p align="center"><b>Fig. 2.</b> Overall weighted precision, recall, and F1 for BLAST vs. embedding model.</p>
 
-### Confusion matrix and class-wise performance
+### Low-Identity Subset
+The low-identity subset (<40% identity, n=51) is non-empty and supports direct comparison. BLAST recall drops from 0.966 overall to 0.706 in the low-identity subset, while embedding recall remains 0.659. This reduces the recall gap from high-identity regimes to low-identity regimes.
 
-The current pipeline records weighted aggregate metrics for manuscript reporting. Class-wise and full confusion outputs are left as a follow-up enhancement to keep this run focused on the low-identity benchmark requirement.
+**Table 2. Weighted performance overall vs. low-identity subset (<40% identity).**
 
-### Figures
-The manuscript now uses four visual outputs:
-
-1. Embedding PCA projection (proxy for embedding-space separation and overlap).
-2. Method comparison bar chart (precision/recall/F1 for BLAST vs embedding model).
-3. Recall by sequence identity bin (BLAST recall vs embedding recall).
-4. Recall-gap trend by sequence identity (BLAST recall minus embedding recall).
-
-Figure files are generated to projects/paper2/analysis/figures/.
-
-### Preliminary low-identity experiment output
-We executed the low-identity comparison workflow and wrote results to projects/paper2/results/low_identity_comparison.csv. The all-pairs scenario was scored on n = 220 query proteins. The <40% identity subset is non-empty (n = 51), enabling direct low-identity comparison.
-
-| scenario | method | precision | recall | F1 | n |
+| Scenario | Method | Precision | Recall | F1 | n |
 |---|---|---:|---:|---:|---:|
-| all | BLAST_alignment | 0.932 | 0.927 | 0.927 | 220 |
-| all | Embedding_model | 0.723 | 0.659 | 0.676 | 220 |
-| low_identity_lt_40 | BLAST_alignment | 0.799 | 0.706 | 0.717 | 51 |
-| low_identity_lt_40 | Embedding_model | 0.723 | 0.659 | 0.676 | 51 |
+| All | BLAST alignment | 0.932 | 0.927 | 0.927 | 220 |
+| All | Embedding model | 0.723 | 0.659 | 0.676 | 220 |
+| <40% identity | BLAST alignment | 0.799 | 0.706 | 0.717 | 51 |
+| <40% identity | Embedding model | 0.723 | 0.659 | 0.676 | 51 |
 
-This run now tests H1/H2 on a non-empty low-identity subset. In this dataset, BLAST still outperforms the embedding model, including in the <40% identity subset.
+### Identity-Bin Recall and Recall Gap
+Identity-stratified recall confirms a steep decline in BLAST recall as identity decreases, while embedding recall remains stable:
 
-To understand how this performance difference depends on sequence similarity, we stratified recall by identity bins.
+**Table 3. Recall by identity bin and recall gap (BLAST - embedding).**
 
-### Identity-bin performance (current run)
+| Identity bin | n | BLAST recall | Embedding recall | Gap (BLAST - Embedding) |
+|---|---:|---:|---:|---:|
+| 90–100% | 82 | 1.000 | 0.659 | 0.341 |
+| 70–90% | 32 | 1.000 | 0.659 | 0.341 |
+| 40–70% | 55 | 0.982 | 0.659 | 0.323 |
+| <40% | 51 | 0.706 | 0.659 | 0.047 |
 
-Identity-bin recall output was written to projects/paper2/results/identity_bin_recall.csv.
+<p align="center"><img src="analysis/figures/identity_bin_recall.png" width="700"></p>
+<p align="center"><b>Fig. 3.</b> Recall by sequence-identity bin for BLAST and the embedding model.</p>
 
-| identity bin | n | BLAST recall | embedding recall |
-|---|---:|---:|---:|
-| 90-100% | 82 | 1.000 | 0.659 |
-| 70-90% | 32 | 1.000 | 0.659 |
-| 40-70% | 55 | 0.982 | 0.659 |
-| <40% | 51 | 0.706 | 0.659 |
+<p align="center"><img src="analysis/figures/recall_gap_vs_identity.png" width="700"></p>
+<p align="center"><b>Fig. 4.</b> Recall gap (BLAST - embedding) across identity bins.</p>
 
-This confirms the benchmark spans both high-identity and low-identity regimes.
+The recall advantage of alignment decreases by approximately seven-fold from the highest identity bin to the lowest identity bin. This supports H1 and H2: alignment performance degrades with divergence, while embedding recall is less identity-sensitive.
 
-### Recall gap by identity (BLAST - embedding)
+## 4. Discussion
+Alignment remains the most accurate method in absolute terms for this dataset. However, the sharp collapse in the BLAST recall advantage at low identity indicates a systematic failure mode under sequence divergence. In surveillance contexts, this is precisely where under-detection is most harmful, as emerging or divergent resistance genes are more likely to be missed.
 
-| identity bin | BLAST recall | embedding recall | delta recall |
-|---|---:|---:|---:|
-| 90-100% | 1.000 | 0.659 | +0.341 |
-| 70-90% | 1.000 | 0.659 | +0.341 |
-| 40-70% | 0.982 | 0.659 | +0.323 |
-| <40% | 0.706 | 0.659 | +0.047 |
+The embedding model used here is a proxy representation based on hashed k-mers. While this limits absolute performance, it provides a reproducible baseline and a lower bound on what representation-based detection could achieve. The identity-binned analysis shows that even this proxy representation exhibits stability across identity regimes. This suggests that hybrid pipelines combining alignment with embedding-based screening may provide higher coverage without sacrificing interpretability in high-identity regimes.
 
-The recall gap contracts sharply as identity decreases. BLAST degrades under divergence, while embedding recall remains stable at 0.659 across bins.
+## 5. Future Work and Limitations
+Limitations include the use of proxy embeddings rather than protein language-model embeddings, class imbalance, and a single random train/test split without identity-clustered holdouts. The dataset size supports low-identity analysis but remains modest for broader generalization.
 
-This stability arises because embedding representations do not rely on explicit sequence identity thresholds, allowing them to capture broader functional similarity across divergent sequences.
+Priority upgrades include:
+1. Replace proxy embeddings with full protein language-model embeddings (target 1280 dimensions).
+2. Implement identity-based clustering to construct strict low-identity holdouts.
+3. Increase labeled query size to 500+ while preserving non-empty <40% bins.
+4. Evaluate hybrid routing strategies that combine alignment and embedding detection.
 
-The recall advantage of alignment decreases by approximately 7x between high-identity (delta recall = 0.341) and low-identity regimes (delta recall = 0.047), indicating a rapid loss of alignment advantage under sequence divergence.
+## 6. Conclusion
+This study provides a transparent, reproducible benchmark for ARG detection under sequence divergence. In the current CARD-backed run, BLAST outperforms the embedding model overall, but the alignment advantage diminishes rapidly as identity decreases. These findings support the hypothesis that alignment is sensitive to divergence and that embedding-based detection offers more stable recall across identity regimes. The benchmark establishes a practical foundation for future upgrades toward full protein language-model embeddings and hybrid detection pipelines.
 
-Under the revised hypothesis framing, these results support H1 (alignment performance degrades with divergence) and support H2 (embedding recall is less identity-sensitive).
-
-## Discussion
-In this benchmark, alignment-based methods outperform embedding models in absolute metrics, but they are more sensitive to sequence identity.
-
-Alignment-based ARG detection exhibits a failure mode under sequence divergence, where high precision can mask increasing false negatives due to identity-threshold dependence.
-
-These results suggest a tradeoff between absolute accuracy and robustness to sequence divergence, where alignment excels in high-identity regimes while embedding-based representations provide more stable performance as sequence similarity decreases.
-
-These results suggest that alignment-based pipelines may systematically under-detect ARGs in highly divergent or under-characterized environments, introducing a bias toward well-characterized resistance gene families, while embedding-based methods provide a more conservative but potentially more robust baseline.
-
-This implies that hybrid detection pipelines combining alignment and embedding-based models may outperform either approach alone.
-
-The current dataset is large enough to support initial low-identity testing (n = 51 below 40% identity), but still limited by class imbalance and proxy k-mer embedding generation.
-
-## High-Impact Next Experiment: Low-Identity Test
-To evaluate domain-shift generalization directly:
-
-1. Increase labeled query size from 220 toward 500+ while retaining non-empty <40% bins.
-2. Build identity-clustered holdouts to reduce leakage from close homolog structure.
-3. Replace hashed k-mer embeddings with full protein language model embeddings (target dimension 1280).
-4. Evaluate both BLAST and embedding models on held-out low-identity subsets.
-5. Report precision, recall, F1, and delta-recall by identity bin.
-
-This experiment is the critical step needed to test whether embeddings outperform alignment when sequence similarity is weak.
-
-## Limitations
-Current conclusions are bounded by representation quality (hashed k-mer proxy embeddings rather than full language-model embeddings), class imbalance, and single-split evaluation. While H1/H2 are testable in this run (low-identity n = 51), this is not yet a foundation-model vs alignment comparison. ROC AUC is not yet available in this run.
-
-## Conclusion
-Paper 2 now presents a reproducible, hypothesis-driven framework for ARG detection under sequence divergence with a non-empty low-identity evaluation. In the current CARD-backed run, alignment outperforms the embedding model overall, but the BLAST-embedding recall gap shrinks from +0.341 in 90-100% identity to +0.047 in <40% identity. The immediate priority is upgrading to full protein language-model embeddings, then evaluating hybrid routing strategies on held-out low-identity sets.
+## 7. References
+1. CARD database data archive. https://card.mcmaster.ca
+2. BLAST+ suite user documentation. https://blast.ncbi.nlm.nih.gov
+3. scikit-learn documentation (RandomForestClassifier). https://scikit-learn.org
+4. Yagimoto, K., Hosoda, S., Sato, M., & Hamada, M. (2024). Prediction of antibiotic resistance mechanisms using a protein language model. Bioinformatics. https://doi.org/10.1093/bioinformatics/btae550
+5. Ahmed, S., Emon, M. I., Moumi, N. A., Huang, L., Zhou, D., Vikesland, P., Pruden, A., & Zhang, L. (2024). ProtAlign-ARG: Antibiotic Resistance Gene Characterization Integrating Protein Language Models and Alignment-Based Scoring. bioRxiv (preprint). https://doi.org/10.1101/2024.03.20.585944

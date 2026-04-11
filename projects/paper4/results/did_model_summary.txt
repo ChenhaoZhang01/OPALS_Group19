@@ -1,26 +1,26 @@
 Paper 4 Difference-in-Differences Model
-Input: projects\paper4\results\did_input_table.csv
+Input: projects/paper4/results/did_input_table.csv
 Formula: ARG_total ~ treatment + time + treatment:time
-Robust HC3: True
+Robust HC3: False
 log1p outcome: False
                             OLS Regression Results                            
 ==============================================================================
 Dep. Variable:              ARG_total   R-squared:                       0.432
 Model:                            OLS   Adj. R-squared:                  0.290
-Method:                 Least Squares   F-statistic:                     3.444
-Date:                Sun, 05 Apr 2026   Prob (F-statistic):             0.0517
-Time:                        16:00:21   Log-Likelihood:                -458.33
+Method:                 Least Squares   F-statistic:                     3.047
+Date:                Tue, 07 Apr 2026   Prob (F-statistic):             0.0701
+Time:                        11:12:07   Log-Likelihood:                -458.33
 No. Observations:                  16   AIC:                             924.7
 Df Residuals:                      12   BIC:                             927.7
 Df Model:                           3                                         
-Covariance Type:                  HC3                                         
+Covariance Type:            nonrobust                                         
 ==================================================================================
                      coef    std err          t      P>|t|      [0.025      0.975]
 ----------------------------------------------------------------------------------
-Intercept       1.181e+12   1.19e+12      0.990      0.342   -1.42e+12    3.78e+12
-treatment      -1.132e+12   1.19e+12     -0.949      0.361   -3.73e+12    1.47e+12
-time           -3.399e+11   1.35e+12     -0.252      0.805   -3.28e+12     2.6e+12
-treatment:time  1.633e+12   1.42e+12      1.146      0.274   -1.47e+12    4.74e+12
+Intercept       1.181e+12   5.45e+11      2.168      0.051    -5.9e+09    2.37e+12
+treatment      -1.132e+12   6.29e+11     -1.799      0.097    -2.5e+12    2.39e+11
+time           -3.399e+11   7.71e+11     -0.441      0.667   -2.02e+12    1.34e+12
+treatment:time  1.633e+12    8.9e+11      1.835      0.091   -3.06e+11    3.57e+12
 ==============================================================================
 Omnibus:                        2.906   Durbin-Watson:                   1.742
 Prob(Omnibus):                  0.234   Jarque-Bera (JB):                0.967
@@ -29,4 +29,4 @@ Kurtosis:                       3.856   Cond. No.                         9.89
 ==============================================================================
 
 Notes:
-[1] Standard Errors are heteroscedasticity robust (HC3)
+[1] Standard Errors assume that the covariance matrix of the errors is correctly specified.

@@ -1,0 +1,3 @@
+method,overall_recall,low_id_recall,high_id_recall
+BLAST_alignment,0.241303,0.241777,0.833333
+Embedding_hashed_class_topk,0.414136,0.418927,1.000000

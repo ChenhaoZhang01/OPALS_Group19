@@ -1,0 +1,6141 @@
+row_index,label
+0,antibiotic efflux
+1,antibiotic efflux
+2,antibiotic efflux
+3,antibiotic efflux
+4,antibiotic efflux
+5,antibiotic efflux
+6,antibiotic efflux
+7,antibiotic efflux
+8,antibiotic efflux
+9,antibiotic efflux
+10,antibiotic efflux
+11,antibiotic efflux
+12,antibiotic efflux
+13,antibiotic efflux
+14,antibiotic efflux
+15,antibiotic efflux
+16,antibiotic efflux
+17,antibiotic efflux
+18,antibiotic efflux
+19,antibiotic efflux
+20,antibiotic efflux
+21,antibiotic efflux
+22,antibiotic efflux
+23,antibiotic efflux
+24,antibiotic efflux
+25,antibiotic efflux
+26,antibiotic efflux
+27,antibiotic efflux
+28,antibiotic efflux
+29,antibiotic efflux
+30,antibiotic efflux
+31,antibiotic efflux
+32,antibiotic efflux
+33,antibiotic efflux
+34,antibiotic efflux
+35,antibiotic efflux
+36,antibiotic efflux
+37,antibiotic efflux
+38,antibiotic efflux
+39,antibiotic efflux
+40,antibiotic efflux
+41,antibiotic efflux
+42,antibiotic efflux
+43,antibiotic efflux
+44,antibiotic efflux
+45,antibiotic efflux
+46,antibiotic efflux
+47,antibiotic efflux
+48,antibiotic efflux
+49,antibiotic efflux
+50,antibiotic efflux
+51,antibiotic efflux
+52,antibiotic efflux
+53,antibiotic efflux
+54,antibiotic efflux
+55,antibiotic efflux
+56,antibiotic efflux
+57,antibiotic efflux
+58,antibiotic efflux
+59,antibiotic efflux
+60,antibiotic efflux
+61,antibiotic efflux
+62,antibiotic efflux
+63,antibiotic efflux
+64,antibiotic efflux
+65,antibiotic efflux
+66,antibiotic efflux
+67,antibiotic efflux
+68,antibiotic efflux
+69,antibiotic efflux
+70,antibiotic efflux
+71,antibiotic efflux
+72,antibiotic efflux
+73,antibiotic efflux
+74,antibiotic efflux
+75,antibiotic efflux
+76,antibiotic efflux
+77,antibiotic efflux
+78,antibiotic efflux
+79,antibiotic efflux
+80,antibiotic efflux
+81,antibiotic efflux
+82,antibiotic efflux
+83,antibiotic efflux
+84,antibiotic efflux
+85,antibiotic efflux
+86,antibiotic efflux
+87,antibiotic efflux
+88,antibiotic efflux
+89,antibiotic efflux
+90,antibiotic efflux
+91,antibiotic efflux
+92,antibiotic efflux
+93,antibiotic efflux
+94,antibiotic efflux
+95,antibiotic efflux
+96,antibiotic efflux
+97,antibiotic efflux
+98,antibiotic efflux
+99,antibiotic efflux
+100,antibiotic efflux
+101,antibiotic efflux
+102,antibiotic efflux
+103,antibiotic efflux
+104,antibiotic efflux
+105,antibiotic efflux
+106,antibiotic efflux
+107,antibiotic efflux
+108,antibiotic efflux
+109,antibiotic efflux
+110,antibiotic efflux
+111,antibiotic efflux
+112,antibiotic efflux
+113,antibiotic efflux
+114,antibiotic efflux
+115,antibiotic efflux
+116,antibiotic efflux
+117,antibiotic efflux
+118,antibiotic efflux
+119,antibiotic efflux
+120,antibiotic efflux
+121,antibiotic efflux
+122,antibiotic efflux
+123,antibiotic efflux
+124,antibiotic efflux
+125,antibiotic efflux
+126,antibiotic efflux
+127,antibiotic efflux
+128,antibiotic efflux
+129,antibiotic efflux
+130,antibiotic efflux
+131,antibiotic efflux
+132,antibiotic efflux
+133,antibiotic efflux
+134,antibiotic efflux
+135,antibiotic efflux
+136,antibiotic efflux
+137,antibiotic efflux
+138,antibiotic efflux
+139,antibiotic efflux
+140,antibiotic efflux
+141,antibiotic efflux
+142,antibiotic efflux
+143,antibiotic efflux
+144,antibiotic efflux
+145,antibiotic efflux
+146,antibiotic efflux
+147,antibiotic efflux
+148,antibiotic efflux
+149,antibiotic efflux
+150,antibiotic efflux
+151,antibiotic efflux
+152,antibiotic efflux
+153,antibiotic efflux
+154,antibiotic efflux
+155,antibiotic efflux
+156,antibiotic efflux
+157,antibiotic efflux
+158,antibiotic efflux
+159,antibiotic efflux
+160,antibiotic efflux
+161,antibiotic efflux
+162,antibiotic efflux
+163,antibiotic efflux
+164,antibiotic efflux
+165,antibiotic efflux
+166,antibiotic efflux
+167,antibiotic efflux
+168,antibiotic efflux
+169,antibiotic efflux
+170,antibiotic efflux
+171,antibiotic efflux
+172,antibiotic efflux
+173,antibiotic efflux
+174,antibiotic efflux
+175,antibiotic efflux
+176,antibiotic efflux
+177,antibiotic efflux
+178,antibiotic efflux
+179,antibiotic efflux
+180,antibiotic efflux
+181,antibiotic efflux
+182,antibiotic efflux
+183,antibiotic efflux
+184,antibiotic efflux
+185,antibiotic efflux
+186,antibiotic efflux
+187,antibiotic efflux
+188,antibiotic efflux
+189,antibiotic efflux
+190,antibiotic efflux
+191,antibiotic efflux
+192,antibiotic efflux
+193,antibiotic efflux
+194,antibiotic efflux
+195,antibiotic efflux
+196,antibiotic efflux
+197,antibiotic efflux
+198,antibiotic efflux
+199,antibiotic efflux
+200,antibiotic efflux
+201,antibiotic efflux
+202,antibiotic efflux
+203,antibiotic efflux
+204,antibiotic efflux
+205,antibiotic efflux
+206,antibiotic efflux
+207,antibiotic efflux
+208,antibiotic efflux
+209,antibiotic efflux
+210,antibiotic efflux
+211,antibiotic efflux
+212,antibiotic efflux
+213,antibiotic efflux
+214,antibiotic efflux
+215,antibiotic efflux
+216,antibiotic efflux
+217,antibiotic efflux
+218,antibiotic efflux
+219,antibiotic efflux
+220,antibiotic efflux
+221,antibiotic efflux
+222,antibiotic efflux
+223,antibiotic efflux
+224,antibiotic efflux
+225,antibiotic efflux
+226,antibiotic efflux
+227,antibiotic efflux
+228,antibiotic efflux
+229,antibiotic efflux
+230,antibiotic efflux
+231,antibiotic efflux
+232,antibiotic efflux
+233,antibiotic efflux
+234,antibiotic efflux
+235,antibiotic efflux
+236,antibiotic efflux
+237,antibiotic efflux
+238,antibiotic efflux
+239,antibiotic efflux
+240,antibiotic efflux
+241,antibiotic efflux
+242,antibiotic efflux
+243,antibiotic efflux
+244,antibiotic efflux
+245,antibiotic efflux
+246,antibiotic efflux
+247,antibiotic efflux
+248,antibiotic efflux
+249,antibiotic efflux
+250,antibiotic efflux
+251,antibiotic efflux
+252,antibiotic efflux
+253,antibiotic efflux
+254,antibiotic efflux
+255,antibiotic efflux
+256,antibiotic efflux
+257,antibiotic efflux
+258,antibiotic efflux
+259,antibiotic efflux
+260,antibiotic efflux
+261,antibiotic inactivation
+262,antibiotic inactivation
+263,antibiotic inactivation
+264,antibiotic inactivation
+265,antibiotic inactivation
+266,antibiotic inactivation
+267,antibiotic inactivation
+268,antibiotic inactivation
+269,antibiotic inactivation
+270,antibiotic inactivation
+271,antibiotic inactivation
+272,antibiotic inactivation
+273,antibiotic inactivation
+274,antibiotic inactivation
+275,antibiotic inactivation
+276,antibiotic inactivation
+277,antibiotic inactivation
+278,antibiotic inactivation
+279,antibiotic inactivation
+280,antibiotic inactivation
+281,antibiotic inactivation
+282,antibiotic inactivation
+283,antibiotic inactivation
+284,antibiotic inactivation
+285,antibiotic inactivation
+286,antibiotic inactivation
+287,antibiotic inactivation
+288,antibiotic inactivation
+289,antibiotic inactivation
+290,antibiotic inactivation
+291,antibiotic inactivation
+292,antibiotic inactivation
+293,antibiotic inactivation
+294,antibiotic inactivation
+295,antibiotic inactivation
+296,antibiotic inactivation
+297,antibiotic inactivation
+298,antibiotic inactivation
+299,antibiotic inactivation
+300,antibiotic inactivation
+301,antibiotic inactivation
+302,antibiotic inactivation
+303,antibiotic inactivation
+304,antibiotic inactivation
+305,antibiotic inactivation
+306,antibiotic inactivation
+307,antibiotic inactivation
+308,antibiotic inactivation
+309,antibiotic inactivation
+310,antibiotic inactivation
+311,antibiotic inactivation
+312,antibiotic inactivation
+313,antibiotic inactivation
+314,antibiotic inactivation
+315,antibiotic inactivation
+316,antibiotic inactivation
+317,antibiotic inactivation
+318,antibiotic inactivation
+319,antibiotic inactivation
+320,antibiotic inactivation
+321,antibiotic inactivation
+322,antibiotic inactivation
+323,antibiotic inactivation
+324,antibiotic inactivation
+325,antibiotic inactivation
+326,antibiotic inactivation
+327,antibiotic inactivation
+328,antibiotic inactivation
+329,antibiotic inactivation
+330,antibiotic inactivation
+331,antibiotic inactivation
+332,antibiotic inactivation
+333,antibiotic inactivation
+334,antibiotic inactivation
+335,antibiotic inactivation
+336,antibiotic inactivation
+337,antibiotic inactivation
+338,antibiotic inactivation
+339,antibiotic inactivation
+340,antibiotic inactivation
+341,antibiotic inactivation
+342,antibiotic inactivation
+343,antibiotic inactivation
+344,antibiotic inactivation
+345,antibiotic inactivation
+346,antibiotic inactivation
+347,antibiotic inactivation
+348,antibiotic inactivation
+349,antibiotic inactivation
+350,antibiotic inactivation
+351,antibiotic inactivation
+352,antibiotic inactivation
+353,antibiotic inactivation
+354,antibiotic inactivation
+355,antibiotic inactivation
+356,antibiotic inactivation
+357,antibiotic inactivation
+358,antibiotic inactivation
+359,antibiotic inactivation
+360,antibiotic inactivation
+361,antibiotic inactivation
+362,antibiotic inactivation
+363,antibiotic inactivation
+364,antibiotic inactivation
+365,antibiotic inactivation
+366,antibiotic inactivation
+367,antibiotic inactivation
+368,antibiotic inactivation
+369,antibiotic inactivation
+370,antibiotic inactivation
+371,antibiotic inactivation
+372,antibiotic inactivation
+373,antibiotic inactivation
+374,antibiotic inactivation
+375,antibiotic inactivation
+376,antibiotic inactivation
+377,antibiotic inactivation
+378,antibiotic inactivation
+379,antibiotic inactivation
+380,antibiotic inactivation
+381,antibiotic inactivation
+382,antibiotic inactivation
+383,antibiotic inactivation
+384,antibiotic inactivation
+385,antibiotic inactivation
+386,antibiotic inactivation
+387,antibiotic inactivation
+388,antibiotic inactivation
+389,antibiotic inactivation
+390,antibiotic inactivation
+391,antibiotic inactivation
+392,antibiotic inactivation
+393,antibiotic inactivation
+394,antibiotic inactivation
+395,antibiotic inactivation
+396,antibiotic inactivation
+397,antibiotic inactivation
+398,antibiotic inactivation
+399,antibiotic inactivation
+400,antibiotic inactivation
+401,antibiotic inactivation
+402,antibiotic inactivation
+403,antibiotic inactivation
+404,antibiotic inactivation
+405,antibiotic inactivation
+406,antibiotic inactivation
+407,antibiotic inactivation
+408,antibiotic inactivation
+409,antibiotic inactivation
+410,antibiotic inactivation
+411,antibiotic inactivation
+412,antibiotic inactivation
+413,antibiotic inactivation
+414,antibiotic inactivation
+415,antibiotic inactivation
+416,antibiotic inactivation
+417,antibiotic inactivation
+418,antibiotic inactivation
+419,antibiotic inactivation
+420,antibiotic inactivation
+421,antibiotic inactivation
+422,antibiotic inactivation
+423,antibiotic inactivation
+424,antibiotic inactivation
+425,antibiotic inactivation
+426,antibiotic inactivation
+427,antibiotic inactivation
+428,antibiotic inactivation
+429,antibiotic inactivation
+430,antibiotic inactivation
+431,antibiotic inactivation
+432,antibiotic inactivation
+433,antibiotic inactivation
+434,antibiotic inactivation
+435,antibiotic inactivation
+436,antibiotic inactivation
+437,antibiotic inactivation
+438,antibiotic inactivation
+439,antibiotic inactivation
+440,antibiotic inactivation
+441,antibiotic inactivation
+442,antibiotic inactivation
+443,antibiotic inactivation
+444,antibiotic inactivation
+445,antibiotic inactivation
+446,antibiotic inactivation
+447,antibiotic inactivation
+448,antibiotic inactivation
+449,antibiotic inactivation
+450,antibiotic inactivation
+451,antibiotic inactivation
+452,antibiotic inactivation
+453,antibiotic inactivation
+454,antibiotic inactivation
+455,antibiotic inactivation
+456,antibiotic inactivation
+457,antibiotic inactivation
+458,antibiotic inactivation
+459,antibiotic inactivation
+460,antibiotic inactivation
+461,antibiotic inactivation
+462,antibiotic inactivation
+463,antibiotic inactivation
+464,antibiotic inactivation
+465,antibiotic inactivation
+466,antibiotic inactivation
+467,antibiotic inactivation
+468,antibiotic inactivation
+469,antibiotic inactivation
+470,antibiotic inactivation
+471,antibiotic inactivation
+472,antibiotic inactivation
+473,antibiotic inactivation
+474,antibiotic inactivation
+475,antibiotic inactivation
+476,antibiotic inactivation
+477,antibiotic inactivation
+478,antibiotic inactivation
+479,antibiotic inactivation
+480,antibiotic inactivation
+481,antibiotic inactivation
+482,antibiotic inactivation
+483,antibiotic inactivation
+484,antibiotic inactivation
+485,antibiotic inactivation
+486,antibiotic inactivation
+487,antibiotic inactivation
+488,antibiotic inactivation
+489,antibiotic inactivation
+490,antibiotic inactivation
+491,antibiotic inactivation
+492,antibiotic inactivation
+493,antibiotic inactivation
+494,antibiotic inactivation
+495,antibiotic inactivation
+496,antibiotic inactivation
+497,antibiotic inactivation
+498,antibiotic inactivation
+499,antibiotic inactivation
+500,antibiotic inactivation
+501,antibiotic inactivation
+502,antibiotic inactivation
+503,antibiotic inactivation
+504,antibiotic inactivation
+505,antibiotic inactivation
+506,antibiotic inactivation
+507,antibiotic inactivation
+508,antibiotic inactivation
+509,antibiotic inactivation
+510,antibiotic inactivation
+511,antibiotic inactivation
+512,antibiotic inactivation
+513,antibiotic inactivation
+514,antibiotic inactivation
+515,antibiotic inactivation
+516,antibiotic inactivation
+517,antibiotic inactivation
+518,antibiotic inactivation
+519,antibiotic inactivation
+520,antibiotic inactivation
+521,antibiotic inactivation
+522,antibiotic inactivation
+523,antibiotic inactivation
+524,antibiotic inactivation
+525,antibiotic inactivation
+526,antibiotic inactivation
+527,antibiotic inactivation
+528,antibiotic inactivation
+529,antibiotic inactivation
+530,antibiotic inactivation
+531,antibiotic inactivation
+532,antibiotic inactivation
+533,antibiotic inactivation
+534,antibiotic inactivation
+535,antibiotic inactivation
+536,antibiotic inactivation
+537,antibiotic inactivation
+538,antibiotic inactivation
+539,antibiotic inactivation
+540,antibiotic inactivation
+541,antibiotic inactivation
+542,antibiotic inactivation
+543,antibiotic inactivation
+544,antibiotic inactivation
+545,antibiotic inactivation
+546,antibiotic inactivation
+547,antibiotic inactivation
+548,antibiotic inactivation
+549,antibiotic inactivation
+550,antibiotic inactivation
+551,antibiotic inactivation
+552,antibiotic inactivation
+553,antibiotic inactivation
+554,antibiotic inactivation
+555,antibiotic inactivation
+556,antibiotic inactivation
+557,antibiotic inactivation
+558,antibiotic inactivation
+559,antibiotic inactivation
+560,antibiotic inactivation
+561,antibiotic inactivation
+562,antibiotic inactivation
+563,antibiotic inactivation
+564,antibiotic inactivation
+565,antibiotic inactivation
+566,antibiotic inactivation
+567,antibiotic inactivation
+568,antibiotic inactivation
+569,antibiotic inactivation
+570,antibiotic inactivation
+571,antibiotic inactivation
+572,antibiotic inactivation
+573,antibiotic inactivation
+574,antibiotic inactivation
+575,antibiotic inactivation
+576,antibiotic inactivation
+577,antibiotic inactivation
+578,antibiotic inactivation
+579,antibiotic inactivation
+580,antibiotic inactivation
+581,antibiotic inactivation
+582,antibiotic inactivation
+583,antibiotic inactivation
+584,antibiotic inactivation
+585,antibiotic inactivation
+586,antibiotic inactivation
+587,antibiotic inactivation
+588,antibiotic inactivation
+589,antibiotic inactivation
+590,antibiotic inactivation
+591,antibiotic inactivation
+592,antibiotic inactivation
+593,antibiotic inactivation
+594,antibiotic inactivation
+595,antibiotic inactivation
+596,antibiotic inactivation
+597,antibiotic inactivation
+598,antibiotic inactivation
+599,antibiotic inactivation
+600,antibiotic inactivation
+601,antibiotic inactivation
+602,antibiotic inactivation
+603,antibiotic inactivation
+604,antibiotic inactivation
+605,antibiotic inactivation
+606,antibiotic inactivation
+607,antibiotic inactivation
+608,antibiotic inactivation
+609,antibiotic inactivation
+610,antibiotic inactivation
+611,antibiotic inactivation
+612,antibiotic inactivation
+613,antibiotic inactivation
+614,antibiotic inactivation
+615,antibiotic inactivation
+616,antibiotic inactivation
+617,antibiotic inactivation
+618,antibiotic inactivation
+619,antibiotic inactivation
+620,antibiotic inactivation
+621,antibiotic inactivation
+622,antibiotic inactivation
+623,antibiotic inactivation
+624,antibiotic inactivation
+625,antibiotic inactivation
+626,antibiotic inactivation
+627,antibiotic inactivation
+628,antibiotic inactivation
+629,antibiotic inactivation
+630,antibiotic inactivation
+631,antibiotic inactivation
+632,antibiotic inactivation
+633,antibiotic inactivation
+634,antibiotic inactivation
+635,antibiotic inactivation
+636,antibiotic inactivation
+637,antibiotic inactivation
+638,antibiotic inactivation
+639,antibiotic inactivation
+640,antibiotic inactivation
+641,antibiotic inactivation
+642,antibiotic inactivation
+643,antibiotic inactivation
+644,antibiotic inactivation
+645,antibiotic inactivation
+646,antibiotic inactivation
+647,antibiotic inactivation
+648,antibiotic inactivation
+649,antibiotic inactivation
+650,antibiotic inactivation
+651,antibiotic inactivation
+652,antibiotic inactivation
+653,antibiotic inactivation
+654,antibiotic inactivation
+655,antibiotic inactivation
+656,antibiotic inactivation
+657,antibiotic inactivation
+658,antibiotic inactivation
+659,antibiotic inactivation
+660,antibiotic inactivation
+661,antibiotic inactivation
+662,antibiotic inactivation
+663,antibiotic inactivation
+664,antibiotic inactivation
+665,antibiotic inactivation
+666,antibiotic inactivation
+667,antibiotic inactivation
+668,antibiotic inactivation
+669,antibiotic inactivation
+670,antibiotic inactivation
+671,antibiotic inactivation
+672,antibiotic inactivation
+673,antibiotic inactivation
+674,antibiotic inactivation
+675,antibiotic inactivation
+676,antibiotic inactivation
+677,antibiotic inactivation
+678,antibiotic inactivation
+679,antibiotic inactivation
+680,antibiotic inactivation
+681,antibiotic inactivation
+682,antibiotic inactivation
+683,antibiotic inactivation
+684,antibiotic inactivation
+685,antibiotic inactivation
+686,antibiotic inactivation
+687,antibiotic inactivation
+688,antibiotic inactivation
+689,antibiotic inactivation
+690,antibiotic inactivation
+691,antibiotic inactivation
+692,antibiotic inactivation
+693,antibiotic inactivation
+694,antibiotic inactivation
+695,antibiotic inactivation
+696,antibiotic inactivation
+697,antibiotic inactivation
+698,antibiotic inactivation
+699,antibiotic inactivation
+700,antibiotic inactivation
+701,antibiotic inactivation
+702,antibiotic inactivation
+703,antibiotic inactivation
+704,antibiotic inactivation
+705,antibiotic inactivation
+706,antibiotic inactivation
+707,antibiotic inactivation
+708,antibiotic inactivation
+709,antibiotic inactivation
+710,antibiotic inactivation
+711,antibiotic inactivation
+712,antibiotic inactivation
+713,antibiotic inactivation
+714,antibiotic inactivation
+715,antibiotic inactivation
+716,antibiotic inactivation
+717,antibiotic inactivation
+718,antibiotic inactivation
+719,antibiotic inactivation
+720,antibiotic inactivation
+721,antibiotic inactivation
+722,antibiotic inactivation
+723,antibiotic inactivation
+724,antibiotic inactivation
+725,antibiotic inactivation
+726,antibiotic inactivation
+727,antibiotic inactivation
+728,antibiotic inactivation
+729,antibiotic inactivation
+730,antibiotic inactivation
+731,antibiotic inactivation
+732,antibiotic inactivation
+733,antibiotic inactivation
+734,antibiotic inactivation
+735,antibiotic inactivation
+736,antibiotic inactivation
+737,antibiotic inactivation
+738,antibiotic inactivation
+739,antibiotic inactivation
+740,antibiotic inactivation
+741,antibiotic inactivation
+742,antibiotic inactivation
+743,antibiotic inactivation
+744,antibiotic inactivation
+745,antibiotic inactivation
+746,antibiotic inactivation
+747,antibiotic inactivation
+748,antibiotic inactivation
+749,antibiotic inactivation
+750,antibiotic inactivation
+751,antibiotic inactivation
+752,antibiotic inactivation
+753,antibiotic inactivation
+754,antibiotic inactivation
+755,antibiotic inactivation
+756,antibiotic inactivation
+757,antibiotic inactivation
+758,antibiotic inactivation
+759,antibiotic inactivation
+760,antibiotic inactivation
+761,antibiotic target alteration
+762,antibiotic target alteration
+763,antibiotic target alteration
+764,antibiotic target alteration
+765,antibiotic target alteration
+766,antibiotic target alteration
+767,antibiotic target alteration
+768,antibiotic target alteration
+769,antibiotic target alteration
+770,antibiotic target alteration
+771,antibiotic target alteration
+772,antibiotic target alteration
+773,antibiotic target alteration
+774,antibiotic target alteration
+775,antibiotic target alteration
+776,antibiotic target alteration
+777,antibiotic target alteration
+778,antibiotic target alteration
+779,antibiotic target alteration
+780,antibiotic target alteration
+781,antibiotic target alteration
+782,antibiotic target alteration
+783,antibiotic target alteration
+784,antibiotic target alteration
+785,antibiotic target alteration
+786,antibiotic target alteration
+787,antibiotic target alteration
+788,antibiotic target alteration
+789,antibiotic target alteration
+790,antibiotic target alteration
+791,antibiotic target alteration
+792,antibiotic target alteration
+793,antibiotic target alteration
+794,antibiotic target alteration
+795,antibiotic target alteration
+796,antibiotic target alteration
+797,antibiotic target alteration
+798,antibiotic target alteration
+799,antibiotic target alteration
+800,antibiotic target alteration
+801,antibiotic target alteration
+802,antibiotic target alteration
+803,antibiotic target alteration
+804,antibiotic target alteration
+805,antibiotic target alteration
+806,antibiotic target alteration
+807,antibiotic target alteration
+808,antibiotic target alteration
+809,antibiotic target alteration
+810,antibiotic target alteration
+811,antibiotic target alteration
+812,antibiotic target alteration
+813,antibiotic target alteration
+814,antibiotic target alteration
+815,antibiotic target alteration
+816,antibiotic target alteration
+817,antibiotic target alteration
+818,antibiotic target alteration
+819,antibiotic target alteration
+820,antibiotic target alteration
+821,antibiotic target alteration
+822,antibiotic target alteration
+823,antibiotic target alteration
+824,antibiotic target alteration
+825,antibiotic target alteration
+826,antibiotic target alteration
+827,antibiotic target alteration
+828,antibiotic target alteration
+829,antibiotic target alteration
+830,antibiotic target alteration
+831,antibiotic target alteration
+832,antibiotic target alteration
+833,antibiotic target alteration
+834,antibiotic target alteration
+835,antibiotic target alteration
+836,antibiotic target alteration
+837,antibiotic target alteration
+838,antibiotic target alteration
+839,antibiotic target alteration
+840,antibiotic target alteration
+841,antibiotic target alteration
+842,antibiotic target alteration
+843,antibiotic target alteration
+844,antibiotic target alteration
+845,antibiotic target alteration
+846,antibiotic target alteration
+847,antibiotic target alteration
+848,antibiotic target alteration
+849,antibiotic target alteration
+850,antibiotic target alteration
+851,antibiotic target alteration
+852,antibiotic target alteration
+853,antibiotic target alteration
+854,antibiotic target alteration
+855,antibiotic target alteration
+856,antibiotic target alteration
+857,antibiotic target alteration
+858,antibiotic target alteration
+859,antibiotic target alteration
+860,antibiotic target alteration
+861,antibiotic target alteration
+862,antibiotic target alteration
+863,antibiotic target alteration
+864,antibiotic target alteration
+865,antibiotic target alteration
+866,antibiotic target alteration
+867,antibiotic target alteration
+868,antibiotic target alteration
+869,antibiotic target alteration
+870,antibiotic target alteration
+871,antibiotic target alteration
+872,antibiotic target alteration
+873,antibiotic target alteration
+874,antibiotic target alteration
+875,antibiotic target alteration
+876,antibiotic target alteration
+877,antibiotic target alteration
+878,antibiotic target alteration
+879,antibiotic target alteration
+880,antibiotic target alteration
+881,antibiotic target alteration
+882,antibiotic target alteration
+883,antibiotic target alteration
+884,antibiotic target alteration
+885,antibiotic target alteration
+886,antibiotic target alteration
+887,antibiotic target alteration
+888,antibiotic target alteration
+889,antibiotic target alteration
+890,antibiotic target alteration
+891,antibiotic target alteration
+892,antibiotic target alteration
+893,antibiotic target alteration
+894,antibiotic target alteration
+895,antibiotic target alteration
+896,antibiotic target alteration
+897,antibiotic target alteration
+898,antibiotic target alteration
+899,antibiotic target alteration
+900,antibiotic target alteration
+901,antibiotic target alteration
+902,antibiotic target alteration
+903,antibiotic target alteration
+904,antibiotic target alteration
+905,antibiotic target alteration
+906,antibiotic target alteration
+907,antibiotic target alteration
+908,antibiotic target alteration
+909,antibiotic target alteration
+910,antibiotic target alteration
+911,antibiotic target alteration
+912,antibiotic target alteration
+913,antibiotic target alteration
+914,antibiotic target alteration
+915,antibiotic target alteration
+916,antibiotic target alteration
+917,antibiotic target alteration
+918,antibiotic target alteration
+919,antibiotic target alteration
+920,antibiotic target alteration
+921,antibiotic target alteration
+922,antibiotic target alteration
+923,antibiotic target alteration
+924,antibiotic target alteration
+925,antibiotic target alteration
+926,antibiotic target alteration
+927,antibiotic target alteration
+928,antibiotic target alteration
+929,antibiotic target alteration
+930,antibiotic target alteration
+931,antibiotic target alteration
+932,antibiotic target alteration
+933,antibiotic target alteration
+934,antibiotic target alteration
+935,antibiotic target alteration
+936,antibiotic target alteration
+937,antibiotic target alteration
+938,antibiotic target alteration
+939,antibiotic target alteration
+940,antibiotic target alteration
+941,antibiotic target alteration
+942,antibiotic target alteration
+943,antibiotic target alteration
+944,antibiotic target alteration
+945,antibiotic target alteration
+946,antibiotic target alteration
+947,antibiotic target alteration
+948,antibiotic target alteration
+949,antibiotic target alteration
+950,antibiotic target alteration
+951,antibiotic target alteration
+952,antibiotic target alteration
+953,antibiotic target alteration
+954,antibiotic target alteration
+955,antibiotic target alteration
+956,antibiotic target alteration
+957,antibiotic target alteration
+958,antibiotic target alteration
+959,antibiotic target alteration
+960,antibiotic target alteration
+961,antibiotic target alteration
+962,antibiotic target alteration
+963,antibiotic target alteration
+964,antibiotic target alteration
+965,antibiotic target alteration
+966,antibiotic target alteration
+967,antibiotic target alteration
+968,antibiotic target alteration
+969,antibiotic target alteration
+970,antibiotic target alteration
+971,antibiotic target alteration
+972,antibiotic target alteration
+973,antibiotic target alteration
+974,antibiotic target alteration
+975,antibiotic target alteration
+976,antibiotic target alteration
+977,antibiotic target alteration
+978,antibiotic target alteration
+979,antibiotic target alteration
+980,antibiotic target alteration
+981,antibiotic target alteration
+982,antibiotic target alteration
+983,antibiotic target alteration
+984,antibiotic target alteration
+985,antibiotic target alteration
+986,antibiotic target alteration
+987,antibiotic target alteration
+988,antibiotic target alteration
+989,antibiotic target alteration
+990,antibiotic target alteration
+991,antibiotic target alteration
+992,antibiotic target alteration
+993,antibiotic target alteration
+994,antibiotic target alteration
+995,antibiotic target alteration
+996,antibiotic target alteration
+997,antibiotic target alteration
+998,antibiotic target alteration
+999,antibiotic target alteration
+1000,antibiotic target alteration
+1001,antibiotic target alteration
+1002,antibiotic target alteration
+1003,antibiotic target alteration
+1004,antibiotic target alteration
+1005,antibiotic target alteration
+1006,antibiotic target alteration
+1007,antibiotic target alteration
+1008,antibiotic target alteration
+1009,antibiotic target alteration
+1010,antibiotic target alteration
+1011,antibiotic target alteration
+1012,antibiotic target alteration
+1013,antibiotic target alteration
+1014,antibiotic target alteration
+1015,antibiotic target alteration
+1016,antibiotic target alteration
+1017,antibiotic target alteration
+1018,antibiotic target alteration
+1019,antibiotic target alteration
+1020,antibiotic target alteration
+1021,antibiotic target alteration
+1022,antibiotic target alteration
+1023,antibiotic target alteration
+1024,antibiotic target alteration
+1025,antibiotic target alteration
+1026,antibiotic target alteration
+1027,antibiotic target alteration
+1028,antibiotic target protection
+1029,antibiotic target protection
+1030,antibiotic target protection
+1031,antibiotic target protection
+1032,antibiotic target protection
+1033,antibiotic target protection
+1034,antibiotic target protection
+1035,antibiotic target protection
+1036,antibiotic target protection
+1037,antibiotic target protection
+1038,antibiotic target protection
+1039,antibiotic target protection
+1040,antibiotic target protection
+1041,antibiotic target protection
+1042,antibiotic target protection
+1043,antibiotic target protection
+1044,antibiotic target protection
+1045,antibiotic target protection
+1046,antibiotic target protection
+1047,antibiotic target protection
+1048,antibiotic target protection
+1049,antibiotic target protection
+1050,antibiotic target protection
+1051,antibiotic target protection
+1052,antibiotic target protection
+1053,antibiotic target protection
+1054,antibiotic target protection
+1055,antibiotic target protection
+1056,antibiotic target protection
+1057,antibiotic target protection
+1058,antibiotic target protection
+1059,antibiotic target protection
+1060,antibiotic target protection
+1061,antibiotic target protection
+1062,antibiotic target protection
+1063,antibiotic target protection
+1064,antibiotic target protection
+1065,antibiotic target protection
+1066,antibiotic target protection
+1067,antibiotic target protection
+1068,antibiotic target protection
+1069,antibiotic target protection
+1070,antibiotic target protection
+1071,antibiotic target protection
+1072,antibiotic target protection
+1073,antibiotic target protection
+1074,antibiotic target protection
+1075,antibiotic target protection
+1076,antibiotic target protection
+1077,antibiotic target protection
+1078,antibiotic target protection
+1079,antibiotic target protection
+1080,antibiotic target protection
+1081,antibiotic target protection
+1082,antibiotic target protection
+1083,antibiotic target protection
+1084,antibiotic target protection
+1085,antibiotic target protection
+1086,antibiotic target protection
+1087,antibiotic target protection
+1088,antibiotic target protection
+1089,antibiotic target protection
+1090,antibiotic target protection
+1091,antibiotic target protection
+1092,antibiotic target protection
+1093,antibiotic target protection
+1094,antibiotic target protection
+1095,antibiotic target protection
+1096,antibiotic target protection
+1097,antibiotic target protection
+1098,antibiotic target protection
+1099,antibiotic target protection
+1100,antibiotic target protection
+1101,antibiotic target protection
+1102,antibiotic target protection
+1103,antibiotic target protection
+1104,antibiotic target protection
+1105,antibiotic target protection
+1106,antibiotic target protection
+1107,antibiotic target protection
+1108,antibiotic target protection
+1109,antibiotic target protection
+1110,antibiotic target protection
+1111,antibiotic target protection
+1112,antibiotic target protection
+1113,antibiotic target protection
+1114,antibiotic target protection
+1115,antibiotic target protection
+1116,antibiotic target protection
+1117,antibiotic target protection
+1118,antibiotic target protection
+1119,antibiotic target protection
+1120,antibiotic target protection
+1121,antibiotic target protection
+1122,antibiotic target protection
+1123,antibiotic target protection
+1124,antibiotic target protection
+1125,antibiotic target protection
+1126,antibiotic target protection
+1127,antibiotic target protection
+1128,antibiotic target protection
+1129,antibiotic target protection
+1130,antibiotic target protection
+1131,antibiotic target protection
+1132,antibiotic target protection
+1133,antibiotic target protection
+1134,antibiotic target protection
+1135,antibiotic target protection
+1136,antibiotic target protection
+1137,antibiotic target protection
+1138,antibiotic target protection
+1139,antibiotic target protection
+1140,antibiotic target protection
+1141,antibiotic target protection
+1142,antibiotic target protection
+1143,antibiotic target protection
+1144,antibiotic target protection
+1145,antibiotic target protection
+1146,antibiotic target protection
+1147,antibiotic target protection
+1148,antibiotic target protection
+1149,antibiotic target protection
+1150,antibiotic target protection
+1151,antibiotic target protection
+1152,antibiotic target protection
+1153,antibiotic target protection
+1154,antibiotic target protection
+1155,antibiotic target protection
+1156,antibiotic target protection
+1157,antibiotic target protection
+1158,antibiotic target protection
+1159,antibiotic target protection
+1160,antibiotic target protection
+1161,antibiotic target protection
+1162,antibiotic target protection
+1163,antibiotic target protection
+1164,antibiotic target protection
+1165,antibiotic target protection
+1166,antibiotic target protection
+1167,antibiotic target protection
+1168,antibiotic target protection
+1169,antibiotic target protection
+1170,antibiotic target protection
+1171,antibiotic target protection
+1172,antibiotic target protection
+1173,antibiotic target protection
+1174,antibiotic target protection
+1175,antibiotic target protection
+1176,antibiotic target protection
+1177,antibiotic target protection
+1178,antibiotic target replacement
+1179,antibiotic target replacement
+1180,antibiotic target replacement
+1181,antibiotic target replacement
+1182,antibiotic target replacement
+1183,antibiotic target replacement
+1184,antibiotic target replacement
+1185,antibiotic target replacement
+1186,antibiotic target replacement
+1187,antibiotic target replacement
+1188,antibiotic target replacement
+1189,antibiotic target replacement
+1190,antibiotic target replacement
+1191,antibiotic target replacement
+1192,antibiotic target replacement
+1193,antibiotic target replacement
+1194,antibiotic target replacement
+1195,antibiotic target replacement
+1196,antibiotic target replacement
+1197,antibiotic target replacement
+1198,antibiotic target replacement
+1199,antibiotic target replacement
+1200,antibiotic target replacement
+1201,antibiotic target replacement
+1202,antibiotic target replacement
+1203,antibiotic target replacement
+1204,antibiotic target replacement
+1205,antibiotic target replacement
+1206,antibiotic target replacement
+1207,antibiotic target replacement
+1208,antibiotic target replacement
+1209,antibiotic target replacement
+1210,antibiotic target replacement
+1211,antibiotic target replacement
+1212,antibiotic target replacement
+1213,antibiotic target replacement
+1214,antibiotic target replacement
+1215,antibiotic target replacement
+1216,antibiotic target replacement
+1217,antibiotic target replacement
+1218,antibiotic target replacement
+1219,antibiotic target replacement
+1220,antibiotic target replacement
+1221,antibiotic target replacement
+1222,antibiotic target replacement
+1223,antibiotic target replacement
+1224,antibiotic target replacement
+1225,antibiotic target replacement
+1226,antibiotic target replacement
+1227,antibiotic target replacement
+1228,antibiotic efflux
+1229,antibiotic efflux
+1230,antibiotic efflux
+1231,antibiotic efflux
+1232,antibiotic efflux
+1233,antibiotic efflux
+1234,antibiotic efflux
+1235,antibiotic efflux
+1236,antibiotic efflux
+1237,antibiotic efflux
+1238,antibiotic efflux
+1239,antibiotic efflux
+1240,antibiotic efflux
+1241,antibiotic efflux
+1242,antibiotic efflux
+1243,antibiotic efflux
+1244,antibiotic efflux
+1245,antibiotic efflux
+1246,antibiotic efflux
+1247,antibiotic efflux
+1248,antibiotic efflux
+1249,antibiotic efflux
+1250,antibiotic efflux
+1251,antibiotic efflux
+1252,antibiotic efflux
+1253,antibiotic efflux
+1254,antibiotic efflux
+1255,antibiotic efflux
+1256,antibiotic efflux
+1257,antibiotic efflux
+1258,antibiotic efflux
+1259,antibiotic efflux
+1260,antibiotic efflux
+1261,antibiotic efflux
+1262,antibiotic efflux
+1263,antibiotic efflux
+1264,antibiotic efflux
+1265,antibiotic efflux
+1266,antibiotic efflux
+1267,antibiotic efflux
+1268,antibiotic efflux
+1269,antibiotic efflux
+1270,antibiotic efflux
+1271,antibiotic efflux
+1272,antibiotic efflux
+1273,antibiotic efflux
+1274,antibiotic efflux
+1275,antibiotic efflux
+1276,antibiotic efflux
+1277,antibiotic efflux
+1278,antibiotic efflux
+1279,antibiotic efflux
+1280,antibiotic efflux
+1281,antibiotic efflux
+1282,antibiotic efflux
+1283,antibiotic efflux
+1284,antibiotic efflux
+1285,antibiotic efflux
+1286,antibiotic efflux
+1287,antibiotic efflux
+1288,antibiotic efflux
+1289,antibiotic efflux
+1290,antibiotic efflux
+1291,antibiotic efflux
+1292,antibiotic efflux
+1293,antibiotic efflux
+1294,antibiotic efflux
+1295,antibiotic efflux
+1296,antibiotic efflux
+1297,antibiotic efflux
+1298,antibiotic efflux
+1299,antibiotic efflux
+1300,antibiotic efflux
+1301,antibiotic efflux
+1302,antibiotic efflux
+1303,antibiotic efflux
+1304,antibiotic efflux
+1305,antibiotic efflux
+1306,antibiotic efflux
+1307,antibiotic efflux
+1308,antibiotic efflux
+1309,antibiotic efflux
+1310,antibiotic efflux
+1311,antibiotic efflux
+1312,antibiotic efflux
+1313,antibiotic efflux
+1314,antibiotic efflux
+1315,antibiotic efflux
+1316,antibiotic efflux
+1317,antibiotic efflux
+1318,antibiotic efflux
+1319,antibiotic efflux
+1320,antibiotic efflux
+1321,antibiotic efflux
+1322,antibiotic efflux
+1323,antibiotic efflux
+1324,antibiotic efflux
+1325,antibiotic efflux
+1326,antibiotic efflux
+1327,antibiotic efflux
+1328,antibiotic efflux
+1329,antibiotic efflux
+1330,antibiotic efflux
+1331,antibiotic efflux
+1332,antibiotic efflux
+1333,antibiotic efflux
+1334,antibiotic efflux
+1335,antibiotic efflux
+1336,antibiotic efflux
+1337,antibiotic efflux
+1338,antibiotic efflux
+1339,antibiotic efflux
+1340,antibiotic efflux
+1341,antibiotic efflux
+1342,antibiotic efflux
+1343,antibiotic efflux
+1344,antibiotic efflux
+1345,antibiotic efflux
+1346,antibiotic efflux
+1347,antibiotic efflux
+1348,antibiotic efflux
+1349,antibiotic efflux
+1350,antibiotic efflux
+1351,antibiotic efflux
+1352,antibiotic efflux
+1353,antibiotic efflux
+1354,antibiotic efflux
+1355,antibiotic efflux
+1356,antibiotic efflux
+1357,antibiotic efflux
+1358,antibiotic efflux
+1359,antibiotic efflux
+1360,antibiotic efflux
+1361,antibiotic efflux
+1362,antibiotic efflux
+1363,antibiotic efflux
+1364,antibiotic efflux
+1365,antibiotic efflux
+1366,antibiotic efflux
+1367,antibiotic efflux
+1368,antibiotic efflux
+1369,antibiotic efflux
+1370,antibiotic efflux
+1371,antibiotic efflux
+1372,antibiotic efflux
+1373,antibiotic efflux
+1374,antibiotic efflux
+1375,antibiotic efflux
+1376,antibiotic efflux
+1377,antibiotic efflux
+1378,antibiotic efflux
+1379,antibiotic efflux
+1380,antibiotic efflux
+1381,antibiotic efflux
+1382,antibiotic efflux
+1383,antibiotic efflux
+1384,antibiotic efflux
+1385,antibiotic efflux
+1386,antibiotic efflux
+1387,antibiotic efflux
+1388,antibiotic efflux
+1389,antibiotic efflux
+1390,antibiotic efflux
+1391,antibiotic efflux
+1392,antibiotic efflux
+1393,antibiotic efflux
+1394,antibiotic efflux
+1395,antibiotic efflux
+1396,antibiotic efflux
+1397,antibiotic efflux
+1398,antibiotic efflux
+1399,antibiotic efflux
+1400,antibiotic efflux
+1401,antibiotic efflux
+1402,antibiotic efflux
+1403,antibiotic efflux
+1404,antibiotic efflux
+1405,antibiotic efflux
+1406,antibiotic efflux
+1407,antibiotic efflux
+1408,antibiotic efflux
+1409,antibiotic efflux
+1410,antibiotic efflux
+1411,antibiotic efflux
+1412,antibiotic efflux
+1413,antibiotic efflux
+1414,antibiotic efflux
+1415,antibiotic efflux
+1416,antibiotic efflux
+1417,antibiotic efflux
+1418,antibiotic efflux
+1419,antibiotic efflux
+1420,antibiotic efflux
+1421,antibiotic efflux
+1422,antibiotic efflux
+1423,antibiotic efflux
+1424,antibiotic efflux
+1425,antibiotic efflux
+1426,antibiotic efflux
+1427,antibiotic efflux
+1428,antibiotic efflux
+1429,antibiotic efflux
+1430,antibiotic efflux
+1431,antibiotic efflux
+1432,antibiotic efflux
+1433,antibiotic efflux
+1434,antibiotic efflux
+1435,antibiotic efflux
+1436,antibiotic efflux
+1437,antibiotic efflux
+1438,antibiotic efflux
+1439,antibiotic efflux
+1440,antibiotic efflux
+1441,antibiotic efflux
+1442,antibiotic efflux
+1443,antibiotic efflux
+1444,antibiotic efflux
+1445,antibiotic efflux
+1446,antibiotic efflux
+1447,antibiotic efflux
+1448,antibiotic efflux
+1449,antibiotic efflux
+1450,antibiotic efflux
+1451,antibiotic efflux
+1452,antibiotic efflux
+1453,antibiotic efflux
+1454,antibiotic efflux
+1455,antibiotic efflux
+1456,antibiotic efflux
+1457,antibiotic efflux
+1458,antibiotic efflux
+1459,antibiotic efflux
+1460,antibiotic efflux
+1461,antibiotic efflux
+1462,antibiotic efflux
+1463,antibiotic efflux
+1464,antibiotic efflux
+1465,antibiotic efflux
+1466,antibiotic efflux
+1467,antibiotic efflux
+1468,antibiotic efflux
+1469,antibiotic efflux
+1470,antibiotic efflux
+1471,antibiotic efflux
+1472,antibiotic efflux
+1473,antibiotic efflux
+1474,antibiotic efflux
+1475,antibiotic efflux
+1476,antibiotic efflux
+1477,antibiotic efflux
+1478,antibiotic efflux
+1479,antibiotic efflux
+1480,antibiotic efflux
+1481,antibiotic efflux
+1482,antibiotic efflux
+1483,antibiotic efflux
+1484,antibiotic efflux
+1485,antibiotic efflux
+1486,antibiotic efflux
+1487,antibiotic efflux
+1488,antibiotic efflux
+1489,antibiotic efflux
+1490,antibiotic efflux
+1491,antibiotic efflux
+1492,antibiotic efflux
+1493,antibiotic efflux
+1494,antibiotic efflux
+1495,antibiotic efflux
+1496,antibiotic efflux
+1497,antibiotic efflux
+1498,antibiotic efflux
+1499,antibiotic efflux
+1500,antibiotic efflux
+1501,antibiotic efflux
+1502,antibiotic efflux
+1503,antibiotic efflux
+1504,antibiotic efflux
+1505,antibiotic efflux
+1506,antibiotic efflux
+1507,antibiotic efflux
+1508,antibiotic efflux
+1509,antibiotic efflux
+1510,antibiotic efflux
+1511,antibiotic efflux
+1512,antibiotic efflux
+1513,antibiotic efflux
+1514,antibiotic efflux
+1515,antibiotic efflux
+1516,antibiotic efflux
+1517,antibiotic efflux
+1518,antibiotic efflux
+1519,antibiotic efflux
+1520,antibiotic efflux
+1521,antibiotic efflux
+1522,antibiotic efflux
+1523,antibiotic efflux
+1524,antibiotic efflux
+1525,antibiotic efflux
+1526,antibiotic efflux
+1527,antibiotic efflux
+1528,antibiotic efflux
+1529,antibiotic efflux
+1530,antibiotic efflux
+1531,antibiotic efflux
+1532,antibiotic efflux
+1533,antibiotic efflux
+1534,antibiotic efflux
+1535,antibiotic efflux
+1536,antibiotic efflux
+1537,antibiotic efflux
+1538,antibiotic efflux
+1539,antibiotic efflux
+1540,antibiotic efflux
+1541,antibiotic efflux
+1542,antibiotic efflux
+1543,antibiotic efflux
+1544,antibiotic efflux
+1545,antibiotic efflux
+1546,antibiotic efflux
+1547,antibiotic efflux
+1548,antibiotic efflux
+1549,antibiotic efflux
+1550,antibiotic efflux
+1551,antibiotic efflux
+1552,antibiotic efflux
+1553,antibiotic efflux
+1554,antibiotic efflux
+1555,antibiotic efflux
+1556,antibiotic efflux
+1557,antibiotic efflux
+1558,antibiotic efflux
+1559,antibiotic efflux
+1560,antibiotic efflux
+1561,antibiotic efflux
+1562,antibiotic efflux
+1563,antibiotic efflux
+1564,antibiotic efflux
+1565,antibiotic efflux
+1566,antibiotic efflux
+1567,antibiotic efflux
+1568,antibiotic efflux
+1569,antibiotic efflux
+1570,antibiotic efflux
+1571,antibiotic efflux
+1572,antibiotic efflux
+1573,antibiotic efflux
+1574,antibiotic efflux
+1575,antibiotic efflux
+1576,antibiotic efflux
+1577,antibiotic efflux
+1578,antibiotic efflux
+1579,antibiotic efflux
+1580,antibiotic efflux
+1581,antibiotic efflux
+1582,antibiotic efflux
+1583,antibiotic efflux
+1584,antibiotic efflux
+1585,antibiotic efflux
+1586,antibiotic efflux
+1587,antibiotic efflux
+1588,antibiotic efflux
+1589,antibiotic efflux
+1590,antibiotic efflux
+1591,antibiotic efflux
+1592,antibiotic efflux
+1593,antibiotic efflux
+1594,antibiotic efflux
+1595,antibiotic efflux
+1596,antibiotic efflux
+1597,antibiotic efflux
+1598,antibiotic efflux
+1599,antibiotic efflux
+1600,antibiotic efflux
+1601,antibiotic efflux
+1602,antibiotic efflux
+1603,antibiotic efflux
+1604,antibiotic efflux
+1605,antibiotic efflux
+1606,antibiotic efflux
+1607,antibiotic efflux
+1608,antibiotic efflux
+1609,antibiotic efflux
+1610,antibiotic efflux
+1611,antibiotic efflux
+1612,antibiotic efflux
+1613,antibiotic efflux
+1614,antibiotic efflux
+1615,antibiotic efflux
+1616,antibiotic efflux
+1617,antibiotic efflux
+1618,antibiotic efflux
+1619,antibiotic efflux
+1620,antibiotic efflux
+1621,antibiotic efflux
+1622,antibiotic efflux
+1623,antibiotic efflux
+1624,antibiotic efflux
+1625,antibiotic efflux
+1626,antibiotic efflux
+1627,antibiotic efflux
+1628,antibiotic efflux
+1629,antibiotic efflux
+1630,antibiotic efflux
+1631,antibiotic efflux
+1632,antibiotic efflux
+1633,antibiotic efflux
+1634,antibiotic efflux
+1635,antibiotic efflux
+1636,antibiotic efflux
+1637,antibiotic efflux
+1638,antibiotic efflux
+1639,antibiotic efflux
+1640,antibiotic efflux
+1641,antibiotic efflux
+1642,antibiotic efflux
+1643,antibiotic efflux
+1644,antibiotic efflux
+1645,antibiotic efflux
+1646,antibiotic efflux
+1647,antibiotic efflux
+1648,antibiotic efflux
+1649,antibiotic efflux
+1650,antibiotic efflux
+1651,antibiotic efflux
+1652,antibiotic efflux
+1653,antibiotic efflux
+1654,antibiotic efflux
+1655,antibiotic efflux
+1656,antibiotic efflux
+1657,antibiotic efflux
+1658,antibiotic efflux
+1659,antibiotic efflux
+1660,antibiotic efflux
+1661,antibiotic efflux
+1662,antibiotic efflux
+1663,antibiotic efflux
+1664,antibiotic efflux
+1665,antibiotic efflux
+1666,antibiotic efflux
+1667,antibiotic efflux
+1668,antibiotic efflux
+1669,antibiotic efflux
+1670,antibiotic efflux
+1671,antibiotic efflux
+1672,antibiotic efflux
+1673,antibiotic efflux
+1674,antibiotic efflux
+1675,antibiotic efflux
+1676,antibiotic efflux
+1677,antibiotic efflux
+1678,antibiotic efflux
+1679,antibiotic efflux
+1680,antibiotic efflux
+1681,antibiotic efflux
+1682,antibiotic efflux
+1683,antibiotic efflux
+1684,antibiotic efflux
+1685,antibiotic efflux
+1686,antibiotic efflux
+1687,antibiotic efflux
+1688,antibiotic efflux
+1689,antibiotic efflux
+1690,antibiotic efflux
+1691,antibiotic efflux
+1692,antibiotic efflux
+1693,antibiotic efflux
+1694,antibiotic efflux
+1695,antibiotic efflux
+1696,antibiotic efflux
+1697,antibiotic efflux
+1698,antibiotic efflux
+1699,antibiotic efflux
+1700,antibiotic efflux
+1701,antibiotic efflux
+1702,antibiotic efflux
+1703,antibiotic efflux
+1704,antibiotic efflux
+1705,antibiotic efflux
+1706,antibiotic efflux
+1707,antibiotic efflux
+1708,antibiotic efflux
+1709,antibiotic efflux
+1710,antibiotic efflux
+1711,antibiotic efflux
+1712,antibiotic efflux
+1713,antibiotic efflux
+1714,antibiotic efflux
+1715,antibiotic efflux
+1716,antibiotic efflux
+1717,antibiotic efflux
+1718,antibiotic efflux
+1719,antibiotic efflux
+1720,antibiotic efflux
+1721,antibiotic efflux
+1722,antibiotic efflux
+1723,antibiotic efflux
+1724,antibiotic efflux
+1725,antibiotic efflux
+1726,antibiotic efflux
+1727,antibiotic efflux
+1728,antibiotic efflux
+1729,antibiotic efflux
+1730,antibiotic efflux
+1731,antibiotic efflux
+1732,antibiotic efflux
+1733,antibiotic efflux
+1734,antibiotic efflux
+1735,antibiotic efflux
+1736,antibiotic efflux
+1737,antibiotic efflux
+1738,antibiotic efflux
+1739,antibiotic efflux
+1740,antibiotic efflux
+1741,antibiotic efflux
+1742,antibiotic efflux
+1743,antibiotic efflux
+1744,antibiotic efflux
+1745,antibiotic efflux
+1746,antibiotic efflux
+1747,antibiotic efflux
+1748,antibiotic efflux
+1749,antibiotic efflux
+1750,antibiotic efflux
+1751,antibiotic efflux
+1752,antibiotic efflux
+1753,antibiotic efflux
+1754,antibiotic efflux
+1755,antibiotic efflux
+1756,antibiotic efflux
+1757,antibiotic efflux
+1758,antibiotic efflux
+1759,antibiotic efflux
+1760,antibiotic efflux
+1761,antibiotic efflux
+1762,antibiotic efflux
+1763,antibiotic efflux
+1764,antibiotic efflux
+1765,antibiotic efflux
+1766,antibiotic efflux
+1767,antibiotic efflux
+1768,antibiotic efflux
+1769,antibiotic efflux
+1770,antibiotic efflux
+1771,antibiotic efflux
+1772,antibiotic efflux
+1773,antibiotic efflux
+1774,antibiotic efflux
+1775,antibiotic efflux
+1776,antibiotic efflux
+1777,antibiotic efflux
+1778,antibiotic efflux
+1779,antibiotic efflux
+1780,antibiotic efflux
+1781,antibiotic efflux
+1782,antibiotic efflux
+1783,antibiotic efflux
+1784,antibiotic efflux
+1785,antibiotic efflux
+1786,antibiotic efflux
+1787,antibiotic efflux
+1788,antibiotic efflux
+1789,antibiotic efflux
+1790,antibiotic efflux
+1791,antibiotic efflux
+1792,antibiotic efflux
+1793,antibiotic efflux
+1794,antibiotic efflux
+1795,antibiotic efflux
+1796,antibiotic efflux
+1797,antibiotic efflux
+1798,antibiotic efflux
+1799,antibiotic efflux
+1800,antibiotic efflux
+1801,antibiotic efflux
+1802,antibiotic efflux
+1803,antibiotic efflux
+1804,antibiotic efflux
+1805,antibiotic efflux
+1806,antibiotic efflux
+1807,antibiotic efflux
+1808,antibiotic efflux
+1809,antibiotic efflux
+1810,antibiotic efflux
+1811,antibiotic efflux
+1812,antibiotic efflux
+1813,antibiotic efflux
+1814,antibiotic efflux
+1815,antibiotic efflux
+1816,antibiotic efflux
+1817,antibiotic efflux
+1818,antibiotic efflux
+1819,antibiotic efflux
+1820,antibiotic efflux
+1821,antibiotic efflux
+1822,antibiotic efflux
+1823,antibiotic efflux
+1824,antibiotic efflux
+1825,antibiotic efflux
+1826,antibiotic efflux
+1827,antibiotic efflux
+1828,antibiotic efflux
+1829,antibiotic efflux
+1830,antibiotic efflux
+1831,antibiotic efflux
+1832,antibiotic efflux
+1833,antibiotic efflux
+1834,antibiotic efflux
+1835,antibiotic efflux
+1836,antibiotic efflux
+1837,antibiotic efflux
+1838,antibiotic efflux
+1839,antibiotic efflux
+1840,antibiotic efflux
+1841,antibiotic efflux
+1842,antibiotic efflux
+1843,antibiotic efflux
+1844,antibiotic efflux
+1845,antibiotic efflux
+1846,antibiotic efflux
+1847,antibiotic efflux
+1848,antibiotic efflux
+1849,antibiotic efflux
+1850,antibiotic efflux
+1851,antibiotic efflux
+1852,antibiotic efflux
+1853,antibiotic efflux
+1854,antibiotic efflux
+1855,antibiotic efflux
+1856,antibiotic efflux
+1857,antibiotic efflux
+1858,antibiotic efflux
+1859,antibiotic efflux
+1860,antibiotic efflux
+1861,antibiotic efflux
+1862,antibiotic efflux
+1863,antibiotic efflux
+1864,antibiotic efflux
+1865,antibiotic efflux
+1866,antibiotic efflux
+1867,antibiotic efflux
+1868,antibiotic efflux
+1869,antibiotic efflux
+1870,antibiotic efflux
+1871,antibiotic efflux
+1872,antibiotic efflux
+1873,antibiotic efflux
+1874,antibiotic efflux
+1875,antibiotic efflux
+1876,antibiotic efflux
+1877,antibiotic efflux
+1878,antibiotic efflux
+1879,antibiotic efflux
+1880,antibiotic efflux
+1881,antibiotic efflux
+1882,antibiotic efflux
+1883,antibiotic efflux
+1884,antibiotic efflux
+1885,antibiotic efflux
+1886,antibiotic efflux
+1887,antibiotic efflux
+1888,antibiotic efflux
+1889,antibiotic efflux
+1890,antibiotic efflux
+1891,antibiotic efflux
+1892,antibiotic efflux
+1893,antibiotic efflux
+1894,antibiotic efflux
+1895,antibiotic efflux
+1896,antibiotic efflux
+1897,antibiotic efflux
+1898,antibiotic efflux
+1899,antibiotic efflux
+1900,antibiotic efflux
+1901,antibiotic efflux
+1902,antibiotic efflux
+1903,antibiotic efflux
+1904,antibiotic efflux
+1905,antibiotic efflux
+1906,antibiotic efflux
+1907,antibiotic efflux
+1908,antibiotic efflux
+1909,antibiotic efflux
+1910,antibiotic efflux
+1911,antibiotic efflux
+1912,antibiotic efflux
+1913,antibiotic efflux
+1914,antibiotic efflux
+1915,antibiotic efflux
+1916,antibiotic efflux
+1917,antibiotic efflux
+1918,antibiotic efflux
+1919,antibiotic efflux
+1920,antibiotic efflux
+1921,antibiotic efflux
+1922,antibiotic efflux
+1923,antibiotic efflux
+1924,antibiotic efflux
+1925,antibiotic efflux
+1926,antibiotic efflux
+1927,antibiotic efflux
+1928,antibiotic efflux
+1929,antibiotic efflux
+1930,antibiotic efflux
+1931,antibiotic efflux
+1932,antibiotic efflux
+1933,antibiotic efflux
+1934,antibiotic efflux
+1935,antibiotic efflux
+1936,antibiotic efflux
+1937,antibiotic efflux
+1938,antibiotic efflux
+1939,antibiotic efflux
+1940,antibiotic efflux
+1941,antibiotic efflux
+1942,antibiotic efflux
+1943,antibiotic efflux
+1944,antibiotic efflux
+1945,antibiotic efflux
+1946,antibiotic efflux
+1947,antibiotic efflux
+1948,antibiotic efflux
+1949,antibiotic efflux
+1950,antibiotic efflux
+1951,antibiotic efflux
+1952,antibiotic efflux
+1953,antibiotic efflux
+1954,antibiotic efflux
+1955,antibiotic efflux
+1956,antibiotic efflux
+1957,antibiotic efflux
+1958,antibiotic efflux
+1959,antibiotic efflux
+1960,antibiotic efflux
+1961,antibiotic efflux
+1962,antibiotic efflux
+1963,antibiotic efflux
+1964,antibiotic efflux
+1965,antibiotic efflux
+1966,antibiotic efflux
+1967,antibiotic efflux
+1968,antibiotic efflux
+1969,antibiotic efflux
+1970,antibiotic efflux
+1971,antibiotic efflux
+1972,antibiotic efflux
+1973,antibiotic efflux
+1974,antibiotic efflux
+1975,antibiotic efflux
+1976,antibiotic efflux
+1977,antibiotic efflux
+1978,antibiotic efflux
+1979,antibiotic efflux
+1980,antibiotic efflux
+1981,antibiotic efflux
+1982,antibiotic efflux
+1983,antibiotic efflux
+1984,antibiotic efflux
+1985,antibiotic efflux
+1986,antibiotic efflux
+1987,antibiotic efflux
+1988,antibiotic efflux
+1989,antibiotic efflux
+1990,antibiotic efflux
+1991,antibiotic efflux
+1992,antibiotic efflux
+1993,antibiotic efflux
+1994,antibiotic efflux
+1995,antibiotic efflux
+1996,antibiotic efflux
+1997,antibiotic efflux
+1998,antibiotic efflux
+1999,antibiotic efflux
+2000,antibiotic efflux
+2001,antibiotic efflux
+2002,antibiotic efflux
+2003,antibiotic efflux
+2004,antibiotic efflux
+2005,antibiotic efflux
+2006,antibiotic efflux
+2007,antibiotic efflux
+2008,antibiotic efflux
+2009,antibiotic efflux
+2010,antibiotic efflux
+2011,antibiotic efflux
+2012,antibiotic efflux
+2013,antibiotic efflux
+2014,antibiotic efflux
+2015,antibiotic efflux
+2016,antibiotic efflux
+2017,antibiotic efflux
+2018,antibiotic efflux
+2019,antibiotic efflux
+2020,antibiotic efflux
+2021,antibiotic efflux
+2022,antibiotic efflux
+2023,antibiotic efflux
+2024,antibiotic efflux
+2025,antibiotic efflux
+2026,antibiotic efflux
+2027,antibiotic efflux
+2028,antibiotic efflux
+2029,antibiotic efflux
+2030,antibiotic efflux
+2031,antibiotic efflux
+2032,antibiotic efflux
+2033,antibiotic efflux
+2034,antibiotic efflux
+2035,antibiotic efflux
+2036,antibiotic efflux
+2037,antibiotic efflux
+2038,antibiotic efflux
+2039,antibiotic efflux
+2040,antibiotic efflux
+2041,antibiotic efflux
+2042,antibiotic efflux
+2043,antibiotic efflux
+2044,antibiotic efflux
+2045,antibiotic efflux
+2046,antibiotic efflux
+2047,antibiotic efflux
+2048,antibiotic efflux
+2049,antibiotic efflux
+2050,antibiotic efflux
+2051,antibiotic efflux
+2052,antibiotic efflux
+2053,antibiotic efflux
+2054,antibiotic efflux
+2055,antibiotic efflux
+2056,antibiotic efflux
+2057,antibiotic efflux
+2058,antibiotic efflux
+2059,antibiotic efflux
+2060,antibiotic efflux
+2061,antibiotic efflux
+2062,antibiotic efflux
+2063,antibiotic efflux
+2064,antibiotic efflux
+2065,antibiotic efflux
+2066,antibiotic efflux
+2067,antibiotic efflux
+2068,antibiotic efflux
+2069,antibiotic efflux
+2070,antibiotic efflux
+2071,antibiotic efflux
+2072,antibiotic efflux
+2073,antibiotic efflux
+2074,antibiotic efflux
+2075,antibiotic efflux
+2076,antibiotic efflux
+2077,antibiotic efflux
+2078,antibiotic efflux
+2079,antibiotic efflux
+2080,antibiotic efflux
+2081,antibiotic efflux
+2082,antibiotic efflux
+2083,antibiotic efflux
+2084,antibiotic efflux
+2085,antibiotic efflux
+2086,antibiotic efflux
+2087,antibiotic efflux
+2088,antibiotic efflux
+2089,antibiotic efflux
+2090,antibiotic efflux
+2091,antibiotic efflux
+2092,antibiotic efflux
+2093,antibiotic efflux
+2094,antibiotic efflux
+2095,antibiotic efflux
+2096,antibiotic efflux
+2097,antibiotic efflux
+2098,antibiotic efflux
+2099,antibiotic efflux
+2100,antibiotic efflux
+2101,antibiotic efflux
+2102,antibiotic efflux
+2103,antibiotic efflux
+2104,antibiotic efflux
+2105,antibiotic efflux
+2106,antibiotic efflux
+2107,antibiotic efflux
+2108,antibiotic efflux
+2109,antibiotic efflux
+2110,antibiotic efflux
+2111,antibiotic efflux
+2112,antibiotic efflux
+2113,antibiotic efflux
+2114,antibiotic efflux
+2115,antibiotic efflux
+2116,antibiotic efflux
+2117,antibiotic efflux
+2118,antibiotic efflux
+2119,antibiotic efflux
+2120,antibiotic efflux
+2121,antibiotic efflux
+2122,antibiotic efflux
+2123,antibiotic efflux
+2124,antibiotic efflux
+2125,antibiotic efflux
+2126,antibiotic efflux
+2127,antibiotic efflux
+2128,antibiotic efflux
+2129,antibiotic efflux
+2130,antibiotic efflux
+2131,antibiotic efflux
+2132,antibiotic efflux
+2133,antibiotic efflux
+2134,antibiotic efflux
+2135,antibiotic efflux
+2136,antibiotic efflux
+2137,antibiotic efflux
+2138,antibiotic efflux
+2139,antibiotic efflux
+2140,antibiotic efflux
+2141,antibiotic efflux
+2142,antibiotic efflux
+2143,antibiotic efflux
+2144,antibiotic efflux
+2145,antibiotic efflux
+2146,antibiotic efflux
+2147,antibiotic efflux
+2148,antibiotic efflux
+2149,antibiotic efflux
+2150,antibiotic efflux
+2151,antibiotic efflux
+2152,antibiotic efflux
+2153,antibiotic efflux
+2154,antibiotic efflux
+2155,antibiotic efflux
+2156,antibiotic efflux
+2157,antibiotic efflux
+2158,antibiotic efflux
+2159,antibiotic efflux
+2160,antibiotic efflux
+2161,antibiotic efflux
+2162,antibiotic efflux
+2163,antibiotic efflux
+2164,antibiotic efflux
+2165,antibiotic efflux
+2166,antibiotic efflux
+2167,antibiotic efflux
+2168,antibiotic efflux
+2169,antibiotic efflux
+2170,antibiotic efflux
+2171,antibiotic efflux
+2172,antibiotic efflux
+2173,antibiotic efflux
+2174,antibiotic efflux
+2175,antibiotic efflux
+2176,antibiotic efflux
+2177,antibiotic efflux
+2178,antibiotic efflux
+2179,antibiotic efflux
+2180,antibiotic efflux
+2181,antibiotic efflux
+2182,antibiotic efflux
+2183,antibiotic efflux
+2184,antibiotic efflux
+2185,antibiotic efflux
+2186,antibiotic efflux
+2187,antibiotic efflux
+2188,antibiotic efflux
+2189,antibiotic efflux
+2190,antibiotic efflux
+2191,antibiotic efflux
+2192,antibiotic efflux
+2193,antibiotic efflux
+2194,antibiotic efflux
+2195,antibiotic efflux
+2196,antibiotic efflux
+2197,antibiotic efflux
+2198,antibiotic efflux
+2199,antibiotic efflux
+2200,antibiotic efflux
+2201,antibiotic efflux
+2202,antibiotic efflux
+2203,antibiotic efflux
+2204,antibiotic efflux
+2205,antibiotic efflux
+2206,antibiotic efflux
+2207,antibiotic efflux
+2208,antibiotic efflux
+2209,antibiotic efflux
+2210,antibiotic efflux
+2211,antibiotic efflux
+2212,antibiotic efflux
+2213,antibiotic efflux
+2214,antibiotic efflux
+2215,antibiotic efflux
+2216,antibiotic efflux
+2217,antibiotic efflux
+2218,antibiotic efflux
+2219,antibiotic efflux
+2220,antibiotic efflux
+2221,antibiotic efflux
+2222,antibiotic efflux
+2223,antibiotic efflux
+2224,antibiotic efflux
+2225,antibiotic efflux
+2226,antibiotic efflux
+2227,antibiotic efflux
+2228,antibiotic efflux
+2229,antibiotic efflux
+2230,antibiotic efflux
+2231,antibiotic efflux
+2232,antibiotic efflux
+2233,antibiotic efflux
+2234,antibiotic efflux
+2235,antibiotic efflux
+2236,antibiotic efflux
+2237,antibiotic efflux
+2238,antibiotic efflux
+2239,antibiotic efflux
+2240,antibiotic efflux
+2241,antibiotic efflux
+2242,antibiotic efflux
+2243,antibiotic efflux
+2244,antibiotic efflux
+2245,antibiotic efflux
+2246,antibiotic efflux
+2247,antibiotic efflux
+2248,antibiotic efflux
+2249,antibiotic efflux
+2250,antibiotic efflux
+2251,antibiotic efflux
+2252,antibiotic efflux
+2253,antibiotic efflux
+2254,antibiotic efflux
+2255,antibiotic efflux
+2256,antibiotic efflux
+2257,antibiotic efflux
+2258,antibiotic efflux
+2259,antibiotic efflux
+2260,antibiotic efflux
+2261,antibiotic efflux
+2262,antibiotic efflux
+2263,antibiotic efflux
+2264,antibiotic efflux
+2265,antibiotic efflux
+2266,antibiotic efflux
+2267,antibiotic efflux
+2268,antibiotic efflux
+2269,antibiotic efflux
+2270,antibiotic efflux
+2271,antibiotic efflux
+2272,antibiotic inactivation
+2273,antibiotic inactivation
+2274,antibiotic inactivation
+2275,antibiotic inactivation
+2276,antibiotic inactivation
+2277,antibiotic inactivation
+2278,antibiotic inactivation
+2279,antibiotic inactivation
+2280,antibiotic inactivation
+2281,antibiotic inactivation
+2282,antibiotic inactivation
+2283,antibiotic inactivation
+2284,antibiotic inactivation
+2285,antibiotic inactivation
+2286,antibiotic inactivation
+2287,antibiotic inactivation
+2288,antibiotic inactivation
+2289,antibiotic inactivation
+2290,antibiotic inactivation
+2291,antibiotic inactivation
+2292,antibiotic inactivation
+2293,antibiotic inactivation
+2294,antibiotic inactivation
+2295,antibiotic inactivation
+2296,antibiotic inactivation
+2297,antibiotic inactivation
+2298,antibiotic inactivation
+2299,antibiotic inactivation
+2300,antibiotic inactivation
+2301,antibiotic inactivation
+2302,antibiotic inactivation
+2303,antibiotic inactivation
+2304,antibiotic inactivation
+2305,antibiotic inactivation
+2306,antibiotic inactivation
+2307,antibiotic inactivation
+2308,antibiotic inactivation
+2309,antibiotic inactivation
+2310,antibiotic inactivation
+2311,antibiotic inactivation
+2312,antibiotic inactivation
+2313,antibiotic inactivation
+2314,antibiotic inactivation
+2315,antibiotic inactivation
+2316,antibiotic inactivation
+2317,antibiotic inactivation
+2318,antibiotic inactivation
+2319,antibiotic inactivation
+2320,antibiotic inactivation
+2321,antibiotic inactivation
+2322,antibiotic inactivation
+2323,antibiotic inactivation
+2324,antibiotic inactivation
+2325,antibiotic inactivation
+2326,antibiotic inactivation
+2327,antibiotic inactivation
+2328,antibiotic inactivation
+2329,antibiotic inactivation
+2330,antibiotic inactivation
+2331,antibiotic inactivation
+2332,antibiotic inactivation
+2333,antibiotic inactivation
+2334,antibiotic inactivation
+2335,antibiotic inactivation
+2336,antibiotic inactivation
+2337,antibiotic inactivation
+2338,antibiotic inactivation
+2339,antibiotic inactivation
+2340,antibiotic inactivation
+2341,antibiotic inactivation
+2342,antibiotic inactivation
+2343,antibiotic inactivation
+2344,antibiotic inactivation
+2345,antibiotic inactivation
+2346,antibiotic inactivation
+2347,antibiotic inactivation
+2348,antibiotic inactivation
+2349,antibiotic inactivation
+2350,antibiotic inactivation
+2351,antibiotic inactivation
+2352,antibiotic inactivation
+2353,antibiotic inactivation
+2354,antibiotic inactivation
+2355,antibiotic inactivation
+2356,antibiotic inactivation
+2357,antibiotic inactivation
+2358,antibiotic inactivation
+2359,antibiotic inactivation
+2360,antibiotic inactivation
+2361,antibiotic inactivation
+2362,antibiotic inactivation
+2363,antibiotic inactivation
+2364,antibiotic inactivation
+2365,antibiotic inactivation
+2366,antibiotic inactivation
+2367,antibiotic inactivation
+2368,antibiotic inactivation
+2369,antibiotic inactivation
+2370,antibiotic inactivation
+2371,antibiotic inactivation
+2372,antibiotic inactivation
+2373,antibiotic inactivation
+2374,antibiotic inactivation
+2375,antibiotic inactivation
+2376,antibiotic inactivation
+2377,antibiotic inactivation
+2378,antibiotic inactivation
+2379,antibiotic inactivation
+2380,antibiotic inactivation
+2381,antibiotic inactivation
+2382,antibiotic inactivation
+2383,antibiotic inactivation
+2384,antibiotic inactivation
+2385,antibiotic inactivation
+2386,antibiotic inactivation
+2387,antibiotic inactivation
+2388,antibiotic inactivation
+2389,antibiotic inactivation
+2390,antibiotic inactivation
+2391,antibiotic inactivation
+2392,antibiotic inactivation
+2393,antibiotic inactivation
+2394,antibiotic inactivation
+2395,antibiotic inactivation
+2396,antibiotic inactivation
+2397,antibiotic inactivation
+2398,antibiotic inactivation
+2399,antibiotic inactivation
+2400,antibiotic inactivation
+2401,antibiotic inactivation
+2402,antibiotic inactivation
+2403,antibiotic inactivation
+2404,antibiotic inactivation
+2405,antibiotic inactivation
+2406,antibiotic inactivation
+2407,antibiotic inactivation
+2408,antibiotic inactivation
+2409,antibiotic inactivation
+2410,antibiotic inactivation
+2411,antibiotic inactivation
+2412,antibiotic inactivation
+2413,antibiotic inactivation
+2414,antibiotic inactivation
+2415,antibiotic inactivation
+2416,antibiotic inactivation
+2417,antibiotic inactivation
+2418,antibiotic inactivation
+2419,antibiotic inactivation
+2420,antibiotic inactivation
+2421,antibiotic inactivation
+2422,antibiotic inactivation
+2423,antibiotic inactivation
+2424,antibiotic inactivation
+2425,antibiotic inactivation
+2426,antibiotic inactivation
+2427,antibiotic inactivation
+2428,antibiotic inactivation
+2429,antibiotic inactivation
+2430,antibiotic inactivation
+2431,antibiotic inactivation
+2432,antibiotic inactivation
+2433,antibiotic inactivation
+2434,antibiotic inactivation
+2435,antibiotic inactivation
+2436,antibiotic inactivation
+2437,antibiotic inactivation
+2438,antibiotic inactivation
+2439,antibiotic inactivation
+2440,antibiotic inactivation
+2441,antibiotic inactivation
+2442,antibiotic inactivation
+2443,antibiotic inactivation
+2444,antibiotic inactivation
+2445,antibiotic inactivation
+2446,antibiotic inactivation
+2447,antibiotic inactivation
+2448,antibiotic inactivation
+2449,antibiotic inactivation
+2450,antibiotic inactivation
+2451,antibiotic inactivation
+2452,antibiotic inactivation
+2453,antibiotic inactivation
+2454,antibiotic inactivation
+2455,antibiotic inactivation
+2456,antibiotic inactivation
+2457,antibiotic inactivation
+2458,antibiotic inactivation
+2459,antibiotic inactivation
+2460,antibiotic inactivation
+2461,antibiotic inactivation
+2462,antibiotic inactivation
+2463,antibiotic inactivation
+2464,antibiotic inactivation
+2465,antibiotic inactivation
+2466,antibiotic inactivation
+2467,antibiotic inactivation
+2468,antibiotic inactivation
+2469,antibiotic inactivation
+2470,antibiotic inactivation
+2471,antibiotic inactivation
+2472,antibiotic inactivation
+2473,antibiotic inactivation
+2474,antibiotic inactivation
+2475,antibiotic inactivation
+2476,antibiotic inactivation
+2477,antibiotic inactivation
+2478,antibiotic inactivation
+2479,antibiotic inactivation
+2480,antibiotic inactivation
+2481,antibiotic inactivation
+2482,antibiotic inactivation
+2483,antibiotic inactivation
+2484,antibiotic inactivation
+2485,antibiotic inactivation
+2486,antibiotic inactivation
+2487,antibiotic inactivation
+2488,antibiotic inactivation
+2489,antibiotic inactivation
+2490,antibiotic inactivation
+2491,antibiotic inactivation
+2492,antibiotic inactivation
+2493,antibiotic inactivation
+2494,antibiotic inactivation
+2495,antibiotic inactivation
+2496,antibiotic inactivation
+2497,antibiotic inactivation
+2498,antibiotic inactivation
+2499,antibiotic inactivation
+2500,antibiotic inactivation
+2501,antibiotic inactivation
+2502,antibiotic inactivation
+2503,antibiotic inactivation
+2504,antibiotic inactivation
+2505,antibiotic inactivation
+2506,antibiotic inactivation
+2507,antibiotic inactivation
+2508,antibiotic inactivation
+2509,antibiotic inactivation
+2510,antibiotic inactivation
+2511,antibiotic inactivation
+2512,antibiotic inactivation
+2513,antibiotic inactivation
+2514,antibiotic inactivation
+2515,antibiotic inactivation
+2516,antibiotic inactivation
+2517,antibiotic inactivation
+2518,antibiotic inactivation
+2519,antibiotic inactivation
+2520,antibiotic inactivation
+2521,antibiotic inactivation
+2522,antibiotic inactivation
+2523,antibiotic inactivation
+2524,antibiotic inactivation
+2525,antibiotic inactivation
+2526,antibiotic inactivation
+2527,antibiotic inactivation
+2528,antibiotic inactivation
+2529,antibiotic inactivation
+2530,antibiotic inactivation
+2531,antibiotic inactivation
+2532,antibiotic inactivation
+2533,antibiotic inactivation
+2534,antibiotic inactivation
+2535,antibiotic inactivation
+2536,antibiotic inactivation
+2537,antibiotic inactivation
+2538,antibiotic inactivation
+2539,antibiotic inactivation
+2540,antibiotic inactivation
+2541,antibiotic inactivation
+2542,antibiotic inactivation
+2543,antibiotic inactivation
+2544,antibiotic inactivation
+2545,antibiotic inactivation
+2546,antibiotic inactivation
+2547,antibiotic inactivation
+2548,antibiotic inactivation
+2549,antibiotic inactivation
+2550,antibiotic inactivation
+2551,antibiotic inactivation
+2552,antibiotic inactivation
+2553,antibiotic inactivation
+2554,antibiotic inactivation
+2555,antibiotic inactivation
+2556,antibiotic inactivation
+2557,antibiotic inactivation
+2558,antibiotic inactivation
+2559,antibiotic inactivation
+2560,antibiotic inactivation
+2561,antibiotic inactivation
+2562,antibiotic inactivation
+2563,antibiotic inactivation
+2564,antibiotic inactivation
+2565,antibiotic inactivation
+2566,antibiotic inactivation
+2567,antibiotic inactivation
+2568,antibiotic inactivation
+2569,antibiotic inactivation
+2570,antibiotic inactivation
+2571,antibiotic inactivation
+2572,antibiotic inactivation
+2573,antibiotic inactivation
+2574,antibiotic inactivation
+2575,antibiotic inactivation
+2576,antibiotic inactivation
+2577,antibiotic inactivation
+2578,antibiotic inactivation
+2579,antibiotic inactivation
+2580,antibiotic inactivation
+2581,antibiotic inactivation
+2582,antibiotic inactivation
+2583,antibiotic inactivation
+2584,antibiotic inactivation
+2585,antibiotic inactivation
+2586,antibiotic inactivation
+2587,antibiotic inactivation
+2588,antibiotic inactivation
+2589,antibiotic inactivation
+2590,antibiotic inactivation
+2591,antibiotic inactivation
+2592,antibiotic inactivation
+2593,antibiotic inactivation
+2594,antibiotic inactivation
+2595,antibiotic inactivation
+2596,antibiotic inactivation
+2597,antibiotic inactivation
+2598,antibiotic inactivation
+2599,antibiotic inactivation
+2600,antibiotic inactivation
+2601,antibiotic inactivation
+2602,antibiotic inactivation
+2603,antibiotic inactivation
+2604,antibiotic inactivation
+2605,antibiotic inactivation
+2606,antibiotic inactivation
+2607,antibiotic inactivation
+2608,antibiotic inactivation
+2609,antibiotic inactivation
+2610,antibiotic inactivation
+2611,antibiotic inactivation
+2612,antibiotic inactivation
+2613,antibiotic inactivation
+2614,antibiotic inactivation
+2615,antibiotic inactivation
+2616,antibiotic inactivation
+2617,antibiotic inactivation
+2618,antibiotic inactivation
+2619,antibiotic inactivation
+2620,antibiotic inactivation
+2621,antibiotic inactivation
+2622,antibiotic inactivation
+2623,antibiotic inactivation
+2624,antibiotic inactivation
+2625,antibiotic inactivation
+2626,antibiotic inactivation
+2627,antibiotic inactivation
+2628,antibiotic inactivation
+2629,antibiotic inactivation
+2630,antibiotic inactivation
+2631,antibiotic inactivation
+2632,antibiotic inactivation
+2633,antibiotic inactivation
+2634,antibiotic inactivation
+2635,antibiotic inactivation
+2636,antibiotic inactivation
+2637,antibiotic inactivation
+2638,antibiotic inactivation
+2639,antibiotic inactivation
+2640,antibiotic inactivation
+2641,antibiotic inactivation
+2642,antibiotic inactivation
+2643,antibiotic inactivation
+2644,antibiotic inactivation
+2645,antibiotic inactivation
+2646,antibiotic inactivation
+2647,antibiotic inactivation
+2648,antibiotic inactivation
+2649,antibiotic inactivation
+2650,antibiotic inactivation
+2651,antibiotic inactivation
+2652,antibiotic inactivation
+2653,antibiotic inactivation
+2654,antibiotic inactivation
+2655,antibiotic inactivation
+2656,antibiotic inactivation
+2657,antibiotic inactivation
+2658,antibiotic inactivation
+2659,antibiotic inactivation
+2660,antibiotic inactivation
+2661,antibiotic inactivation
+2662,antibiotic inactivation
+2663,antibiotic inactivation
+2664,antibiotic inactivation
+2665,antibiotic inactivation
+2666,antibiotic inactivation
+2667,antibiotic inactivation
+2668,antibiotic inactivation
+2669,antibiotic inactivation
+2670,antibiotic inactivation
+2671,antibiotic inactivation
+2672,antibiotic inactivation
+2673,antibiotic inactivation
+2674,antibiotic inactivation
+2675,antibiotic inactivation
+2676,antibiotic inactivation
+2677,antibiotic inactivation
+2678,antibiotic inactivation
+2679,antibiotic inactivation
+2680,antibiotic inactivation
+2681,antibiotic inactivation
+2682,antibiotic inactivation
+2683,antibiotic inactivation
+2684,antibiotic inactivation
+2685,antibiotic inactivation
+2686,antibiotic inactivation
+2687,antibiotic inactivation
+2688,antibiotic inactivation
+2689,antibiotic inactivation
+2690,antibiotic inactivation
+2691,antibiotic inactivation
+2692,antibiotic inactivation
+2693,antibiotic inactivation
+2694,antibiotic inactivation
+2695,antibiotic inactivation
+2696,antibiotic inactivation
+2697,antibiotic inactivation
+2698,antibiotic inactivation
+2699,antibiotic inactivation
+2700,antibiotic inactivation
+2701,antibiotic inactivation
+2702,antibiotic inactivation
+2703,antibiotic inactivation
+2704,antibiotic inactivation
+2705,antibiotic inactivation
+2706,antibiotic inactivation
+2707,antibiotic inactivation
+2708,antibiotic inactivation
+2709,antibiotic inactivation
+2710,antibiotic inactivation
+2711,antibiotic inactivation
+2712,antibiotic inactivation
+2713,antibiotic inactivation
+2714,antibiotic inactivation
+2715,antibiotic inactivation
+2716,antibiotic inactivation
+2717,antibiotic inactivation
+2718,antibiotic inactivation
+2719,antibiotic inactivation
+2720,antibiotic inactivation
+2721,antibiotic inactivation
+2722,antibiotic inactivation
+2723,antibiotic inactivation
+2724,antibiotic inactivation
+2725,antibiotic inactivation
+2726,antibiotic inactivation
+2727,antibiotic inactivation
+2728,antibiotic inactivation
+2729,antibiotic inactivation
+2730,antibiotic inactivation
+2731,antibiotic inactivation
+2732,antibiotic inactivation
+2733,antibiotic inactivation
+2734,antibiotic inactivation
+2735,antibiotic inactivation
+2736,antibiotic inactivation
+2737,antibiotic inactivation
+2738,antibiotic inactivation
+2739,antibiotic inactivation
+2740,antibiotic inactivation
+2741,antibiotic inactivation
+2742,antibiotic inactivation
+2743,antibiotic inactivation
+2744,antibiotic inactivation
+2745,antibiotic inactivation
+2746,antibiotic inactivation
+2747,antibiotic inactivation
+2748,antibiotic inactivation
+2749,antibiotic inactivation
+2750,antibiotic inactivation
+2751,antibiotic inactivation
+2752,antibiotic inactivation
+2753,antibiotic inactivation
+2754,antibiotic inactivation
+2755,antibiotic inactivation
+2756,antibiotic inactivation
+2757,antibiotic inactivation
+2758,antibiotic inactivation
+2759,antibiotic inactivation
+2760,antibiotic inactivation
+2761,antibiotic inactivation
+2762,antibiotic inactivation
+2763,antibiotic inactivation
+2764,antibiotic inactivation
+2765,antibiotic inactivation
+2766,antibiotic inactivation
+2767,antibiotic inactivation
+2768,antibiotic inactivation
+2769,antibiotic inactivation
+2770,antibiotic inactivation
+2771,antibiotic inactivation
+2772,antibiotic inactivation
+2773,antibiotic inactivation
+2774,antibiotic inactivation
+2775,antibiotic inactivation
+2776,antibiotic inactivation
+2777,antibiotic inactivation
+2778,antibiotic inactivation
+2779,antibiotic inactivation
+2780,antibiotic inactivation
+2781,antibiotic inactivation
+2782,antibiotic inactivation
+2783,antibiotic inactivation
+2784,antibiotic inactivation
+2785,antibiotic inactivation
+2786,antibiotic inactivation
+2787,antibiotic inactivation
+2788,antibiotic inactivation
+2789,antibiotic inactivation
+2790,antibiotic inactivation
+2791,antibiotic inactivation
+2792,antibiotic inactivation
+2793,antibiotic inactivation
+2794,antibiotic inactivation
+2795,antibiotic inactivation
+2796,antibiotic inactivation
+2797,antibiotic inactivation
+2798,antibiotic inactivation
+2799,antibiotic inactivation
+2800,antibiotic inactivation
+2801,antibiotic inactivation
+2802,antibiotic inactivation
+2803,antibiotic inactivation
+2804,antibiotic inactivation
+2805,antibiotic inactivation
+2806,antibiotic inactivation
+2807,antibiotic inactivation
+2808,antibiotic inactivation
+2809,antibiotic inactivation
+2810,antibiotic inactivation
+2811,antibiotic inactivation
+2812,antibiotic inactivation
+2813,antibiotic inactivation
+2814,antibiotic inactivation
+2815,antibiotic inactivation
+2816,antibiotic inactivation
+2817,antibiotic inactivation
+2818,antibiotic inactivation
+2819,antibiotic inactivation
+2820,antibiotic inactivation
+2821,antibiotic inactivation
+2822,antibiotic inactivation
+2823,antibiotic inactivation
+2824,antibiotic inactivation
+2825,antibiotic inactivation
+2826,antibiotic inactivation
+2827,antibiotic inactivation
+2828,antibiotic inactivation
+2829,antibiotic inactivation
+2830,antibiotic inactivation
+2831,antibiotic inactivation
+2832,antibiotic inactivation
+2833,antibiotic inactivation
+2834,antibiotic inactivation
+2835,antibiotic inactivation
+2836,antibiotic inactivation
+2837,antibiotic inactivation
+2838,antibiotic inactivation
+2839,antibiotic inactivation
+2840,antibiotic inactivation
+2841,antibiotic inactivation
+2842,antibiotic inactivation
+2843,antibiotic inactivation
+2844,antibiotic inactivation
+2845,antibiotic inactivation
+2846,antibiotic inactivation
+2847,antibiotic inactivation
+2848,antibiotic inactivation
+2849,antibiotic inactivation
+2850,antibiotic inactivation
+2851,antibiotic inactivation
+2852,antibiotic inactivation
+2853,antibiotic inactivation
+2854,antibiotic inactivation
+2855,antibiotic inactivation
+2856,antibiotic inactivation
+2857,antibiotic inactivation
+2858,antibiotic inactivation
+2859,antibiotic inactivation
+2860,antibiotic inactivation
+2861,antibiotic inactivation
+2862,antibiotic inactivation
+2863,antibiotic inactivation
+2864,antibiotic inactivation
+2865,antibiotic inactivation
+2866,antibiotic inactivation
+2867,antibiotic inactivation
+2868,antibiotic inactivation
+2869,antibiotic inactivation
+2870,antibiotic inactivation
+2871,antibiotic inactivation
+2872,antibiotic inactivation
+2873,antibiotic inactivation
+2874,antibiotic inactivation
+2875,antibiotic inactivation
+2876,antibiotic inactivation
+2877,antibiotic inactivation
+2878,antibiotic inactivation
+2879,antibiotic inactivation
+2880,antibiotic inactivation
+2881,antibiotic inactivation
+2882,antibiotic inactivation
+2883,antibiotic inactivation
+2884,antibiotic inactivation
+2885,antibiotic inactivation
+2886,antibiotic inactivation
+2887,antibiotic inactivation
+2888,antibiotic inactivation
+2889,antibiotic inactivation
+2890,antibiotic inactivation
+2891,antibiotic inactivation
+2892,antibiotic inactivation
+2893,antibiotic inactivation
+2894,antibiotic inactivation
+2895,antibiotic inactivation
+2896,antibiotic inactivation
+2897,antibiotic inactivation
+2898,antibiotic inactivation
+2899,antibiotic inactivation
+2900,antibiotic inactivation
+2901,antibiotic inactivation
+2902,antibiotic inactivation
+2903,antibiotic inactivation
+2904,antibiotic inactivation
+2905,antibiotic inactivation
+2906,antibiotic inactivation
+2907,antibiotic inactivation
+2908,antibiotic inactivation
+2909,antibiotic inactivation
+2910,antibiotic inactivation
+2911,antibiotic inactivation
+2912,antibiotic inactivation
+2913,antibiotic inactivation
+2914,antibiotic inactivation
+2915,antibiotic inactivation
+2916,antibiotic inactivation
+2917,antibiotic inactivation
+2918,antibiotic inactivation
+2919,antibiotic inactivation
+2920,antibiotic inactivation
+2921,antibiotic inactivation
+2922,antibiotic inactivation
+2923,antibiotic inactivation
+2924,antibiotic inactivation
+2925,antibiotic inactivation
+2926,antibiotic inactivation
+2927,antibiotic inactivation
+2928,antibiotic inactivation
+2929,antibiotic inactivation
+2930,antibiotic inactivation
+2931,antibiotic inactivation
+2932,antibiotic inactivation
+2933,antibiotic inactivation
+2934,antibiotic inactivation
+2935,antibiotic inactivation
+2936,antibiotic inactivation
+2937,antibiotic inactivation
+2938,antibiotic inactivation
+2939,antibiotic inactivation
+2940,antibiotic inactivation
+2941,antibiotic inactivation
+2942,antibiotic inactivation
+2943,antibiotic inactivation
+2944,antibiotic inactivation
+2945,antibiotic inactivation
+2946,antibiotic inactivation
+2947,antibiotic inactivation
+2948,antibiotic inactivation
+2949,antibiotic inactivation
+2950,antibiotic inactivation
+2951,antibiotic inactivation
+2952,antibiotic inactivation
+2953,antibiotic inactivation
+2954,antibiotic inactivation
+2955,antibiotic inactivation
+2956,antibiotic inactivation
+2957,antibiotic inactivation
+2958,antibiotic inactivation
+2959,antibiotic inactivation
+2960,antibiotic inactivation
+2961,antibiotic inactivation
+2962,antibiotic inactivation
+2963,antibiotic inactivation
+2964,antibiotic inactivation
+2965,antibiotic inactivation
+2966,antibiotic inactivation
+2967,antibiotic inactivation
+2968,antibiotic inactivation
+2969,antibiotic inactivation
+2970,antibiotic inactivation
+2971,antibiotic inactivation
+2972,antibiotic inactivation
+2973,antibiotic inactivation
+2974,antibiotic inactivation
+2975,antibiotic inactivation
+2976,antibiotic inactivation
+2977,antibiotic inactivation
+2978,antibiotic inactivation
+2979,antibiotic inactivation
+2980,antibiotic inactivation
+2981,antibiotic inactivation
+2982,antibiotic inactivation
+2983,antibiotic inactivation
+2984,antibiotic inactivation
+2985,antibiotic inactivation
+2986,antibiotic inactivation
+2987,antibiotic inactivation
+2988,antibiotic inactivation
+2989,antibiotic inactivation
+2990,antibiotic inactivation
+2991,antibiotic inactivation
+2992,antibiotic inactivation
+2993,antibiotic inactivation
+2994,antibiotic inactivation
+2995,antibiotic inactivation
+2996,antibiotic inactivation
+2997,antibiotic inactivation
+2998,antibiotic inactivation
+2999,antibiotic inactivation
+3000,antibiotic inactivation
+3001,antibiotic inactivation
+3002,antibiotic inactivation
+3003,antibiotic inactivation
+3004,antibiotic inactivation
+3005,antibiotic inactivation
+3006,antibiotic inactivation
+3007,antibiotic inactivation
+3008,antibiotic inactivation
+3009,antibiotic inactivation
+3010,antibiotic inactivation
+3011,antibiotic inactivation
+3012,antibiotic inactivation
+3013,antibiotic inactivation
+3014,antibiotic inactivation
+3015,antibiotic inactivation
+3016,antibiotic inactivation
+3017,antibiotic inactivation
+3018,antibiotic inactivation
+3019,antibiotic inactivation
+3020,antibiotic inactivation
+3021,antibiotic inactivation
+3022,antibiotic inactivation
+3023,antibiotic inactivation
+3024,antibiotic inactivation
+3025,antibiotic inactivation
+3026,antibiotic inactivation
+3027,antibiotic inactivation
+3028,antibiotic inactivation
+3029,antibiotic inactivation
+3030,antibiotic inactivation
+3031,antibiotic inactivation
+3032,antibiotic inactivation
+3033,antibiotic inactivation
+3034,antibiotic inactivation
+3035,antibiotic inactivation
+3036,antibiotic inactivation
+3037,antibiotic inactivation
+3038,antibiotic inactivation
+3039,antibiotic inactivation
+3040,antibiotic inactivation
+3041,antibiotic inactivation
+3042,antibiotic inactivation
+3043,antibiotic inactivation
+3044,antibiotic inactivation
+3045,antibiotic inactivation
+3046,antibiotic inactivation
+3047,antibiotic inactivation
+3048,antibiotic inactivation
+3049,antibiotic inactivation
+3050,antibiotic inactivation
+3051,antibiotic inactivation
+3052,antibiotic inactivation
+3053,antibiotic inactivation
+3054,antibiotic inactivation
+3055,antibiotic inactivation
+3056,antibiotic inactivation
+3057,antibiotic inactivation
+3058,antibiotic inactivation
+3059,antibiotic inactivation
+3060,antibiotic inactivation
+3061,antibiotic inactivation
+3062,antibiotic inactivation
+3063,antibiotic inactivation
+3064,antibiotic inactivation
+3065,antibiotic inactivation
+3066,antibiotic inactivation
+3067,antibiotic inactivation
+3068,antibiotic inactivation
+3069,antibiotic inactivation
+3070,antibiotic inactivation
+3071,antibiotic inactivation
+3072,antibiotic inactivation
+3073,antibiotic inactivation
+3074,antibiotic inactivation
+3075,antibiotic inactivation
+3076,antibiotic inactivation
+3077,antibiotic inactivation
+3078,antibiotic inactivation
+3079,antibiotic inactivation
+3080,antibiotic inactivation
+3081,antibiotic inactivation
+3082,antibiotic inactivation
+3083,antibiotic inactivation
+3084,antibiotic inactivation
+3085,antibiotic inactivation
+3086,antibiotic inactivation
+3087,antibiotic inactivation
+3088,antibiotic inactivation
+3089,antibiotic inactivation
+3090,antibiotic inactivation
+3091,antibiotic inactivation
+3092,antibiotic inactivation
+3093,antibiotic inactivation
+3094,antibiotic inactivation
+3095,antibiotic inactivation
+3096,antibiotic inactivation
+3097,antibiotic inactivation
+3098,antibiotic inactivation
+3099,antibiotic inactivation
+3100,antibiotic inactivation
+3101,antibiotic inactivation
+3102,antibiotic inactivation
+3103,antibiotic inactivation
+3104,antibiotic inactivation
+3105,antibiotic inactivation
+3106,antibiotic inactivation
+3107,antibiotic inactivation
+3108,antibiotic inactivation
+3109,antibiotic inactivation
+3110,antibiotic inactivation
+3111,antibiotic inactivation
+3112,antibiotic inactivation
+3113,antibiotic inactivation
+3114,antibiotic inactivation
+3115,antibiotic inactivation
+3116,antibiotic inactivation
+3117,antibiotic inactivation
+3118,antibiotic inactivation
+3119,antibiotic inactivation
+3120,antibiotic inactivation
+3121,antibiotic inactivation
+3122,antibiotic inactivation
+3123,antibiotic inactivation
+3124,antibiotic inactivation
+3125,antibiotic inactivation
+3126,antibiotic inactivation
+3127,antibiotic inactivation
+3128,antibiotic inactivation
+3129,antibiotic inactivation
+3130,antibiotic inactivation
+3131,antibiotic inactivation
+3132,antibiotic inactivation
+3133,antibiotic inactivation
+3134,antibiotic inactivation
+3135,antibiotic inactivation
+3136,antibiotic inactivation
+3137,antibiotic inactivation
+3138,antibiotic inactivation
+3139,antibiotic inactivation
+3140,antibiotic inactivation
+3141,antibiotic inactivation
+3142,antibiotic inactivation
+3143,antibiotic inactivation
+3144,antibiotic inactivation
+3145,antibiotic inactivation
+3146,antibiotic inactivation
+3147,antibiotic inactivation
+3148,antibiotic inactivation
+3149,antibiotic inactivation
+3150,antibiotic inactivation
+3151,antibiotic inactivation
+3152,antibiotic inactivation
+3153,antibiotic inactivation
+3154,antibiotic inactivation
+3155,antibiotic inactivation
+3156,antibiotic inactivation
+3157,antibiotic inactivation
+3158,antibiotic inactivation
+3159,antibiotic inactivation
+3160,antibiotic inactivation
+3161,antibiotic inactivation
+3162,antibiotic inactivation
+3163,antibiotic inactivation
+3164,antibiotic inactivation
+3165,antibiotic inactivation
+3166,antibiotic inactivation
+3167,antibiotic inactivation
+3168,antibiotic inactivation
+3169,antibiotic inactivation
+3170,antibiotic inactivation
+3171,antibiotic inactivation
+3172,antibiotic inactivation
+3173,antibiotic inactivation
+3174,antibiotic inactivation
+3175,antibiotic inactivation
+3176,antibiotic inactivation
+3177,antibiotic inactivation
+3178,antibiotic inactivation
+3179,antibiotic inactivation
+3180,antibiotic inactivation
+3181,antibiotic inactivation
+3182,antibiotic inactivation
+3183,antibiotic inactivation
+3184,antibiotic inactivation
+3185,antibiotic inactivation
+3186,antibiotic inactivation
+3187,antibiotic inactivation
+3188,antibiotic inactivation
+3189,antibiotic inactivation
+3190,antibiotic inactivation
+3191,antibiotic inactivation
+3192,antibiotic inactivation
+3193,antibiotic inactivation
+3194,antibiotic inactivation
+3195,antibiotic inactivation
+3196,antibiotic inactivation
+3197,antibiotic inactivation
+3198,antibiotic inactivation
+3199,antibiotic inactivation
+3200,antibiotic inactivation
+3201,antibiotic inactivation
+3202,antibiotic inactivation
+3203,antibiotic inactivation
+3204,antibiotic inactivation
+3205,antibiotic inactivation
+3206,antibiotic inactivation
+3207,antibiotic inactivation
+3208,antibiotic inactivation
+3209,antibiotic inactivation
+3210,antibiotic inactivation
+3211,antibiotic inactivation
+3212,antibiotic inactivation
+3213,antibiotic inactivation
+3214,antibiotic inactivation
+3215,antibiotic inactivation
+3216,antibiotic inactivation
+3217,antibiotic inactivation
+3218,antibiotic inactivation
+3219,antibiotic inactivation
+3220,antibiotic inactivation
+3221,antibiotic inactivation
+3222,antibiotic inactivation
+3223,antibiotic inactivation
+3224,antibiotic inactivation
+3225,antibiotic inactivation
+3226,antibiotic inactivation
+3227,antibiotic inactivation
+3228,antibiotic inactivation
+3229,antibiotic inactivation
+3230,antibiotic inactivation
+3231,antibiotic inactivation
+3232,antibiotic inactivation
+3233,antibiotic inactivation
+3234,antibiotic inactivation
+3235,antibiotic inactivation
+3236,antibiotic inactivation
+3237,antibiotic inactivation
+3238,antibiotic inactivation
+3239,antibiotic inactivation
+3240,antibiotic inactivation
+3241,antibiotic inactivation
+3242,antibiotic inactivation
+3243,antibiotic inactivation
+3244,antibiotic inactivation
+3245,antibiotic inactivation
+3246,antibiotic inactivation
+3247,antibiotic inactivation
+3248,antibiotic inactivation
+3249,antibiotic inactivation
+3250,antibiotic inactivation
+3251,antibiotic inactivation
+3252,antibiotic inactivation
+3253,antibiotic inactivation
+3254,antibiotic inactivation
+3255,antibiotic inactivation
+3256,antibiotic inactivation
+3257,antibiotic inactivation
+3258,antibiotic inactivation
+3259,antibiotic inactivation
+3260,antibiotic inactivation
+3261,antibiotic inactivation
+3262,antibiotic inactivation
+3263,antibiotic inactivation
+3264,antibiotic inactivation
+3265,antibiotic inactivation
+3266,antibiotic inactivation
+3267,antibiotic inactivation
+3268,antibiotic inactivation
+3269,antibiotic inactivation
+3270,antibiotic inactivation
+3271,antibiotic inactivation
+3272,antibiotic inactivation
+3273,antibiotic inactivation
+3274,antibiotic inactivation
+3275,antibiotic inactivation
+3276,antibiotic inactivation
+3277,antibiotic inactivation
+3278,antibiotic inactivation
+3279,antibiotic inactivation
+3280,antibiotic inactivation
+3281,antibiotic inactivation
+3282,antibiotic inactivation
+3283,antibiotic inactivation
+3284,antibiotic inactivation
+3285,antibiotic inactivation
+3286,antibiotic inactivation
+3287,antibiotic inactivation
+3288,antibiotic inactivation
+3289,antibiotic inactivation
+3290,antibiotic inactivation
+3291,antibiotic inactivation
+3292,antibiotic inactivation
+3293,antibiotic inactivation
+3294,antibiotic inactivation
+3295,antibiotic inactivation
+3296,antibiotic inactivation
+3297,antibiotic inactivation
+3298,antibiotic inactivation
+3299,antibiotic inactivation
+3300,antibiotic inactivation
+3301,antibiotic inactivation
+3302,antibiotic inactivation
+3303,antibiotic inactivation
+3304,antibiotic inactivation
+3305,antibiotic inactivation
+3306,antibiotic inactivation
+3307,antibiotic inactivation
+3308,antibiotic inactivation
+3309,antibiotic inactivation
+3310,antibiotic inactivation
+3311,antibiotic inactivation
+3312,antibiotic inactivation
+3313,antibiotic inactivation
+3314,antibiotic inactivation
+3315,antibiotic inactivation
+3316,antibiotic inactivation
+3317,antibiotic inactivation
+3318,antibiotic inactivation
+3319,antibiotic inactivation
+3320,antibiotic inactivation
+3321,antibiotic inactivation
+3322,antibiotic inactivation
+3323,antibiotic inactivation
+3324,antibiotic inactivation
+3325,antibiotic inactivation
+3326,antibiotic inactivation
+3327,antibiotic inactivation
+3328,antibiotic inactivation
+3329,antibiotic inactivation
+3330,antibiotic inactivation
+3331,antibiotic inactivation
+3332,antibiotic inactivation
+3333,antibiotic inactivation
+3334,antibiotic inactivation
+3335,antibiotic inactivation
+3336,antibiotic inactivation
+3337,antibiotic inactivation
+3338,antibiotic inactivation
+3339,antibiotic inactivation
+3340,antibiotic inactivation
+3341,antibiotic inactivation
+3342,antibiotic inactivation
+3343,antibiotic inactivation
+3344,antibiotic inactivation
+3345,antibiotic inactivation
+3346,antibiotic inactivation
+3347,antibiotic inactivation
+3348,antibiotic inactivation
+3349,antibiotic inactivation
+3350,antibiotic inactivation
+3351,antibiotic inactivation
+3352,antibiotic inactivation
+3353,antibiotic inactivation
+3354,antibiotic inactivation
+3355,antibiotic inactivation
+3356,antibiotic inactivation
+3357,antibiotic inactivation
+3358,antibiotic inactivation
+3359,antibiotic inactivation
+3360,antibiotic inactivation
+3361,antibiotic inactivation
+3362,antibiotic inactivation
+3363,antibiotic inactivation
+3364,antibiotic inactivation
+3365,antibiotic inactivation
+3366,antibiotic inactivation
+3367,antibiotic inactivation
+3368,antibiotic inactivation
+3369,antibiotic inactivation
+3370,antibiotic inactivation
+3371,antibiotic inactivation
+3372,antibiotic inactivation
+3373,antibiotic inactivation
+3374,antibiotic inactivation
+3375,antibiotic inactivation
+3376,antibiotic inactivation
+3377,antibiotic inactivation
+3378,antibiotic inactivation
+3379,antibiotic inactivation
+3380,antibiotic inactivation
+3381,antibiotic inactivation
+3382,antibiotic inactivation
+3383,antibiotic inactivation
+3384,antibiotic inactivation
+3385,antibiotic inactivation
+3386,antibiotic inactivation
+3387,antibiotic inactivation
+3388,antibiotic inactivation
+3389,antibiotic inactivation
+3390,antibiotic inactivation
+3391,antibiotic inactivation
+3392,antibiotic inactivation
+3393,antibiotic inactivation
+3394,antibiotic inactivation
+3395,antibiotic inactivation
+3396,antibiotic inactivation
+3397,antibiotic inactivation
+3398,antibiotic inactivation
+3399,antibiotic inactivation
+3400,antibiotic inactivation
+3401,antibiotic inactivation
+3402,antibiotic inactivation
+3403,antibiotic inactivation
+3404,antibiotic inactivation
+3405,antibiotic inactivation
+3406,antibiotic inactivation
+3407,antibiotic inactivation
+3408,antibiotic inactivation
+3409,antibiotic inactivation
+3410,antibiotic inactivation
+3411,antibiotic inactivation
+3412,antibiotic inactivation
+3413,antibiotic inactivation
+3414,antibiotic inactivation
+3415,antibiotic inactivation
+3416,antibiotic inactivation
+3417,antibiotic inactivation
+3418,antibiotic inactivation
+3419,antibiotic inactivation
+3420,antibiotic inactivation
+3421,antibiotic inactivation
+3422,antibiotic inactivation
+3423,antibiotic inactivation
+3424,antibiotic inactivation
+3425,antibiotic inactivation
+3426,antibiotic inactivation
+3427,antibiotic inactivation
+3428,antibiotic inactivation
+3429,antibiotic inactivation
+3430,antibiotic inactivation
+3431,antibiotic inactivation
+3432,antibiotic inactivation
+3433,antibiotic inactivation
+3434,antibiotic inactivation
+3435,antibiotic inactivation
+3436,antibiotic inactivation
+3437,antibiotic inactivation
+3438,antibiotic inactivation
+3439,antibiotic inactivation
+3440,antibiotic inactivation
+3441,antibiotic inactivation
+3442,antibiotic inactivation
+3443,antibiotic inactivation
+3444,antibiotic inactivation
+3445,antibiotic inactivation
+3446,antibiotic inactivation
+3447,antibiotic inactivation
+3448,antibiotic inactivation
+3449,antibiotic inactivation
+3450,antibiotic inactivation
+3451,antibiotic inactivation
+3452,antibiotic inactivation
+3453,antibiotic inactivation
+3454,antibiotic inactivation
+3455,antibiotic inactivation
+3456,antibiotic inactivation
+3457,antibiotic inactivation
+3458,antibiotic inactivation
+3459,antibiotic inactivation
+3460,antibiotic inactivation
+3461,antibiotic inactivation
+3462,antibiotic inactivation
+3463,antibiotic inactivation
+3464,antibiotic inactivation
+3465,antibiotic inactivation
+3466,antibiotic inactivation
+3467,antibiotic inactivation
+3468,antibiotic inactivation
+3469,antibiotic inactivation
+3470,antibiotic inactivation
+3471,antibiotic inactivation
+3472,antibiotic inactivation
+3473,antibiotic inactivation
+3474,antibiotic inactivation
+3475,antibiotic inactivation
+3476,antibiotic inactivation
+3477,antibiotic inactivation
+3478,antibiotic inactivation
+3479,antibiotic inactivation
+3480,antibiotic inactivation
+3481,antibiotic inactivation
+3482,antibiotic inactivation
+3483,antibiotic inactivation
+3484,antibiotic inactivation
+3485,antibiotic inactivation
+3486,antibiotic inactivation
+3487,antibiotic inactivation
+3488,antibiotic inactivation
+3489,antibiotic inactivation
+3490,antibiotic inactivation
+3491,antibiotic inactivation
+3492,antibiotic inactivation
+3493,antibiotic inactivation
+3494,antibiotic inactivation
+3495,antibiotic inactivation
+3496,antibiotic inactivation
+3497,antibiotic inactivation
+3498,antibiotic inactivation
+3499,antibiotic inactivation
+3500,antibiotic inactivation
+3501,antibiotic inactivation
+3502,antibiotic inactivation
+3503,antibiotic inactivation
+3504,antibiotic inactivation
+3505,antibiotic inactivation
+3506,antibiotic inactivation
+3507,antibiotic inactivation
+3508,antibiotic inactivation
+3509,antibiotic inactivation
+3510,antibiotic inactivation
+3511,antibiotic inactivation
+3512,antibiotic inactivation
+3513,antibiotic inactivation
+3514,antibiotic inactivation
+3515,antibiotic inactivation
+3516,antibiotic inactivation
+3517,antibiotic inactivation
+3518,antibiotic inactivation
+3519,antibiotic inactivation
+3520,antibiotic inactivation
+3521,antibiotic inactivation
+3522,antibiotic inactivation
+3523,antibiotic inactivation
+3524,antibiotic inactivation
+3525,antibiotic inactivation
+3526,antibiotic inactivation
+3527,antibiotic inactivation
+3528,antibiotic inactivation
+3529,antibiotic inactivation
+3530,antibiotic inactivation
+3531,antibiotic inactivation
+3532,antibiotic inactivation
+3533,antibiotic inactivation
+3534,antibiotic inactivation
+3535,antibiotic inactivation
+3536,antibiotic inactivation
+3537,antibiotic inactivation
+3538,antibiotic inactivation
+3539,antibiotic inactivation
+3540,antibiotic inactivation
+3541,antibiotic inactivation
+3542,antibiotic inactivation
+3543,antibiotic inactivation
+3544,antibiotic inactivation
+3545,antibiotic inactivation
+3546,antibiotic inactivation
+3547,antibiotic inactivation
+3548,antibiotic inactivation
+3549,antibiotic inactivation
+3550,antibiotic inactivation
+3551,antibiotic inactivation
+3552,antibiotic inactivation
+3553,antibiotic inactivation
+3554,antibiotic inactivation
+3555,antibiotic inactivation
+3556,antibiotic inactivation
+3557,antibiotic inactivation
+3558,antibiotic inactivation
+3559,antibiotic inactivation
+3560,antibiotic inactivation
+3561,antibiotic inactivation
+3562,antibiotic inactivation
+3563,antibiotic inactivation
+3564,antibiotic inactivation
+3565,antibiotic inactivation
+3566,antibiotic inactivation
+3567,antibiotic inactivation
+3568,antibiotic inactivation
+3569,antibiotic inactivation
+3570,antibiotic inactivation
+3571,antibiotic inactivation
+3572,antibiotic inactivation
+3573,antibiotic inactivation
+3574,antibiotic inactivation
+3575,antibiotic inactivation
+3576,antibiotic inactivation
+3577,antibiotic inactivation
+3578,antibiotic inactivation
+3579,antibiotic inactivation
+3580,antibiotic inactivation
+3581,antibiotic inactivation
+3582,antibiotic inactivation
+3583,antibiotic inactivation
+3584,antibiotic inactivation
+3585,antibiotic inactivation
+3586,antibiotic inactivation
+3587,antibiotic inactivation
+3588,antibiotic inactivation
+3589,antibiotic inactivation
+3590,antibiotic inactivation
+3591,antibiotic inactivation
+3592,antibiotic inactivation
+3593,antibiotic inactivation
+3594,antibiotic inactivation
+3595,antibiotic inactivation
+3596,antibiotic inactivation
+3597,antibiotic inactivation
+3598,antibiotic inactivation
+3599,antibiotic inactivation
+3600,antibiotic inactivation
+3601,antibiotic inactivation
+3602,antibiotic inactivation
+3603,antibiotic inactivation
+3604,antibiotic inactivation
+3605,antibiotic inactivation
+3606,antibiotic inactivation
+3607,antibiotic inactivation
+3608,antibiotic inactivation
+3609,antibiotic inactivation
+3610,antibiotic inactivation
+3611,antibiotic inactivation
+3612,antibiotic inactivation
+3613,antibiotic inactivation
+3614,antibiotic inactivation
+3615,antibiotic inactivation
+3616,antibiotic inactivation
+3617,antibiotic inactivation
+3618,antibiotic inactivation
+3619,antibiotic inactivation
+3620,antibiotic inactivation
+3621,antibiotic inactivation
+3622,antibiotic inactivation
+3623,antibiotic inactivation
+3624,antibiotic inactivation
+3625,antibiotic inactivation
+3626,antibiotic inactivation
+3627,antibiotic inactivation
+3628,antibiotic inactivation
+3629,antibiotic inactivation
+3630,antibiotic inactivation
+3631,antibiotic inactivation
+3632,antibiotic inactivation
+3633,antibiotic inactivation
+3634,antibiotic inactivation
+3635,antibiotic inactivation
+3636,antibiotic inactivation
+3637,antibiotic inactivation
+3638,antibiotic inactivation
+3639,antibiotic inactivation
+3640,antibiotic inactivation
+3641,antibiotic inactivation
+3642,antibiotic inactivation
+3643,antibiotic inactivation
+3644,antibiotic inactivation
+3645,antibiotic inactivation
+3646,antibiotic inactivation
+3647,antibiotic inactivation
+3648,antibiotic inactivation
+3649,antibiotic inactivation
+3650,antibiotic inactivation
+3651,antibiotic inactivation
+3652,antibiotic inactivation
+3653,antibiotic inactivation
+3654,antibiotic inactivation
+3655,antibiotic inactivation
+3656,antibiotic inactivation
+3657,antibiotic inactivation
+3658,antibiotic inactivation
+3659,antibiotic inactivation
+3660,antibiotic inactivation
+3661,antibiotic inactivation
+3662,antibiotic inactivation
+3663,antibiotic inactivation
+3664,antibiotic inactivation
+3665,antibiotic inactivation
+3666,antibiotic inactivation
+3667,antibiotic inactivation
+3668,antibiotic inactivation
+3669,antibiotic inactivation
+3670,antibiotic inactivation
+3671,antibiotic inactivation
+3672,antibiotic inactivation
+3673,antibiotic inactivation
+3674,antibiotic inactivation
+3675,antibiotic inactivation
+3676,antibiotic inactivation
+3677,antibiotic inactivation
+3678,antibiotic inactivation
+3679,antibiotic inactivation
+3680,antibiotic inactivation
+3681,antibiotic inactivation
+3682,antibiotic inactivation
+3683,antibiotic inactivation
+3684,antibiotic inactivation
+3685,antibiotic inactivation
+3686,antibiotic inactivation
+3687,antibiotic inactivation
+3688,antibiotic inactivation
+3689,antibiotic inactivation
+3690,antibiotic inactivation
+3691,antibiotic inactivation
+3692,antibiotic inactivation
+3693,antibiotic inactivation
+3694,antibiotic inactivation
+3695,antibiotic inactivation
+3696,antibiotic inactivation
+3697,antibiotic inactivation
+3698,antibiotic inactivation
+3699,antibiotic inactivation
+3700,antibiotic inactivation
+3701,antibiotic inactivation
+3702,antibiotic inactivation
+3703,antibiotic inactivation
+3704,antibiotic inactivation
+3705,antibiotic inactivation
+3706,antibiotic inactivation
+3707,antibiotic inactivation
+3708,antibiotic inactivation
+3709,antibiotic inactivation
+3710,antibiotic inactivation
+3711,antibiotic inactivation
+3712,antibiotic inactivation
+3713,antibiotic inactivation
+3714,antibiotic inactivation
+3715,antibiotic inactivation
+3716,antibiotic inactivation
+3717,antibiotic inactivation
+3718,antibiotic inactivation
+3719,antibiotic inactivation
+3720,antibiotic inactivation
+3721,antibiotic inactivation
+3722,antibiotic inactivation
+3723,antibiotic inactivation
+3724,antibiotic inactivation
+3725,antibiotic inactivation
+3726,antibiotic inactivation
+3727,antibiotic inactivation
+3728,antibiotic inactivation
+3729,antibiotic inactivation
+3730,antibiotic inactivation
+3731,antibiotic inactivation
+3732,antibiotic inactivation
+3733,antibiotic inactivation
+3734,antibiotic inactivation
+3735,antibiotic inactivation
+3736,antibiotic inactivation
+3737,antibiotic inactivation
+3738,antibiotic inactivation
+3739,antibiotic inactivation
+3740,antibiotic inactivation
+3741,antibiotic inactivation
+3742,antibiotic inactivation
+3743,antibiotic inactivation
+3744,antibiotic inactivation
+3745,antibiotic inactivation
+3746,antibiotic inactivation
+3747,antibiotic inactivation
+3748,antibiotic inactivation
+3749,antibiotic inactivation
+3750,antibiotic inactivation
+3751,antibiotic inactivation
+3752,antibiotic inactivation
+3753,antibiotic inactivation
+3754,antibiotic inactivation
+3755,antibiotic inactivation
+3756,antibiotic inactivation
+3757,antibiotic inactivation
+3758,antibiotic inactivation
+3759,antibiotic inactivation
+3760,antibiotic inactivation
+3761,antibiotic inactivation
+3762,antibiotic inactivation
+3763,antibiotic inactivation
+3764,antibiotic inactivation
+3765,antibiotic inactivation
+3766,antibiotic inactivation
+3767,antibiotic inactivation
+3768,antibiotic inactivation
+3769,antibiotic inactivation
+3770,antibiotic inactivation
+3771,antibiotic inactivation
+3772,antibiotic inactivation
+3773,antibiotic inactivation
+3774,antibiotic inactivation
+3775,antibiotic inactivation
+3776,antibiotic inactivation
+3777,antibiotic inactivation
+3778,antibiotic inactivation
+3779,antibiotic inactivation
+3780,antibiotic inactivation
+3781,antibiotic inactivation
+3782,antibiotic inactivation
+3783,antibiotic inactivation
+3784,antibiotic inactivation
+3785,antibiotic inactivation
+3786,antibiotic inactivation
+3787,antibiotic inactivation
+3788,antibiotic inactivation
+3789,antibiotic inactivation
+3790,antibiotic inactivation
+3791,antibiotic inactivation
+3792,antibiotic inactivation
+3793,antibiotic inactivation
+3794,antibiotic inactivation
+3795,antibiotic inactivation
+3796,antibiotic inactivation
+3797,antibiotic inactivation
+3798,antibiotic inactivation
+3799,antibiotic inactivation
+3800,antibiotic inactivation
+3801,antibiotic inactivation
+3802,antibiotic inactivation
+3803,antibiotic inactivation
+3804,antibiotic inactivation
+3805,antibiotic inactivation
+3806,antibiotic inactivation
+3807,antibiotic inactivation
+3808,antibiotic inactivation
+3809,antibiotic inactivation
+3810,antibiotic inactivation
+3811,antibiotic inactivation
+3812,antibiotic inactivation
+3813,antibiotic inactivation
+3814,antibiotic inactivation
+3815,antibiotic inactivation
+3816,antibiotic inactivation
+3817,antibiotic inactivation
+3818,antibiotic inactivation
+3819,antibiotic inactivation
+3820,antibiotic inactivation
+3821,antibiotic inactivation
+3822,antibiotic inactivation
+3823,antibiotic inactivation
+3824,antibiotic inactivation
+3825,antibiotic inactivation
+3826,antibiotic inactivation
+3827,antibiotic inactivation
+3828,antibiotic inactivation
+3829,antibiotic inactivation
+3830,antibiotic inactivation
+3831,antibiotic inactivation
+3832,antibiotic inactivation
+3833,antibiotic inactivation
+3834,antibiotic inactivation
+3835,antibiotic inactivation
+3836,antibiotic inactivation
+3837,antibiotic inactivation
+3838,antibiotic inactivation
+3839,antibiotic inactivation
+3840,antibiotic inactivation
+3841,antibiotic inactivation
+3842,antibiotic inactivation
+3843,antibiotic inactivation
+3844,antibiotic inactivation
+3845,antibiotic inactivation
+3846,antibiotic inactivation
+3847,antibiotic inactivation
+3848,antibiotic inactivation
+3849,antibiotic inactivation
+3850,antibiotic inactivation
+3851,antibiotic inactivation
+3852,antibiotic inactivation
+3853,antibiotic inactivation
+3854,antibiotic inactivation
+3855,antibiotic inactivation
+3856,antibiotic inactivation
+3857,antibiotic inactivation
+3858,antibiotic inactivation
+3859,antibiotic inactivation
+3860,antibiotic inactivation
+3861,antibiotic inactivation
+3862,antibiotic inactivation
+3863,antibiotic inactivation
+3864,antibiotic inactivation
+3865,antibiotic inactivation
+3866,antibiotic inactivation
+3867,antibiotic inactivation
+3868,antibiotic inactivation
+3869,antibiotic inactivation
+3870,antibiotic inactivation
+3871,antibiotic inactivation
+3872,antibiotic inactivation
+3873,antibiotic inactivation
+3874,antibiotic inactivation
+3875,antibiotic inactivation
+3876,antibiotic inactivation
+3877,antibiotic inactivation
+3878,antibiotic inactivation
+3879,antibiotic inactivation
+3880,antibiotic inactivation
+3881,antibiotic inactivation
+3882,antibiotic inactivation
+3883,antibiotic inactivation
+3884,antibiotic inactivation
+3885,antibiotic inactivation
+3886,antibiotic inactivation
+3887,antibiotic inactivation
+3888,antibiotic inactivation
+3889,antibiotic inactivation
+3890,antibiotic inactivation
+3891,antibiotic inactivation
+3892,antibiotic inactivation
+3893,antibiotic inactivation
+3894,antibiotic inactivation
+3895,antibiotic inactivation
+3896,antibiotic inactivation
+3897,antibiotic inactivation
+3898,antibiotic inactivation
+3899,antibiotic inactivation
+3900,antibiotic inactivation
+3901,antibiotic inactivation
+3902,antibiotic inactivation
+3903,antibiotic inactivation
+3904,antibiotic inactivation
+3905,antibiotic inactivation
+3906,antibiotic inactivation
+3907,antibiotic inactivation
+3908,antibiotic inactivation
+3909,antibiotic inactivation
+3910,antibiotic inactivation
+3911,antibiotic inactivation
+3912,antibiotic inactivation
+3913,antibiotic inactivation
+3914,antibiotic inactivation
+3915,antibiotic inactivation
+3916,antibiotic inactivation
+3917,antibiotic inactivation
+3918,antibiotic inactivation
+3919,antibiotic inactivation
+3920,antibiotic inactivation
+3921,antibiotic inactivation
+3922,antibiotic inactivation
+3923,antibiotic inactivation
+3924,antibiotic inactivation
+3925,antibiotic inactivation
+3926,antibiotic inactivation
+3927,antibiotic inactivation
+3928,antibiotic inactivation
+3929,antibiotic inactivation
+3930,antibiotic inactivation
+3931,antibiotic inactivation
+3932,antibiotic inactivation
+3933,antibiotic inactivation
+3934,antibiotic inactivation
+3935,antibiotic inactivation
+3936,antibiotic inactivation
+3937,antibiotic inactivation
+3938,antibiotic inactivation
+3939,antibiotic inactivation
+3940,antibiotic inactivation
+3941,antibiotic inactivation
+3942,antibiotic inactivation
+3943,antibiotic inactivation
+3944,antibiotic inactivation
+3945,antibiotic inactivation
+3946,antibiotic inactivation
+3947,antibiotic inactivation
+3948,antibiotic inactivation
+3949,antibiotic inactivation
+3950,antibiotic inactivation
+3951,antibiotic inactivation
+3952,antibiotic inactivation
+3953,antibiotic inactivation
+3954,antibiotic inactivation
+3955,antibiotic inactivation
+3956,antibiotic inactivation
+3957,antibiotic inactivation
+3958,antibiotic inactivation
+3959,antibiotic inactivation
+3960,antibiotic inactivation
+3961,antibiotic inactivation
+3962,antibiotic inactivation
+3963,antibiotic inactivation
+3964,antibiotic inactivation
+3965,antibiotic inactivation
+3966,antibiotic inactivation
+3967,antibiotic inactivation
+3968,antibiotic inactivation
+3969,antibiotic inactivation
+3970,antibiotic inactivation
+3971,antibiotic inactivation
+3972,antibiotic inactivation
+3973,antibiotic inactivation
+3974,antibiotic inactivation
+3975,antibiotic inactivation
+3976,antibiotic inactivation
+3977,antibiotic inactivation
+3978,antibiotic inactivation
+3979,antibiotic inactivation
+3980,antibiotic inactivation
+3981,antibiotic inactivation
+3982,antibiotic inactivation
+3983,antibiotic inactivation
+3984,antibiotic inactivation
+3985,antibiotic inactivation
+3986,antibiotic inactivation
+3987,antibiotic inactivation
+3988,antibiotic inactivation
+3989,antibiotic inactivation
+3990,antibiotic inactivation
+3991,antibiotic inactivation
+3992,antibiotic inactivation
+3993,antibiotic inactivation
+3994,antibiotic inactivation
+3995,antibiotic inactivation
+3996,antibiotic inactivation
+3997,antibiotic inactivation
+3998,antibiotic inactivation
+3999,antibiotic inactivation
+4000,antibiotic inactivation
+4001,antibiotic inactivation
+4002,antibiotic inactivation
+4003,antibiotic inactivation
+4004,antibiotic inactivation
+4005,antibiotic inactivation
+4006,antibiotic inactivation
+4007,antibiotic inactivation
+4008,antibiotic inactivation
+4009,antibiotic inactivation
+4010,antibiotic inactivation
+4011,antibiotic inactivation
+4012,antibiotic inactivation
+4013,antibiotic inactivation
+4014,antibiotic inactivation
+4015,antibiotic inactivation
+4016,antibiotic inactivation
+4017,antibiotic inactivation
+4018,antibiotic inactivation
+4019,antibiotic inactivation
+4020,antibiotic inactivation
+4021,antibiotic inactivation
+4022,antibiotic inactivation
+4023,antibiotic inactivation
+4024,antibiotic inactivation
+4025,antibiotic inactivation
+4026,antibiotic inactivation
+4027,antibiotic inactivation
+4028,antibiotic inactivation
+4029,antibiotic inactivation
+4030,antibiotic inactivation
+4031,antibiotic inactivation
+4032,antibiotic inactivation
+4033,antibiotic inactivation
+4034,antibiotic inactivation
+4035,antibiotic inactivation
+4036,antibiotic inactivation
+4037,antibiotic inactivation
+4038,antibiotic inactivation
+4039,antibiotic inactivation
+4040,antibiotic inactivation
+4041,antibiotic inactivation
+4042,antibiotic inactivation
+4043,antibiotic inactivation
+4044,antibiotic inactivation
+4045,antibiotic inactivation
+4046,antibiotic inactivation
+4047,antibiotic inactivation
+4048,antibiotic inactivation
+4049,antibiotic inactivation
+4050,antibiotic inactivation
+4051,antibiotic inactivation
+4052,antibiotic inactivation
+4053,antibiotic inactivation
+4054,antibiotic inactivation
+4055,antibiotic inactivation
+4056,antibiotic inactivation
+4057,antibiotic inactivation
+4058,antibiotic inactivation
+4059,antibiotic inactivation
+4060,antibiotic inactivation
+4061,antibiotic inactivation
+4062,antibiotic inactivation
+4063,antibiotic inactivation
+4064,antibiotic inactivation
+4065,antibiotic inactivation
+4066,antibiotic inactivation
+4067,antibiotic inactivation
+4068,antibiotic inactivation
+4069,antibiotic inactivation
+4070,antibiotic inactivation
+4071,antibiotic inactivation
+4072,antibiotic inactivation
+4073,antibiotic inactivation
+4074,antibiotic inactivation
+4075,antibiotic inactivation
+4076,antibiotic inactivation
+4077,antibiotic inactivation
+4078,antibiotic inactivation
+4079,antibiotic inactivation
+4080,antibiotic inactivation
+4081,antibiotic inactivation
+4082,antibiotic inactivation
+4083,antibiotic inactivation
+4084,antibiotic inactivation
+4085,antibiotic inactivation
+4086,antibiotic inactivation
+4087,antibiotic inactivation
+4088,antibiotic inactivation
+4089,antibiotic inactivation
+4090,antibiotic inactivation
+4091,antibiotic inactivation
+4092,antibiotic inactivation
+4093,antibiotic inactivation
+4094,antibiotic inactivation
+4095,antibiotic inactivation
+4096,antibiotic inactivation
+4097,antibiotic inactivation
+4098,antibiotic inactivation
+4099,antibiotic inactivation
+4100,antibiotic inactivation
+4101,antibiotic inactivation
+4102,antibiotic inactivation
+4103,antibiotic inactivation
+4104,antibiotic inactivation
+4105,antibiotic inactivation
+4106,antibiotic inactivation
+4107,antibiotic inactivation
+4108,antibiotic inactivation
+4109,antibiotic inactivation
+4110,antibiotic inactivation
+4111,antibiotic inactivation
+4112,antibiotic inactivation
+4113,antibiotic inactivation
+4114,antibiotic inactivation
+4115,antibiotic inactivation
+4116,antibiotic inactivation
+4117,antibiotic inactivation
+4118,antibiotic inactivation
+4119,antibiotic inactivation
+4120,antibiotic inactivation
+4121,antibiotic inactivation
+4122,antibiotic inactivation
+4123,antibiotic inactivation
+4124,antibiotic inactivation
+4125,antibiotic inactivation
+4126,antibiotic inactivation
+4127,antibiotic inactivation
+4128,antibiotic inactivation
+4129,antibiotic inactivation
+4130,antibiotic inactivation
+4131,antibiotic inactivation
+4132,antibiotic inactivation
+4133,antibiotic inactivation
+4134,antibiotic inactivation
+4135,antibiotic inactivation
+4136,antibiotic inactivation
+4137,antibiotic inactivation
+4138,antibiotic inactivation
+4139,antibiotic inactivation
+4140,antibiotic inactivation
+4141,antibiotic inactivation
+4142,antibiotic inactivation
+4143,antibiotic inactivation
+4144,antibiotic inactivation
+4145,antibiotic inactivation
+4146,antibiotic inactivation
+4147,antibiotic inactivation
+4148,antibiotic inactivation
+4149,antibiotic inactivation
+4150,antibiotic inactivation
+4151,antibiotic inactivation
+4152,antibiotic inactivation
+4153,antibiotic inactivation
+4154,antibiotic inactivation
+4155,antibiotic inactivation
+4156,antibiotic inactivation
+4157,antibiotic inactivation
+4158,antibiotic inactivation
+4159,antibiotic inactivation
+4160,antibiotic inactivation
+4161,antibiotic inactivation
+4162,antibiotic inactivation
+4163,antibiotic inactivation
+4164,antibiotic inactivation
+4165,antibiotic inactivation
+4166,antibiotic inactivation
+4167,antibiotic inactivation
+4168,antibiotic inactivation
+4169,antibiotic inactivation
+4170,antibiotic inactivation
+4171,antibiotic inactivation
+4172,antibiotic inactivation
+4173,antibiotic inactivation
+4174,antibiotic inactivation
+4175,antibiotic inactivation
+4176,antibiotic inactivation
+4177,antibiotic inactivation
+4178,antibiotic inactivation
+4179,antibiotic inactivation
+4180,antibiotic inactivation
+4181,antibiotic inactivation
+4182,antibiotic inactivation
+4183,antibiotic inactivation
+4184,antibiotic inactivation
+4185,antibiotic inactivation
+4186,antibiotic inactivation
+4187,antibiotic inactivation
+4188,antibiotic inactivation
+4189,antibiotic inactivation
+4190,antibiotic inactivation
+4191,antibiotic inactivation
+4192,antibiotic inactivation
+4193,antibiotic inactivation
+4194,antibiotic inactivation
+4195,antibiotic inactivation
+4196,antibiotic inactivation
+4197,antibiotic inactivation
+4198,antibiotic inactivation
+4199,antibiotic inactivation
+4200,antibiotic inactivation
+4201,antibiotic inactivation
+4202,antibiotic inactivation
+4203,antibiotic inactivation
+4204,antibiotic inactivation
+4205,antibiotic inactivation
+4206,antibiotic inactivation
+4207,antibiotic inactivation
+4208,antibiotic inactivation
+4209,antibiotic inactivation
+4210,antibiotic inactivation
+4211,antibiotic inactivation
+4212,antibiotic inactivation
+4213,antibiotic inactivation
+4214,antibiotic inactivation
+4215,antibiotic inactivation
+4216,antibiotic inactivation
+4217,antibiotic inactivation
+4218,antibiotic inactivation
+4219,antibiotic inactivation
+4220,antibiotic inactivation
+4221,antibiotic inactivation
+4222,antibiotic inactivation
+4223,antibiotic inactivation
+4224,antibiotic inactivation
+4225,antibiotic inactivation
+4226,antibiotic inactivation
+4227,antibiotic inactivation
+4228,antibiotic inactivation
+4229,antibiotic inactivation
+4230,antibiotic inactivation
+4231,antibiotic inactivation
+4232,antibiotic inactivation
+4233,antibiotic inactivation
+4234,antibiotic inactivation
+4235,antibiotic inactivation
+4236,antibiotic inactivation
+4237,antibiotic inactivation
+4238,antibiotic inactivation
+4239,antibiotic inactivation
+4240,antibiotic inactivation
+4241,antibiotic inactivation
+4242,antibiotic inactivation
+4243,antibiotic inactivation
+4244,antibiotic inactivation
+4245,antibiotic inactivation
+4246,antibiotic inactivation
+4247,antibiotic inactivation
+4248,antibiotic inactivation
+4249,antibiotic inactivation
+4250,antibiotic inactivation
+4251,antibiotic inactivation
+4252,antibiotic inactivation
+4253,antibiotic inactivation
+4254,antibiotic inactivation
+4255,antibiotic inactivation
+4256,antibiotic inactivation
+4257,antibiotic inactivation
+4258,antibiotic inactivation
+4259,antibiotic inactivation
+4260,antibiotic inactivation
+4261,antibiotic inactivation
+4262,antibiotic inactivation
+4263,antibiotic inactivation
+4264,antibiotic inactivation
+4265,antibiotic inactivation
+4266,antibiotic inactivation
+4267,antibiotic inactivation
+4268,antibiotic inactivation
+4269,antibiotic inactivation
+4270,antibiotic inactivation
+4271,antibiotic inactivation
+4272,antibiotic target alteration
+4273,antibiotic target alteration
+4274,antibiotic target alteration
+4275,antibiotic target alteration
+4276,antibiotic target alteration
+4277,antibiotic target alteration
+4278,antibiotic target alteration
+4279,antibiotic target alteration
+4280,antibiotic target alteration
+4281,antibiotic target alteration
+4282,antibiotic target alteration
+4283,antibiotic target alteration
+4284,antibiotic target alteration
+4285,antibiotic target alteration
+4286,antibiotic target alteration
+4287,antibiotic target alteration
+4288,antibiotic target alteration
+4289,antibiotic target alteration
+4290,antibiotic target alteration
+4291,antibiotic target alteration
+4292,antibiotic target alteration
+4293,antibiotic target alteration
+4294,antibiotic target alteration
+4295,antibiotic target alteration
+4296,antibiotic target alteration
+4297,antibiotic target alteration
+4298,antibiotic target alteration
+4299,antibiotic target alteration
+4300,antibiotic target alteration
+4301,antibiotic target alteration
+4302,antibiotic target alteration
+4303,antibiotic target alteration
+4304,antibiotic target alteration
+4305,antibiotic target alteration
+4306,antibiotic target alteration
+4307,antibiotic target alteration
+4308,antibiotic target alteration
+4309,antibiotic target alteration
+4310,antibiotic target alteration
+4311,antibiotic target alteration
+4312,antibiotic target alteration
+4313,antibiotic target alteration
+4314,antibiotic target alteration
+4315,antibiotic target alteration
+4316,antibiotic target alteration
+4317,antibiotic target alteration
+4318,antibiotic target alteration
+4319,antibiotic target alteration
+4320,antibiotic target alteration
+4321,antibiotic target alteration
+4322,antibiotic target alteration
+4323,antibiotic target alteration
+4324,antibiotic target alteration
+4325,antibiotic target alteration
+4326,antibiotic target alteration
+4327,antibiotic target alteration
+4328,antibiotic target alteration
+4329,antibiotic target alteration
+4330,antibiotic target alteration
+4331,antibiotic target alteration
+4332,antibiotic target alteration
+4333,antibiotic target alteration
+4334,antibiotic target alteration
+4335,antibiotic target alteration
+4336,antibiotic target alteration
+4337,antibiotic target alteration
+4338,antibiotic target alteration
+4339,antibiotic target alteration
+4340,antibiotic target alteration
+4341,antibiotic target alteration
+4342,antibiotic target alteration
+4343,antibiotic target alteration
+4344,antibiotic target alteration
+4345,antibiotic target alteration
+4346,antibiotic target alteration
+4347,antibiotic target alteration
+4348,antibiotic target alteration
+4349,antibiotic target alteration
+4350,antibiotic target alteration
+4351,antibiotic target alteration
+4352,antibiotic target alteration
+4353,antibiotic target alteration
+4354,antibiotic target alteration
+4355,antibiotic target alteration
+4356,antibiotic target alteration
+4357,antibiotic target alteration
+4358,antibiotic target alteration
+4359,antibiotic target alteration
+4360,antibiotic target alteration
+4361,antibiotic target alteration
+4362,antibiotic target alteration
+4363,antibiotic target alteration
+4364,antibiotic target alteration
+4365,antibiotic target alteration
+4366,antibiotic target alteration
+4367,antibiotic target alteration
+4368,antibiotic target alteration
+4369,antibiotic target alteration
+4370,antibiotic target alteration
+4371,antibiotic target alteration
+4372,antibiotic target alteration
+4373,antibiotic target alteration
+4374,antibiotic target alteration
+4375,antibiotic target alteration
+4376,antibiotic target alteration
+4377,antibiotic target alteration
+4378,antibiotic target alteration
+4379,antibiotic target alteration
+4380,antibiotic target alteration
+4381,antibiotic target alteration
+4382,antibiotic target alteration
+4383,antibiotic target alteration
+4384,antibiotic target alteration
+4385,antibiotic target alteration
+4386,antibiotic target alteration
+4387,antibiotic target alteration
+4388,antibiotic target alteration
+4389,antibiotic target alteration
+4390,antibiotic target alteration
+4391,antibiotic target alteration
+4392,antibiotic target alteration
+4393,antibiotic target alteration
+4394,antibiotic target alteration
+4395,antibiotic target alteration
+4396,antibiotic target alteration
+4397,antibiotic target alteration
+4398,antibiotic target alteration
+4399,antibiotic target alteration
+4400,antibiotic target alteration
+4401,antibiotic target alteration
+4402,antibiotic target alteration
+4403,antibiotic target alteration
+4404,antibiotic target alteration
+4405,antibiotic target alteration
+4406,antibiotic target alteration
+4407,antibiotic target alteration
+4408,antibiotic target alteration
+4409,antibiotic target alteration
+4410,antibiotic target alteration
+4411,antibiotic target alteration
+4412,antibiotic target alteration
+4413,antibiotic target alteration
+4414,antibiotic target alteration
+4415,antibiotic target alteration
+4416,antibiotic target alteration
+4417,antibiotic target alteration
+4418,antibiotic target alteration
+4419,antibiotic target alteration
+4420,antibiotic target alteration
+4421,antibiotic target alteration
+4422,antibiotic target alteration
+4423,antibiotic target alteration
+4424,antibiotic target alteration
+4425,antibiotic target alteration
+4426,antibiotic target alteration
+4427,antibiotic target alteration
+4428,antibiotic target alteration
+4429,antibiotic target alteration
+4430,antibiotic target alteration
+4431,antibiotic target alteration
+4432,antibiotic target alteration
+4433,antibiotic target alteration
+4434,antibiotic target alteration
+4435,antibiotic target alteration
+4436,antibiotic target alteration
+4437,antibiotic target alteration
+4438,antibiotic target alteration
+4439,antibiotic target alteration
+4440,antibiotic target alteration
+4441,antibiotic target alteration
+4442,antibiotic target alteration
+4443,antibiotic target alteration
+4444,antibiotic target alteration
+4445,antibiotic target alteration
+4446,antibiotic target alteration
+4447,antibiotic target alteration
+4448,antibiotic target alteration
+4449,antibiotic target alteration
+4450,antibiotic target alteration
+4451,antibiotic target alteration
+4452,antibiotic target alteration
+4453,antibiotic target alteration
+4454,antibiotic target alteration
+4455,antibiotic target alteration
+4456,antibiotic target alteration
+4457,antibiotic target alteration
+4458,antibiotic target alteration
+4459,antibiotic target alteration
+4460,antibiotic target alteration
+4461,antibiotic target alteration
+4462,antibiotic target alteration
+4463,antibiotic target alteration
+4464,antibiotic target alteration
+4465,antibiotic target alteration
+4466,antibiotic target alteration
+4467,antibiotic target alteration
+4468,antibiotic target alteration
+4469,antibiotic target alteration
+4470,antibiotic target alteration
+4471,antibiotic target alteration
+4472,antibiotic target alteration
+4473,antibiotic target alteration
+4474,antibiotic target alteration
+4475,antibiotic target alteration
+4476,antibiotic target alteration
+4477,antibiotic target alteration
+4478,antibiotic target alteration
+4479,antibiotic target alteration
+4480,antibiotic target alteration
+4481,antibiotic target alteration
+4482,antibiotic target alteration
+4483,antibiotic target alteration
+4484,antibiotic target alteration
+4485,antibiotic target alteration
+4486,antibiotic target alteration
+4487,antibiotic target alteration
+4488,antibiotic target alteration
+4489,antibiotic target alteration
+4490,antibiotic target alteration
+4491,antibiotic target alteration
+4492,antibiotic target alteration
+4493,antibiotic target alteration
+4494,antibiotic target alteration
+4495,antibiotic target alteration
+4496,antibiotic target alteration
+4497,antibiotic target alteration
+4498,antibiotic target alteration
+4499,antibiotic target alteration
+4500,antibiotic target alteration
+4501,antibiotic target alteration
+4502,antibiotic target alteration
+4503,antibiotic target alteration
+4504,antibiotic target alteration
+4505,antibiotic target alteration
+4506,antibiotic target alteration
+4507,antibiotic target alteration
+4508,antibiotic target alteration
+4509,antibiotic target alteration
+4510,antibiotic target alteration
+4511,antibiotic target alteration
+4512,antibiotic target alteration
+4513,antibiotic target alteration
+4514,antibiotic target alteration
+4515,antibiotic target alteration
+4516,antibiotic target alteration
+4517,antibiotic target alteration
+4518,antibiotic target alteration
+4519,antibiotic target alteration
+4520,antibiotic target alteration
+4521,antibiotic target alteration
+4522,antibiotic target alteration
+4523,antibiotic target alteration
+4524,antibiotic target alteration
+4525,antibiotic target alteration
+4526,antibiotic target alteration
+4527,antibiotic target alteration
+4528,antibiotic target alteration
+4529,antibiotic target alteration
+4530,antibiotic target alteration
+4531,antibiotic target alteration
+4532,antibiotic target alteration
+4533,antibiotic target alteration
+4534,antibiotic target alteration
+4535,antibiotic target alteration
+4536,antibiotic target alteration
+4537,antibiotic target alteration
+4538,antibiotic target alteration
+4539,antibiotic target alteration
+4540,antibiotic target alteration
+4541,antibiotic target alteration
+4542,antibiotic target alteration
+4543,antibiotic target alteration
+4544,antibiotic target alteration
+4545,antibiotic target alteration
+4546,antibiotic target alteration
+4547,antibiotic target alteration
+4548,antibiotic target alteration
+4549,antibiotic target alteration
+4550,antibiotic target alteration
+4551,antibiotic target alteration
+4552,antibiotic target alteration
+4553,antibiotic target alteration
+4554,antibiotic target alteration
+4555,antibiotic target alteration
+4556,antibiotic target alteration
+4557,antibiotic target alteration
+4558,antibiotic target alteration
+4559,antibiotic target alteration
+4560,antibiotic target alteration
+4561,antibiotic target alteration
+4562,antibiotic target alteration
+4563,antibiotic target alteration
+4564,antibiotic target alteration
+4565,antibiotic target alteration
+4566,antibiotic target alteration
+4567,antibiotic target alteration
+4568,antibiotic target alteration
+4569,antibiotic target alteration
+4570,antibiotic target alteration
+4571,antibiotic target alteration
+4572,antibiotic target alteration
+4573,antibiotic target alteration
+4574,antibiotic target alteration
+4575,antibiotic target alteration
+4576,antibiotic target alteration
+4577,antibiotic target alteration
+4578,antibiotic target alteration
+4579,antibiotic target alteration
+4580,antibiotic target alteration
+4581,antibiotic target alteration
+4582,antibiotic target alteration
+4583,antibiotic target alteration
+4584,antibiotic target alteration
+4585,antibiotic target alteration
+4586,antibiotic target alteration
+4587,antibiotic target alteration
+4588,antibiotic target alteration
+4589,antibiotic target alteration
+4590,antibiotic target alteration
+4591,antibiotic target alteration
+4592,antibiotic target alteration
+4593,antibiotic target alteration
+4594,antibiotic target alteration
+4595,antibiotic target alteration
+4596,antibiotic target alteration
+4597,antibiotic target alteration
+4598,antibiotic target alteration
+4599,antibiotic target alteration
+4600,antibiotic target alteration
+4601,antibiotic target alteration
+4602,antibiotic target alteration
+4603,antibiotic target alteration
+4604,antibiotic target alteration
+4605,antibiotic target alteration
+4606,antibiotic target alteration
+4607,antibiotic target alteration
+4608,antibiotic target alteration
+4609,antibiotic target alteration
+4610,antibiotic target alteration
+4611,antibiotic target alteration
+4612,antibiotic target alteration
+4613,antibiotic target alteration
+4614,antibiotic target alteration
+4615,antibiotic target alteration
+4616,antibiotic target alteration
+4617,antibiotic target alteration
+4618,antibiotic target alteration
+4619,antibiotic target alteration
+4620,antibiotic target alteration
+4621,antibiotic target alteration
+4622,antibiotic target alteration
+4623,antibiotic target alteration
+4624,antibiotic target alteration
+4625,antibiotic target alteration
+4626,antibiotic target alteration
+4627,antibiotic target alteration
+4628,antibiotic target alteration
+4629,antibiotic target alteration
+4630,antibiotic target alteration
+4631,antibiotic target alteration
+4632,antibiotic target alteration
+4633,antibiotic target alteration
+4634,antibiotic target alteration
+4635,antibiotic target alteration
+4636,antibiotic target alteration
+4637,antibiotic target alteration
+4638,antibiotic target alteration
+4639,antibiotic target alteration
+4640,antibiotic target alteration
+4641,antibiotic target alteration
+4642,antibiotic target alteration
+4643,antibiotic target alteration
+4644,antibiotic target alteration
+4645,antibiotic target alteration
+4646,antibiotic target alteration
+4647,antibiotic target alteration
+4648,antibiotic target alteration
+4649,antibiotic target alteration
+4650,antibiotic target alteration
+4651,antibiotic target alteration
+4652,antibiotic target alteration
+4653,antibiotic target alteration
+4654,antibiotic target alteration
+4655,antibiotic target alteration
+4656,antibiotic target alteration
+4657,antibiotic target alteration
+4658,antibiotic target alteration
+4659,antibiotic target alteration
+4660,antibiotic target alteration
+4661,antibiotic target alteration
+4662,antibiotic target alteration
+4663,antibiotic target alteration
+4664,antibiotic target alteration
+4665,antibiotic target alteration
+4666,antibiotic target alteration
+4667,antibiotic target alteration
+4668,antibiotic target alteration
+4669,antibiotic target alteration
+4670,antibiotic target alteration
+4671,antibiotic target alteration
+4672,antibiotic target alteration
+4673,antibiotic target alteration
+4674,antibiotic target alteration
+4675,antibiotic target alteration
+4676,antibiotic target alteration
+4677,antibiotic target alteration
+4678,antibiotic target alteration
+4679,antibiotic target alteration
+4680,antibiotic target alteration
+4681,antibiotic target alteration
+4682,antibiotic target alteration
+4683,antibiotic target alteration
+4684,antibiotic target alteration
+4685,antibiotic target alteration
+4686,antibiotic target alteration
+4687,antibiotic target alteration
+4688,antibiotic target alteration
+4689,antibiotic target alteration
+4690,antibiotic target alteration
+4691,antibiotic target alteration
+4692,antibiotic target alteration
+4693,antibiotic target alteration
+4694,antibiotic target alteration
+4695,antibiotic target alteration
+4696,antibiotic target alteration
+4697,antibiotic target alteration
+4698,antibiotic target alteration
+4699,antibiotic target alteration
+4700,antibiotic target alteration
+4701,antibiotic target alteration
+4702,antibiotic target alteration
+4703,antibiotic target alteration
+4704,antibiotic target alteration
+4705,antibiotic target alteration
+4706,antibiotic target alteration
+4707,antibiotic target alteration
+4708,antibiotic target alteration
+4709,antibiotic target alteration
+4710,antibiotic target alteration
+4711,antibiotic target alteration
+4712,antibiotic target alteration
+4713,antibiotic target alteration
+4714,antibiotic target alteration
+4715,antibiotic target alteration
+4716,antibiotic target alteration
+4717,antibiotic target alteration
+4718,antibiotic target alteration
+4719,antibiotic target alteration
+4720,antibiotic target alteration
+4721,antibiotic target alteration
+4722,antibiotic target alteration
+4723,antibiotic target alteration
+4724,antibiotic target alteration
+4725,antibiotic target alteration
+4726,antibiotic target alteration
+4727,antibiotic target alteration
+4728,antibiotic target alteration
+4729,antibiotic target alteration
+4730,antibiotic target alteration
+4731,antibiotic target alteration
+4732,antibiotic target alteration
+4733,antibiotic target alteration
+4734,antibiotic target alteration
+4735,antibiotic target alteration
+4736,antibiotic target alteration
+4737,antibiotic target alteration
+4738,antibiotic target alteration
+4739,antibiotic target alteration
+4740,antibiotic target alteration
+4741,antibiotic target alteration
+4742,antibiotic target alteration
+4743,antibiotic target alteration
+4744,antibiotic target alteration
+4745,antibiotic target alteration
+4746,antibiotic target alteration
+4747,antibiotic target alteration
+4748,antibiotic target alteration
+4749,antibiotic target alteration
+4750,antibiotic target alteration
+4751,antibiotic target alteration
+4752,antibiotic target alteration
+4753,antibiotic target alteration
+4754,antibiotic target alteration
+4755,antibiotic target alteration
+4756,antibiotic target alteration
+4757,antibiotic target alteration
+4758,antibiotic target alteration
+4759,antibiotic target alteration
+4760,antibiotic target alteration
+4761,antibiotic target alteration
+4762,antibiotic target alteration
+4763,antibiotic target alteration
+4764,antibiotic target alteration
+4765,antibiotic target alteration
+4766,antibiotic target alteration
+4767,antibiotic target alteration
+4768,antibiotic target alteration
+4769,antibiotic target alteration
+4770,antibiotic target alteration
+4771,antibiotic target alteration
+4772,antibiotic target alteration
+4773,antibiotic target alteration
+4774,antibiotic target alteration
+4775,antibiotic target alteration
+4776,antibiotic target alteration
+4777,antibiotic target alteration
+4778,antibiotic target alteration
+4779,antibiotic target alteration
+4780,antibiotic target alteration
+4781,antibiotic target alteration
+4782,antibiotic target alteration
+4783,antibiotic target alteration
+4784,antibiotic target alteration
+4785,antibiotic target alteration
+4786,antibiotic target alteration
+4787,antibiotic target alteration
+4788,antibiotic target alteration
+4789,antibiotic target alteration
+4790,antibiotic target alteration
+4791,antibiotic target alteration
+4792,antibiotic target alteration
+4793,antibiotic target alteration
+4794,antibiotic target alteration
+4795,antibiotic target alteration
+4796,antibiotic target alteration
+4797,antibiotic target alteration
+4798,antibiotic target alteration
+4799,antibiotic target alteration
+4800,antibiotic target alteration
+4801,antibiotic target alteration
+4802,antibiotic target alteration
+4803,antibiotic target alteration
+4804,antibiotic target alteration
+4805,antibiotic target alteration
+4806,antibiotic target alteration
+4807,antibiotic target alteration
+4808,antibiotic target alteration
+4809,antibiotic target alteration
+4810,antibiotic target alteration
+4811,antibiotic target alteration
+4812,antibiotic target alteration
+4813,antibiotic target alteration
+4814,antibiotic target alteration
+4815,antibiotic target alteration
+4816,antibiotic target alteration
+4817,antibiotic target alteration
+4818,antibiotic target alteration
+4819,antibiotic target alteration
+4820,antibiotic target alteration
+4821,antibiotic target alteration
+4822,antibiotic target alteration
+4823,antibiotic target alteration
+4824,antibiotic target alteration
+4825,antibiotic target alteration
+4826,antibiotic target alteration
+4827,antibiotic target alteration
+4828,antibiotic target alteration
+4829,antibiotic target alteration
+4830,antibiotic target alteration
+4831,antibiotic target alteration
+4832,antibiotic target alteration
+4833,antibiotic target alteration
+4834,antibiotic target alteration
+4835,antibiotic target alteration
+4836,antibiotic target alteration
+4837,antibiotic target alteration
+4838,antibiotic target alteration
+4839,antibiotic target alteration
+4840,antibiotic target alteration
+4841,antibiotic target alteration
+4842,antibiotic target alteration
+4843,antibiotic target alteration
+4844,antibiotic target alteration
+4845,antibiotic target alteration
+4846,antibiotic target alteration
+4847,antibiotic target alteration
+4848,antibiotic target alteration
+4849,antibiotic target alteration
+4850,antibiotic target alteration
+4851,antibiotic target alteration
+4852,antibiotic target alteration
+4853,antibiotic target alteration
+4854,antibiotic target alteration
+4855,antibiotic target alteration
+4856,antibiotic target alteration
+4857,antibiotic target alteration
+4858,antibiotic target alteration
+4859,antibiotic target alteration
+4860,antibiotic target alteration
+4861,antibiotic target alteration
+4862,antibiotic target alteration
+4863,antibiotic target alteration
+4864,antibiotic target alteration
+4865,antibiotic target alteration
+4866,antibiotic target alteration
+4867,antibiotic target alteration
+4868,antibiotic target alteration
+4869,antibiotic target alteration
+4870,antibiotic target alteration
+4871,antibiotic target alteration
+4872,antibiotic target alteration
+4873,antibiotic target alteration
+4874,antibiotic target alteration
+4875,antibiotic target alteration
+4876,antibiotic target alteration
+4877,antibiotic target alteration
+4878,antibiotic target alteration
+4879,antibiotic target alteration
+4880,antibiotic target alteration
+4881,antibiotic target alteration
+4882,antibiotic target alteration
+4883,antibiotic target alteration
+4884,antibiotic target alteration
+4885,antibiotic target alteration
+4886,antibiotic target alteration
+4887,antibiotic target alteration
+4888,antibiotic target alteration
+4889,antibiotic target alteration
+4890,antibiotic target alteration
+4891,antibiotic target alteration
+4892,antibiotic target alteration
+4893,antibiotic target alteration
+4894,antibiotic target alteration
+4895,antibiotic target alteration
+4896,antibiotic target alteration
+4897,antibiotic target alteration
+4898,antibiotic target alteration
+4899,antibiotic target alteration
+4900,antibiotic target alteration
+4901,antibiotic target alteration
+4902,antibiotic target alteration
+4903,antibiotic target alteration
+4904,antibiotic target alteration
+4905,antibiotic target alteration
+4906,antibiotic target alteration
+4907,antibiotic target alteration
+4908,antibiotic target alteration
+4909,antibiotic target alteration
+4910,antibiotic target alteration
+4911,antibiotic target alteration
+4912,antibiotic target alteration
+4913,antibiotic target alteration
+4914,antibiotic target alteration
+4915,antibiotic target alteration
+4916,antibiotic target alteration
+4917,antibiotic target alteration
+4918,antibiotic target alteration
+4919,antibiotic target alteration
+4920,antibiotic target alteration
+4921,antibiotic target alteration
+4922,antibiotic target alteration
+4923,antibiotic target alteration
+4924,antibiotic target alteration
+4925,antibiotic target alteration
+4926,antibiotic target alteration
+4927,antibiotic target alteration
+4928,antibiotic target alteration
+4929,antibiotic target alteration
+4930,antibiotic target alteration
+4931,antibiotic target alteration
+4932,antibiotic target alteration
+4933,antibiotic target alteration
+4934,antibiotic target alteration
+4935,antibiotic target alteration
+4936,antibiotic target alteration
+4937,antibiotic target alteration
+4938,antibiotic target alteration
+4939,antibiotic target alteration
+4940,antibiotic target alteration
+4941,antibiotic target alteration
+4942,antibiotic target alteration
+4943,antibiotic target alteration
+4944,antibiotic target alteration
+4945,antibiotic target alteration
+4946,antibiotic target alteration
+4947,antibiotic target alteration
+4948,antibiotic target alteration
+4949,antibiotic target alteration
+4950,antibiotic target alteration
+4951,antibiotic target alteration
+4952,antibiotic target alteration
+4953,antibiotic target alteration
+4954,antibiotic target alteration
+4955,antibiotic target alteration
+4956,antibiotic target alteration
+4957,antibiotic target alteration
+4958,antibiotic target alteration
+4959,antibiotic target alteration
+4960,antibiotic target alteration
+4961,antibiotic target alteration
+4962,antibiotic target alteration
+4963,antibiotic target alteration
+4964,antibiotic target alteration
+4965,antibiotic target alteration
+4966,antibiotic target alteration
+4967,antibiotic target alteration
+4968,antibiotic target alteration
+4969,antibiotic target alteration
+4970,antibiotic target alteration
+4971,antibiotic target alteration
+4972,antibiotic target alteration
+4973,antibiotic target alteration
+4974,antibiotic target alteration
+4975,antibiotic target alteration
+4976,antibiotic target alteration
+4977,antibiotic target alteration
+4978,antibiotic target alteration
+4979,antibiotic target alteration
+4980,antibiotic target alteration
+4981,antibiotic target alteration
+4982,antibiotic target alteration
+4983,antibiotic target alteration
+4984,antibiotic target alteration
+4985,antibiotic target alteration
+4986,antibiotic target alteration
+4987,antibiotic target alteration
+4988,antibiotic target alteration
+4989,antibiotic target alteration
+4990,antibiotic target alteration
+4991,antibiotic target alteration
+4992,antibiotic target alteration
+4993,antibiotic target alteration
+4994,antibiotic target alteration
+4995,antibiotic target alteration
+4996,antibiotic target alteration
+4997,antibiotic target alteration
+4998,antibiotic target alteration
+4999,antibiotic target alteration
+5000,antibiotic target alteration
+5001,antibiotic target alteration
+5002,antibiotic target alteration
+5003,antibiotic target alteration
+5004,antibiotic target alteration
+5005,antibiotic target alteration
+5006,antibiotic target alteration
+5007,antibiotic target alteration
+5008,antibiotic target alteration
+5009,antibiotic target alteration
+5010,antibiotic target alteration
+5011,antibiotic target alteration
+5012,antibiotic target alteration
+5013,antibiotic target alteration
+5014,antibiotic target alteration
+5015,antibiotic target alteration
+5016,antibiotic target alteration
+5017,antibiotic target alteration
+5018,antibiotic target alteration
+5019,antibiotic target alteration
+5020,antibiotic target alteration
+5021,antibiotic target alteration
+5022,antibiotic target alteration
+5023,antibiotic target alteration
+5024,antibiotic target alteration
+5025,antibiotic target alteration
+5026,antibiotic target alteration
+5027,antibiotic target alteration
+5028,antibiotic target alteration
+5029,antibiotic target alteration
+5030,antibiotic target alteration
+5031,antibiotic target alteration
+5032,antibiotic target alteration
+5033,antibiotic target alteration
+5034,antibiotic target alteration
+5035,antibiotic target alteration
+5036,antibiotic target alteration
+5037,antibiotic target alteration
+5038,antibiotic target alteration
+5039,antibiotic target alteration
+5040,antibiotic target alteration
+5041,antibiotic target alteration
+5042,antibiotic target alteration
+5043,antibiotic target alteration
+5044,antibiotic target alteration
+5045,antibiotic target alteration
+5046,antibiotic target alteration
+5047,antibiotic target alteration
+5048,antibiotic target alteration
+5049,antibiotic target alteration
+5050,antibiotic target alteration
+5051,antibiotic target alteration
+5052,antibiotic target alteration
+5053,antibiotic target alteration
+5054,antibiotic target alteration
+5055,antibiotic target alteration
+5056,antibiotic target alteration
+5057,antibiotic target alteration
+5058,antibiotic target alteration
+5059,antibiotic target alteration
+5060,antibiotic target alteration
+5061,antibiotic target alteration
+5062,antibiotic target alteration
+5063,antibiotic target alteration
+5064,antibiotic target alteration
+5065,antibiotic target alteration
+5066,antibiotic target alteration
+5067,antibiotic target alteration
+5068,antibiotic target alteration
+5069,antibiotic target alteration
+5070,antibiotic target alteration
+5071,antibiotic target alteration
+5072,antibiotic target alteration
+5073,antibiotic target alteration
+5074,antibiotic target alteration
+5075,antibiotic target alteration
+5076,antibiotic target alteration
+5077,antibiotic target alteration
+5078,antibiotic target alteration
+5079,antibiotic target alteration
+5080,antibiotic target alteration
+5081,antibiotic target alteration
+5082,antibiotic target alteration
+5083,antibiotic target alteration
+5084,antibiotic target alteration
+5085,antibiotic target alteration
+5086,antibiotic target alteration
+5087,antibiotic target alteration
+5088,antibiotic target alteration
+5089,antibiotic target alteration
+5090,antibiotic target alteration
+5091,antibiotic target alteration
+5092,antibiotic target alteration
+5093,antibiotic target alteration
+5094,antibiotic target alteration
+5095,antibiotic target alteration
+5096,antibiotic target alteration
+5097,antibiotic target alteration
+5098,antibiotic target alteration
+5099,antibiotic target alteration
+5100,antibiotic target alteration
+5101,antibiotic target alteration
+5102,antibiotic target alteration
+5103,antibiotic target alteration
+5104,antibiotic target alteration
+5105,antibiotic target alteration
+5106,antibiotic target alteration
+5107,antibiotic target alteration
+5108,antibiotic target alteration
+5109,antibiotic target alteration
+5110,antibiotic target alteration
+5111,antibiotic target alteration
+5112,antibiotic target alteration
+5113,antibiotic target alteration
+5114,antibiotic target alteration
+5115,antibiotic target alteration
+5116,antibiotic target alteration
+5117,antibiotic target alteration
+5118,antibiotic target alteration
+5119,antibiotic target alteration
+5120,antibiotic target alteration
+5121,antibiotic target alteration
+5122,antibiotic target alteration
+5123,antibiotic target alteration
+5124,antibiotic target alteration
+5125,antibiotic target alteration
+5126,antibiotic target alteration
+5127,antibiotic target alteration
+5128,antibiotic target alteration
+5129,antibiotic target alteration
+5130,antibiotic target alteration
+5131,antibiotic target alteration
+5132,antibiotic target alteration
+5133,antibiotic target alteration
+5134,antibiotic target alteration
+5135,antibiotic target alteration
+5136,antibiotic target alteration
+5137,antibiotic target alteration
+5138,antibiotic target alteration
+5139,antibiotic target alteration
+5140,antibiotic target alteration
+5141,antibiotic target alteration
+5142,antibiotic target alteration
+5143,antibiotic target alteration
+5144,antibiotic target alteration
+5145,antibiotic target alteration
+5146,antibiotic target alteration
+5147,antibiotic target alteration
+5148,antibiotic target alteration
+5149,antibiotic target alteration
+5150,antibiotic target alteration
+5151,antibiotic target alteration
+5152,antibiotic target alteration
+5153,antibiotic target alteration
+5154,antibiotic target alteration
+5155,antibiotic target alteration
+5156,antibiotic target alteration
+5157,antibiotic target alteration
+5158,antibiotic target alteration
+5159,antibiotic target alteration
+5160,antibiotic target alteration
+5161,antibiotic target alteration
+5162,antibiotic target alteration
+5163,antibiotic target alteration
+5164,antibiotic target alteration
+5165,antibiotic target alteration
+5166,antibiotic target alteration
+5167,antibiotic target alteration
+5168,antibiotic target alteration
+5169,antibiotic target alteration
+5170,antibiotic target alteration
+5171,antibiotic target alteration
+5172,antibiotic target alteration
+5173,antibiotic target alteration
+5174,antibiotic target alteration
+5175,antibiotic target alteration
+5176,antibiotic target alteration
+5177,antibiotic target alteration
+5178,antibiotic target alteration
+5179,antibiotic target alteration
+5180,antibiotic target alteration
+5181,antibiotic target alteration
+5182,antibiotic target alteration
+5183,antibiotic target alteration
+5184,antibiotic target alteration
+5185,antibiotic target alteration
+5186,antibiotic target alteration
+5187,antibiotic target alteration
+5188,antibiotic target alteration
+5189,antibiotic target alteration
+5190,antibiotic target alteration
+5191,antibiotic target alteration
+5192,antibiotic target alteration
+5193,antibiotic target alteration
+5194,antibiotic target alteration
+5195,antibiotic target alteration
+5196,antibiotic target alteration
+5197,antibiotic target alteration
+5198,antibiotic target alteration
+5199,antibiotic target alteration
+5200,antibiotic target alteration
+5201,antibiotic target alteration
+5202,antibiotic target alteration
+5203,antibiotic target alteration
+5204,antibiotic target alteration
+5205,antibiotic target alteration
+5206,antibiotic target alteration
+5207,antibiotic target alteration
+5208,antibiotic target alteration
+5209,antibiotic target alteration
+5210,antibiotic target alteration
+5211,antibiotic target alteration
+5212,antibiotic target alteration
+5213,antibiotic target alteration
+5214,antibiotic target alteration
+5215,antibiotic target alteration
+5216,antibiotic target alteration
+5217,antibiotic target alteration
+5218,antibiotic target alteration
+5219,antibiotic target alteration
+5220,antibiotic target alteration
+5221,antibiotic target alteration
+5222,antibiotic target alteration
+5223,antibiotic target alteration
+5224,antibiotic target alteration
+5225,antibiotic target alteration
+5226,antibiotic target alteration
+5227,antibiotic target alteration
+5228,antibiotic target alteration
+5229,antibiotic target alteration
+5230,antibiotic target alteration
+5231,antibiotic target alteration
+5232,antibiotic target alteration
+5233,antibiotic target alteration
+5234,antibiotic target alteration
+5235,antibiotic target alteration
+5236,antibiotic target alteration
+5237,antibiotic target alteration
+5238,antibiotic target alteration
+5239,antibiotic target alteration
+5240,antibiotic target alteration
+5241,antibiotic target alteration
+5242,antibiotic target alteration
+5243,antibiotic target alteration
+5244,antibiotic target alteration
+5245,antibiotic target alteration
+5246,antibiotic target alteration
+5247,antibiotic target alteration
+5248,antibiotic target alteration
+5249,antibiotic target alteration
+5250,antibiotic target alteration
+5251,antibiotic target alteration
+5252,antibiotic target alteration
+5253,antibiotic target alteration
+5254,antibiotic target alteration
+5255,antibiotic target alteration
+5256,antibiotic target alteration
+5257,antibiotic target alteration
+5258,antibiotic target alteration
+5259,antibiotic target alteration
+5260,antibiotic target alteration
+5261,antibiotic target alteration
+5262,antibiotic target alteration
+5263,antibiotic target alteration
+5264,antibiotic target alteration
+5265,antibiotic target alteration
+5266,antibiotic target alteration
+5267,antibiotic target alteration
+5268,antibiotic target alteration
+5269,antibiotic target alteration
+5270,antibiotic target alteration
+5271,antibiotic target alteration
+5272,antibiotic target alteration
+5273,antibiotic target alteration
+5274,antibiotic target alteration
+5275,antibiotic target alteration
+5276,antibiotic target alteration
+5277,antibiotic target alteration
+5278,antibiotic target alteration
+5279,antibiotic target alteration
+5280,antibiotic target alteration
+5281,antibiotic target alteration
+5282,antibiotic target alteration
+5283,antibiotic target alteration
+5284,antibiotic target alteration
+5285,antibiotic target alteration
+5286,antibiotic target alteration
+5287,antibiotic target alteration
+5288,antibiotic target alteration
+5289,antibiotic target alteration
+5290,antibiotic target alteration
+5291,antibiotic target alteration
+5292,antibiotic target alteration
+5293,antibiotic target alteration
+5294,antibiotic target alteration
+5295,antibiotic target alteration
+5296,antibiotic target alteration
+5297,antibiotic target alteration
+5298,antibiotic target alteration
+5299,antibiotic target alteration
+5300,antibiotic target alteration
+5301,antibiotic target alteration
+5302,antibiotic target alteration
+5303,antibiotic target alteration
+5304,antibiotic target alteration
+5305,antibiotic target alteration
+5306,antibiotic target alteration
+5307,antibiotic target alteration
+5308,antibiotic target alteration
+5309,antibiotic target alteration
+5310,antibiotic target alteration
+5311,antibiotic target alteration
+5312,antibiotic target alteration
+5313,antibiotic target alteration
+5314,antibiotic target alteration
+5315,antibiotic target alteration
+5316,antibiotic target alteration
+5317,antibiotic target alteration
+5318,antibiotic target alteration
+5319,antibiotic target alteration
+5320,antibiotic target alteration
+5321,antibiotic target alteration
+5322,antibiotic target alteration
+5323,antibiotic target alteration
+5324,antibiotic target alteration
+5325,antibiotic target alteration
+5326,antibiotic target alteration
+5327,antibiotic target alteration
+5328,antibiotic target alteration
+5329,antibiotic target alteration
+5330,antibiotic target alteration
+5331,antibiotic target alteration
+5332,antibiotic target alteration
+5333,antibiotic target alteration
+5334,antibiotic target alteration
+5335,antibiotic target alteration
+5336,antibiotic target alteration
+5337,antibiotic target alteration
+5338,antibiotic target alteration
+5339,antibiotic target alteration
+5340,antibiotic target protection
+5341,antibiotic target protection
+5342,antibiotic target protection
+5343,antibiotic target protection
+5344,antibiotic target protection
+5345,antibiotic target protection
+5346,antibiotic target protection
+5347,antibiotic target protection
+5348,antibiotic target protection
+5349,antibiotic target protection
+5350,antibiotic target protection
+5351,antibiotic target protection
+5352,antibiotic target protection
+5353,antibiotic target protection
+5354,antibiotic target protection
+5355,antibiotic target protection
+5356,antibiotic target protection
+5357,antibiotic target protection
+5358,antibiotic target protection
+5359,antibiotic target protection
+5360,antibiotic target protection
+5361,antibiotic target protection
+5362,antibiotic target protection
+5363,antibiotic target protection
+5364,antibiotic target protection
+5365,antibiotic target protection
+5366,antibiotic target protection
+5367,antibiotic target protection
+5368,antibiotic target protection
+5369,antibiotic target protection
+5370,antibiotic target protection
+5371,antibiotic target protection
+5372,antibiotic target protection
+5373,antibiotic target protection
+5374,antibiotic target protection
+5375,antibiotic target protection
+5376,antibiotic target protection
+5377,antibiotic target protection
+5378,antibiotic target protection
+5379,antibiotic target protection
+5380,antibiotic target protection
+5381,antibiotic target protection
+5382,antibiotic target protection
+5383,antibiotic target protection
+5384,antibiotic target protection
+5385,antibiotic target protection
+5386,antibiotic target protection
+5387,antibiotic target protection
+5388,antibiotic target protection
+5389,antibiotic target protection
+5390,antibiotic target protection
+5391,antibiotic target protection
+5392,antibiotic target protection
+5393,antibiotic target protection
+5394,antibiotic target protection
+5395,antibiotic target protection
+5396,antibiotic target protection
+5397,antibiotic target protection
+5398,antibiotic target protection
+5399,antibiotic target protection
+5400,antibiotic target protection
+5401,antibiotic target protection
+5402,antibiotic target protection
+5403,antibiotic target protection
+5404,antibiotic target protection
+5405,antibiotic target protection
+5406,antibiotic target protection
+5407,antibiotic target protection
+5408,antibiotic target protection
+5409,antibiotic target protection
+5410,antibiotic target protection
+5411,antibiotic target protection
+5412,antibiotic target protection
+5413,antibiotic target protection
+5414,antibiotic target protection
+5415,antibiotic target protection
+5416,antibiotic target protection
+5417,antibiotic target protection
+5418,antibiotic target protection
+5419,antibiotic target protection
+5420,antibiotic target protection
+5421,antibiotic target protection
+5422,antibiotic target protection
+5423,antibiotic target protection
+5424,antibiotic target protection
+5425,antibiotic target protection
+5426,antibiotic target protection
+5427,antibiotic target protection
+5428,antibiotic target protection
+5429,antibiotic target protection
+5430,antibiotic target protection
+5431,antibiotic target protection
+5432,antibiotic target protection
+5433,antibiotic target protection
+5434,antibiotic target protection
+5435,antibiotic target protection
+5436,antibiotic target protection
+5437,antibiotic target protection
+5438,antibiotic target protection
+5439,antibiotic target protection
+5440,antibiotic target protection
+5441,antibiotic target protection
+5442,antibiotic target protection
+5443,antibiotic target protection
+5444,antibiotic target protection
+5445,antibiotic target protection
+5446,antibiotic target protection
+5447,antibiotic target protection
+5448,antibiotic target protection
+5449,antibiotic target protection
+5450,antibiotic target protection
+5451,antibiotic target protection
+5452,antibiotic target protection
+5453,antibiotic target protection
+5454,antibiotic target protection
+5455,antibiotic target protection
+5456,antibiotic target protection
+5457,antibiotic target protection
+5458,antibiotic target protection
+5459,antibiotic target protection
+5460,antibiotic target protection
+5461,antibiotic target protection
+5462,antibiotic target protection
+5463,antibiotic target protection
+5464,antibiotic target protection
+5465,antibiotic target protection
+5466,antibiotic target protection
+5467,antibiotic target protection
+5468,antibiotic target protection
+5469,antibiotic target protection
+5470,antibiotic target protection
+5471,antibiotic target protection
+5472,antibiotic target protection
+5473,antibiotic target protection
+5474,antibiotic target protection
+5475,antibiotic target protection
+5476,antibiotic target protection
+5477,antibiotic target protection
+5478,antibiotic target protection
+5479,antibiotic target protection
+5480,antibiotic target protection
+5481,antibiotic target protection
+5482,antibiotic target protection
+5483,antibiotic target protection
+5484,antibiotic target protection
+5485,antibiotic target protection
+5486,antibiotic target protection
+5487,antibiotic target protection
+5488,antibiotic target protection
+5489,antibiotic target protection
+5490,antibiotic target protection
+5491,antibiotic target protection
+5492,antibiotic target protection
+5493,antibiotic target protection
+5494,antibiotic target protection
+5495,antibiotic target protection
+5496,antibiotic target protection
+5497,antibiotic target protection
+5498,antibiotic target protection
+5499,antibiotic target protection
+5500,antibiotic target protection
+5501,antibiotic target protection
+5502,antibiotic target protection
+5503,antibiotic target protection
+5504,antibiotic target protection
+5505,antibiotic target protection
+5506,antibiotic target protection
+5507,antibiotic target protection
+5508,antibiotic target protection
+5509,antibiotic target protection
+5510,antibiotic target protection
+5511,antibiotic target protection
+5512,antibiotic target protection
+5513,antibiotic target protection
+5514,antibiotic target protection
+5515,antibiotic target protection
+5516,antibiotic target protection
+5517,antibiotic target protection
+5518,antibiotic target protection
+5519,antibiotic target protection
+5520,antibiotic target protection
+5521,antibiotic target protection
+5522,antibiotic target protection
+5523,antibiotic target protection
+5524,antibiotic target protection
+5525,antibiotic target protection
+5526,antibiotic target protection
+5527,antibiotic target protection
+5528,antibiotic target protection
+5529,antibiotic target protection
+5530,antibiotic target protection
+5531,antibiotic target protection
+5532,antibiotic target protection
+5533,antibiotic target protection
+5534,antibiotic target protection
+5535,antibiotic target protection
+5536,antibiotic target protection
+5537,antibiotic target protection
+5538,antibiotic target protection
+5539,antibiotic target protection
+5540,antibiotic target protection
+5541,antibiotic target protection
+5542,antibiotic target protection
+5543,antibiotic target protection
+5544,antibiotic target protection
+5545,antibiotic target protection
+5546,antibiotic target protection
+5547,antibiotic target protection
+5548,antibiotic target protection
+5549,antibiotic target protection
+5550,antibiotic target protection
+5551,antibiotic target protection
+5552,antibiotic target protection
+5553,antibiotic target protection
+5554,antibiotic target protection
+5555,antibiotic target protection
+5556,antibiotic target protection
+5557,antibiotic target protection
+5558,antibiotic target protection
+5559,antibiotic target protection
+5560,antibiotic target protection
+5561,antibiotic target protection
+5562,antibiotic target protection
+5563,antibiotic target protection
+5564,antibiotic target protection
+5565,antibiotic target protection
+5566,antibiotic target protection
+5567,antibiotic target protection
+5568,antibiotic target protection
+5569,antibiotic target protection
+5570,antibiotic target protection
+5571,antibiotic target protection
+5572,antibiotic target protection
+5573,antibiotic target protection
+5574,antibiotic target protection
+5575,antibiotic target protection
+5576,antibiotic target protection
+5577,antibiotic target protection
+5578,antibiotic target protection
+5579,antibiotic target protection
+5580,antibiotic target protection
+5581,antibiotic target protection
+5582,antibiotic target protection
+5583,antibiotic target protection
+5584,antibiotic target protection
+5585,antibiotic target protection
+5586,antibiotic target protection
+5587,antibiotic target protection
+5588,antibiotic target protection
+5589,antibiotic target protection
+5590,antibiotic target protection
+5591,antibiotic target protection
+5592,antibiotic target protection
+5593,antibiotic target protection
+5594,antibiotic target protection
+5595,antibiotic target protection
+5596,antibiotic target protection
+5597,antibiotic target protection
+5598,antibiotic target protection
+5599,antibiotic target protection
+5600,antibiotic target protection
+5601,antibiotic target protection
+5602,antibiotic target protection
+5603,antibiotic target protection
+5604,antibiotic target protection
+5605,antibiotic target protection
+5606,antibiotic target protection
+5607,antibiotic target protection
+5608,antibiotic target protection
+5609,antibiotic target protection
+5610,antibiotic target protection
+5611,antibiotic target protection
+5612,antibiotic target protection
+5613,antibiotic target protection
+5614,antibiotic target protection
+5615,antibiotic target protection
+5616,antibiotic target protection
+5617,antibiotic target protection
+5618,antibiotic target protection
+5619,antibiotic target protection
+5620,antibiotic target protection
+5621,antibiotic target protection
+5622,antibiotic target protection
+5623,antibiotic target protection
+5624,antibiotic target protection
+5625,antibiotic target protection
+5626,antibiotic target protection
+5627,antibiotic target protection
+5628,antibiotic target protection
+5629,antibiotic target protection
+5630,antibiotic target protection
+5631,antibiotic target protection
+5632,antibiotic target protection
+5633,antibiotic target protection
+5634,antibiotic target protection
+5635,antibiotic target protection
+5636,antibiotic target protection
+5637,antibiotic target protection
+5638,antibiotic target protection
+5639,antibiotic target protection
+5640,antibiotic target protection
+5641,antibiotic target protection
+5642,antibiotic target protection
+5643,antibiotic target protection
+5644,antibiotic target protection
+5645,antibiotic target protection
+5646,antibiotic target protection
+5647,antibiotic target protection
+5648,antibiotic target protection
+5649,antibiotic target protection
+5650,antibiotic target protection
+5651,antibiotic target protection
+5652,antibiotic target protection
+5653,antibiotic target protection
+5654,antibiotic target protection
+5655,antibiotic target protection
+5656,antibiotic target protection
+5657,antibiotic target protection
+5658,antibiotic target protection
+5659,antibiotic target protection
+5660,antibiotic target protection
+5661,antibiotic target protection
+5662,antibiotic target protection
+5663,antibiotic target protection
+5664,antibiotic target protection
+5665,antibiotic target protection
+5666,antibiotic target protection
+5667,antibiotic target protection
+5668,antibiotic target protection
+5669,antibiotic target protection
+5670,antibiotic target protection
+5671,antibiotic target protection
+5672,antibiotic target protection
+5673,antibiotic target protection
+5674,antibiotic target protection
+5675,antibiotic target protection
+5676,antibiotic target protection
+5677,antibiotic target protection
+5678,antibiotic target protection
+5679,antibiotic target protection
+5680,antibiotic target protection
+5681,antibiotic target protection
+5682,antibiotic target protection
+5683,antibiotic target protection
+5684,antibiotic target protection
+5685,antibiotic target protection
+5686,antibiotic target protection
+5687,antibiotic target protection
+5688,antibiotic target protection
+5689,antibiotic target protection
+5690,antibiotic target protection
+5691,antibiotic target protection
+5692,antibiotic target protection
+5693,antibiotic target protection
+5694,antibiotic target protection
+5695,antibiotic target protection
+5696,antibiotic target protection
+5697,antibiotic target protection
+5698,antibiotic target protection
+5699,antibiotic target protection
+5700,antibiotic target protection
+5701,antibiotic target protection
+5702,antibiotic target protection
+5703,antibiotic target protection
+5704,antibiotic target protection
+5705,antibiotic target protection
+5706,antibiotic target protection
+5707,antibiotic target protection
+5708,antibiotic target protection
+5709,antibiotic target protection
+5710,antibiotic target protection
+5711,antibiotic target protection
+5712,antibiotic target protection
+5713,antibiotic target protection
+5714,antibiotic target protection
+5715,antibiotic target protection
+5716,antibiotic target protection
+5717,antibiotic target protection
+5718,antibiotic target protection
+5719,antibiotic target protection
+5720,antibiotic target protection
+5721,antibiotic target protection
+5722,antibiotic target protection
+5723,antibiotic target protection
+5724,antibiotic target protection
+5725,antibiotic target protection
+5726,antibiotic target protection
+5727,antibiotic target protection
+5728,antibiotic target protection
+5729,antibiotic target protection
+5730,antibiotic target protection
+5731,antibiotic target protection
+5732,antibiotic target protection
+5733,antibiotic target protection
+5734,antibiotic target protection
+5735,antibiotic target protection
+5736,antibiotic target protection
+5737,antibiotic target protection
+5738,antibiotic target protection
+5739,antibiotic target protection
+5740,antibiotic target protection
+5741,antibiotic target protection
+5742,antibiotic target protection
+5743,antibiotic target protection
+5744,antibiotic target protection
+5745,antibiotic target protection
+5746,antibiotic target protection
+5747,antibiotic target protection
+5748,antibiotic target protection
+5749,antibiotic target protection
+5750,antibiotic target protection
+5751,antibiotic target protection
+5752,antibiotic target protection
+5753,antibiotic target protection
+5754,antibiotic target protection
+5755,antibiotic target protection
+5756,antibiotic target protection
+5757,antibiotic target protection
+5758,antibiotic target protection
+5759,antibiotic target protection
+5760,antibiotic target protection
+5761,antibiotic target protection
+5762,antibiotic target protection
+5763,antibiotic target protection
+5764,antibiotic target protection
+5765,antibiotic target protection
+5766,antibiotic target protection
+5767,antibiotic target protection
+5768,antibiotic target protection
+5769,antibiotic target protection
+5770,antibiotic target protection
+5771,antibiotic target protection
+5772,antibiotic target protection
+5773,antibiotic target protection
+5774,antibiotic target protection
+5775,antibiotic target protection
+5776,antibiotic target protection
+5777,antibiotic target protection
+5778,antibiotic target protection
+5779,antibiotic target protection
+5780,antibiotic target protection
+5781,antibiotic target protection
+5782,antibiotic target protection
+5783,antibiotic target protection
+5784,antibiotic target protection
+5785,antibiotic target protection
+5786,antibiotic target protection
+5787,antibiotic target protection
+5788,antibiotic target protection
+5789,antibiotic target protection
+5790,antibiotic target protection
+5791,antibiotic target protection
+5792,antibiotic target protection
+5793,antibiotic target protection
+5794,antibiotic target protection
+5795,antibiotic target protection
+5796,antibiotic target protection
+5797,antibiotic target protection
+5798,antibiotic target protection
+5799,antibiotic target protection
+5800,antibiotic target protection
+5801,antibiotic target protection
+5802,antibiotic target protection
+5803,antibiotic target protection
+5804,antibiotic target protection
+5805,antibiotic target protection
+5806,antibiotic target protection
+5807,antibiotic target protection
+5808,antibiotic target protection
+5809,antibiotic target protection
+5810,antibiotic target protection
+5811,antibiotic target protection
+5812,antibiotic target protection
+5813,antibiotic target protection
+5814,antibiotic target protection
+5815,antibiotic target protection
+5816,antibiotic target protection
+5817,antibiotic target protection
+5818,antibiotic target protection
+5819,antibiotic target protection
+5820,antibiotic target protection
+5821,antibiotic target protection
+5822,antibiotic target protection
+5823,antibiotic target protection
+5824,antibiotic target protection
+5825,antibiotic target protection
+5826,antibiotic target protection
+5827,antibiotic target protection
+5828,antibiotic target protection
+5829,antibiotic target protection
+5830,antibiotic target protection
+5831,antibiotic target protection
+5832,antibiotic target protection
+5833,antibiotic target protection
+5834,antibiotic target protection
+5835,antibiotic target protection
+5836,antibiotic target protection
+5837,antibiotic target protection
+5838,antibiotic target protection
+5839,antibiotic target protection
+5840,antibiotic target protection
+5841,antibiotic target protection
+5842,antibiotic target protection
+5843,antibiotic target protection
+5844,antibiotic target protection
+5845,antibiotic target protection
+5846,antibiotic target protection
+5847,antibiotic target protection
+5848,antibiotic target protection
+5849,antibiotic target protection
+5850,antibiotic target protection
+5851,antibiotic target protection
+5852,antibiotic target protection
+5853,antibiotic target protection
+5854,antibiotic target protection
+5855,antibiotic target protection
+5856,antibiotic target protection
+5857,antibiotic target protection
+5858,antibiotic target protection
+5859,antibiotic target protection
+5860,antibiotic target protection
+5861,antibiotic target protection
+5862,antibiotic target protection
+5863,antibiotic target protection
+5864,antibiotic target protection
+5865,antibiotic target protection
+5866,antibiotic target protection
+5867,antibiotic target protection
+5868,antibiotic target protection
+5869,antibiotic target protection
+5870,antibiotic target protection
+5871,antibiotic target protection
+5872,antibiotic target protection
+5873,antibiotic target protection
+5874,antibiotic target protection
+5875,antibiotic target protection
+5876,antibiotic target protection
+5877,antibiotic target protection
+5878,antibiotic target protection
+5879,antibiotic target protection
+5880,antibiotic target protection
+5881,antibiotic target protection
+5882,antibiotic target protection
+5883,antibiotic target protection
+5884,antibiotic target protection
+5885,antibiotic target protection
+5886,antibiotic target protection
+5887,antibiotic target protection
+5888,antibiotic target protection
+5889,antibiotic target protection
+5890,antibiotic target protection
+5891,antibiotic target protection
+5892,antibiotic target protection
+5893,antibiotic target protection
+5894,antibiotic target protection
+5895,antibiotic target protection
+5896,antibiotic target protection
+5897,antibiotic target protection
+5898,antibiotic target protection
+5899,antibiotic target protection
+5900,antibiotic target protection
+5901,antibiotic target protection
+5902,antibiotic target protection
+5903,antibiotic target protection
+5904,antibiotic target protection
+5905,antibiotic target protection
+5906,antibiotic target protection
+5907,antibiotic target protection
+5908,antibiotic target protection
+5909,antibiotic target protection
+5910,antibiotic target protection
+5911,antibiotic target protection
+5912,antibiotic target protection
+5913,antibiotic target protection
+5914,antibiotic target protection
+5915,antibiotic target protection
+5916,antibiotic target protection
+5917,antibiotic target protection
+5918,antibiotic target protection
+5919,antibiotic target protection
+5920,antibiotic target protection
+5921,antibiotic target protection
+5922,antibiotic target protection
+5923,antibiotic target protection
+5924,antibiotic target protection
+5925,antibiotic target protection
+5926,antibiotic target protection
+5927,antibiotic target protection
+5928,antibiotic target protection
+5929,antibiotic target protection
+5930,antibiotic target protection
+5931,antibiotic target protection
+5932,antibiotic target protection
+5933,antibiotic target protection
+5934,antibiotic target protection
+5935,antibiotic target protection
+5936,antibiotic target protection
+5937,antibiotic target protection
+5938,antibiotic target protection
+5939,antibiotic target protection
+5940,antibiotic target replacement
+5941,antibiotic target replacement
+5942,antibiotic target replacement
+5943,antibiotic target replacement
+5944,antibiotic target replacement
+5945,antibiotic target replacement
+5946,antibiotic target replacement
+5947,antibiotic target replacement
+5948,antibiotic target replacement
+5949,antibiotic target replacement
+5950,antibiotic target replacement
+5951,antibiotic target replacement
+5952,antibiotic target replacement
+5953,antibiotic target replacement
+5954,antibiotic target replacement
+5955,antibiotic target replacement
+5956,antibiotic target replacement
+5957,antibiotic target replacement
+5958,antibiotic target replacement
+5959,antibiotic target replacement
+5960,antibiotic target replacement
+5961,antibiotic target replacement
+5962,antibiotic target replacement
+5963,antibiotic target replacement
+5964,antibiotic target replacement
+5965,antibiotic target replacement
+5966,antibiotic target replacement
+5967,antibiotic target replacement
+5968,antibiotic target replacement
+5969,antibiotic target replacement
+5970,antibiotic target replacement
+5971,antibiotic target replacement
+5972,antibiotic target replacement
+5973,antibiotic target replacement
+5974,antibiotic target replacement
+5975,antibiotic target replacement
+5976,antibiotic target replacement
+5977,antibiotic target replacement
+5978,antibiotic target replacement
+5979,antibiotic target replacement
+5980,antibiotic target replacement
+5981,antibiotic target replacement
+5982,antibiotic target replacement
+5983,antibiotic target replacement
+5984,antibiotic target replacement
+5985,antibiotic target replacement
+5986,antibiotic target replacement
+5987,antibiotic target replacement
+5988,antibiotic target replacement
+5989,antibiotic target replacement
+5990,antibiotic target replacement
+5991,antibiotic target replacement
+5992,antibiotic target replacement
+5993,antibiotic target replacement
+5994,antibiotic target replacement
+5995,antibiotic target replacement
+5996,antibiotic target replacement
+5997,antibiotic target replacement
+5998,antibiotic target replacement
+5999,antibiotic target replacement
+6000,antibiotic target replacement
+6001,antibiotic target replacement
+6002,antibiotic target replacement
+6003,antibiotic target replacement
+6004,antibiotic target replacement
+6005,antibiotic target replacement
+6006,antibiotic target replacement
+6007,antibiotic target replacement
+6008,antibiotic target replacement
+6009,antibiotic target replacement
+6010,antibiotic target replacement
+6011,antibiotic target replacement
+6012,antibiotic target replacement
+6013,antibiotic target replacement
+6014,antibiotic target replacement
+6015,antibiotic target replacement
+6016,antibiotic target replacement
+6017,antibiotic target replacement
+6018,antibiotic target replacement
+6019,antibiotic target replacement
+6020,antibiotic target replacement
+6021,antibiotic target replacement
+6022,antibiotic target replacement
+6023,antibiotic target replacement
+6024,antibiotic target replacement
+6025,antibiotic target replacement
+6026,antibiotic target replacement
+6027,antibiotic target replacement
+6028,antibiotic target replacement
+6029,antibiotic target replacement
+6030,antibiotic target replacement
+6031,antibiotic target replacement
+6032,antibiotic target replacement
+6033,antibiotic target replacement
+6034,antibiotic target replacement
+6035,antibiotic target replacement
+6036,antibiotic target replacement
+6037,antibiotic target replacement
+6038,antibiotic target replacement
+6039,antibiotic target replacement
+6040,antibiotic target replacement
+6041,antibiotic target replacement
+6042,antibiotic target replacement
+6043,antibiotic target replacement
+6044,antibiotic target replacement
+6045,antibiotic target replacement
+6046,antibiotic target replacement
+6047,antibiotic target replacement
+6048,antibiotic target replacement
+6049,antibiotic target replacement
+6050,antibiotic target replacement
+6051,antibiotic target replacement
+6052,antibiotic target replacement
+6053,antibiotic target replacement
+6054,antibiotic target replacement
+6055,antibiotic target replacement
+6056,antibiotic target replacement
+6057,antibiotic target replacement
+6058,antibiotic target replacement
+6059,antibiotic target replacement
+6060,antibiotic target replacement
+6061,antibiotic target replacement
+6062,antibiotic target replacement
+6063,antibiotic target replacement
+6064,antibiotic target replacement
+6065,antibiotic target replacement
+6066,antibiotic target replacement
+6067,antibiotic target replacement
+6068,antibiotic target replacement
+6069,antibiotic target replacement
+6070,antibiotic target replacement
+6071,antibiotic target replacement
+6072,antibiotic target replacement
+6073,antibiotic target replacement
+6074,antibiotic target replacement
+6075,antibiotic target replacement
+6076,antibiotic target replacement
+6077,antibiotic target replacement
+6078,antibiotic target replacement
+6079,antibiotic target replacement
+6080,antibiotic target replacement
+6081,antibiotic target replacement
+6082,antibiotic target replacement
+6083,antibiotic target replacement
+6084,antibiotic target replacement
+6085,antibiotic target replacement
+6086,antibiotic target replacement
+6087,antibiotic target replacement
+6088,antibiotic target replacement
+6089,antibiotic target replacement
+6090,antibiotic target replacement
+6091,antibiotic target replacement
+6092,antibiotic target replacement
+6093,antibiotic target replacement
+6094,antibiotic target replacement
+6095,antibiotic target replacement
+6096,antibiotic target replacement
+6097,antibiotic target replacement
+6098,antibiotic target replacement
+6099,antibiotic target replacement
+6100,antibiotic target replacement
+6101,antibiotic target replacement
+6102,antibiotic target replacement
+6103,antibiotic target replacement
+6104,antibiotic target replacement
+6105,antibiotic target replacement
+6106,antibiotic target replacement
+6107,antibiotic target replacement
+6108,antibiotic target replacement
+6109,antibiotic target replacement
+6110,antibiotic target replacement
+6111,antibiotic target replacement
+6112,antibiotic target replacement
+6113,antibiotic target replacement
+6114,antibiotic target replacement
+6115,antibiotic target replacement
+6116,antibiotic target replacement
+6117,antibiotic target replacement
+6118,antibiotic target replacement
+6119,antibiotic target replacement
+6120,antibiotic target replacement
+6121,antibiotic target replacement
+6122,antibiotic target replacement
+6123,antibiotic target replacement
+6124,antibiotic target replacement
+6125,antibiotic target replacement
+6126,antibiotic target replacement
+6127,antibiotic target replacement
+6128,antibiotic target replacement
+6129,antibiotic target replacement
+6130,antibiotic target replacement
+6131,antibiotic target replacement
+6132,antibiotic target replacement
+6133,antibiotic target replacement
+6134,antibiotic target replacement
+6135,antibiotic target replacement
+6136,antibiotic target replacement
+6137,antibiotic target replacement
+6138,antibiotic target replacement
+6139,antibiotic target replacement

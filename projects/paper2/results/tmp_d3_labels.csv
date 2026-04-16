@@ -26,6 +26,7 @@ gb|CAC35723.1|ARO:3003374|Kaer_acrR_MULT,antibiotic efflux
 gb|QWW12915.1|ARO:3007203|Kpne_PhoQ_CST,antibiotic efflux
 gb|WP_323056190.1|ARO:3007843|VRA-F,antibiotic efflux
 gb|NP_214856.1|ARO:3007798|Mtub_iniA_INH,antibiotic efflux
+gb|P24734.3|ARO:3007491|Paer_ampR_ATM,antibiotic inactivation
 gb|AFC91828.1|ARO:3003041|Spne_PBP1a_AMX,antibiotic target alteration
 gb|AAC76209.2|ARO:3003386|Ecol_folP_SLF,antibiotic target alteration
 gb|CAG39568.1|ARO:3003285|Saur_rpoB_RIF,antibiotic target alteration
@@ -225,3 +226,11 @@ gb|NP_215181.1|ARO:3003283|Mtub_rpoB_RIF,antibiotic target alteration
 gb|NP_214921.1|ARO:3007849|Mtub_fgd1_DLM,antibiotic target alteration
 gb|ABK64957.1|ARO:3007473|Mavi_gyrA_FLO,antibiotic target alteration
 gb|CAA38861.1|ARO:3007423|Ecol_PBP3_BLA,antibiotic target alteration
+gb|AGQ48857.1|ARO:3003761|eatAv,antibiotic target protection
+gb|AAW90462.1|ARO:3003930|rpsJ,antibiotic target protection
+gb|NP_217187.1|ARO:3004184|Mtub_ribD_PAS,antibiotic target replacement
+gb|AAB57788.1|ARO:3000464|Ngon_porin,reduced permeability to antibiotic
+gb|AAK11270.1|ARO:3003385|Kaer_Omp36,reduced permeability to antibiotic
+gb|AAG04347.1|ARO:3003686|Paer_oprD_IPM,reduced permeability to antibiotic
+gb|AAC74015.1|ARO:3003390|Ecol_ompF_BLA,reduced permeability to antibiotic
+gb|WAH47136.1|ARO:3007420|Kpne_lamB_CZA,reduced permeability to antibiotic

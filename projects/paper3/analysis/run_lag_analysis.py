@@ -5,6 +5,7 @@ from __future__ import annotations
 import argparse
 import csv
 import os
+import re
 from pathlib import Path
 
 
@@ -124,6 +125,77 @@ def _write_csv(path: Path, header: list[str], rows: list[list[str]]) -> None:
         writer.writerows(rows)
 
 
+def _series_trend_label(values) -> str:
+    clean = values.dropna()
+    if len(clean) < 2:
+        return "trend unavailable"
+    start = float(clean.iloc[0])
+    end = float(clean.iloc[-1])
+    if end > start:
+        return "increasing"
+    if end < start:
+        return "decreasing"
+    return "stable"
+
+
+def _baseline_rank_label(rank: int, total: int) -> str:
+    if total <= 1:
+        return "single cohort"
+    if total == 2:
+        return "lower starting ARG burden" if rank == 0 else "higher starting ARG burden"
+    if total == 3:
+        return [
+            "lowest starting ARG burden",
+            "middle starting ARG burden",
+            "highest starting ARG burden",
+        ][rank]
+    frac = rank / (total - 1)
+    if frac <= 0.33:
+        return "lower starting ARG burden"
+    if frac >= 0.67:
+        return "higher starting ARG burden"
+    return "middle starting ARG burden"
+
+
+def _trend_summary_word(trend: str) -> str:
+    if trend == "increasing":
+        return "up"
+    if trend == "decreasing":
+        return "down"
+    if trend == "stable":
+        return "flat"
+    return "NA"
+
+
+def _format_study_panel_title(
+    study_value: object,
+    baseline_label: str,
+) -> str:
+    raw = str(study_value)
+    match = re.fullmatch(r"study([A-Za-z0-9]+)", raw.strip(), flags=re.IGNORECASE)
+    if match:
+        pretty = f"Study {match.group(1).upper()}"
+    else:
+        pretty = raw
+    return f"{pretty}: {baseline_label}"
+
+
+def _format_study_panel_note(
+    n_points: int,
+    mge_start: float | None,
+    arg_start: float | None,
+    mge_trend: str,
+    arg_trend: str,
+) -> str:
+    mge_start_text = "NA" if mge_start is None else f"{mge_start:.2f}"
+    arg_start_text = "NA" if arg_start is None else f"{arg_start:.1f}"
+    return (
+        f"Start values: MGE={mge_start_text}, ARG={arg_start_text} | "
+        f"Direction over time: MGE={_trend_summary_word(mge_trend)}, ARG={_trend_summary_word(arg_trend)} | "
+        f"n={n_points}"
+    )
+
+
 def _make_figures(figures_dir: Path, lag1_df, diff_df, corr_rows: list[tuple[str, float | None, int]]) -> None:
     try:
         import matplotlib.pyplot as plt
@@ -155,19 +227,80 @@ def _make_figures(figures_dir: Path, lag1_df, diff_df, corr_rows: list[tuple[str
     # 2) Time-series plot per study
     studies = sorted(lag1_df["study"].dropna().unique())
     if studies:
+        study_to_sub = {
+            study: lag1_df[lag1_df["study"] == study].sort_values("order")
+            for study in studies
+        }
+        arg_start_values: dict[object, float] = {}
+        for study, sub in study_to_sub.items():
+            arg_start_series = sub["arg_total"].dropna()
+            if not arg_start_series.empty:
+                arg_start_values[study] = float(arg_start_series.iloc[0])
+            else:
+                arg_start_values[study] = float("inf")
+        sorted_by_arg_baseline = sorted(studies, key=lambda study: arg_start_values[study])
+        baseline_label_map: dict[object, str] = {}
+        for rank, study in enumerate(sorted_by_arg_baseline):
+            baseline_label_map[study] = _baseline_rank_label(rank, len(sorted_by_arg_baseline))
+
         n = len(studies)
-        fig, axes = plt.subplots(n, 1, figsize=(9, max(3 * n, 4)), squeeze=False)
+        fig, axes = plt.subplots(
+            n,
+            1,
+            figsize=(10, max(2.9 * n + 1.0, 4.8)),
+            squeeze=False,
+            sharex=True,
+        )
         for i, study in enumerate(studies):
             ax = axes[i][0]
-            sub = lag1_df[lag1_df["study"] == study].sort_values("order")
-            ax.plot(sub["order"], sub["mge_abundance"], marker="o", label="MGE")
-            ax.plot(sub["order"], sub["arg_total"], marker="s", label="ARG")
-            ax.set_title(f"Study {study}")
-            ax.set_xlabel("Time order")
+            sub = study_to_sub[study]
+            ax.plot(sub["order"], sub["mge_abundance"], marker="o", markersize=5, linewidth=2, label="MGE abundance")
+            ax.plot(sub["order"], sub["arg_total"], marker="s", markersize=5, linewidth=2, label="ARG burden")
+            mge_start_series = sub["mge_abundance"].dropna()
+            arg_start_series = sub["arg_total"].dropna()
+            mge_start = float(mge_start_series.iloc[0]) if not mge_start_series.empty else None
+            arg_start = float(arg_start_series.iloc[0]) if not arg_start_series.empty else None
+            mge_trend = _series_trend_label(sub["mge_abundance"])
+            arg_trend = _series_trend_label(sub["arg_total"])
+            ax.set_title(
+                _format_study_panel_title(study, baseline_label_map.get(study, "unknown")),
+                fontsize=13,
+                fontweight="semibold",
+                pad=10,
+            )
+            ax.text(
+                0.01,
+                0.95,
+                _format_study_panel_note(
+                    len(sub),
+                    mge_start,
+                    arg_start,
+                    mge_trend,
+                    arg_trend,
+                ),
+                transform=ax.transAxes,
+                ha="left",
+                va="top",
+                fontsize=9,
+                bbox={"boxstyle": "round,pad=0.25", "facecolor": "white", "edgecolor": "0.8", "alpha": 0.9},
+            )
             ax.set_ylabel("Abundance")
-            ax.legend(loc="best")
-        fig.suptitle("Time-Series Trajectories by Study")
-        fig.tight_layout()
+            ax.grid(True, linestyle="--", linewidth=0.7, alpha=0.3)
+            ax.margins(x=0.03)
+            if i == 0:
+                ax.legend(loc="upper right", frameon=True)
+
+        axes[-1][0].set_xlabel("Time order")
+        fig.text(
+            0.5,
+            0.007,
+            "Interpretation note: this is descriptive co-trending; by itself it does not prove MGE causes future ARG change.",
+            ha="center",
+            va="center",
+            fontsize=9,
+            style="italic",
+        )
+        fig.tight_layout(rect=[0, 0.02, 1, 1])
         fig.savefig(figures_dir / "timeseries_mge_arg_by_study.png", dpi=180)
         plt.close(fig)
 

@@ -1,0 +1,1812 @@
+query_id,pident,true_label,pred_label_embedding,embedding_correct,blast_correct
+gb|AAL19308.1|ARO:3000504|golS,30.556000,antibiotic efflux,antibiotic target replacement,0,1
+gb|BAE78082.1|ARO:3003550|mdtP,23.529000,antibiotic efflux,antibiotic inactivation,0,0
+gb|BAE77778.1|ARO:3000508|gadX,28.125000,antibiotic efflux,antibiotic inactivation,0,1
+gb|AAC76539.1|ARO:3000796|mdtF,25.758000,antibiotic efflux,antibiotic target alteration,0,0
+gb|BAB38260.1|ARO:3000830|cpxA,27.660000,antibiotic efflux,antibiotic inactivation,0,0
+gb|CAJ77856.1|ARO:3000777|adeF,27.273000,antibiotic efflux,antibiotic target alteration,0,0
+gb|BAB41874.1|ARO:3000815|mgrA,26.923000,antibiotic efflux,antibiotic target replacement,0,0
+gb|ACD35503.1|ARO:3000572|tet(42),28.313000,antibiotic efflux,antibiotic inactivation,0,1
+gb|AEM62948.1|ARO:3003196|tet(45),27.273000,antibiotic efflux,antibiotic target alteration,0,1
+gb|AAA71915.1|ARO:3000173|tet(E),32.812000,antibiotic efflux,antibiotic target alteration,0,0
+gb|CAA42594.1|ARO:3002690|Sliv_cmlR,27.557000,antibiotic efflux,antibiotic inactivation,0,0
+gb|ABD30512.1|ARO:3000839|arlS,35.484000,antibiotic efflux,antibiotic inactivation,0,0
+gb|ADM92606.1|ARO:3000549|adeS,28.000000,antibiotic efflux,antibiotic inactivation,0,0
+gb|AAL20862.1|ARO:3000826|sdiA,40.984000,antibiotic efflux,antibiotic target replacement,0,1
+gb|AAM77075.1|ARO:3002695|cmlA5,28.571000,antibiotic efflux,antibiotic target replacement,0,0
+gb|CAC14594.1|ARO:3003055|smeD,43.490000,antibiotic efflux,antibiotic target replacement,0,1
+gb|AAG05883.1|ARO:3000805|OprN,31.395000,antibiotic efflux,antibiotic inactivation,0,0
+gb|CAA78046.1|ARO:3002701|Rfas_cmr,27.507000,antibiotic efflux,antibiotic target alteration,0,0
+gb|BAA34299.1|ARO:3003034|mexX,37.015000,antibiotic efflux,antibiotic inactivation,0,1
+gb|ALX99516.1|ARO:3003811|adeC,23.973000,antibiotic efflux,antibiotic target alteration,0,0
+gb|AAD51347.1|ARO:3003067|smeS,32.159000,antibiotic efflux,antibiotic target alteration,0,0
+gb|AAA99504.1|ARO:3002987|bcrA,25.871000,antibiotic efflux,antibiotic target replacement,0,1
+gb|CAB13167.1|ARO:3003064|ykkD,34.211000,antibiotic efflux,antibiotic inactivation,0,0
+gb|BAJ09383.1|ARO:3003046|qacA,27.529000,antibiotic efflux,antibiotic target alteration,0,1
+gb|AAC74149.2|ARO:3001216|mdtH,26.190000,antibiotic efflux,antibiotic inactivation,0,0
+gb|AAU95768.1|ARO:3000026|mepA,21.277000,antibiotic efflux,antibiotic target alteration,0,0
+gb|AAC75135.2|ARO:3000792|mdtA,32.448000,antibiotic efflux,antibiotic target alteration,0,1
+gb|AAL19306.1|ARO:3000789|mdsA,31.025000,antibiotic efflux,antibiotic inactivation,0,1
+gb|CAA64891.1|ARO:3000812|mtrE,30.769000,antibiotic efflux,antibiotic target alteration,0,0
+gb|ADM92605.1|ARO:3000553|adeR,34.211000,antibiotic efflux,antibiotic target replacement,0,1
+gb|CAH35802.1|ARO:3002983|amrB,37.255000,antibiotic efflux,antibiotic target alteration,0,0
+gb|AAG03814.1|ARO:3000377|MexA,42.257000,antibiotic efflux,antibiotic inactivation,0,1
+gb|BAC67143.1|ARO:3000166|tet(B),29.688000,antibiotic efflux,antibiotic inactivation,0,0
+gb|AAC72341.1|ARO:3000182|tet(Y),38.636000,antibiotic efflux,antibiotic target alteration,0,0
+gb|AAD22144.1|ARO:3002698|cmlB,27.692000,antibiotic efflux,antibiotic target alteration,0,0
+gb|AAV85982.1|ARO:3000535|macB,41.964000,antibiotic efflux,antibiotic target alteration,0,1
+gb|AAG07595.1|ARO:3000809|OpmD,34.483000,antibiotic efflux,antibiotic inactivation,0,0
+gb|AAC60780.1|ARO:3003049|rosB,37.500000,antibiotic efflux,antibiotic target replacement,0,0
+gb|AAA20116.1|ARO:3000180|tetA(P),30.435000,antibiotic efflux,antibiotic inactivation,0,0
+gb|BAA11237.1|ARO:3000254|emrY,27.457000,antibiotic efflux,antibiotic target replacement,0,1
+gb|CAJ77855.1|ARO:3000779|adeH,28.736000,antibiotic efflux,antibiotic inactivation,0,0
+gb|AAQ10694.1|ARO:3003047|qacB,27.316000,antibiotic efflux,antibiotic target alteration,0,1
+gb|KIX81495.1|ARO:3002813|lmrB,23.096000,antibiotic efflux,antibiotic target alteration,0,1
+gb|ACJ59254.1|ARO:3000768|abeS,57.143000,antibiotic efflux,antibiotic target replacement,0,0
+gb|ABV18113.1|ARO:3001329|mdtG,40.000000,antibiotic efflux,antibiotic target replacement,0,0
+gb|BAA11236.1|ARO:3000206|emrK,21.845000,antibiotic efflux,antibiotic target replacement,0,1
+gb|BAC11911.1|ARO:3003551|emeA,29.577000,antibiotic efflux,antibiotic target replacement,0,0
+gb|AAX14802.1|ARO:3000781|adeJ,25.664000,antibiotic efflux,antibiotic target alteration,0,0
+gb|CAC14596.1|ARO:3003057|smeF,21.795000,antibiotic efflux,antibiotic inactivation,0,0
+gb|BAA07390.1|ARO:3002893|tcr3,28.758000,antibiotic efflux,antibiotic target alteration,0,1
+gb|CAC80727.1|ARO:3000476|tet(31),38.095000,antibiotic efflux,antibiotic target alteration,0,1
+gb|AAC76296.1|ARO:3000656|AcrS,37.681000,antibiotic efflux,antibiotic target replacement,0,1
+gb|ABS43151.1|ARO:3000784|cmeB,28.889000,antibiotic efflux,antibiotic target alteration,0,0
+gb|BAO79432.1|ARO:3000785|cmeC,34.884000,antibiotic efflux,antibiotic inactivation,0,0
+gb|AAB41956.1|ARO:3000800|MexC,42.045000,antibiotic efflux,antibiotic inactivation,0,1
+gb|AAB41958.1|ARO:3000802|OprJ,42.105000,antibiotic efflux,antibiotic target alteration,0,0
+gb|AAC75136.1|ARO:3000793|mdtB,47.059000,antibiotic efflux,antibiotic target alteration,0,0
+gb|BAB56495.1|ARO:3000746|mepR,28.205000,antibiotic efflux,antibiotic target replacement,0,0
+gb|AAL14440.1|ARO:3000775|adeB,37.931000,antibiotic efflux,antibiotic target alteration,0,0
+gb|BAE77933.1|ARO:3000518|CRP,23.490000,antibiotic efflux,antibiotic target replacement,0,0
+gb|CAC14595.1|ARO:3003056|smeE,27.500000,antibiotic efflux,antibiotic target alteration,0,0
+gb|CAD70268.1|ARO:3002704|fexA,27.586000,antibiotic efflux,antibiotic inactivation,0,1
+gb|AAA99505.1|ARO:3002988|bcrB,42.105000,antibiotic efflux,antibiotic inactivation,0,0
+gb|AAD04032.1|ARO:3002892|otr(B),28.436000,antibiotic efflux,antibiotic target alteration,0,1
+gb|CAM12479.1|ARO:3000567|tet(40),29.448000,antibiotic efflux,antibiotic target alteration,0,1
+gb|AAK97755.1|ARO:3000167|tet(C),27.368000,antibiotic efflux,antibiotic target alteration,0,0
+gb|AAD25538.1|ARO:3000174|tet(G),35.938000,antibiotic efflux,antibiotic target replacement,0,0
+gb|AAF27726.1|ARO:3002694|cmlA4,27.473000,antibiotic efflux,antibiotic target replacement,0,0
+gb|BAB36671.1|ARO:3000832|evgA,26.601000,antibiotic efflux,antibiotic inactivation,0,1
+gb|AAA26057.1|ARO:3002693|cmlA1,27.473000,antibiotic efflux,antibiotic target replacement,0,0
+gb|CAL30186.1|ARO:3002699|cmlB1,26.667000,antibiotic efflux,antibiotic target alteration,0,1
+gb|AAC73564.1|ARO:3000216|acrB,24.752000,antibiotic efflux,antibiotic target alteration,0,0
+gb|CAA75663.1|ARO:3000175|tet(H),28.571000,antibiotic efflux,antibiotic target alteration,0,0
+gb|AAW66497.1|ARO:3000566|tet(39),31.250000,antibiotic efflux,antibiotic target replacement,0,0
+gb|AAG05881.1|ARO:3000803|MexE,33.618000,antibiotic efflux,antibiotic inactivation,0,1
+gb|AAD12753.1|ARO:3000177|tet(J),26.437000,antibiotic efflux,antibiotic target alteration,0,0
+gb|AAB84282.1|ARO:3000181|tet(V),25.322000,antibiotic efflux,antibiotic target alteration,0,0
+gb|CCQ22388.1|ARO:3000421|norB,26.174000,antibiotic efflux,antibiotic target alteration,0,1
+gb|AAL19304.1|ARO:3000791|mdsC,24.752000,antibiotic efflux,antibiotic inactivation,0,0
+gb|ABS43901.1|ARO:3000783|cmeA,28.529000,antibiotic efflux,reduced permeability to antibiotic,0,1
+gb|AAC77293.1|ARO:3001214|mdtM,22.115000,antibiotic efflux,antibiotic inactivation,0,1
+gb|AAF67494.2|ARO:3002522|novA,26.667000,antibiotic efflux,antibiotic target alteration,0,1
+gb|CAJ77857.1|ARO:3000778|adeG,32.927000,antibiotic efflux,antibiotic inactivation,0,1
+gb|CAL34518.1|ARO:3000526|cmeR,31.325000,antibiotic efflux,antibiotic inactivation,0,1
+gb|BAB35162.1|ARO:3000676|H-NS,36.667000,antibiotic efflux,antibiotic inactivation,0,0
+gb|AAB58161.1|ARO:3003010|ceoB,29.592000,antibiotic efflux,antibiotic target alteration,0,0
+gb|AAA22277.1|ARO:3003007|bmr,22.078000,antibiotic efflux,antibiotic target alteration,0,1
+gb|AAC60781.1|ARO:3003048|rosA,31.915000,antibiotic efflux,antibiotic target replacement,0,0
+gb|AAL75563.1|ARO:3000168|tet(D),33.846000,antibiotic efflux,antibiotic inactivation,0,0
+gb|ACJ63262.1|ARO:3003107|mef(B),29.167000,antibiotic efflux,antibiotic target replacement,0,0
+gb|AEZ36150.1|ARO:3000448|QepA1,30.047000,antibiotic efflux,antibiotic target alteration,0,1
+gb|AAL14439.1|ARO:3000774|adeA,43.202000,antibiotic efflux,antibiotic inactivation,0,1
+gb|AAC75137.1|ARO:3000794|mdtC,39.583000,antibiotic efflux,antibiotic target alteration,0,0
+gb|AAC75429.1|ARO:3000833|evgS,24.906000,antibiotic efflux,antibiotic target alteration,0,0
+gb|AAC75731.1|ARO:3000516|emrR,37.838000,antibiotic efflux,antibiotic inactivation,0,0
+gb|AAF42063.1|ARO:3000810|mtrC,95.874000,antibiotic efflux,antibiotic efflux,1,1
+gb|AAG03380.1|ARO:3002703|cmx,27.479000,antibiotic efflux,antibiotic target replacement,0,0
+gb|BAD89844.2|ARO:3000753|abeM,37.500000,antibiotic efflux,antibiotic target alteration,0,0
+gb|AAL19305.1|ARO:3000790|mdsB,34.783000,antibiotic efflux,antibiotic target alteration,0,0
+gb|ATC67679.1|ARO:3000838|arlR,38.813000,antibiotic efflux,antibiotic inactivation,0,1
+gb|BAA16344.1|ARO:3000491|acrD,26.316000,antibiotic efflux,antibiotic target alteration,0,0
+gb|AAK52606.1|ARO:3002696|cmlA6,27.473000,antibiotic efflux,antibiotic target replacement,0,0
+gb|BAE78084.1|ARO:3003548|mdtN,25.200000,antibiotic efflux,antibiotic inactivation,0,1
+gb|AAB28795.1|ARO:3000178|tet(K),25.258000,antibiotic efflux,antibiotic inactivation,0,1
+gb|AFK80333.1|ARO:3001313|facT,30.645000,antibiotic efflux,antibiotic target alteration,0,1
+gb|ACJ41739.1|ARO:3000780|adeI,43.590000,antibiotic efflux,antibiotic inactivation,0,1
+gb|AAG07593.1|ARO:3000807|MexH,25.680000,antibiotic efflux,antibiotic target alteration,0,1
+gb|AAC76298.1|ARO:3000502|AcrF,31.250000,antibiotic efflux,antibiotic target alteration,0,0
+gb|AAC76297.1|ARO:3000499|AcrE,45.299000,antibiotic efflux,antibiotic inactivation,0,1
+gb|AAD51344.1|ARO:3003051|smeA,41.641000,antibiotic efflux,antibiotic target alteration,0,1
+gb|CAH35803.1|ARO:3002982|amrA,37.228000,antibiotic efflux,antibiotic target alteration,0,1
+gb|AAD51348.1|ARO:3003066|smeR,38.288000,antibiotic efflux,antibiotic target replacement,0,1
+gb|AAS68233.1|ARO:3000391|norA,24.545000,antibiotic efflux,antibiotic target replacement,0,0
+gb|AAD44693.1|ARO:3000816|mtrA,26.596000,antibiotic efflux,antibiotic inactivation,0,1
+gb|AAP93922.1|ARO:3000569|tet(41),32.710000,antibiotic efflux,antibiotic target alteration,0,0
+gb|AYV52072.1|ARO:3002882|lmrD,28.111000,antibiotic efflux,antibiotic target alteration,0,1
+gb|BAM10414.1|ARO:3003039|OprA,27.381000,antibiotic efflux,antibiotic target alteration,0,0
+gb|AAX14803.1|ARO:3000782|adeK,42.308000,antibiotic efflux,antibiotic inactivation,0,0
+gb|AFK13828.1|ARO:3000823|ramA,50.000000,antibiotic efflux,antibiotic target replacement,0,1
+gb|AAV85981.1|ARO:3000533|macA,26.415000,antibiotic efflux,antibiotic target alteration,0,1
+gb|AAB58160.1|ARO:3003009|ceoA,37.107000,antibiotic efflux,antibiotic inactivation,0,1
+gb|CAA03986.1|ARO:3000343|tap,68.382000,antibiotic efflux,antibiotic target alteration,0,0
+gb|AAC45805.1|ARO:3002702|cmrA,29.226000,antibiotic efflux,antibiotic target alteration,0,0
+gb|BAA16547.1|ARO:3000027|emrA,22.330000,antibiotic efflux,antibiotic inactivation,0,1
+gb|ACS83748.1|ARO:3000573|tet(43),33.795000,antibiotic efflux,antibiotic target alteration,0,1
+gb|BAA34300.1|ARO:3003033|mexY,31.148000,antibiotic efflux,antibiotic target alteration,0,0
+gb|AML99881.1|ARO:3001327|MdtK,26.250000,antibiotic efflux,antibiotic target replacement,0,0
+gb|CAB13166.1|ARO:3003063|ykkC,29.032000,antibiotic efflux,reduced permeability to antibiotic,0,1
+gb|AAC75733.1|ARO:3000074|emrB,27.807000,antibiotic efflux,antibiotic target alteration,0,1
+gb|AGV28567.1|ARO:3000559|adeN,30.631000,antibiotic efflux,antibiotic target replacement,0,1
+gb|BAE77781.1|ARO:3000795|mdtE,39.193000,antibiotic efflux,antibiotic inactivation,0,1
+gb|BAA15221.2|ARO:3000263|marA,41.837000,antibiotic efflux,antibiotic inactivation,0,1
+gb|AAF42062.1|ARO:3000811|mtrD,30.000000,antibiotic efflux,antibiotic target alteration,0,0
+gb|AAA74437.1|ARO:3000378|MexB,30.000000,antibiotic efflux,antibiotic target alteration,0,0
+gb|AAD09860.1|ARO:3000561|tet(30),47.619000,antibiotic efflux,antibiotic target replacement,0,0
+gb|AAV80464.1|ARO:3000565|tet(38),19.231000,antibiotic efflux,antibiotic target alteration,0,0
+gb|AAN06707.1|ARO:3000165|tet(A),34.375000,antibiotic efflux,antibiotic target alteration,0,0
+gb|AAD25063.1|ARO:3000183|tet(Z),31.818000,antibiotic efflux,antibiotic target alteration,0,0
+gb|AAD51345.1|ARO:3003052|smeB,29.032000,antibiotic efflux,antibiotic target alteration,0,0
+gb|AAC36944.1|ARO:3003006|blt,20.339000,antibiotic efflux,antibiotic target alteration,0,1
+gb|BAE78083.1|ARO:3003549|mdtO,41.667000,antibiotic efflux,antibiotic target alteration,0,1
+gb|BAA07072.1|ARO:3002812|pp-flo,42.308000,antibiotic efflux,antibiotic inactivation,0,0
+gb|AAK76137.1|ARO:3000024|patA,24.034000,antibiotic efflux,antibiotic target alteration,0,1
+gb|AAK76136.1|ARO:3000025|patB,27.230000,antibiotic efflux,antibiotic target alteration,0,1
+gb|AAC43969.1|ARO:3003037|opcM,27.869000,antibiotic efflux,antibiotic target alteration,0,0
+gb|AAK99679.1|ARO:3000822|pmrA,23.129000,antibiotic efflux,antibiotic target replacement,0,1
+gb|CAD12227.2|ARO:3000478|tet(33),30.682000,antibiotic efflux,antibiotic target alteration,0,0
+gb|AAK37619.1|ARO:3000481|tet(35),28.571000,antibiotic efflux,antibiotic target alteration,0,0
+gb|AAR96051.1|ARO:3002894|otr(C),17.040000,antibiotic efflux,antibiotic target replacement,0,1
+gb|AAG03546.1|ARO:3003679|TriA,25.625000,antibiotic efflux,antibiotic inactivation,0,1
+gb|AAG03547.1|ARO:3003680|TriB,24.260000,antibiotic efflux,antibiotic inactivation,0,1
+gb|AAG03548.1|ARO:3003681|TriC,40.625000,antibiotic efflux,antibiotic target alteration,0,0
+gb|AAG08359.1|ARO:3003682|OpmH,26.897000,antibiotic efflux,antibiotic inactivation,0,0
+gb|BAE06007.1|ARO:3003698|mexP,27.299000,antibiotic efflux,antibiotic target alteration,0,1
+gb|BAE06008.1|ARO:3003699|mexQ,36.364000,antibiotic efflux,antibiotic target alteration,0,0
+gb|AAG07065.1|ARO:3003692|MexJ,25.532000,antibiotic efflux,antibiotic target alteration,0,1
+gb|AAG07064.1|ARO:3003693|MexK,35.484000,antibiotic efflux,antibiotic target alteration,0,0
+gb|AAG07762.1|ARO:3003030|MexV,27.299000,antibiotic efflux,antibiotic target replacement,0,1
+gb|AAG07763.1|ARO:3003031|MexW,29.630000,antibiotic efflux,antibiotic target alteration,0,0
+gb|BAE06009.1|ARO:3003700|opmE,33.333000,antibiotic efflux,antibiotic target alteration,0,0
+gb|BAE06005.1|ARO:3003704|mexM,33.875000,antibiotic efflux,antibiotic inactivation,0,1
+gb|BAE06006.1|ARO:3003705|mexN,25.490000,antibiotic efflux,antibiotic target alteration,0,0
+gb|AAA26793.1|ARO:3003748|oleC,25.806000,antibiotic efflux,antibiotic inactivation,0,1
+gb|ABW91179.1|ARO:3004665|cmlA8,26.374000,antibiotic efflux,antibiotic target replacement,0,0
+gb|ANK04027.1|ARO:3003838|gadW,27.381000,antibiotic efflux,antibiotic inactivation,0,1
+gb|CAE00499.1|ARO:3003835|cdeA,23.188000,antibiotic efflux,antibiotic target replacement,0,0
+gb|AAC73788.1|ARO:3003841|kdpE,36.161000,antibiotic efflux,antibiotic inactivation,0,1
+gb|NP_862226.1|ARO:3004639|Cstr_tetA,32.967000,antibiotic efflux,antibiotic target alteration,0,1
+gb|AAP43109.1|ARO:3003922|oqxA,32.845000,antibiotic efflux,antibiotic target alteration,0,1
+gb|AAP43110.2|ARO:3003923|oqxB,29.762000,antibiotic efflux,antibiotic target alteration,0,0
+gb|XP_753111.1|ARO:3003942|abcA,26.291000,antibiotic efflux,antibiotic target alteration,0,1
+gb|WP_104671188.1|ARO:3003948|efrA,28.696000,antibiotic efflux,antibiotic target alteration,0,1
+gb|CDO61516.1|ARO:3003949|efrB,30.208000,antibiotic efflux,antibiotic target alteration,0,1
+gb|AAC74000.1|ARO:3003950|msbA,27.434000,antibiotic efflux,antibiotic target alteration,0,1
+gb|ADO96486.1|ARO:3003953|hmrM,36.667000,antibiotic efflux,antibiotic target replacement,0,0
+gb|BAG75524.1|ARO:3003954|efmA,36.709000,antibiotic efflux,antibiotic target replacement,0,0
+gb|CCP45647.1|ARO:3003955|efpA,29.782000,antibiotic efflux,antibiotic inactivation,0,1
+gb|AAF40763.1|ARO:3003961|farA,26.818000,antibiotic efflux,antibiotic target alteration,0,1
+gb|AAF40764.1|ARO:3003962|farB,30.547000,antibiotic efflux,antibiotic target alteration,0,1
+gb|AAD08227.1|ARO:3003964|hp1181,28.000000,antibiotic efflux,antibiotic target alteration,0,1
+gb|ABF33001.1|ARO:3003969|lmrP,30.435000,antibiotic efflux,antibiotic inactivation,0,0
+gb|AAC43550.1|ARO:3003967|lfrA,28.155000,antibiotic efflux,antibiotic target alteration,0,1
+gb|AAF74725.1|ARO:3004659|Mef(En2),22.310000,antibiotic efflux,antibiotic target replacement,0,0
+gb|BAA14147.1|ARO:3004667|Saur_norA,25.000000,antibiotic efflux,reduced permeability to antibiotic,0,0
+gb|ADI87853.1|ARO:3004666|pexA,26.923000,antibiotic efflux,antibiotic inactivation,0,1
+gb|APB03219.1|ARO:3003986|TaeA,23.921000,antibiotic efflux,antibiotic target alteration,0,0
+gb|AAG05916.1|ARO:3004073|MuxA,33.143000,antibiotic efflux,antibiotic target alteration,0,1
+gb|APB03214.1|ARO:3003980|tetA(58),22.172000,antibiotic efflux,antibiotic inactivation,0,1
+gb|SIP52035.1|ARO:3004054|Paer_CpxR,37.615000,antibiotic efflux,antibiotic inactivation,0,1
+gb|ANZ79241.1|ARO:3004036|tetB(60),25.238000,antibiotic efflux,antibiotic target alteration,0,1
+gb|AET10444.1|ARO:3004032|tetA(46),26.794000,antibiotic efflux,antibiotic target alteration,0,1
+gb|AET10445.1|ARO:3004033|tetB(46),25.238000,antibiotic efflux,antibiotic target alteration,0,1
+gb|ANZ79240.1|ARO:3004035|tetA(60),27.397000,antibiotic efflux,antibiotic target alteration,0,1
+gb|AAG16656.1|ARO:3002705|floR,42.308000,antibiotic efflux,antibiotic inactivation,0,0
+gb|AAG05913.1|ARO:3004072|OpmB,24.107000,antibiotic efflux,antibiotic inactivation,0,0
+gb|ALH22601.1|ARO:3000620|adeL,25.325000,antibiotic efflux,antibiotic target replacement,0,0
+gb|AAG08375.1|ARO:3004038|Paer_emrE,37.500000,antibiotic efflux,antibiotic target replacement,0,0
+gb|CAA77936.1|ARO:3004039|Ecol_emrE,48.000000,antibiotic efflux,antibiotic target replacement,0,1
+gb|CAC41008.1|ARO:3004041|Kpne_acrA,42.249000,antibiotic efflux,antibiotic inactivation,0,1
+gb|ABG77965.1|ARO:3004042|Eclo_acrA,45.732000,antibiotic efflux,antibiotic target replacement,0,1
+gb|AAC73565.1|ARO:3004043|Ecol_acrA,45.455000,antibiotic efflux,antibiotic inactivation,0,1
+gb|ALV80601.1|ARO:3003801|bcr-1,26.866000,antibiotic efflux,antibiotic target alteration,0,0
+gb|AAG07106.1|ARO:3004056|ArmR,44.444000,antibiotic efflux,antibiotic inactivation,0,0
+gb|AAA22851.1|ARO:3000179|tet(L),26.000000,antibiotic efflux,antibiotic target alteration,0,1
+gb|AEX49906.1|ARO:3003583|basS,26.957000,antibiotic efflux,antibiotic inactivation,0,0
+gb|AAG05882.1|ARO:3000804|MexF,43.243000,antibiotic efflux,antibiotic target alteration,0,0
+gb|AAG03816.1|ARO:3000379|OprM,35.714000,antibiotic efflux,antibiotic inactivation,0,1
+gb|AAG05915.1|ARO:3004074|MuxB,31.746000,antibiotic efflux,antibiotic target alteration,0,0
+gb|AAG05914.1|ARO:3004075|MuxC,30.120000,antibiotic efflux,antibiotic target alteration,0,0
+gb|AAG04750.1|ARO:3004077|PmpM,47.368000,antibiotic efflux,antibiotic target alteration,0,0
+gb|CAH14032.1|ARO:3004099|LpeA,23.853000,antibiotic efflux,antibiotic target replacement,0,1
+gb|CAH14033.1|ARO:3004100|LpeB,50.000000,antibiotic efflux,antibiotic target alteration,0,0
+gb|ACF70723.1|ARO:3004103|QepA2,30.047000,antibiotic efflux,antibiotic target replacement,0,1
+gb|AAG05661.1|ARO:3004107|Paer_soxR,61.871000,antibiotic efflux,antibiotic target replacement,0,1
+gb|EGP45230.2|ARO:3004142|OprZ,48.485000,antibiotic efflux,antibiotic inactivation,0,0
+gb|EGP45232.2|ARO:3004143|AxyX,40.000000,antibiotic efflux,antibiotic target replacement,0,1
+gb|EGP45231.1|ARO:3004144|AxyY,31.944000,antibiotic efflux,antibiotic target alteration,0,0
+gb|AFH35853.1|ARO:3001328|Ecol_mdfA,40.476000,antibiotic efflux,antibiotic inactivation,0,1
+gb|CAD31707.1|ARO:3002691|Sent_cmlA,27.473000,antibiotic efflux,antibiotic target replacement,0,0
+gb|AQX36338.1|ARO:3004379|QepA4,30.211000,antibiotic efflux,antibiotic target alteration,0,1
+gb|AMP42492.1|ARO:3004441|tet(59),31.250000,antibiotic efflux,antibiotic inactivation,0,0
+gb|ABO11759.2|ARO:3004573|Abau_AbaF,28.070000,antibiotic efflux,antibiotic target alteration,0,1
+gb|ACJ41547.2|ARO:3004574|Abau_AbaQ,21.725000,antibiotic efflux,antibiotic target alteration,0,0
+gb|ACQ82816.1|ARO:3004577|Abau_AmvA,25.420000,antibiotic efflux,antibiotic target alteration,0,1
+gb|BAH63251.1|ARO:3004580|Kpne_KpnE,25.000000,antibiotic efflux,antibiotic inactivation,0,0
+gb|BAH63252.1|ARO:3004583|Kpne_KpnF,50.000000,antibiotic efflux,antibiotic inactivation,0,0
+gb|EHL92831.1|ARO:3004588|Kpne_KpnG,24.272000,antibiotic efflux,antibiotic inactivation,0,1
+gb|EOU56998.1|ARO:3004597|Kpne_KpnH,27.807000,antibiotic efflux,antibiotic target alteration,0,1
+gb|AJO67548.1|ARO:3005006|tet(57),29.688000,antibiotic efflux,antibiotic target replacement,0,0
+gb|AEH26330.1|ARO:3005009|qacE,28.261000,antibiotic efflux,antibiotic inactivation,0,0
+gb|AAC44316.1|ARO:3005010|qacEdelta1,30.435000,antibiotic efflux,antibiotic inactivation,0,0
+gb|TKW44661.1|ARO:3005040|YajC,36.364000,antibiotic efflux,antibiotic target replacement,0,0
+gb|ABZ01840.1|ARO:3005043|cmlA9,42.308000,antibiotic efflux,antibiotic inactivation,0,0
+gb|CCN31428.1|ARO:3005049|CrcB,39.286000,antibiotic efflux,antibiotic target replacement,0,0
+gb|AIA35096.1|ARO:3005059|LptD,29.167000,antibiotic efflux,antibiotic target alteration,0,0
+gb|AAG06465.1|ARO:3005063|cprR,36.486000,antibiotic efflux,antibiotic inactivation,0,1
+gb|AAG06466.1|ARO:3005064|cprS,28.856000,antibiotic efflux,antibiotic target replacement,0,1
+gb|AAG05187.1|ARO:3005067|ParS,27.273000,antibiotic efflux,antibiotic target replacement,0,0
+gb|AAG05188.1|ARO:3005068|ParR,36.818000,antibiotic efflux,antibiotic target protection,0,1
+gb|AAC16242.1|ARO:3005069|rsmA,40.741000,antibiotic efflux,antibiotic inactivation,0,0
+gb|QHW12307.1|ARO:3005089|mef(D),23.913000,antibiotic efflux,antibiotic target replacement,0,0
+gb|ADZ12700.1|ARO:3005090|RanB,26.531000,antibiotic efflux,antibiotic target replacement,0,0
+gb|ADZ12699.1|ARO:3005091|RanA,32.051000,antibiotic efflux,reduced permeability to antibiotic,0,1
+gb|CAA76544.1|ARO:3003836|qacH,32.258000,antibiotic efflux,antibiotic target replacement,0,1
+gb|AAZ42322.1|ARO:3005098|qacL,64.286000,antibiotic efflux,antibiotic target replacement,0,0
+gb|AAW38464.1|ARO:3004572|Saur_LmrS,24.483000,antibiotic efflux,antibiotic inactivation,0,1
+gb|AGP27106.1|ARO:3007010|norC,22.857000,antibiotic efflux,antibiotic target alteration,0,1
+gb|WP_002289367.1|ARO:3007011|mdeA,30.288000,antibiotic efflux,antibiotic target alteration,0,1
+gb|WP_042355600.1|ARO:3007012|sepA,44.000000,antibiotic efflux,antibiotic target replacement,0,0
+gb|BAB43261.1|ARO:3007013|sdrM,26.115000,antibiotic efflux,antibiotic inactivation,0,1
+gb|AEV23046.1|ARO:3007019|fexB,31.293000,antibiotic efflux,antibiotic target alteration,0,1
+gb|ACN32294.1|ARO:3000237|TolC,32.692000,antibiotic efflux,antibiotic target alteration,0,0
+gb|AAG07592.1|ARO:3000806|MexG,55.556000,antibiotic efflux,antibiotic inactivation,0,1
+gb|AAG07594.1|ARO:3000808|MexI,22.115000,antibiotic efflux,antibiotic target alteration,0,0
+gb|AAC75271.1|ARO:3003952|YojI,23.636000,antibiotic efflux,antibiotic inactivation,0,1
+gb|APB03215.1|ARO:3003981|tetB(58),28.049000,antibiotic efflux,antibiotic inactivation,0,0
+gb|AAK37618.1|ARO:3005008|TxR,18.750000,antibiotic efflux,antibiotic inactivation,0,0
+gb|AAB64408.1|ARO:3007050|mreA,31.507000,antibiotic efflux,antibiotic target replacement,0,0
+gb|QQA64076.1|ARO:3007049|mef(J),25.428000,antibiotic efflux,antibiotic target replacement,0,0
+gb|QQM99829.1|ARO:3007047|mef(H),22.857000,antibiotic efflux,antibiotic target replacement,0,0
+gb|CYF42523.1|ARO:3004047|kdpD,23.077000,antibiotic efflux,antibiotic target alteration,0,0
+gb|VWQ00850.1|ARO:3003843|leuO,39.286000,antibiotic efflux,antibiotic target replacement,0,0
+gb|QIQ10744.1|ARO:3007492|tet(62),32.143000,antibiotic efflux,antibiotic target replacement,0,0
+gb|QJR33972.1|ARO:3007493|tet(63),25.287000,antibiotic efflux,antibiotic target alteration,0,1
+gb|WP_124470450.1|ARO:3007494|tet(64),34.375000,antibiotic efflux,antibiotic target alteration,0,0
+gb|NP_706356.2|ARO:3007509|Sfle_acrA,45.455000,antibiotic efflux,antibiotic inactivation,0,1
+gb|BAL43360.1|ARO:3003745|mef(C),22.475000,antibiotic efflux,antibiotic target alteration,0,0
+gb|AAK99775.1|ARO:3000614|mef(E),34.694000,antibiotic efflux,antibiotic target replacement,0,0
+gb|QNR09091.1|ARO:3007044|mef(F),24.185000,antibiotic efflux,antibiotic target replacement,0,0
+gb|NP_217372.1|ARO:3007659|Rv2856,26.087000,antibiotic efflux,antibiotic inactivation,0,0
+gb|NP_216393.1|ARO:3007662|Rv1877,30.960000,antibiotic efflux,antibiotic target alteration,0,1
+gb|AMD83542.1|ARO:3007669|aadT,25.000000,antibiotic efflux,antibiotic target alteration,0,1
+gb|WPF67354.1|ARO:3007838|tet(65),30.682000,antibiotic efflux,antibiotic target alteration,0,0
+gb|NP_253005.1|ARO:3004069|MvaT,39.474000,antibiotic efflux,antibiotic target protection,0,0
+gb|WP_001985623.1|ARO:3004578|Abau_AbuO,30.769000,antibiotic efflux,antibiotic inactivation,0,0
+gb|VWQ04090.1|ARO:3005042|mlaD,29.091000,antibiotic efflux,reduced permeability to antibiotic,0,0
+gb|VWQ04088.1|ARO:3005041|mlaF,30.693000,antibiotic efflux,antibiotic inactivation,0,1
+gb|ACT97415.1|ARO:3002999|CblA-1,29.091000,antibiotic inactivation,antibiotic inactivation,1,0
+gb|AEJ08681.1|ARO:3001109|SHV-52,30.769000,antibiotic inactivation,antibiotic target replacement,0,0
+gb|AFJ59957.1|ARO:3001989|CTX-M-130,32.727000,antibiotic inactivation,antibiotic inactivation,1,0
+gb|AEX08599.1|ARO:3002356|NDM-6,36.364000,antibiotic inactivation,antibiotic inactivation,1,0
+gb|BAP68758.1|ARO:3001855|ACT-35,29.213000,antibiotic inactivation,antibiotic inactivation,1,0
+gb|AAF61417.1|ARO:3002244|CARB-5,43.333000,antibiotic inactivation,antibiotic target replacement,0,0
+gb|AAT45742.1|ARO:3000988|TEM-126,33.333000,antibiotic inactivation,antibiotic inactivation,1,0
+gb|ACH58990.1|ARO:3002511|LRA-12,28.866000,antibiotic inactivation,antibiotic target replacement,0,0
+gb|AAF19151.1|ARO:3000938|TEM-72,33.333000,antibiotic inactivation,antibiotic inactivation,1,0
+gb|AAD45935.1|ARO:3000928|TEM-59,33.333000,antibiotic inactivation,antibiotic inactivation,1,0
+gb|AEV91551.1|ARO:3001711|OXA-212,24.852000,antibiotic inactivation,antibiotic inactivation,1,0
+gb|CAB94707.1|ARO:3002193|IMP-2,28.205000,antibiotic inactivation,reduced permeability to antibiotic,0,0
+gb|CAA63264.1|ARO:3002012|CMY-1,28.205000,antibiotic inactivation,antibiotic target replacement,0,0
+gb|AGW16411.1|ARO:3001517|OXA-329,29.268000,antibiotic inactivation,antibiotic target replacement,0,0
+gb|AEV91214.1|ARO:3001832|ACT-10,28.395000,antibiotic inactivation,antibiotic inactivation,1,0
+gb|BAO09635.1|ARO:3001557|OXA-371,30.357000,antibiotic inactivation,antibiotic target replacement,0,0
+gb|AFA51699.1|ARO:3001980|CTX-M-121,40.000000,antibiotic inactivation,antibiotic inactivation,1,0
+gb|AAS48620.1|ARO:3002372|VEB-3,52.941000,antibiotic inactivation,antibiotic inactivation,1,0
+gb|AAA26652.1|ARO:3002835|lnuA,34.211000,antibiotic inactivation,antibiotic target replacement,0,0
+gb|CAD58780.1|ARO:3001794|OXA-45,45.833000,antibiotic inactivation,antibiotic inactivation,1,0
+gb|ACM67635.1|ARO:3001800|OXA-226,26.923000,antibiotic inactivation,antibiotic inactivation,1,0
+gb|AIS67611.1|ARO:3003163|CTX-M-155,40.000000,antibiotic inactivation,antibiotic inactivation,1,0
+gb|AIT76106.1|ARO:3002146|DHA-15,23.729000,antibiotic inactivation,antibiotic inactivation,1,0
+gb|CAI43424.1|ARO:3002415|OXY-6-3,38.710000,antibiotic inactivation,antibiotic inactivation,1,0
+gb|ACC85616.1|ARO:3002804|FosA2,37.838000,antibiotic inactivation,antibiotic inactivation,1,0
+gb|AAG15269.1|ARO:3002528|AAC(3)-Ia,26.429000,antibiotic inactivation,antibiotic inactivation,1,0
+gb|CAI43422.1|ARO:3002413|OXY-6-1,38.710000,antibiotic inactivation,antibiotic inactivation,1,0
+gb|AIT76099.1|ARO:3002125|CMY-114,24.359000,antibiotic inactivation,antibiotic inactivation,1,0
+gb|AAQ08905.1|ARO:3001808|OXA-60,32.653000,antibiotic inactivation,antibiotic inactivation,1,0
+gb|CAJ77809.1|ARO:3001650|OXA-90,28.571000,antibiotic inactivation,antibiotic target replacement,0,0
+gb|AAG29813.1|ARO:3002380|SME-2,33.333000,antibiotic inactivation,antibiotic inactivation,1,0
+gb|AAA25683.1|ARO:3002538|AAC(3)-IIIc,35.714000,antibiotic inactivation,antibiotic target alteration,0,0
+gb|AAL79541.1|ARO:3002397|OXY-2-2,41.935000,antibiotic inactivation,antibiotic inactivation,1,0
+gb|ACS44783.1|ARO:3002188|MOX-5,22.727000,antibiotic inactivation,antibiotic inactivation,1,0
+gb|AGE11905.1|ARO:3000904|TEM-34,33.333000,antibiotic inactivation,antibiotic inactivation,1,0
+gb|CAM86994.1|ARO:3001617|OXA-69,30.357000,antibiotic inactivation,antibiotic target replacement,0,0
+gb|AAO33760.1|ARO:3000879|TEM-7,33.333000,antibiotic inactivation,antibiotic inactivation,1,0
+gb|BAA84973.1|ARO:3001082|SHV-24,30.769000,antibiotic inactivation,antibiotic target replacement,0,0
+gb|CCE94500.1|ARO:3001502|OXA-256,31.707000,antibiotic inactivation,antibiotic target replacement,0,0
+gb|AGW16412.1|ARO:3001518|OXA-330,30.081000,antibiotic inactivation,antibiotic target replacement,0,0
+gb|ADM21467.1|ARO:3002053|CMY-42,23.077000,antibiotic inactivation,antibiotic inactivation,1,0
+gb|AFJ11384.1|ARO:3002546|AAC(6')-Ib,30.000000,antibiotic inactivation,antibiotic inactivation,1,0
+gb|AFU25635.1|ARO:3002083|CMY-70,23.457000,antibiotic inactivation,antibiotic inactivation,1,0
+gb|AFK80745.1|ARO:3002350|GES-21,28.000000,antibiotic inactivation,antibiotic inactivation,1,0
+gb|AAN04883.1|ARO:3001099|SHV-41,30.769000,antibiotic inactivation,antibiotic target replacement,0,0
+gb|AHN53381.1|ARO:3001577|OXA-391,25.000000,antibiotic inactivation,antibiotic target replacement,0,0
+gb|AAR84298.1|ARO:3000996|TEM-132,33.333000,antibiotic inactivation,antibiotic inactivation,1,0
+gb|CAH10847.1|ARO:3002620|aadA23,24.806000,antibiotic inactivation,antibiotic inactivation,1,0
+gb|AGT37351.1|ARO:3002360|NDM-10,40.741000,antibiotic inactivation,antibiotic inactivation,1,0
+gb|AAN04884.1|ARO:3001100|SHV-42,30.769000,antibiotic inactivation,antibiotic target replacement,0,0
+gb|AAK49460.1|ARO:3001429|OXA-35,31.707000,antibiotic inactivation,reduced permeability to antibiotic,0,0
+gb|AAF64386.1|ARO:3001076|SHV-18,28.846000,antibiotic inactivation,antibiotic target replacement,0,0
+gb|CAA90432.1|ARO:3003026|fusH,48.276000,antibiotic inactivation,reduced permeability to antibiotic,0,0
+gb|CAJ47134.2|ARO:3001133|SHV-79,30.769000,antibiotic inactivation,antibiotic target replacement,0,0
+gb|CAA71322.1|ARO:3000916|TEM-47,33.333000,antibiotic inactivation,antibiotic inactivation,1,0
+gb|CAA46346.1|ARO:3000887|TEM-16,33.333000,antibiotic inactivation,antibiotic inactivation,1,0
+gb|AGC50807.1|ARO:3002307|VIM-37,26.761000,antibiotic inactivation,antibiotic inactivation,1,0
+gb|AIT76085.1|ARO:3001849|ACT-29,26.230000,antibiotic inactivation,antibiotic inactivation,1,0
+gb|CAA71947.1|ARO:3002157|FOX-3,37.500000,antibiotic inactivation,antibiotic inactivation,1,0
+gb|ACE77058.1|ARO:3002366|PER-4,37.209000,antibiotic inactivation,antibiotic inactivation,1,0
+gb|CAF05908.1|ARO:3000845|GIM-1,71.429000,antibiotic inactivation,antibiotic inactivation,1,0
+gb|BAM62793.1|ARO:3002233|IMP-42,40.000000,antibiotic inactivation,antibiotic target protection,0,0
+gb|AAK82652.1|ARO:3000965|TEM-102,33.333000,antibiotic inactivation,antibiotic inactivation,1,0
+gb|AAB39956.1|ARO:3000979|TEM-116,33.333000,antibiotic inactivation,antibiotic target replacement,0,0
+gb|ADK55605.1|ARO:3002066|CMY-55,23.077000,antibiotic inactivation,antibiotic inactivation,1,0
+gb|AAY84742.1|ARO:3001904|CTX-M-42,40.000000,antibiotic inactivation,antibiotic inactivation,1,0
+gb|ACI22621.1|ARO:3001154|SHV-105,28.846000,antibiotic inactivation,antibiotic target replacement,0,0
+gb|AFK73446.1|ARO:3002092|CMY-79,23.077000,antibiotic inactivation,antibiotic inactivation,1,0
+gb|ADT91162.1|ARO:3002067|CMY-56,23.077000,antibiotic inactivation,antibiotic inactivation,1,0
+gb|AJA32744.1|ARO:3003149|OXA-426,25.000000,antibiotic inactivation,antibiotic target replacement,0,0
+gb|ADP02979.1|ARO:3002059|CMY-48,24.359000,antibiotic inactivation,antibiotic inactivation,1,0
+gb|AAT46413.1|ARO:3000972|TEM-109,33.333000,antibiotic inactivation,antibiotic inactivation,1,0
+gb|CAG27800.1|ARO:3003203|TLA-2,34.286000,antibiotic inactivation,antibiotic inactivation,1,0
+gb|AHN60527.1|ARO:3001071|SHV-12,28.846000,antibiotic inactivation,antibiotic target replacement,0,0
+gb|AAT01092.1|ARO:3001773|OXA-61,30.556000,antibiotic inactivation,antibiotic inactivation,1,0
+gb|AAC09012.1|ARO:3002243|CARB-4,32.143000,antibiotic inactivation,antibiotic inactivation,1,0
+gb|AAL68645.1|ARO:3002681|catB9,33.333000,antibiotic inactivation,antibiotic inactivation,1,0
+gb|AAC32889.2|ARO:3000912|TEM-43,33.333000,antibiotic inactivation,antibiotic inactivation,1,0
+gb|ACQ82813.1|ARO:3002507|PDC-8,31.507000,antibiotic inactivation,antibiotic inactivation,1,0
+gb|AAD03493.1|ARO:3002565|AAC(6')-Iu,33.333000,antibiotic inactivation,antibiotic inactivation,1,0
+gb|ABN80430.1|ARO:3002375|VEB-5,52.941000,antibiotic inactivation,antibiotic inactivation,1,0
+gb|AAG44570.1|ARO:3000954|TEM-87,33.333000,antibiotic inactivation,antibiotic inactivation,1,0
+gb|ACH58989.1|ARO:3002488|LRA-9,28.814000,antibiotic inactivation,antibiotic inactivation,1,0
+gb|AAZ73123.1|ARO:3002282|VIM-12,27.835000,antibiotic inactivation,antibiotic inactivation,1,0
+gb|AAN34365.1|ARO:3002604|aadA4,44.444000,antibiotic inactivation,antibiotic target replacement,0,0
+gb|AFN88953.1|ARO:3002304|VIM-34,27.451000,antibiotic inactivation,antibiotic inactivation,1,0
+gb|ABA06586.1|ARO:3001119|SHV-64,28.846000,antibiotic inactivation,antibiotic target replacement,0,0
+gb|BAJ05825.1|ARO:3002263|IND-7,30.556000,antibiotic inactivation,antibiotic inactivation,1,0
+gb|AJO16042.1|ARO:3001364|SHV-182,30.769000,antibiotic inactivation,antibiotic target replacement,0,0
+gb|ADR71220.1|ARO:3001045|TEM-183,33.333000,antibiotic inactivation,antibiotic inactivation,1,0
+gb|CWV56762.1|ARO:3000198|FosX,30.612000,antibiotic inactivation,antibiotic inactivation,1,0
+gb|AEM44652.1|ARO:3001972|CTX-M-112,40.000000,antibiotic inactivation,antibiotic target replacement,0,0
+gb|AAV97955.1|ARO:3001912|CTX-M-50,32.727000,antibiotic inactivation,antibiotic target replacement,0,0
+gb|BAL68178.1|ARO:3001057|TEM-198,33.333000,antibiotic inactivation,antibiotic inactivation,1,0
+gb|AGC29882.1|ARO:3002853|arr-8,42.308000,antibiotic inactivation,antibiotic target replacement,0,0
+gb|AFO53532.1|ARO:3002883|rgt1438,26.250000,antibiotic inactivation,antibiotic inactivation,1,0
+gb|AHV85514.1|ARO:3002383|SME-5,22.018000,antibiotic inactivation,antibiotic inactivation,1,0
+gb|BAB72158.1|ARO:3002020|CMY-9,28.205000,antibiotic inactivation,antibiotic target replacement,0,0
+gb|AAX38178.1|ARO:3002634|APH(2'')-Ie,52.174000,antibiotic inactivation,reduced permeability to antibiotic,0,0
+gb|AAA25680.1|ARO:3002595|AAC(6')-IIb,40.625000,antibiotic inactivation,antibiotic inactivation,1,0
+gb|AAP69915.1|ARO:3003103|cphA7,28.409000,antibiotic inactivation,antibiotic inactivation,1,0
+gb|CAD12765.1|ARO:3002203|IMP-12,29.310000,antibiotic inactivation,antibiotic inactivation,1,0
+gb|AFM55000.1|ARO:3001692|OXA-229,29.464000,antibiotic inactivation,antibiotic inactivation,1,0
+gb|CAK50801.1|ARO:3001646|OXA-98,25.000000,antibiotic inactivation,antibiotic target replacement,0,0
+gb|AAG35609.2|ARO:3001422|OXA-27,26.582000,antibiotic inactivation,antibiotic inactivation,1,0
+gb|ABH04327.1|ARO:3001144|SHV-92,30.769000,antibiotic inactivation,antibiotic target replacement,0,0
+gb|ACJ47200.1|ARO:3002612|aadA12,24.806000,antibiotic inactivation,antibiotic inactivation,1,0
+gb|AFQ93498.1|ARO:3002676|catB3,39.216000,antibiotic inactivation,antibiotic inactivation,1,0
+gb|ACN65419.1|ARO:3002432|OKP-A-15,30.769000,antibiotic inactivation,antibiotic target replacement,0,0
+gb|AFC75525.1|ARO:3001055|TEM-195,30.769000,antibiotic inactivation,antibiotic inactivation,1,0
+gb|BAH66386.1|ARO:3002574|AAC(6')-Iaf,31.707000,antibiotic inactivation,antibiotic target replacement,0,0
+gb|AFH36332.1|ARO:3001677|OXA-236,26.250000,antibiotic inactivation,antibiotic inactivation,1,0
+gb|ACB73258.1|ARO:3001112|SHV-56,28.846000,antibiotic inactivation,antibiotic target replacement,0,0
+gb|AHL30276.1|ARO:3001562|OXA-376,30.357000,antibiotic inactivation,antibiotic target replacement,0,0
+gb|AFP99885.1|ARO:3002299|VIM-29,25.510000,antibiotic inactivation,antibiotic inactivation,1,0
+gb|BAF95726.1|ARO:3002050|CMY-39,23.077000,antibiotic inactivation,antibiotic inactivation,1,0
+gb|ABW90721.1|ARO:3002287|VIM-17,40.000000,antibiotic inactivation,antibiotic inactivation,1,0
+gb|AJE60855.1|ARO:3003209|fosA5,33.929000,antibiotic inactivation,antibiotic inactivation,1,0
+gb|AEU17778.1|ARO:3002224|IMP-33,25.352000,antibiotic inactivation,reduced permeability to antibiotic,0,0
+gb|ABM67078.1|ARO:3002210|IMP-19,30.769000,antibiotic inactivation,reduced permeability to antibiotic,0,0
+gb|AAF05612.1|ARO:3000944|TEM-78,33.333000,antibiotic inactivation,antibiotic inactivation,1,0
+gb|ABV26705.1|ARO:3002849|arr-4,25.210000,antibiotic inactivation,antibiotic inactivation,1,0
+gb|AAD23513.1|ARO:3003002|CfxA2,24.051000,antibiotic inactivation,antibiotic target replacement,0,0
+gb|AAN38836.1|ARO:3001886|CTX-M-24,32.727000,antibiotic inactivation,antibiotic inactivation,1,0
+gb|ACA30420.1|ARO:3002036|CMY-25,23.077000,antibiotic inactivation,antibiotic inactivation,1,0
+gb|BAQ56016.1|ARO:3003659|IMP-51,36.000000,antibiotic inactivation,antibiotic inactivation,1,0
+gb|AIT76102.1|ARO:3002150|DHA-19,22.034000,antibiotic inactivation,antibiotic inactivation,1,0
+gb|ADC91899.1|ARO:3002343|GES-14,28.000000,antibiotic inactivation,antibiotic target replacement,0,0
+gb|CAC04522.1|ARO:3002514|OCH-1,28.125000,antibiotic inactivation,antibiotic target replacement,0,0
+gb|AGD91915.1|ARO:3001778|OXA-232,36.667000,antibiotic inactivation,reduced permeability to antibiotic,0,0
+gb|AAA83417.1|ARO:3001407|OXA-12,24.658000,antibiotic inactivation,antibiotic inactivation,1,0
+gb|AGW83446.1|ARO:3001535|OXA-348,29.268000,antibiotic inactivation,antibiotic target replacement,0,0
+gb|ABA60809.1|ARO:3001141|SHV-89,30.769000,antibiotic inactivation,antibiotic target replacement,0,0
+gb|AAK55534.1|ARO:3001881|CTX-M-19,32.727000,antibiotic inactivation,antibiotic inactivation,1,0
+gb|AEB98921.1|ARO:3001480|OXA-195,28.571000,antibiotic inactivation,antibiotic target replacement,0,0
+gb|AFC95894.1|ARO:3001814|OXA-199,31.183000,antibiotic inactivation,antibiotic target replacement,0,0
+gb|AAV70602.1|ARO:3001900|CTX-M-38,32.727000,antibiotic inactivation,antibiotic target replacement,0,0
+gb|AAQ01671.1|ARO:3000983|TEM-121,33.333000,antibiotic inactivation,antibiotic inactivation,1,0
+gb|CAI30650.2|ARO:3001116|SHV-61,30.769000,antibiotic inactivation,antibiotic target replacement,0,0
+gb|ABM97538.1|ARO:3001919|CTX-M-58,40.000000,antibiotic inactivation,antibiotic inactivation,1,0
+gb|ABN48311.1|ARO:3001918|CTX-M-56,43.333000,antibiotic inactivation,antibiotic inactivation,1,0
+gb|AAW47922.1|ARO:3001002|TEM-138,33.333000,antibiotic inactivation,antibiotic inactivation,1,0
+gb|BAA23130.1|ARO:3002493|SRT-1,45.455000,antibiotic inactivation,reduced permeability to antibiotic,0,0
+gb|AAP93847.1|ARO:3002477|LEN-14,29.487000,antibiotic inactivation,antibiotic target replacement,0,0
+gb|CAC17623.1|ARO:3002516|OCH-3,25.962000,antibiotic inactivation,antibiotic target replacement,0,0
+gb|ABV72593.1|ARO:3001150|SHV-101,30.769000,antibiotic inactivation,antibiotic target replacement,0,0
+gb|AAL17873.1|ARO:3002403|OXY-2-8,43.333000,antibiotic inactivation,antibiotic inactivation,1,0
+gb|AJP67511.1|ARO:3003179|VIM-43,25.510000,antibiotic inactivation,antibiotic inactivation,1,0
+gb|CAA24743.1|ARO:3002655|APH(4)-Ia,23.077000,antibiotic inactivation,antibiotic target alteration,0,0
+gb|BAA32493.1|ARO:3000423|FomA,32.558000,antibiotic inactivation,antibiotic target replacement,0,0
+gb|CBG22732.1|ARO:3002341|GES-12,28.000000,antibiotic inactivation,antibiotic target replacement,0,0
+gb|AHL39330.1|ARO:3002117|CMY-105,23.077000,antibiotic inactivation,antibiotic inactivation,1,0
+gb|AAL68926.1|ARO:3001093|SHV-35,30.769000,antibiotic inactivation,antibiotic target replacement,0,0
+gb|AGK82336.1|ARO:3001383|TEM-206,33.333000,antibiotic inactivation,antibiotic inactivation,1,0
+gb|CAA71699.2|ARO:3001416|OXA-21,26.667000,antibiotic inactivation,antibiotic inactivation,1,0
+gb|AEI83429.1|ARO:3001168|SHV-121,30.769000,antibiotic inactivation,antibiotic target replacement,0,0
+gb|AXA30439.1|ARO:3002459|LEN-9,30.769000,antibiotic inactivation,antibiotic target replacement,0,0
+gb|CAP12354.2|ARO:3002429|OKP-A-12,30.769000,antibiotic inactivation,antibiotic target replacement,0,0
+gb|AAF66653.1|ARO:3000959|TEM-92,33.333000,antibiotic inactivation,antibiotic inactivation,1,0
+gb|AHA80101.1|ARO:3002112|CMY-100,23.457000,antibiotic inactivation,antibiotic inactivation,1,0
+gb|BAD06399.1|ARO:3002332|GES-3,28.000000,antibiotic inactivation,antibiotic inactivation,1,0
+gb|AAO42602.1|ARO:3002168|MIR-2,26.744000,antibiotic inactivation,reduced permeability to antibiotic,0,0
+gb|WP_063860086.1|ARO:3001948|CTX-M-88,40.000000,antibiotic inactivation,antibiotic inactivation,1,0
+gb|ABW70410.1|ARO:3001644|OXA-113,30.357000,antibiotic inactivation,antibiotic target replacement,0,0
+gb|CAJ19611.1|ARO:3002436|OKP-B-3,35.000000,antibiotic inactivation,antibiotic target replacement,0,0
+gb|AIY30331.1|ARO:3003160|OXA-422,27.215000,antibiotic inactivation,antibiotic inactivation,1,0
+gb|ADI58622.1|ARO:3001472|OXA-178,27.027000,antibiotic inactivation,antibiotic target replacement,0,0
+gb|CAD69003.1|ARO:3003094|imiH,25.641000,antibiotic inactivation,antibiotic inactivation,1,0
+gb|CAP12349.2|ARO:3002468|LEN-21,23.913000,antibiotic inactivation,antibiotic target replacement,0,0
+gb|AEP16366.1|ARO:3001784|OXA-181,36.667000,antibiotic inactivation,reduced permeability to antibiotic,0,0
+gb|AHM76779.1|ARO:3001840|ACT-19,24.468000,antibiotic inactivation,antibiotic inactivation,1,0
+gb|AEI83430.1|ARO:3001181|SHV-137,30.769000,antibiotic inactivation,antibiotic target replacement,0,0
+gb|ABC26007.1|ARO:3001623|OXA-83,28.571000,antibiotic inactivation,antibiotic target replacement,0,0
+gb|AIT76086.1|ARO:3001850|ACT-30,26.230000,antibiotic inactivation,antibiotic inactivation,1,0
+gb|AFQ23958.1|ARO:3001191|SHV-152,28.846000,antibiotic inactivation,antibiotic target replacement,0,0
+gb|AAA98406.1|ARO:3001404|OXA-9,31.429000,antibiotic inactivation,antibiotic target replacement,0,0
+gb|CCK86744.1|ARO:3001347|SHV-164,28.846000,antibiotic inactivation,antibiotic target replacement,0,0
+gb|BAL72196.1|ARO:3001985|CTX-M-126,32.727000,antibiotic inactivation,antibiotic inactivation,1,0
+gb|ABQ00181.1|ARO:3001024|TEM-158,33.333000,antibiotic inactivation,antibiotic inactivation,1,0
+gb|CAJ19618.1|ARO:3002442|OKP-B-9,26.923000,antibiotic inactivation,antibiotic target replacement,0,0
+gb|AAA76822.1|ARO:3002654|APH(3')-VIIa,33.333000,antibiotic inactivation,antibiotic inactivation,1,0
+gb|AAB58447.1|ARO:3002662|APH(9)-Ia,31.429000,antibiotic inactivation,antibiotic target replacement,0,0
+gb|ACX31142.1|ARO:3001455|OXA-150,31.250000,antibiotic inactivation,antibiotic target replacement,0,0
+gb|AAZ66866.1|ARO:3002032|CMY-21,23.077000,antibiotic inactivation,antibiotic inactivation,1,0
+gb|AJG06172.1|ARO:3003172|ACT-37,23.810000,antibiotic inactivation,antibiotic inactivation,1,0
+gb|CCA94644.1|ARO:3001486|OXA-208,25.000000,antibiotic inactivation,antibiotic target replacement,0,0
+gb|AEI52842.1|ARO:3002078|CMY-65,24.359000,antibiotic inactivation,antibiotic inactivation,1,0
+gb|AAS13759.1|ARO:3002278|VIM-8,40.000000,antibiotic inactivation,antibiotic inactivation,1,0
+gb|ADE58494.1|ARO:3001175|SHV-128,26.923000,antibiotic inactivation,antibiotic target replacement,0,0
+gb|CAD32565.1|ARO:3001770|OXA-43,29.268000,antibiotic inactivation,antibiotic target replacement,0,0
+gb|ACT97371.1|ARO:3003097|CfxA6,30.769000,antibiotic inactivation,antibiotic target replacement,0,0
+gb|AAD50818.2|ARO:3002019|CMY-8,28.205000,antibiotic inactivation,antibiotic target replacement,0,0
+gb|CAP12348.2|ARO:3002467|LEN-20,22.222000,antibiotic inactivation,antibiotic target replacement,0,0
+gb|CAA75402.1|ARO:3002015|CMY-4,23.077000,antibiotic inactivation,antibiotic inactivation,1,0
+gb|ACO56763.1|ARO:3002376|VEB-7,52.941000,antibiotic inactivation,antibiotic inactivation,1,0
+gb|ADI58618.1|ARO:3001658|OXA-174,28.571000,antibiotic inactivation,antibiotic target replacement,0,0
+gb|CAJ19610.1|ARO:3002435|OKP-B-2,28.846000,antibiotic inactivation,antibiotic target replacement,0,0
+gb|BAB16308.1|ARO:3000958|TEM-91,33.333000,antibiotic inactivation,antibiotic inactivation,1,0
+gb|CAA71441.1|ARO:3003095|imiS,21.818000,antibiotic inactivation,antibiotic inactivation,1,0
+gb|AEM44650.1|ARO:3001967|CTX-M-107,40.000000,antibiotic inactivation,antibiotic inactivation,1,0
+gb|AAF93177.1|ARO:3001874|CTX-M-11,39.286000,antibiotic inactivation,antibiotic inactivation,1,0
+gb|BAO05497.1|ARO:3002071|CMY-110,24.359000,antibiotic inactivation,antibiotic inactivation,1,0
+gb|AFO69261.1|ARO:3001984|CTX-M-125,32.727000,antibiotic inactivation,antibiotic inactivation,1,0
+gb|AHL39322.1|ARO:3002098|CMY-85,23.077000,antibiotic inactivation,antibiotic inactivation,1,0
+gb|AAW66604.1|ARO:3000883|TEM-11,33.333000,antibiotic inactivation,antibiotic inactivation,1,0
+gb|AFQ23968.1|ARO:3001201|SHV-162,28.846000,antibiotic inactivation,antibiotic target replacement,0,0
+gb|AAD33116.2|ARO:3000934|TEM-67,33.333000,antibiotic inactivation,antibiotic inactivation,1,0
+gb|AEM97672.1|ARO:3002073|CMY-60,23.077000,antibiotic inactivation,antibiotic inactivation,1,0
+gb|AAP69916.1|ARO:3001780|OXA-85,21.667000,antibiotic inactivation,antibiotic target replacement,0,0
+gb|AAK84316.1|ARO:3002843|vatD,29.825000,antibiotic inactivation,antibiotic target replacement,0,0
+gb|CAE51638.1|ARO:3002641|APH(3')-Ia,30.769000,antibiotic inactivation,antibiotic target replacement,0,0
+gb|CAA74912.2|ARO:3000888|TEM-17,33.333000,antibiotic inactivation,antibiotic inactivation,1,0
+gb|AJO16040.1|ARO:3001350|SHV-180,30.769000,antibiotic inactivation,antibiotic target replacement,0,0
+gb|AAV37205.1|ARO:3003005|CfxA4,24.051000,antibiotic inactivation,antibiotic target replacement,0,0
+gb|ACN85419.1|ARO:3001804|OXA-145,31.707000,antibiotic inactivation,reduced permeability to antibiotic,0,0
+gb|ACT33323.1|ARO:3002293|VIM-23,40.000000,antibiotic inactivation,antibiotic inactivation,1,0
+gb|AGH70380.1|ARO:3002111|CMY-98,24.561000,antibiotic inactivation,antibiotic inactivation,1,0
+gb|WP_064190968.1|ARO:3002583|AAC(6')-29a,25.556000,antibiotic inactivation,antibiotic target replacement,0,0
+gb|AGC54799.1|ARO:3002108|CMY-95,23.457000,antibiotic inactivation,antibiotic inactivation,1,0
+gb|AGK40892.1|ARO:3001384|TEM-207,33.333000,antibiotic inactivation,antibiotic inactivation,1,0
+gb|ADK25050.1|ARO:3002267|IND-11,31.707000,antibiotic inactivation,antibiotic inactivation,1,0
+gb|AAK69828.1|ARO:3001090|SHV-32,30.769000,antibiotic inactivation,antibiotic target replacement,0,0
+gb|ADY02545.1|ARO:3001960|CTX-M-101,43.333000,antibiotic inactivation,antibiotic inactivation,1,0
+gb|AIT76091.1|ARO:3002129|CMY-118,24.359000,antibiotic inactivation,antibiotic inactivation,1,0
+gb|ABN51007.1|ARO:3002046|CMY-35,23.077000,antibiotic inactivation,antibiotic inactivation,1,0
+gb|CAJ47133.2|ARO:3001132|SHV-78,30.769000,antibiotic inactivation,antibiotic target replacement,0,0
+gb|AAG29757.1|ARO:3002257|IND-2,31.707000,antibiotic inactivation,antibiotic inactivation,1,0
+gb|ADK35871.1|ARO:3001467|OXA-167,27.215000,antibiotic inactivation,antibiotic inactivation,1,0
+gb|ACX70402.1|ARO:3001654|OXA-143,28.571000,antibiotic inactivation,antibiotic inactivation,1,0
+gb|ADB90239.1|ARO:3001041|TEM-176,33.333000,antibiotic inactivation,antibiotic inactivation,1,0
+gb|AAG36927.1|ARO:3002133|DHA-2,22.034000,antibiotic inactivation,antibiotic target alteration,0,0
+gb|BAD16611.1|ARO:3001898|CTX-M-36,40.000000,antibiotic inactivation,antibiotic inactivation,1,0
+gb|CAJ32372.1|ARO:3001015|TEM-148,33.333000,antibiotic inactivation,antibiotic inactivation,1,0
+gb|AGZ83154.1|ARO:3001545|OXA-358,28.000000,antibiotic inactivation,antibiotic target replacement,0,0
+gb|AJO16038.1|ARO:3001553|OXA-366,27.215000,antibiotic inactivation,antibiotic inactivation,1,0
+gb|BAD83775.1|ARO:3001897|CTX-M-35,43.333000,antibiotic inactivation,antibiotic inactivation,1,0
+gb|ABG49324.1|ARO:3002609|aadA9,30.435000,antibiotic inactivation,antibiotic inactivation,1,0
+gb|CAP12351.2|ARO:3002470|LEN-23,23.913000,antibiotic inactivation,antibiotic target replacement,0,0
+gb|AEP43731.1|ARO:3001493|OXA-225,27.215000,antibiotic inactivation,antibiotic inactivation,1,0
+gb|ADZ48685.1|ARO:3002346|GES-17,28.000000,antibiotic inactivation,antibiotic target replacement,0,0
+gb|AAK38324.1|ARO:3000840|JOHN-1,24.242000,antibiotic inactivation,antibiotic target replacement,0,0
+gb|CAA56561.1|ARO:3003553|CepS,25.373000,antibiotic inactivation,antibiotic target replacement,0,0
+gb|CAB96921.1|ARO:3000606|FEZ-1,36.000000,antibiotic inactivation,antibiotic inactivation,1,0
+gb|BAP18874.1|ARO:3003167|CTX-M-159,32.727000,antibiotic inactivation,antibiotic inactivation,1,0
+gb|ACY01749.1|ARO:3002217|IMP-26,45.833000,antibiotic inactivation,antibiotic inactivation,1,0
+gb|ACI25375.1|ARO:3001032|TEM-166,30.769000,antibiotic inactivation,antibiotic inactivation,1,0
+gb|AHJ02283.1|ARO:3003186|CARB-23,31.818000,antibiotic inactivation,antibiotic target replacement,0,0
+gb|CAI43413.1|ARO:3002390|OXY-1-2,38.710000,antibiotic inactivation,antibiotic inactivation,1,0
+gb|AWU66462.1|ARO:3004866|NDM-23,36.364000,antibiotic inactivation,antibiotic inactivation,1,0
+gb|AFK73431.1|ARO:3002062|CMY-51,24.359000,antibiotic inactivation,antibiotic inactivation,1,0
+gb|CAA11471.1|ARO:3002192|IMP-1,40.000000,antibiotic inactivation,antibiotic target replacement,0,0
+gb|AAK52604.1|ARO:3001425|OXA-31,25.843000,antibiotic inactivation,reduced permeability to antibiotic,0,0
+gb|CEA29751.1|ARO:3003155|SHV-188,30.769000,antibiotic inactivation,antibiotic target replacement,0,0
+gb|AAN28732.1|ARO:3002409|OXY-3-1,38.710000,antibiotic inactivation,antibiotic inactivation,1,0
+gb|HBX2855210.1|ARO:3001065|SHV-6,30.769000,antibiotic inactivation,antibiotic target replacement,0,0
+gb|ACQ82810.1|ARO:3002502|PDC-5,31.507000,antibiotic inactivation,antibiotic inactivation,1,0
+gb|AGE83081.2|ARO:3002308|VIM-38,25.510000,antibiotic inactivation,antibiotic inactivation,1,0
+gb|AAS89982.1|ARO:3000975|TEM-112,33.333000,antibiotic inactivation,antibiotic inactivation,1,0
+gb|AAF03531.1|ARO:3002569|AAC(6')-Iy,24.545000,antibiotic inactivation,antibiotic inactivation,1,0
+gb|AGI65307.1|ARO:3001681|OXA-278,32.895000,antibiotic inactivation,antibiotic inactivation,1,0
+gb|BAP34782.1|ARO:3002008|CTX-M-151,38.095000,antibiotic inactivation,antibiotic inactivation,1,0
+gb|ABG77582.1|ARO:3001021|TEM-155,33.333000,antibiotic inactivation,antibiotic inactivation,1,0
+gb|AFU25638.1|ARO:3002096|CMY-83,23.457000,antibiotic inactivation,antibiotic inactivation,1,0
+gb|AAQ98890.1|ARO:3000984|TEM-122,33.333000,antibiotic inactivation,antibiotic inactivation,1,0
+gb|AAM70498.1|ARO:3001887|CTX-M-25,36.667000,antibiotic inactivation,antibiotic inactivation,1,0
+gb|AFI72872.1|ARO:3002252|CARB-14,43.333000,antibiotic inactivation,antibiotic target replacement,0,0
+gb|CAB37325.2|ARO:3001074|SHV-15,28.846000,antibiotic inactivation,antibiotic target replacement,0,0
+gb|AAB51384.1|ARO:3001067|SHV-8,30.769000,antibiotic inactivation,antibiotic target replacement,0,0
+gb|AAU95779.1|ARO:3002169|MIR-3,26.214000,antibiotic inactivation,reduced permeability to antibiotic,0,0
+gb|AAF34335.1|ARO:3001079|SHV-21,50.000000,antibiotic inactivation,antibiotic target replacement,0,0
+gb|AAY32951.1|ARO:3002837|lnuC,25.974000,antibiotic inactivation,antibiotic target protection,0,0
+gb|AJO16044.1|ARO:3001391|TEM-214,33.333000,antibiotic inactivation,antibiotic inactivation,1,0
+gb|ACX31140.1|ARO:3001453|OXA-148,25.000000,antibiotic inactivation,antibiotic inactivation,1,0
+gb|AHA80961.1|ARO:3002005|CTX-M-147,32.727000,antibiotic inactivation,antibiotic inactivation,1,0
+gb|AAC14693.1|ARO:3002637|APH(2'')-IVa,52.174000,antibiotic inactivation,reduced permeability to antibiotic,0,0
+gb|AFP97030.1|ARO:3001797|OXA-46,40.000000,antibiotic inactivation,antibiotic inactivation,1,0
+gb|CEP30258.1|ARO:3002458|LEN-8,30.769000,antibiotic inactivation,antibiotic target replacement,0,0
+gb|ABR10840.1|ARO:3002272|VIM-2,40.000000,antibiotic inactivation,antibiotic inactivation,1,0
+gb|ACD84988.1|ARO:3001651|OXA-130,28.571000,antibiotic inactivation,antibiotic target replacement,0,0
+gb|AGZ83153.1|ARO:3001544|OXA-357,30.081000,antibiotic inactivation,antibiotic target replacement,0,0
+gb|AAL03985.1|ARO:3000937|TEM-71,33.333000,antibiotic inactivation,antibiotic inactivation,1,0
+gb|AIT76114.1|ARO:3002181|MIR-16,26.744000,antibiotic inactivation,reduced permeability to antibiotic,0,0
+gb|ACQ82807.1|ARO:3002497|PDC-1,31.507000,antibiotic inactivation,antibiotic inactivation,1,0
+gb|AHM76774.1|ARO:3001843|ACT-22,25.532000,antibiotic inactivation,antibiotic inactivation,1,0
+gb|AEO44980.1|ARO:3001489|OXA-217,25.000000,antibiotic inactivation,antibiotic target replacement,0,0
+gb|ADX07747.1|ARO:3001667|OXA-202,28.571000,antibiotic inactivation,antibiotic target replacement,0,0
+gb|ABP49606.1|ARO:3001818|ACC-4,39.024000,antibiotic inactivation,antibiotic target replacement,0,0
+gb|AGW83450.1|ARO:3001539|OXA-352,29.268000,antibiotic inactivation,antibiotic target replacement,0,0
+gb|AHL30280.1|ARO:3001566|OXA-380,30.357000,antibiotic inactivation,antibiotic target replacement,0,0
+gb|KSC15183.1|ARO:3002537|AAC(3)-IIIb,28.800000,antibiotic inactivation,antibiotic inactivation,1,0
+gb|ACV49885.1|ARO:3001442|OXA-117,25.000000,antibiotic inactivation,antibiotic target replacement,0,0
+gb|ACY56711.1|ARO:3002480|OXA-144,25.000000,antibiotic inactivation,antibiotic target replacement,0,0
+gb|AHL30277.1|ARO:3001563|OXA-377,29.464000,antibiotic inactivation,antibiotic target replacement,0,0
+gb|ADL13944.1|ARO:3000903|TEM-33,33.333000,antibiotic inactivation,antibiotic inactivation,1,0
+gb|AFU91598.1|ARO:3001788|OXA-204,37.288000,antibiotic inactivation,antibiotic target replacement,0,0
+gb|AGW16407.1|ARO:3001513|OXA-325,29.268000,antibiotic inactivation,antibiotic target replacement,0,0
+gb|AAT90846.1|ARO:3003556|SLB-1,26.000000,antibiotic inactivation,reduced permeability to antibiotic,0,0
+gb|CAA63262.1|ARO:3001864|CTX-M-1,40.000000,antibiotic inactivation,antibiotic inactivation,1,0
+gb|CAA38429.1|ARO:3000874|TEM-2,33.333000,antibiotic inactivation,antibiotic inactivation,1,0
+gb|AGE45503.1|ARO:3002162|FOX-10,26.437000,antibiotic inactivation,antibiotic inactivation,1,0
+gb|AIT76105.1|ARO:3002147|DHA-16,22.034000,antibiotic inactivation,reduced permeability to antibiotic,0,0
+gb|AAL82592.1|ARO:3001094|SHV-36,30.769000,antibiotic inactivation,antibiotic target replacement,0,0
+gb|ADP20705.1|ARO:3001373|TEM-182,33.333000,antibiotic inactivation,antibiotic inactivation,1,0
+gb|CAB14620.1|ARO:3002627|aadK,33.962000,antibiotic inactivation,antibiotic target replacement,0,0
+gb|CAC17627.1|ARO:3002520|OCH-7,32.500000,antibiotic inactivation,antibiotic target replacement,0,0
+gb|CAA88908.1|ARO:3002402|OXY-2-7,41.935000,antibiotic inactivation,antibiotic inactivation,1,0
+gb|ABC84263.1|ARO:3001704|OXA-87,30.357000,antibiotic inactivation,antibiotic target replacement,0,0
+gb|AHL39338.1|ARO:3001845|ACT-25,28.090000,antibiotic inactivation,antibiotic inactivation,1,0
+gb|AAU89706.1|ARO:3002464|LEN-16,30.769000,antibiotic inactivation,antibiotic target replacement,0,0
+gb|CAJ19607.1|ARO:3002426|OKP-A-9,30.769000,antibiotic inactivation,antibiotic target replacement,0,0
+gb|AAL78161.1|ARO:3002410|OXY-4-1,38.710000,antibiotic inactivation,antibiotic inactivation,1,0
+gb|ABA06590.1|ARO:3001123|SHV-69,30.769000,antibiotic inactivation,antibiotic target replacement,0,0
+gb|AAN84550.1|ARO:3002276|VIM-6,40.000000,antibiotic inactivation,antibiotic inactivation,1,0
+gb|CAJ47138.2|ARO:3001137|SHV-83,30.769000,antibiotic inactivation,antibiotic target replacement,0,0
+gb|AAR89917.1|ARO:3001812|OXA-54,36.667000,antibiotic inactivation,antibiotic target replacement,0,0
+gb|CAJ19619.1|ARO:3002443|OKP-B-10,35.000000,antibiotic inactivation,antibiotic target replacement,0,0
+gb|ABU55430.1|ARO:3002591|AAC_6_IB_Su,32.500000,antibiotic inactivation,antibiotic inactivation,1,0
+gb|CAA76795.1|ARO:3000893|TEM-22,33.333000,antibiotic inactivation,antibiotic inactivation,1,0
+gb|AAM92461.1|ARO:3002680|catB8,41.176000,antibiotic inactivation,antibiotic inactivation,1,0
+gb|ABA06589.1|ARO:3001122|SHV-67,30.769000,antibiotic inactivation,antibiotic target replacement,0,0
+gb|BAI94487.1|ARO:3001177|SHV-133,30.769000,antibiotic inactivation,antibiotic target replacement,0,0
+gb|CAC83905.2|ARO:3001612|OXA-51,29.464000,antibiotic inactivation,antibiotic target replacement,0,0
+gb|ACH59002.1|ARO:3002483|LRA-5,36.066000,antibiotic inactivation,antibiotic target alteration,0,0
+gb|ABF47916.1|ARO:3001628|OXA-93,25.000000,antibiotic inactivation,antibiotic target replacement,0,0
+gb|ADK11041.1|ARO:3001954|CTX-M-94,40.000000,antibiotic inactivation,antibiotic inactivation,1,0
+gb|ABS12248.1|ARO:3002040|CMY-29,23.077000,antibiotic inactivation,antibiotic inactivation,1,0
+gb|AAC46344.1|ARO:3001408|OXA-13,31.707000,antibiotic inactivation,reduced permeability to antibiotic,0,0
+gb|AAP43508.1|ARO:3001892|CTX-M-30,40.000000,antibiotic inactivation,antibiotic inactivation,1,0
+gb|BAQ02518.1|ARO:3003182|NDM-13,36.364000,antibiotic inactivation,antibiotic inactivation,1,0
+gb|CAQ42486.1|ARO:3001937|CTX-M-76,43.333000,antibiotic inactivation,antibiotic inactivation,1,0
+gb|AAB19430.2|ARO:3002242|CARB-3,33.333000,antibiotic inactivation,antibiotic target protection,0,0
+gb|AAS98184.1|ARO:3001106|SHV-49,30.769000,antibiotic inactivation,antibiotic target replacement,0,0
+gb|AET05998.1|ARO:3001399|OXA-4,25.843000,antibiotic inactivation,reduced permeability to antibiotic,0,0
+gb|ABI74448.1|ARO:3001018|TEM-151,33.333000,antibiotic inactivation,antibiotic inactivation,1,0
+gb|AAR89359.1|ARO:3000990|TEM-128,33.333000,antibiotic inactivation,antibiotic inactivation,1,0
+gb|ABV31686.1|ARO:3001637|OXA-106,25.000000,antibiotic inactivation,antibiotic target replacement,0,0
+gb|AAB51421.1|ARO:3002686|catP,35.000000,antibiotic inactivation,antibiotic target replacement,0,0
+gb|CAA31895.1|ARO:3002533|AAC(3)-IIa,27.692000,antibiotic inactivation,antibiotic target replacement,0,0
+gb|AFG25462.1|ARO:3002220|IMP-29,36.000000,antibiotic inactivation,antibiotic inactivation,1,0
+gb|AAY43207.1|ARO:3002338|GES-9,28.000000,antibiotic inactivation,antibiotic target replacement,0,0
+gb|AET05999.1|ARO:3002300|VIM-30,40.000000,antibiotic inactivation,antibiotic inactivation,1,0
+gb|CAA28198.1|ARO:3002454|LEN-1,30.769000,antibiotic inactivation,antibiotic target replacement,0,0
+gb|AAP22974.1|ARO:3002336|GES-7,28.000000,antibiotic inactivation,antibiotic target replacement,0,0
+gb|APY23677.1|ARO:3001051|TEM-191,33.333000,antibiotic inactivation,antibiotic inactivation,1,0
+gb|AAA19882.1|ARO:3003562|blaF,48.276000,antibiotic inactivation,antibiotic inactivation,1,0
+gb|CAJ98570.1|ARO:3003071|mphF,35.849000,antibiotic inactivation,antibiotic inactivation,1,0
+gb|AFQ23962.1|ARO:3001195|SHV-156,30.769000,antibiotic inactivation,antibiotic target replacement,0,0
+gb|AEL17198.1|ARO:3001048|TEM-188,33.333000,antibiotic inactivation,antibiotic inactivation,1,0
+gb|AAN63648.1|ARO:3000844|TUS-1,29.310000,antibiotic inactivation,antibiotic target replacement,0,0
+gb|CAA63714.1|ARO:3002364|PER-2,32.787000,antibiotic inactivation,antibiotic inactivation,1,0
+gb|AAL29436.1|ARO:3000951|TEM-84,33.333000,antibiotic inactivation,antibiotic inactivation,1,0
+gb|AFV48348.1|ARO:3002324|KPC-14,27.778000,antibiotic inactivation,antibiotic inactivation,1,0
+gb|ABQ51091.1|ARO:3002039|CMY-28,23.457000,antibiotic inactivation,antibiotic inactivation,1,0
+gb|AGJ01153.1|ARO:3002326|KPC-16,27.778000,antibiotic inactivation,antibiotic target alteration,0,0
+gb|ABV71246.1|ARO:3001633|OXA-79,28.571000,antibiotic inactivation,antibiotic target replacement,0,0
+gb|ADK34116.1|ARO:3001662|OXA-164,26.667000,antibiotic inactivation,antibiotic inactivation,1,0
+gb|AAA26685.1|ARO:3002542|AAC(3)-VIIIa,32.143000,antibiotic inactivation,antibiotic inactivation,1,0
+gb|ACK43806.1|ARO:3002617|aadA17,24.806000,antibiotic inactivation,antibiotic inactivation,1,0
+gb|ABY91281.1|ARO:3001930|CTX-M-69,40.000000,antibiotic inactivation,antibiotic inactivation,1,0
+gb|CAA73933.1|ARO:3000921|TEM-52,33.333000,antibiotic inactivation,antibiotic inactivation,1,0
+gb|AAK27847.1|ARO:3002196|IMP-5,36.000000,antibiotic inactivation,antibiotic inactivation,1,0
+gb|CAA54602.1|ARO:3002155|FOX-1,25.000000,antibiotic inactivation,antibiotic inactivation,1,0
+gb|AAF05311.2|ARO:3001872|CTX-M-9,32.727000,antibiotic inactivation,antibiotic inactivation,1,0
+gb|ABB59946.1|ARO:3001943|CTX-M-82,40.000000,antibiotic inactivation,antibiotic inactivation,1,0
+gb|AIL92328.1|ARO:3003175|CARB-19,31.818000,antibiotic inactivation,antibiotic target replacement,0,0
+gb|CDA01504.1|ARO:3002460|LEN-10,23.913000,antibiotic inactivation,antibiotic target replacement,0,0
+gb|AWU66463.1|ARO:3004867|NDM-24,36.364000,antibiotic inactivation,antibiotic inactivation,1,0
+gb|CBY80143.1|ARO:3002296|VIM-26,27.835000,antibiotic inactivation,antibiotic inactivation,1,0
+gb|AHL30273.1|ARO:3001572|OXA-386,25.000000,antibiotic inactivation,antibiotic target replacement,0,0
+gb|CAP01453.1|ARO:3001620|OXA-75,25.000000,antibiotic inactivation,antibiotic target replacement,0,0
+gb|AAQ16660.2|ARO:3002024|CMY-13,23.077000,antibiotic inactivation,antibiotic inactivation,1,0
+gb|CAJ28994.1|ARO:3001822|ACT-2,27.160000,antibiotic inactivation,antibiotic inactivation,1,0
+gb|AAL79576.1|ARO:3001096|SHV-38,30.769000,antibiotic inactivation,antibiotic target replacement,0,0
+gb|ABF50909.1|ARO:3002521|OCH-8,40.741000,antibiotic inactivation,antibiotic target replacement,0,0
+gb|AIS67768.1|ARO:3003152|SHV-185,30.769000,antibiotic inactivation,antibiotic target replacement,0,0
+gb|AAT36613.1|ARO:3002281|VIM-11,40.000000,antibiotic inactivation,antibiotic inactivation,1,0
+gb|AAV97952.1|ARO:3001909|CTX-M-47,32.727000,antibiotic inactivation,antibiotic inactivation,1,0
+gb|CCW43444.1|ARO:3002255|CARB-16,43.333000,antibiotic inactivation,antibiotic target replacement,0,0
+gb|CAC67290.1|ARO:3000962|TEM-95,27.397000,antibiotic inactivation,antibiotic inactivation,1,0
+gb|CCJ32595.1|ARO:3001672|OXA-120,30.357000,antibiotic inactivation,antibiotic target replacement,0,0
+gb|AAS19171.1|ARO:3000997|TEM-133,33.333000,antibiotic inactivation,antibiotic inactivation,1,0
+gb|AAM52207.1|ARO:3000969|TEM-106,33.333000,antibiotic inactivation,antibiotic inactivation,1,0
+gb|AAD03491.1|ARO:3002562|AAC(6')-Is,38.095000,antibiotic inactivation,antibiotic inactivation,1,0
+gb|AFU25739.1|ARO:3002351|GES-22,28.000000,antibiotic inactivation,antibiotic target replacement,0,0
+gb|AAD37403.1|ARO:3003202|TLA-1,27.103000,antibiotic inactivation,antibiotic inactivation,1,0
+gb|ABV26707.1|ARO:3002850|arr-5,27.778000,antibiotic inactivation,antibiotic inactivation,1,0
+gb|AAM52215.1|ARO:3000970|TEM-107,33.333000,antibiotic inactivation,antibiotic inactivation,1,0
+gb|AFK08538.1|ARO:3002084|CMY-71,23.077000,antibiotic inactivation,antibiotic inactivation,1,0
+gb|AET99223.1|ARO:3001977|CTX-M-117,40.000000,antibiotic inactivation,antibiotic inactivation,1,0
+gb|AGC50805.1|ARO:3002305|VIM-35,25.510000,antibiotic inactivation,antibiotic inactivation,1,0
+gb|ADY06444.1|ARO:3001783|OXA-163,36.667000,antibiotic inactivation,antibiotic target replacement,0,0
+gb|ACE63186.1|ARO:3001702|OXA-133,27.273000,antibiotic inactivation,antibiotic inactivation,1,0
+gb|AAB37395.2|ARO:3001068|SHV-9,28.846000,antibiotic inactivation,antibiotic target replacement,0,0
+gb|AAX51233.1|ARO:3001622|OXA-77,25.000000,antibiotic inactivation,antibiotic target replacement,0,0
+gb|CAJ19616.1|ARO:3002441|OKP-B-8,35.000000,antibiotic inactivation,antibiotic target replacement,0,0
+gb|ADM61585.1|ARO:3001047|TEM-187,33.333000,antibiotic inactivation,antibiotic inactivation,1,0
+gb|CAP12355.2|ARO:3002439|OKP-B-6,28.846000,antibiotic inactivation,antibiotic target replacement,0,0
+gb|ABC88434.1|ARO:3002213|IMP-22,27.273000,antibiotic inactivation,antibiotic inactivation,1,0
+gb|CAJ47137.2|ARO:3001136|SHV-82,30.769000,antibiotic inactivation,antibiotic target replacement,0,0
+gb|AAK58418.1|ARO:3001426|OXA-32,28.205000,antibiotic inactivation,antibiotic inactivation,1,0
+gb|AAY43008.1|ARO:3001903|CTX-M-41,40.000000,antibiotic inactivation,antibiotic inactivation,1,0
+gb|CAC95175.1|ARO:3001882|CTX-M-20,43.333000,antibiotic inactivation,antibiotic inactivation,1,0
+gb|AFM55001.1|ARO:3001691|OXA-228,29.464000,antibiotic inactivation,antibiotic inactivation,1,0
+gb|ABW76138.1|ARO:3001767|OXA-137,25.556000,antibiotic inactivation,antibiotic target replacement,0,0
+gb|ABW76134.1|ARO:3001765|OXA-136,25.556000,antibiotic inactivation,antibiotic target replacement,0,0
+gb|AAA98298.1|ARO:3002545|AAC(6')-Ia,37.838000,antibiotic inactivation,antibiotic inactivation,1,0
+gb|AAA88422.1|ARO:3002530|AAC(3)-Ib,31.373000,antibiotic inactivation,antibiotic target replacement,0,0
+gb|AJO16037.1|ARO:3002170|MIR-5,26.744000,antibiotic inactivation,reduced permeability to antibiotic,0,0
+gb|CAA66729.1|ARO:3001070|SHV-11,30.769000,antibiotic inactivation,antibiotic target replacement,0,0
+gb|AAL68923.1|ARO:3000973|TEM-110,33.333000,antibiotic inactivation,antibiotic inactivation,1,0
+gb|CAG28256.1|ARO:3002160|FOX-7,25.000000,antibiotic inactivation,antibiotic inactivation,1,0
+gb|CAQ03505.1|ARO:3001338|SHV-100,24.576000,antibiotic inactivation,antibiotic target replacement,0,0
+gb|AAN87151.1|ARO:3002618|aadA21,24.806000,antibiotic inactivation,antibiotic inactivation,1,0
+gb|AFQ31613.1|ARO:3002357|NDM-7,28.889000,antibiotic inactivation,antibiotic inactivation,1,0
+gb|ACV13198.1|ARO:3002290|VIM-20,40.000000,antibiotic inactivation,antibiotic inactivation,1,0
+gb|CAB65358.1|ARO:3000939|TEM-73,33.333000,antibiotic inactivation,antibiotic inactivation,1,0
+gb|CAJ19605.1|ARO:3002424|OKP-A-7,30.769000,antibiotic inactivation,antibiotic target replacement,0,0
+gb|AAZ14083.2|ARO:3001012|TEM-145,33.333000,antibiotic inactivation,antibiotic target replacement,0,0
+gb|CAJ32373.2|ARO:3002262|IND-6,36.667000,antibiotic inactivation,antibiotic inactivation,1,0
+gb|AFA51700.1|ARO:3001981|CTX-M-122,32.727000,antibiotic inactivation,antibiotic inactivation,1,0
+gb|CAJ47130.2|ARO:3001129|SHV-75,30.769000,antibiotic inactivation,antibiotic target replacement,0,0
+gb|CAA37052.1|ARO:3002995|ROB-1,26.042000,antibiotic inactivation,antibiotic inactivation,1,0
+gb|CAJ19599.1|ARO:3002420|OKP-A-3,30.769000,antibiotic inactivation,antibiotic target replacement,0,0
+gb|CAA62957.1|ARO:3002013|CMY-2,23.077000,antibiotic inactivation,antibiotic inactivation,1,0
+gb|ACB54703.1|ARO:3002286|VIM-16,40.000000,antibiotic inactivation,antibiotic inactivation,1,0
+gb|AHL30272.1|ARO:3001571|OXA-385,29.464000,antibiotic inactivation,antibiotic target replacement,0,0
+gb|ABF47919.1|ARO:3001631|OXA-96,27.500000,antibiotic inactivation,antibiotic inactivation,1,0
+gb|ABA00479.1|ARO:3001859|IMI-2,35.088000,antibiotic inactivation,antibiotic inactivation,1,0
+gb|AFS44742.1|ARO:3001378|TEM-201,33.333000,antibiotic inactivation,antibiotic target replacement,0,0
+gb|AHA11124.1|ARO:3001548|OXA-361,31.579000,antibiotic inactivation,antibiotic inactivation,1,0
+gb|AFQ23959.1|ARO:3001192|SHV-153,28.846000,antibiotic inactivation,antibiotic target replacement,0,0
+gb|AGW16410.1|ARO:3001516|OXA-328,30.081000,antibiotic inactivation,antibiotic target replacement,0,0
+gb|ACQ82812.1|ARO:3002506|PDC-7,31.507000,antibiotic inactivation,antibiotic inactivation,1,0
+gb|ABM54868.1|ARO:3002373|VEB-4,52.941000,antibiotic inactivation,antibiotic inactivation,1,0
+gb|AAT90847.1|ARO:3003557|SFB-1,37.838000,antibiotic inactivation,reduced permeability to antibiotic,0,0
+gb|AEV91550.1|ARO:3001710|OXA-211,21.285000,antibiotic inactivation,antibiotic target replacement,0,0
+gb|BAM84089.1|ARO:3002358|NDM-8,37.143000,antibiotic inactivation,antibiotic inactivation,1,0
+gb|ACO72579.1|ARO:3001801|OXA-147,31.707000,antibiotic inactivation,reduced permeability to antibiotic,0,0
+gb|AAT75225.1|ARO:3001088|SHV-30,28.846000,antibiotic inactivation,antibiotic target replacement,0,0
+gb|AGR55864.1|ARO:3001793|OXA-320,25.843000,antibiotic inactivation,reduced permeability to antibiotic,0,0
+gb|ADQ00385.1|ARO:3002136|DHA-7,23.729000,antibiotic inactivation,antibiotic inactivation,1,0
+gb|AAW81339.1|ARO:3001616|OXA-68,25.000000,antibiotic inactivation,antibiotic target replacement,0,0
+gb|ACL13298.1|ARO:3003110|catB10,25.253000,antibiotic inactivation,antibiotic inactivation,1,0
+gb|AEI25539.1|ARO:3002298|VIM-28,25.510000,antibiotic inactivation,antibiotic inactivation,1,0
+gb|CAA76794.1|ARO:3000892|TEM-21,33.333000,antibiotic inactivation,antibiotic inactivation,1,0
+gb|AGW83453.1|ARO:3001542|OXA-355,29.464000,antibiotic inactivation,antibiotic inactivation,1,0
+gb|AGW16414.1|ARO:3001520|OXA-332,30.081000,antibiotic inactivation,antibiotic target replacement,0,0
+gb|BAC76072.1|ARO:3001856|CFE-1,24.359000,antibiotic inactivation,antibiotic inactivation,1,0
+gb|CAI43423.1|ARO:3002414|OXY-6-2,38.710000,antibiotic inactivation,antibiotic inactivation,1,0
+gb|BAM34463.1|ARO:3001827|ACT-16,28.090000,antibiotic inactivation,antibiotic inactivation,1,0
+gb|AAD19217.1|ARO:3002245|CARB-6,24.590000,antibiotic inactivation,antibiotic inactivation,1,0
+gb|AET15272.1|ARO:3003197|aadA25,34.211000,antibiotic inactivation,antibiotic inactivation,1,0
+gb|CAG34107.1|ARO:3002400|OXY-2-5,41.935000,antibiotic inactivation,antibiotic inactivation,1,0
+gb|CAI43414.1|ARO:3002396|OXY-2-1,41.935000,antibiotic inactivation,antibiotic inactivation,1,0
+gb|AGW83447.1|ARO:3001536|OXA-349,30.894000,antibiotic inactivation,antibiotic target replacement,0,0
+gb|AAK71474.1|ARO:3000956|TEM-89,33.333000,antibiotic inactivation,antibiotic inactivation,1,0
+gb|BAD08689.1|ARO:3002333|GES-4,28.000000,antibiotic inactivation,antibiotic inactivation,1,0
+gb|ABS71123.1|ARO:3001440|OXA-115,28.571000,antibiotic inactivation,antibiotic target replacement,0,0
+gb|AAO49597.1|ARO:3002601|aadA,24.806000,antibiotic inactivation,antibiotic inactivation,1,0
+gb|CAA88265.1|ARO:3002898|SAT-3,30.882000,antibiotic inactivation,antibiotic inactivation,1,0
+gb|AAA73865.1|ARO:3002674|Cbut_catB,50.000000,antibiotic inactivation,reduced permeability to antibiotic,0,0
+gb|AAA88552.1|ARO:3002541|AAC(3)-VIIa,33.962000,antibiotic inactivation,antibiotic target replacement,0,0
+gb|AFQ90085.1|ARO:3001610|OXA-243,33.333000,antibiotic inactivation,antibiotic inactivation,1,0
+gb|AEL17179.1|ARO:3001668|OXA-219,29.464000,antibiotic inactivation,antibiotic target replacement,0,0
+gb|AEX99752.1|ARO:3001184|SHV-142,30.769000,antibiotic inactivation,antibiotic target replacement,0,0
+gb|AGR82311.1|ARO:3002116|CMY-104,24.561000,antibiotic inactivation,antibiotic inactivation,1,0
+gb|WP_064190969.1|ARO:3002584|AAC(6')-29b,25.556000,antibiotic inactivation,antibiotic target replacement,0,0
+gb|AAN52134.1|ARO:3002275|VIM-5,25.510000,antibiotic inactivation,antibiotic inactivation,1,0
+gb|ABO64442.1|ARO:3001028|TEM-162,30.000000,antibiotic inactivation,antibiotic target replacement,0,0
+gb|AJG06170.1|ARO:3003171|ACT-36,28.090000,antibiotic inactivation,antibiotic inactivation,1,0
+gb|ACJ05361.1|ARO:3002054|CMY-43,23.077000,antibiotic inactivation,antibiotic inactivation,1,0
+gb|AAC72362.1|ARO:3000882|TEM-10,33.333000,antibiotic inactivation,antibiotic inactivation,1,0
+gb|AAR99493.1|ARO:3001896|CTX-M-34,40.000000,antibiotic inactivation,antibiotic inactivation,1,0
+gb|AAC45086.2|ARO:3001821|ACT-1,27.160000,antibiotic inactivation,antibiotic inactivation,1,0
+gb|ABN69105.1|ARO:3001926|CTX-M-65,32.727000,antibiotic inactivation,antibiotic inactivation,1,0
+gb|AIT76116.1|ARO:3002177|MIR-12,26.744000,antibiotic inactivation,antibiotic inactivation,1,0
+gb|AAG29761.2|ARO:3002259|IND-3,28.571000,antibiotic inactivation,reduced permeability to antibiotic,0,0
+gb|BAO37256.1|ARO:3001994|CTX-M-137,32.727000,antibiotic inactivation,antibiotic inactivation,1,0
+gb|ACA30421.1|ARO:3002038|CMY-27,23.077000,antibiotic inactivation,antibiotic inactivation,1,0
+gb|AIT76110.1|ARO:3002239|IMP-48,23.636000,antibiotic inactivation,reduced permeability to antibiotic,0,0
+gb|AAB05874.1|ARO:3001410|OXA-15,28.205000,antibiotic inactivation,antibiotic inactivation,1,0
+gb|AAG35607.1|ARO:3001420|OXA-25,27.027000,antibiotic inactivation,antibiotic inactivation,1,0
+gb|AAC41391.1|ARO:3002555|AAC(6')-Ih,22.500000,antibiotic inactivation,antibiotic inactivation,1,0
+gb|ADK35875.1|ARO:3001471|OXA-171,27.215000,antibiotic inactivation,antibiotic inactivation,1,0
+gb|ACQ82815.1|ARO:3002509|PDC-10,31.507000,antibiotic inactivation,antibiotic inactivation,1,0
+gb|ADR80606.1|ARO:3001157|SHV-108,30.769000,antibiotic inactivation,antibiotic target replacement,0,0
+gb|ADK55604.1|ARO:3002065|CMY-54,23.077000,antibiotic inactivation,antibiotic inactivation,1,0
+gb|AAO85882.1|ARO:3000982|TEM-120,33.333000,antibiotic inactivation,antibiotic inactivation,1,0
+gb|AFK73434.1|ARO:3002088|CMY-75,23.077000,antibiotic inactivation,antibiotic inactivation,1,0
+gb|AAL82593.1|ARO:3001095|SHV-37,30.769000,antibiotic inactivation,antibiotic target replacement,0,0
+gb|AFN65709.1|ARO:3001498|OXA-239,27.215000,antibiotic inactivation,antibiotic inactivation,1,0
+gb|ADG27454.1|ARO:3001776|OXA-162,36.667000,antibiotic inactivation,antibiotic target replacement,0,0
+gb|AAB21326.1|ARO:3002651|APH(3')-Vc,34.146000,antibiotic inactivation,antibiotic target replacement,0,0
+gb|CAB82578.1|ARO:3002183|MOX-2,38.462000,antibiotic inactivation,antibiotic target replacement,0,0
+gb|AFA51701.1|ARO:3001982|CTX-M-123,40.000000,antibiotic inactivation,antibiotic inactivation,1,0
+gb|AET35493.1|ARO:3001777|OXA-347,35.556000,antibiotic inactivation,antibiotic target replacement,0,0
+gb|ABM54869.1|ARO:3001025|TEM-159,33.333000,antibiotic inactivation,antibiotic inactivation,1,0
+gb|AAD12233.1|ARO:3001417|OXA-22,24.000000,antibiotic inactivation,antibiotic target replacement,0,0
+gb|AAV28215.2|ARO:3001902|CTX-M-40,41.935000,antibiotic inactivation,antibiotic target replacement,0,0
+gb|AEZ49849.1|ARO:3002079|CMY-66,24.359000,antibiotic inactivation,antibiotic inactivation,1,0
+gb|AGZ20205.1|ARO:3001382|TEM-205,33.333000,antibiotic inactivation,antibiotic target replacement,0,0
+gb|AIT76096.1|ARO:3001851|ACT-31,26.230000,antibiotic inactivation,antibiotic inactivation,1,0
+gb|ADE08533.1|ARO:3001176|SHV-129,32.609000,antibiotic inactivation,antibiotic target replacement,0,0
+gb|ADO17948.1|ARO:3001957|CTX-M-98,32.727000,antibiotic inactivation,antibiotic inactivation,1,0
+gb|AAB36568.1|ARO:3002700|cmlv,27.957000,antibiotic inactivation,antibiotic target alteration,0,0
+gb|AIT76093.1|ARO:3002127|CMY-116,23.077000,antibiotic inactivation,antibiotic inactivation,1,0
+gb|CAQ53840.1|ARO:3000853|AIM-1,30.000000,antibiotic inactivation,antibiotic inactivation,1,0
+gb|AAV97954.1|ARO:3001911|CTX-M-49,32.727000,antibiotic inactivation,antibiotic target replacement,0,0
+gb|AHA58207.1|ARO:3001390|TEM-213,33.333000,antibiotic inactivation,antibiotic target replacement,0,0
+gb|CAI30651.2|ARO:3001117|SHV-62,30.769000,antibiotic inactivation,antibiotic target replacement,0,0
+gb|AAP15294.1|ARO:3002675|catB2,28.846000,antibiotic inactivation,antibiotic inactivation,1,0
+gb|ABV57756.3|ARO:3001942|CTX-M-81,28.169000,antibiotic inactivation,antibiotic inactivation,1,0
+gb|ACQ82808.1|ARO:3002500|PDC-3,31.507000,antibiotic inactivation,antibiotic inactivation,1,0
+gb|CBW46935.1|ARO:3001959|CTX-M-100,36.667000,antibiotic inactivation,antibiotic inactivation,1,0
+gb|ACH58988.1|ARO:3002487|LRA-8,31.507000,antibiotic inactivation,antibiotic inactivation,1,0
+gb|ACA97847.1|ARO:3002044|CMY-33,24.590000,antibiotic inactivation,antibiotic inactivation,1,0
+gb|CAA29819.1|ARO:3002877|BcI,42.857000,antibiotic inactivation,antibiotic inactivation,1,0
+gb|AAF72942.1|ARO:3001423|OXA-28,31.707000,antibiotic inactivation,reduced permeability to antibiotic,0,0
+gb|CAJ47127.2|ARO:3001126|SHV-72,28.846000,antibiotic inactivation,antibiotic target replacement,0,0
+gb|AAC41392.1|ARO:3002557|AAC(6')-Ij,33.333000,antibiotic inactivation,antibiotic inactivation,1,0
+gb|ACS44714.1|ARO:3002340|GES-11,28.000000,antibiotic inactivation,antibiotic target replacement,0,0
+gb|ABX30738.1|ARO:3000621|PC1_blaZ,30.435000,antibiotic inactivation,reduced permeability to antibiotic,0,0
+gb|AEQ59620.1|ARO:3001052|TEM-192,33.333000,antibiotic inactivation,antibiotic inactivation,1,0
+gb|AAF04388.1|ARO:3001871|CTX-M-8,41.935000,antibiotic inactivation,antibiotic target replacement,0,0
+gb|AAD46626.1|ARO:3002596|AAC(6')-IIc,46.154000,antibiotic inactivation,antibiotic target replacement,0,0
+gb|BAB72072.1|ARO:3002202|IMP-11,27.273000,antibiotic inactivation,antibiotic target protection,0,0
+gb|AFH36331.1|ARO:3001678|OXA-237,36.111000,antibiotic inactivation,antibiotic inactivation,1,0
+gb|AYF56302.1|ARO:3004868|NDM-25,36.364000,antibiotic inactivation,antibiotic inactivation,1,0
+gb|CAD24670.1|ARO:3000900|TEM-30,33.333000,antibiotic inactivation,antibiotic inactivation,1,0
+gb|CAZ48628.1|ARO:3002852|arr-7,30.435000,antibiotic inactivation,antibiotic inactivation,1,0
+gb|BAD14386.1|ARO:3002573|AAC(6')-Iae,31.481000,antibiotic inactivation,antibiotic target replacement,0,0
+gb|ACH58997.1|ARO:3002492|LRA-18,38.095000,antibiotic inactivation,antibiotic target replacement,0,0
+gb|AAB17891.1|ARO:3003001|CfxA,24.051000,antibiotic inactivation,antibiotic target replacement,0,0
+gb|AAR21614.1|ARO:3002529|AAC(3)-Id,25.758000,antibiotic inactivation,antibiotic inactivation,1,0
+gb|ACD56151.1|ARO:3002848|arr-3,40.000000,antibiotic inactivation,antibiotic target protection,0,0
+gb|ACA30422.1|ARO:3002051|CMY-40,23.077000,antibiotic inactivation,antibiotic inactivation,1,0
+gb|AAC44793.1|ARO:3002524|AAC(2')-Ib,34.483000,antibiotic inactivation,antibiotic inactivation,1,0
+gb|ABN49114.1|ARO:3001149|SHV-97,30.769000,antibiotic inactivation,antibiotic target replacement,0,0
+gb|AHA80958.1|ARO:3001356|SHV-172,30.769000,antibiotic inactivation,antibiotic target replacement,0,0
+gb|CDN33426.1|ARO:3001394|TEM-217,33.333000,antibiotic inactivation,antibiotic inactivation,1,0
+gb|AAV97953.1|ARO:3001910|CTX-M-48,32.727000,antibiotic inactivation,antibiotic target replacement,0,0
+gb|ACM91559.1|ARO:3002319|KPC-9,27.778000,antibiotic inactivation,antibiotic inactivation,1,0
+gb|AFK73449.1|ARO:3002093|CMY-80,23.077000,antibiotic inactivation,antibiotic inactivation,1,0
+gb|ADT70779.1|ARO:3001805|OXA-198,35.714000,antibiotic inactivation,antibiotic inactivation,1,0
+gb|CAC17622.1|ARO:3002515|OCH-2,38.235000,antibiotic inactivation,antibiotic target replacement,0,0
+gb|CAA41038.1|ARO:3000878|TEM-6,33.333000,antibiotic inactivation,antibiotic inactivation,1,0
+gb|ACZ54536.1|ARO:3002342|GES-13,28.000000,antibiotic inactivation,antibiotic inactivation,1,0
+gb|ABI34705.1|ARO:3001917|CTX-M-55,40.000000,antibiotic inactivation,antibiotic inactivation,1,0
+gb|CAA71325.1|ARO:3002156|FOX-2,26.168000,antibiotic inactivation,antibiotic inactivation,1,0
+gb|ABS72342.1|ARO:3001151|SHV-102,28.846000,antibiotic inactivation,antibiotic target replacement,0,0
+gb|AFK28473.1|ARO:3001485|OXA-207,27.027000,antibiotic inactivation,antibiotic inactivation,1,0
+gb|AAL40899.1|ARO:3001101|SHV-43,30.769000,antibiotic inactivation,antibiotic target replacement,0,0
+gb|ADH95186.1|ARO:3002321|KPC-11,23.077000,antibiotic inactivation,antibiotic inactivation,1,0
+gb|AAO66446.1|ARO:3001113|SHV-57,30.769000,antibiotic inactivation,antibiotic target replacement,0,0
+gb|ABN69070.1|ARO:3002035|CMY-24,23.077000,antibiotic inactivation,antibiotic inactivation,1,0
+gb|AAP93848.1|ARO:3002476|LEN-6,29.487000,antibiotic inactivation,antibiotic target replacement,0,0
+gb|CAC17624.1|ARO:3002517|OCH-4,28.125000,antibiotic inactivation,antibiotic target replacement,0,0
+gb|AIT76089.1|ARO:3002124|CMY-113,24.359000,antibiotic inactivation,antibiotic inactivation,1,0
+gb|CAZ39946.1|ARO:3000589|NDM-1,36.364000,antibiotic inactivation,antibiotic inactivation,1,0
+gb|ACB41775.1|ARO:3002216|IMP-25,40.000000,antibiotic inactivation,antibiotic target replacement,0,0
+gb|AGW83448.1|ARO:3001537|OXA-350,29.268000,antibiotic inactivation,antibiotic target replacement,0,0
+gb|AAP22374.1|ARO:3002248|CARB-9,29.787000,antibiotic inactivation,antibiotic inactivation,1,0
+gb|AAU88145.1|ARO:3001764|OXA-63,25.743000,antibiotic inactivation,antibiotic target replacement,0,0
+gb|AAD03494.1|ARO:3002566|AAC(6')-Iv,29.268000,antibiotic inactivation,antibiotic inactivation,1,0
+gb|ACV44455.1|ARO:3002404|OXY-2-9,41.935000,antibiotic inactivation,antibiotic inactivation,1,0
+gb|AAO53445.1|ARO:3001104|SHV-46,28.846000,antibiotic inactivation,antibiotic target replacement,0,0
+gb|BAM98935.1|ARO:3002234|IMP-43,37.500000,antibiotic inactivation,antibiotic inactivation,1,0
+gb|ACA97846.1|ARO:3002043|CMY-32,23.077000,antibiotic inactivation,antibiotic inactivation,1,0
+gb|AAG17550.1|ARO:3001073|SHV-14,30.769000,antibiotic inactivation,antibiotic target replacement,0,0
+gb|CAA82916.1|ARO:3002389|OXY-1-1,38.710000,antibiotic inactivation,antibiotic inactivation,1,0
+gb|BAP75826.1|ARO:3002225|IMP-34,40.000000,antibiotic inactivation,antibiotic inactivation,1,0
+gb|AGW16406.1|ARO:3001512|OXA-324,30.081000,antibiotic inactivation,antibiotic target replacement,0,0
+gb|AAB41059.1|ARO:3002884|iri,60.000000,antibiotic inactivation,antibiotic target alteration,0,0
+gb|ABB97007.1|ARO:3000924|TEM-55,33.333000,antibiotic inactivation,antibiotic inactivation,1,0
+gb|CAD99181.1|ARO:3001893|CTX-M-31,43.333000,antibiotic inactivation,antibiotic inactivation,1,0
+gb|ACB41777.1|ARO:3001947|CTX-M-87,32.727000,antibiotic inactivation,antibiotic inactivation,1,0
+gb|AAP69912.1|ARO:3003100|cphA4,25.000000,antibiotic inactivation,reduced permeability to antibiotic,0,0
+gb|AFQ23956.1|ARO:3001189|SHV-150,30.769000,antibiotic inactivation,antibiotic target replacement,0,0
+gb|CAG25813.2|ARO:3002434|OKP-B-1,28.846000,antibiotic inactivation,antibiotic target replacement,0,0
+gb|ADA79630.1|ARO:3001037|TEM-171,33.333000,antibiotic inactivation,antibiotic inactivation,1,0
+gb|CAB41414.1|ARO:3002836|lnuB,31.915000,antibiotic inactivation,antibiotic target replacement,0,0
+gb|WP_047028173.1|ARO:3000896|TEM-26,33.333000,antibiotic inactivation,antibiotic inactivation,1,0
+gb|AAK31368.1|ARO:3002021|CMY-10,28.205000,antibiotic inactivation,antibiotic target replacement,0,0
+gb|CCA94649.1|ARO:3001488|OXA-216,30.357000,antibiotic inactivation,antibiotic target replacement,0,0
+gb|AAS89983.1|ARO:3000976|TEM-113,33.333000,antibiotic inactivation,antibiotic inactivation,1,0
+gb|BAL14456.1|ARO:3000854|SMB-1,28.049000,antibiotic inactivation,antibiotic target replacement,0,0
+gb|AAF04458.1|ARO:3000850|GOB-1,31.915000,antibiotic inactivation,antibiotic target protection,0,0
+gb|AAC41449.1|ARO:3001398|OXA-3,32.558000,antibiotic inactivation,antibiotic inactivation,1,0
+gb|AIT97310.1|ARO:3003166|CTX-M-158,40.000000,antibiotic inactivation,antibiotic inactivation,1,0
+gb|AFC60795.1|ARO:3001183|SHV-141,28.846000,antibiotic inactivation,antibiotic target replacement,0,0
+gb|ABV81082.1|ARO:3001929|CTX-M-68,40.000000,antibiotic inactivation,antibiotic inactivation,1,0
+gb|AAF34334.1|ARO:3001078|SHV-20,50.000000,antibiotic inactivation,antibiotic target replacement,0,0
+gb|AAN28721.1|ARO:3002871|tet(37),23.529000,antibiotic inactivation,antibiotic inactivation,1,0
+gb|AAA27471.1|ARO:3000205|tet(X),47.059000,antibiotic inactivation,antibiotic inactivation,1,0
+gb|AAL29435.1|ARO:3000950|TEM-83,33.333000,antibiotic inactivation,antibiotic inactivation,1,0
+gb|AIT76103.1|ARO:3002148|DHA-17,23.729000,antibiotic inactivation,antibiotic inactivation,1,0
+gb|AFQ23963.1|ARO:3001196|SHV-157,30.769000,antibiotic inactivation,antibiotic target replacement,0,0
+gb|AAV80715.1|ARO:3002446|OKP-B-13,35.000000,antibiotic inactivation,antibiotic target replacement,0,0
+gb|AFQ23967.1|ARO:3001200|SHV-161,30.769000,antibiotic inactivation,antibiotic target replacement,0,0
+gb|AAV37206.1|ARO:3003096|CfxA5,24.051000,antibiotic inactivation,antibiotic target replacement,0,0
+gb|AEG78825.1|ARO:3002872|FosA3,26.866000,antibiotic inactivation,antibiotic target replacement,0,0
+gb|AAA26412.1|ARO:3002642|APH(3')-Ib,50.000000,antibiotic inactivation,antibiotic target replacement,0,0
+gb|CAB92324.1|ARO:3000935|TEM-68,33.333000,antibiotic inactivation,antibiotic inactivation,1,0
+gb|ACX92987.1|ARO:3002845|vatH,27.551000,antibiotic inactivation,antibiotic inactivation,1,0
+gb|ADY02546.1|ARO:3001961|CTX-M-102,32.727000,antibiotic inactivation,antibiotic target replacement,0,0
+gb|ACJ65711.1|ARO:3002055|CMY-44,24.590000,antibiotic inactivation,antibiotic inactivation,1,0
+gb|AAX58682.2|ARO:3002031|CMY-20,23.457000,antibiotic inactivation,antibiotic inactivation,1,0
+gb|AAF72530.1|ARO:3001877|CTX-M-14,32.727000,antibiotic inactivation,antibiotic inactivation,1,0
+gb|AIT76097.1|ARO:3002128|CMY-117,24.359000,antibiotic inactivation,antibiotic inactivation,1,0
+gb|ACF32746.1|ARO:3001029|TEM-163,33.333000,antibiotic inactivation,antibiotic inactivation,1,0
+gb|CDL68900.1|ARO:3002143|DHA-12,22.034000,antibiotic inactivation,antibiotic inactivation,1,0
+gb|AEM44651.1|ARO:3001968|CTX-M-108,40.000000,antibiotic inactivation,antibiotic inactivation,1,0
+gb|CAG25815.2|ARO:3002419|OKP-A-2,30.769000,antibiotic inactivation,antibiotic target replacement,0,0
+gb|ACD45467.1|ARO:3001655|OXA-138,28.571000,antibiotic inactivation,antibiotic target replacement,0,0
+gb|AAG35608.1|ARO:3001421|OXA-26,27.027000,antibiotic inactivation,antibiotic inactivation,1,0
+gb|ADB28891.1|ARO:3001663|OXA-160,27.027000,antibiotic inactivation,antibiotic inactivation,1,0
+gb|ADY19254.1|ARO:3002072|CMY-58,23.077000,antibiotic inactivation,antibiotic inactivation,1,0
+gb|ABD60314.1|ARO:3001005|TEM-142,33.333000,antibiotic inactivation,antibiotic inactivation,1,0
+gb|ARB93503.1|ARO:3004603|tet(56),25.000000,antibiotic inactivation,antibiotic target alteration,0,0
+gb|ADK38716.1|ARO:3002269|IND-14,30.556000,antibiotic inactivation,antibiotic inactivation,1,0
+gb|CAA66659.1|ARO:3000911|TEM-42,33.333000,antibiotic inactivation,antibiotic inactivation,1,0
+gb|AEV91554.1|ARO:3001714|OXA-215,27.027000,antibiotic inactivation,antibiotic inactivation,1,0
+gb|CAE48334.1|ARO:3002207|IMP-16,22.727000,antibiotic inactivation,antibiotic inactivation,1,0
+gb|AEI54993.1|ARO:3002369|PER-7,39.535000,antibiotic inactivation,antibiotic inactivation,1,0
+gb|AEM97673.1|ARO:3002074|CMY-61,23.077000,antibiotic inactivation,antibiotic inactivation,1,0
+gb|AGC60012.1|ARO:3001786|OXA-244,36.667000,antibiotic inactivation,antibiotic target replacement,0,0
+gb|ADI58619.1|ARO:3001659|OXA-175,28.571000,antibiotic inactivation,antibiotic target replacement,0,0
+gb|CAA76196.1|ARO:3002132|DHA-1,23.729000,antibiotic inactivation,antibiotic inactivation,1,0
+gb|AAC61671.1|ARO:3002842|vatC,21.118000,antibiotic inactivation,antibiotic target replacement,0,0
+gb|AIH07017.1|ARO:3002329|KPC-19,27.778000,antibiotic inactivation,antibiotic inactivation,1,0
+gb|ACV32634.1|ARO:3001171|SHV-124,50.000000,antibiotic inactivation,antibiotic target replacement,0,0
+gb|AGW25368.1|ARO:3002000|CTX-M-142,40.000000,antibiotic inactivation,antibiotic inactivation,1,0
+gb|AEG64812.1|ARO:3001374|TEM-185,33.333000,antibiotic inactivation,antibiotic inactivation,1,0
+gb|CAA29136.1|ARO:3002658|APH(6)-Ib,27.536000,antibiotic inactivation,antibiotic target replacement,0,0
+gb|ACH58994.1|ARO:3002512|LRA-17,27.451000,antibiotic inactivation,antibiotic target replacement,0,0
+gb|ADL27532.1|ARO:3001958|CTX-M-99,32.727000,antibiotic inactivation,antibiotic inactivation,1,0
+gb|AAK17194.1|ARO:3000931|TEM-63,33.333000,antibiotic inactivation,antibiotic inactivation,1,0
+gb|ADA13241.1|ARO:3002266|IND-10,30.556000,antibiotic inactivation,reduced permeability to antibiotic,0,0
+gb|AFN82060.1|ARO:3001091|SHV-33,30.769000,antibiotic inactivation,antibiotic target replacement,0,0
+gb|AFU25632.1|ARO:3002087|CMY-74,23.457000,antibiotic inactivation,antibiotic inactivation,1,0
+gb|AAT01223.1|ARO:3001110|SHV-53,50.000000,antibiotic inactivation,antibiotic target replacement,0,0
+gb|CAA25854.1|ARO:3002659|APH(6)-Ic,47.619000,antibiotic inactivation,antibiotic inactivation,1,0
+gb|CCK86743.1|ARO:3002103|CMY-90,24.359000,antibiotic inactivation,antibiotic inactivation,1,0
+gb|ADR80609.1|ARO:3001169|SHV-122,30.769000,antibiotic inactivation,antibiotic target replacement,0,0
+gb|AEW46676.3|ARO:3001990|CTX-M-131,43.333000,antibiotic inactivation,antibiotic inactivation,1,0
+gb|AHL30281.1|ARO:3001569|OXA-383,25.000000,antibiotic inactivation,antibiotic target replacement,0,0
+gb|AAK14293.1|ARO:3002378|VEB-9,52.941000,antibiotic inactivation,antibiotic inactivation,1,0
+gb|ABF47917.1|ARO:3001629|OXA-94,28.571000,antibiotic inactivation,antibiotic target replacement,0,0
+gb|CAA40146.1|ARO:3002997|LCR-1,38.462000,antibiotic inactivation,antibiotic target replacement,0,0
+gb|ABC61637.1|ARO:3001632|OXA-92,30.357000,antibiotic inactivation,antibiotic target replacement,0,0
+gb|AGV10818.1|ARO:3002669|APH(2'')-Ig,34.783000,antibiotic inactivation,antibiotic inactivation,1,0
+gb|ADN26580.1|ARO:3001953|CTX-M-93,32.727000,antibiotic inactivation,antibiotic inactivation,1,0
+gb|AGQ93789.1|ARO:3003176|CARB-21,31.818000,antibiotic inactivation,antibiotic target replacement,0,0
+gb|AFY98865.1|ARO:3001997|CTX-M-139,40.000000,antibiotic inactivation,antibiotic inactivation,1,0
+gb|CAA41211.1|ARO:3001400|OXA-5,40.741000,antibiotic inactivation,antibiotic inactivation,1,0
+gb|CBI75447.1|ARO:3002061|CMY-50,23.077000,antibiotic inactivation,antibiotic inactivation,1,0
+gb|ADC58623.1|ARO:3002463|LEN-13,28.846000,antibiotic inactivation,antibiotic target replacement,0,0
+gb|CAI43425.1|ARO:3002416|OXY-6-4,38.710000,antibiotic inactivation,antibiotic inactivation,1,0
+gb|AHE40557.1|ARO:3002626|ANT(6)-Ia,26.263000,antibiotic inactivation,antibiotic target replacement,0,0
+gb|CAQ03506.1|ARO:3001155|SHV-106,28.846000,antibiotic inactivation,antibiotic target replacement,0,0
+gb|AAG24866.1|ARO:3001430|OXA-36,26.667000,antibiotic inactivation,antibiotic inactivation,1,0
+gb|AIS67769.1|ARO:3003153|SHV-186,28.846000,antibiotic inactivation,antibiotic target replacement,0,0
+gb|CAA71324.1|ARO:3000918|TEM-49,33.333000,antibiotic inactivation,antibiotic inactivation,1,0
+gb|CAA79968.1|ARO:3002363|PER-1,37.209000,antibiotic inactivation,antibiotic inactivation,1,0
+gb|ABI74447.1|ARO:3001019|TEM-152,33.333000,antibiotic inactivation,antibiotic inactivation,1,0
+gb|CAP12353.2|ARO:3002428|OKP-A-11,30.769000,antibiotic inactivation,antibiotic target replacement,0,0
+gb|ADO50679.1|ARO:3002295|VIM-25,25.510000,antibiotic inactivation,antibiotic inactivation,1,0
+gb|AAA26548.1|ARO:3002534|AAC(3)-IIb,28.571000,antibiotic inactivation,antibiotic inactivation,1,0
+gb|AGF70638.1|ARO:3002325|KPC-15,52.941000,antibiotic inactivation,antibiotic inactivation,1,0
+gb|AHL30285.1|ARO:3001567|OXA-381,28.571000,antibiotic inactivation,antibiotic target replacement,0,0
+gb|ACS73598.1|ARO:3002339|GES-10,27.333000,antibiotic inactivation,antibiotic inactivation,1,0
+gb|AGU69254.1|ARO:3001687|OXA-316,28.571000,antibiotic inactivation,antibiotic target replacement,0,0
+gb|AAK18183.1|ARO:3002337|GES-8,27.333000,antibiotic inactivation,antibiotic target replacement,0,0
+gb|ACL68095.1|ARO:3002431|OKP-A-14,30.769000,antibiotic inactivation,antibiotic target replacement,0,0
+gb|AAK13430.1|ARO:3002199|IMP-8,30.769000,antibiotic inactivation,reduced permeability to antibiotic,0,0
+gb|AGU69252.1|ARO:3001685|OXA-314,28.571000,antibiotic inactivation,antibiotic target replacement,0,0
+gb|ACL68096.1|ARO:3002430|OKP-A-13,30.769000,antibiotic inactivation,antibiotic target replacement,0,0
+gb|AFO55202.1|ARO:3001680|OXA-242,29.464000,antibiotic inactivation,antibiotic target replacement,0,0
+gb|AEM44653.1|ARO:3001973|CTX-M-113,28.169000,antibiotic inactivation,antibiotic inactivation,1,0
+gb|AAT46414.1|ARO:3000987|TEM-125,33.333000,antibiotic inactivation,antibiotic inactivation,1,0
+gb|AAF27723.1|ARO:3002330|GES-1,28.000000,antibiotic inactivation,antibiotic target replacement,0,0
+gb|ABQ52429.1|ARO:3001636|OXA-104,25.000000,antibiotic inactivation,antibiotic target replacement,0,0
+gb|CAJ77817.2|ARO:3001438|OXA-100,30.357000,antibiotic inactivation,antibiotic target replacement,0,0
+gb|CAQ42480.1|ARO:3001938|CTX-M-77,43.333000,antibiotic inactivation,antibiotic inactivation,1,0
+gb|AFU25653.1|ARO:3001837|ACT-15,29.213000,antibiotic inactivation,antibiotic inactivation,1,0
+gb|CAA62365.1|ARO:3002645|APH(3')-IIb,25.000000,antibiotic inactivation,antibiotic inactivation,1,0
+gb|ABN49112.1|ARO:3001148|SHV-96,30.769000,antibiotic inactivation,antibiotic target replacement,0,0
+gb|AAK14792.1|ARO:3000955|TEM-88,33.333000,antibiotic inactivation,antibiotic inactivation,1,0
+gb|AIN56719.1|ARO:3002496|OXA-418,29.464000,antibiotic inactivation,antibiotic inactivation,1,0
+gb|AAW81336.1|ARO:3001613|OXA-64,29.464000,antibiotic inactivation,antibiotic target replacement,0,0
+gb|CAL08007.1|ARO:3001001|TEM-137,33.333000,antibiotic inactivation,antibiotic inactivation,1,0
+gb|ABN49110.1|ARO:3001145|SHV-93,30.769000,antibiotic inactivation,antibiotic target replacement,0,0
+gb|AGW83454.1|ARO:3001543|OXA-356,30.357000,antibiotic inactivation,antibiotic inactivation,1,0
+gb|AGE45504.1|ARO:3002082|CMY-69,23.077000,antibiotic inactivation,antibiotic inactivation,1,0
+gb|CAP69660.1|ARO:3001811|OXA-129,40.741000,antibiotic inactivation,antibiotic inactivation,1,0
+gb|AGW16415.1|ARO:3001521|OXA-333,24.852000,antibiotic inactivation,antibiotic target replacement,0,0
+gb|BAD10948.2|ARO:3002563|AAC(6')-Isa,27.273000,antibiotic inactivation,antibiotic target replacement,0,0
+gb|AIT76104.1|ARO:3002180|MIR-15,26.744000,antibiotic inactivation,antibiotic inactivation,1,0
+gb|AGH33739.1|ARO:3002377|VEB-8,52.941000,antibiotic inactivation,antibiotic inactivation,1,0
+gb|AIA08936.1|ARO:3000444|rphA,30.769000,antibiotic inactivation,antibiotic target replacement,0,0
+gb|CAA33795.1|ARO:3003563|RCP-1,38.776000,antibiotic inactivation,antibiotic target replacement,0,0
+gb|CAP12358.1|ARO:3002451|OKP-B-18,35.000000,antibiotic inactivation,antibiotic target replacement,0,0
+gb|ABF06441.1|ARO:3002034|CMY-23,23.077000,antibiotic inactivation,antibiotic inactivation,1,0
+gb|AHL30278.1|ARO:3001564|OXA-378,25.000000,antibiotic inactivation,antibiotic target replacement,0,0
+gb|ABN09669.1|ARO:3001922|CTX-M-61,40.000000,antibiotic inactivation,antibiotic inactivation,1,0
+gb|ABS29619.1|ARO:3000841|CGB-1,25.424000,antibiotic inactivation,reduced permeability to antibiotic,0,0
+gb|ABV31692.1|ARO:3001643|OXA-112,30.357000,antibiotic inactivation,antibiotic target replacement,0,0
+gb|ADM47435.1|ARO:3001695|OXA-134,24.528000,antibiotic inactivation,antibiotic inactivation,1,0
+gb|AAM22276.1|ARO:3000963|TEM-96,33.333000,antibiotic inactivation,antibiotic inactivation,1,0
+gb|AAZ78361.1|ARO:3001703|OXA-86,30.357000,antibiotic inactivation,antibiotic target replacement,0,0
+gb|AGA83484.1|ARO:3001369|TEM-153,33.333000,antibiotic inactivation,antibiotic target replacement,0,0
+gb|AEZ05108.1|ARO:3002349|GES-20,28.000000,antibiotic inactivation,antibiotic target replacement,0,0
+gb|CAA74573.1|ARO:3001867|CTX-M-4,40.000000,antibiotic inactivation,antibiotic inactivation,1,0
+gb|AEK78851.1|ARO:3002163|FOX-9,25.581000,antibiotic inactivation,antibiotic inactivation,1,0
+gb|AAO38247.1|ARO:3000361|EreA,50.000000,antibiotic inactivation,antibiotic target replacement,0,0
+gb|ABA06588.1|ARO:3001121|SHV-66,28.846000,antibiotic inactivation,antibiotic target replacement,0,0
+gb|AAD02244.1|ARO:3002580|AAC(6')-Ib9,31.707000,antibiotic inactivation,antibiotic inactivation,1,0
+gb|CAJ47132.2|ARO:3001131|SHV-77,30.769000,antibiotic inactivation,antibiotic target replacement,0,0
+gb|AFU25644.1|ARO:3002090|CMY-77,23.077000,antibiotic inactivation,antibiotic inactivation,1,0
+gb|AFK24647.1|ARO:3002301|VIM-31,40.000000,antibiotic inactivation,antibiotic inactivation,1,0
+gb|ADM25824.1|ARO:3001178|SHV-134,28.846000,antibiotic inactivation,antibiotic target replacement,0,0
+gb|AAK69830.1|ARO:3002455|LEN-2,30.769000,antibiotic inactivation,antibiotic target replacement,0,0
+gb|ACL37342.1|ARO:3002592|AAC6_IB_HZ,32.500000,antibiotic inactivation,antibiotic inactivation,1,0
+gb|AAL38577.1|ARO:3002577|AAC(6')-Ib4,32.500000,antibiotic inactivation,antibiotic inactivation,1,0
+gb|AAB58555.1|ARO:3001413|OXA-18,33.333000,antibiotic inactivation,antibiotic target replacement,0,0
+gb|CAJ19606.1|ARO:3002425|OKP-A-8,30.769000,antibiotic inactivation,antibiotic target replacement,0,0
+gb|AAZ04368.1|ARO:3002385|BEL-1,30.769000,antibiotic inactivation,antibiotic target replacement,0,0
+gb|AAD20273.1|ARO:3002256|IND-1,30.556000,antibiotic inactivation,antibiotic inactivation,1,0
+gb|AGW25367.1|ARO:3001386|TEM-209,33.333000,antibiotic inactivation,antibiotic inactivation,1,0
+gb|CAA76796.1|ARO:3000899|TEM-29,33.333000,antibiotic inactivation,antibiotic inactivation,1,0
+gb|AAB49832.1|ARO:3002636|APH(2'')-IIIa,27.778000,antibiotic inactivation,antibiotic inactivation,1,0
+gb|AAF37209.2|ARO:3001083|SHV-25,30.769000,antibiotic inactivation,antibiotic target replacement,0,0
+gb|AGK07369.1|ARO:3001690|OXA-255,27.206000,antibiotic inactivation,antibiotic inactivation,1,0
+gb|ACI29348.1|ARO:3001946|CTX-M-86,40.000000,antibiotic inactivation,antibiotic inactivation,1,0
+gb|ADQ43421.1|ARO:3002646|APH(3')-IIc,25.758000,antibiotic inactivation,antibiotic target replacement,0,0
+gb|BAD89802.1|ARO:3002212|IMP-21,27.273000,antibiotic inactivation,antibiotic target protection,0,0
+gb|AFO55201.1|ARO:3001679|OXA-241,30.357000,antibiotic inactivation,antibiotic target replacement,0,0
+gb|ABC18328.3|ARO:3001916|CTX-M-54,40.000000,antibiotic inactivation,antibiotic inactivation,1,0
+gb|AAC32891.1|ARO:3000898|TEM-28,33.333000,antibiotic inactivation,antibiotic inactivation,1,0
+gb|AAT49068.1|ARO:3002205|IMP-14,22.981000,antibiotic inactivation,reduced permeability to antibiotic,0,0
+gb|BAD11815.1|ARO:3002593|AAC(6')-Ib-SK,25.806000,antibiotic inactivation,antibiotic target protection,0,0
+gb|AAV83795.1|ARO:3001000|TEM-136,33.333000,antibiotic inactivation,antibiotic inactivation,1,0
+gb|CAJ47129.2|ARO:3001128|SHV-74,30.769000,antibiotic inactivation,antibiotic target replacement,0,0
+gb|ACR66323.1|ARO:3001059|SHV-1,30.769000,antibiotic inactivation,antibiotic target replacement,0,0
+gb|AHA80103.1|ARO:3002114|CMY-102,23.077000,antibiotic inactivation,antibiotic inactivation,1,0
+gb|AAC23556.1|ARO:3002660|APH(6)-Id,27.381000,antibiotic inactivation,antibiotic target replacement,0,0
+gb|AHI63011.1|ARO:3001552|OXA-365,25.000000,antibiotic inactivation,antibiotic target replacement,0,0
+gb|ABF47918.1|ARO:3001630|OXA-95,28.571000,antibiotic inactivation,antibiotic target replacement,0,0
+gb|CAJ47131.2|ARO:3001130|SHV-76,30.769000,antibiotic inactivation,antibiotic target replacement,0,0
+gb|AAL86924.1|ARO:3001884|CTX-M-22,40.000000,antibiotic inactivation,antibiotic inactivation,1,0
+gb|CAA52904.1|ARO:3002688|catS,29.630000,antibiotic inactivation,reduced permeability to antibiotic,0,0
+gb|BAA02563.2|ARO:3002182|MOX-1,28.205000,antibiotic inactivation,antibiotic target replacement,0,0
+gb|PXK69226.1|ARO:3002462|LEN-12,30.769000,antibiotic inactivation,antibiotic target replacement,0,0
+gb|BAL15076.1|ARO:3001484|OXA-206,28.571000,antibiotic inactivation,antibiotic target replacement,0,0
+gb|AAD37413.1|ARO:3001060|SHV-2,28.846000,antibiotic inactivation,antibiotic target replacement,0,0
+gb|ACY29468.1|ARO:3002289|VIM-19,25.510000,antibiotic inactivation,antibiotic inactivation,1,0
+gb|ACU00153.1|ARO:3001974|CTX-M-114,40.000000,antibiotic inactivation,antibiotic inactivation,1,0
+gb|ADX78234.1|ARO:3002297|VIM-27,27.835000,antibiotic inactivation,antibiotic inactivation,1,0
+gb|AAB66655.1|ARO:3002663|APH(9)-Ib,22.772000,antibiotic inactivation,antibiotic inactivation,1,0
+gb|ABS72351.1|ARO:3001152|SHV-103,30.769000,antibiotic inactivation,antibiotic target replacement,0,0
+gb|ACV44456.1|ARO:3002405|OXY-2-10,41.935000,antibiotic inactivation,antibiotic target replacement,0,0
+gb|CAJ47126.2|ARO:3001125|SHV-71,30.769000,antibiotic inactivation,antibiotic target replacement,0,0
+gb|AGN11769.1|ARO:3001999|CTX-M-141,43.333000,antibiotic inactivation,antibiotic inactivation,1,0
+gb|AHL30282.1|ARO:3001570|OXA-384,25.000000,antibiotic inactivation,antibiotic target replacement,0,0
+gb|AAN05029.1|ARO:3000981|TEM-118,33.333000,antibiotic inactivation,antibiotic inactivation,1,0
+gb|ACS44715.1|ARO:3002576|AAC(6')-Ib3,32.500000,antibiotic inactivation,antibiotic inactivation,1,0
+gb|AFO59566.1|ARO:3002226|IMP-35,25.000000,antibiotic inactivation,reduced permeability to antibiotic,0,0
+gb|AIT76109.1|ARO:3002153|DHA-22,23.729000,antibiotic inactivation,antibiotic inactivation,1,0
+gb|AAG33665.1|ARO:3001431|OXA-37,38.710000,antibiotic inactivation,antibiotic inactivation,1,0
+gb|CAP12359.2|ARO:3002452|OKP-B-19,30.769000,antibiotic inactivation,antibiotic target replacement,0,0
+gb|AAN05030.1|ARO:3002475|LEN-3,30.769000,antibiotic inactivation,antibiotic target replacement,0,0
+gb|CAA76793.1|ARO:3000891|TEM-20,33.333000,antibiotic inactivation,antibiotic inactivation,1,0
+gb|AFP97028.1|ARO:3002228|IMP-37,28.205000,antibiotic inactivation,antibiotic target protection,0,0
+gb|BAP28835.1|ARO:3003116|OXA-420,27.500000,antibiotic inactivation,reduced permeability to antibiotic,0,0
+gb|CAJ32502.1|ARO:3002274|VIM-4,25.510000,antibiotic inactivation,antibiotic inactivation,1,0
+gb|ACT09125.1|ARO:3001799|OXA-161,28.205000,antibiotic inactivation,antibiotic inactivation,1,0
+gb|AFQ23964.1|ARO:3001197|SHV-158,30.769000,antibiotic inactivation,antibiotic target replacement,0,0
+gb|ABF70513.1|ARO:3002221|IMP-30,40.000000,antibiotic inactivation,antibiotic inactivation,1,0
+gb|CAA06312.1|ARO:3001870|CTX-M-7,36.667000,antibiotic inactivation,antibiotic inactivation,1,0
+gb|AGW16405.1|ARO:3001511|OXA-323,28.689000,antibiotic inactivation,antibiotic target replacement,0,0
+gb|AAU25807.1|ARO:3002456|LEN-5,30.769000,antibiotic inactivation,antibiotic target replacement,0,0
+gb|CAP12356.2|ARO:3002438|OKP-B-5,30.769000,antibiotic inactivation,antibiotic target replacement,0,0
+gb|BAG14343.1|ARO:3002052|CMY-41,24.359000,antibiotic inactivation,antibiotic inactivation,1,0
+gb|AGK07368.1|ARO:3001689|OXA-253,28.571000,antibiotic inactivation,antibiotic inactivation,1,0
+gb|CAD88479.1|ARO:3002025|CMY-14,23.077000,antibiotic inactivation,antibiotic inactivation,1,0
+gb|ACP18864.1|ARO:3001035|TEM-169,33.333000,antibiotic inactivation,antibiotic inactivation,1,0
+gb|BAB15941.1|ARO:3002197|IMP-6,40.000000,antibiotic inactivation,antibiotic inactivation,1,0
+gb|CAK55557.1|ARO:3002585|AAC(6')-31,32.000000,antibiotic inactivation,antibiotic inactivation,1,0
+gb|AIL92326.1|ARO:3002254|CARB-17,31.818000,antibiotic inactivation,antibiotic target replacement,0,0
+gb|AAV66328.1|ARO:3001114|SHV-59,29.577000,antibiotic inactivation,antibiotic target replacement,0,0
+gb|AAF05611.1|ARO:3000946|TEM-79,33.333000,antibiotic inactivation,antibiotic inactivation,1,0
+gb|AAP70012.1|ARO:3001782|OXA-48,36.667000,antibiotic inactivation,antibiotic target replacement,0,0
+gb|AGC60013.1|ARO:3001787|OXA-245,36.667000,antibiotic inactivation,antibiotic target replacement,0,0
+gb|CAD08929.1|ARO:3001883|CTX-M-21,40.000000,antibiotic inactivation,antibiotic target replacement,0,0
+gb|AAS13399.1|ARO:3002028|CMY-17,23.077000,antibiotic inactivation,antibiotic inactivation,1,0
+gb|AAA16194.1|ARO:3002540|AAC(3)-VIa,32.692000,antibiotic inactivation,antibiotic inactivation,1,0
+gb|AEN03071.1|ARO:3000467|NDM-5,36.364000,antibiotic inactivation,antibiotic inactivation,1,0
+gb|ACQ82806.1|ARO:3002498|PDC-2,31.507000,antibiotic inactivation,antibiotic inactivation,1,0
+gb|CAP12347.2|ARO:3002466|LEN-19,30.769000,antibiotic inactivation,antibiotic target replacement,0,0
+gb|AAA21889.1|ARO:3002554|AAC(6')-Ig,28.846000,antibiotic inactivation,antibiotic inactivation,1,0
+gb|ACC58995.1|ARO:3001611|OXA-58,27.500000,antibiotic inactivation,antibiotic inactivation,1,0
+gb|CBH51824.1|ARO:3002629|ANT(6)-Ib,27.397000,antibiotic inactivation,antibiotic target replacement,0,0
+gb|AHM76771.1|ARO:3001838|ACT-17,29.213000,antibiotic inactivation,antibiotic inactivation,1,0
+gb|AJT57878.1|ARO:3003162|OXA-435,27.215000,antibiotic inactivation,antibiotic inactivation,1,0
+gb|AAC64366.1|ARO:3002847|arr-2,40.000000,antibiotic inactivation,antibiotic target protection,0,0
+gb|CAA30246.1|ARO:3001397|OXA-2,28.205000,antibiotic inactivation,antibiotic inactivation,1,0
+gb|AIS19858.1|ARO:3003177|IMI-7,34.545000,antibiotic inactivation,antibiotic inactivation,1,0
+gb|CAA30578.1|ARO:3002652|APH(3')-VIa,25.243000,antibiotic inactivation,antibiotic inactivation,1,0
+gb|ADM26745.1|ARO:3001474|OXA-180,30.357000,antibiotic inactivation,antibiotic target replacement,0,0
+gb|ADK73994.1|ARO:3002161|FOX-8,37.500000,antibiotic inactivation,antibiotic inactivation,1,0
+gb|AET99222.1|ARO:3001046|TEM-186,33.333000,antibiotic inactivation,antibiotic inactivation,1,0
+gb|CAJ19620.1|ARO:3002444|OKP-B-11,30.769000,antibiotic inactivation,antibiotic target replacement,0,0
+gb|AFO09968.1|ARO:3001476|OXA-184,59.091000,antibiotic inactivation,antibiotic inactivation,1,0
+gb|BAF63422.1|ARO:3001925|CTX-M-64,32.727000,antibiotic inactivation,antibiotic inactivation,1,0
+gb|AAV65289.1|ARO:3001418|OXA-23,27.215000,antibiotic inactivation,antibiotic inactivation,1,0
+gb|BAE48233.1|ARO:3002030|CMY-19,23.418000,antibiotic inactivation,antibiotic target replacement,0,0
+gb|ACQ82814.1|ARO:3002508|PDC-9,31.507000,antibiotic inactivation,antibiotic inactivation,1,0
+gb|CAD53575.1|ARO:3002531|AAC(3)-Ic,31.481000,antibiotic inactivation,antibiotic inactivation,1,0
+gb|AAB63533.1|ARO:3002556|AAC(6')-Ii,35.714000,antibiotic inactivation,antibiotic inactivation,1,0
+gb|ABD48715.1|ARO:3001626|OXA-88,28.571000,antibiotic inactivation,antibiotic target replacement,0,0
+gb|ACM04459.1|ARO:3001158|SHV-109,30.769000,antibiotic inactivation,antibiotic target replacement,0,0
+gb|AFJ79785.1|ARO:3002171|MIR-6,26.744000,antibiotic inactivation,antibiotic inactivation,1,0
+gb|AAK30619.1|ARO:3000957|TEM-90,30.769000,antibiotic inactivation,antibiotic inactivation,1,0
+gb|AHL39327.1|ARO:3002099|CMY-86,23.077000,antibiotic inactivation,antibiotic inactivation,1,0
+gb|ADK35873.1|ARO:3001469|OXA-169,27.215000,antibiotic inactivation,antibiotic inactivation,1,0
+gb|CAA53242.1|ARO:3001402|OXA-7,29.268000,antibiotic inactivation,reduced permeability to antibiotic,0,0
+gb|CAC87665.1|ARO:3000855|CAU-1,32.432000,antibiotic inactivation,antibiotic target replacement,0,0
+gb|AAN32638.1|ARO:3000842|EBR-1,31.250000,antibiotic inactivation,antibiotic inactivation,1,0
+gb|AFH88134.1|ARO:3001983|CTX-M-124,43.333000,antibiotic inactivation,antibiotic inactivation,1,0
+gb|CAQ00120.1|ARO:3001022|TEM-156,33.333000,antibiotic inactivation,antibiotic inactivation,1,0
+gb|AET07387.1|ARO:3002076|CMY-63,23.077000,antibiotic inactivation,antibiotic inactivation,1,0
+gb|AHA11126.1|ARO:3001550|OXA-363,25.000000,antibiotic inactivation,antibiotic inactivation,1,0
+gb|AFN20670.1|ARO:3001499|OXA-240,31.707000,antibiotic inactivation,antibiotic target replacement,0,0
+gb|AAX54694.1|ARO:3001901|CTX-M-39,36.667000,antibiotic inactivation,antibiotic inactivation,1,0
+gb|AAL05630.1|ARO:3002313|KPC-3,27.778000,antibiotic inactivation,antibiotic inactivation,1,0
+gb|AAZ14084.2|ARO:3001013|TEM-146,33.333000,antibiotic inactivation,antibiotic inactivation,1,0
+gb|AAF34336.1|ARO:3001080|SHV-22,50.000000,antibiotic inactivation,antibiotic target replacement,0,0
+gb|CAG34105.1|ARO:3000993|TEM-129,33.333000,antibiotic inactivation,antibiotic inactivation,1,0
+gb|ABD58917.1|ARO:3002615|aadA15,24.806000,antibiotic inactivation,antibiotic inactivation,1,0
+gb|AGC54798.1|ARO:3002107|CMY-94,23.457000,antibiotic inactivation,antibiotic inactivation,1,0
+gb|AIT76113.1|ARO:3002174|MIR-9,26.744000,antibiotic inactivation,reduced permeability to antibiotic,0,0
+gb|CAJ19601.1|ARO:3002421|OKP-A-4,30.769000,antibiotic inactivation,antibiotic target replacement,0,0
+gb|AGU91756.1|ARO:3002359|NDM-9,36.364000,antibiotic inactivation,antibiotic inactivation,1,0
+gb|AGZ83156.1|ARO:3001547|OXA-360,24.194000,antibiotic inactivation,antibiotic inactivation,1,0
+gb|CBH19182.1|ARO:3002057|CMY-46,23.077000,antibiotic inactivation,antibiotic inactivation,1,0
+gb|AEB98920.1|ARO:3001479|OXA-194,28.571000,antibiotic inactivation,antibiotic target replacement,0,0
+gb|AAD22539.1|ARO:3000923|TEM-54,33.333000,antibiotic inactivation,antibiotic inactivation,1,0
+gb|ADZ75467.1|ARO:3002322|KPC-12,27.778000,antibiotic inactivation,antibiotic inactivation,1,0
+gb|AFK73452.1|ARO:3002094|CMY-81,24.359000,antibiotic inactivation,antibiotic inactivation,1,0
+gb|AAK13078.1|ARO:3002195|IMP-4,44.000000,antibiotic inactivation,antibiotic inactivation,1,0
+gb|ADY02554.1|ARO:3001965|CTX-M-105,32.727000,antibiotic inactivation,antibiotic target replacement,0,0
+gb|ADK92148.1|ARO:3001709|OXA-182,27.027000,antibiotic inactivation,antibiotic inactivation,1,0
+gb|ADI58620.1|ARO:3001660|OXA-176,27.027000,antibiotic inactivation,antibiotic target replacement,0,0
+gb|AGW16409.1|ARO:3001515|OXA-327,30.081000,antibiotic inactivation,antibiotic target replacement,0,0
+gb|CCJ32596.1|ARO:3001673|OXA-248,30.357000,antibiotic inactivation,antibiotic target replacement,0,0
+gb|AAA86871.1|ARO:3002841|vatB,23.894000,antibiotic inactivation,antibiotic target replacement,0,0
+gb|AGW83452.1|ARO:3001541|OXA-354,29.268000,antibiotic inactivation,antibiotic target replacement,0,0
+gb|CAM88398.1|ARO:3002370|VEB-1,52.941000,antibiotic inactivation,antibiotic inactivation,1,0
+gb|AAB97924.1|ARO:3001411|OXA-16,31.707000,antibiotic inactivation,antibiotic inactivation,1,0
+gb|CAI10727.2|ARO:3001111|SHV-55,28.846000,antibiotic inactivation,antibiotic target replacement,0,0
+gb|AAW81342.1|ARO:3001619|OXA-71,30.357000,antibiotic inactivation,antibiotic target replacement,0,0
+gb|AFW16978.1|ARO:3001352|SHV-168,30.769000,antibiotic inactivation,antibiotic target replacement,0,0
+gb|BAC61820.1|ARO:3003151|CARB-22,31.818000,antibiotic inactivation,antibiotic target replacement,0,0
+gb|CAD70280.1|ARO:3001890|CTX-M-28,40.000000,antibiotic inactivation,antibiotic inactivation,1,0
+gb|AGS82586.1|ARO:3002309|VIM-39,27.835000,antibiotic inactivation,antibiotic inactivation,1,0
+gb|AIT76108.1|ARO:3002144|DHA-13,22.034000,antibiotic inactivation,antibiotic inactivation,1,0
+gb|AHA80959.1|ARO:3001357|SHV-173,30.769000,antibiotic inactivation,antibiotic target replacement,0,0
+gb|AAN63496.1|ARO:3002271|VIM-1,27.835000,antibiotic inactivation,antibiotic inactivation,1,0
+gb|ABQ15112.1|ARO:3001802|OXA-141,40.909000,antibiotic inactivation,antibiotic inactivation,1,0
+gb|AAS79107.1|ARO:3000998|TEM-134,33.333000,antibiotic inactivation,antibiotic inactivation,1,0
+gb|CAA83855.1|ARO:3000380|FosC,23.077000,antibiotic inactivation,antibiotic inactivation,1,0
+gb|AIG51284.1|ARO:3001340|SHV-119,30.769000,antibiotic inactivation,antibiotic target replacement,0,0
+gb|CAQ51348.1|ARO:3001451|OXA-139,27.027000,antibiotic inactivation,antibiotic inactivation,1,0
+gb|AIS39742.1|ARO:3003157|TEM-219,33.333000,antibiotic inactivation,antibiotic inactivation,1,0
+gb|CAC17625.1|ARO:3002518|OCH-5,22.115000,antibiotic inactivation,antibiotic target replacement,0,0
+gb|AFG29918.1|ARO:3001670|OXA-231,28.571000,antibiotic inactivation,antibiotic inactivation,1,0
+gb|CAA65888.1|ARO:3001043|TEM-178,33.333000,antibiotic inactivation,antibiotic inactivation,1,0
+gb|AAF27727.1|ARO:3002602|aadA2,61.538000,antibiotic inactivation,antibiotic inactivation,1,0
+gb|ABS12249.1|ARO:3002041|CMY-30,23.077000,antibiotic inactivation,antibiotic inactivation,1,0
+gb|CAA06311.1|ARO:3001869|CTX-M-6,40.000000,antibiotic inactivation,antibiotic inactivation,1,0
+gb|AAO88912.1|ARO:3001895|CTX-M-33,40.000000,antibiotic inactivation,antibiotic inactivation,1,0
+gb|AIT76115.1|ARO:3002178|MIR-13,26.744000,antibiotic inactivation,antibiotic inactivation,1,0
+gb|AAT74613.1|ARO:3003676|AAC(6')-Ib',32.500000,antibiotic inactivation,antibiotic inactivation,1,0
+gb|ADQ38362.1|ARO:3002064|CMY-53,24.359000,antibiotic inactivation,antibiotic inactivation,1,0
+gb|AIT76118.1|ARO:3001583|OXA-397,27.500000,antibiotic inactivation,antibiotic inactivation,1,0
+gb|CAJ47136.2|ARO:3001135|SHV-81,30.769000,antibiotic inactivation,antibiotic target replacement,0,0
+gb|CAJ17558.1|ARO:3001007|TEM-144,33.333000,antibiotic inactivation,antibiotic inactivation,1,0
+gb|CAJ32491.1|ARO:3002622|aadA6/aadA10,28.846000,antibiotic inactivation,antibiotic inactivation,1,0
+gb|BAA03776.1|ARO:3000316|mphA,44.186000,antibiotic inactivation,antibiotic inactivation,1,0
+gb|CAI43417.1|ARO:3002411|OXY-5-1,38.710000,antibiotic inactivation,antibiotic inactivation,1,0
+gb|AAS89984.1|ARO:3000977|TEM-114,33.333000,antibiotic inactivation,antibiotic inactivation,1,0
+gb|CCP42991.1|ARO:3002525|AAC(2')-Ic,31.818000,antibiotic inactivation,antibiotic target replacement,0,0
+gb|AFU25641.1|ARO:3002085|CMY-72,24.359000,antibiotic inactivation,antibiotic inactivation,1,0
+gb|AAG12974.1|ARO:3002159|FOX-5,25.000000,antibiotic inactivation,antibiotic inactivation,1,0
+gb|CAG28417.1|ARO:3001956|CTX-M-96,40.000000,antibiotic inactivation,antibiotic inactivation,1,0
+gb|AIS67613.1|ARO:3003165|CTX-M-157,40.000000,antibiotic inactivation,antibiotic inactivation,1,0
+gb|AGT20529.1|ARO:3002352|GES-23,28.000000,antibiotic inactivation,antibiotic target replacement,0,0
+gb|AAV97956.1|ARO:3001908|CTX-M-46,32.727000,antibiotic inactivation,antibiotic target replacement,0,0
+gb|AAN41427.1|ARO:3001775|OXA-119,43.333000,antibiotic inactivation,antibiotic inactivation,1,0
+gb|AAR03105.1|ARO:3001813|OXA-55,36.364000,antibiotic inactivation,antibiotic inactivation,1,0
+gb|AAP33454.2|ARO:3001089|SHV-31,30.769000,antibiotic inactivation,antibiotic target replacement,0,0
+gb|CAA27061.1|ARO:3002648|APH(3')-IVa,30.233000,antibiotic inactivation,antibiotic inactivation,1,0
+gb|AFQ23955.1|ARO:3001188|SHV-149,30.769000,antibiotic inactivation,antibiotic target replacement,0,0
+gb|ABN69112.2|ARO:3002167|MIR-4,26.214000,antibiotic inactivation,reduced permeability to antibiotic,0,0
+gb|AAA25717.1|ARO:3002624|ANT(4')-IIa,40.741000,antibiotic inactivation,antibiotic inactivation,1,0
+gb|AIT76092.1|ARO:3002126|CMY-115,24.359000,antibiotic inactivation,antibiotic inactivation,1,0
+gb|ADZ54048.1|ARO:3001766|OXA-192,28.125000,antibiotic inactivation,antibiotic target replacement,0,0
+gb|AAD03495.1|ARO:3002567|AAC(6')-Iw,30.556000,antibiotic inactivation,antibiotic inactivation,1,0
+gb|ABS90365.1|ARO:3001928|CTX-M-67,40.000000,antibiotic inactivation,antibiotic inactivation,1,0
+gb|AAS13761.1|ARO:3002280|VIM-10,40.000000,antibiotic inactivation,antibiotic inactivation,1,0
+gb|AEE61368.1|ARO:3001487|OXA-210,28.205000,antibiotic inactivation,antibiotic inactivation,1,0
+gb|ADJ94120.1|ARO:3002345|GES-16,28.000000,antibiotic inactivation,antibiotic inactivation,1,0
+gb|CAA64682.1|ARO:3000914|TEM-45,33.333000,antibiotic inactivation,antibiotic inactivation,1,0
+gb|AAM61952.1|ARO:3000967|TEM-104,33.333000,antibiotic inactivation,antibiotic inactivation,1,0
+gb|ABV31690.1|ARO:3001641|OXA-110,30.357000,antibiotic inactivation,antibiotic target replacement,0,0
+gb|ACB71165.1|ARO:3002316|KPC-6,27.778000,antibiotic inactivation,antibiotic inactivation,1,0
+gb|BAJ14288.1|ARO:3002270|IND-15,22.727000,antibiotic inactivation,antibiotic inactivation,1,0
+gb|AAK64187.1|ARO:3001092|SHV-34,28.846000,antibiotic inactivation,antibiotic target replacement,0,0
+gb|AEM44648.1|ARO:3001970|CTX-M-110,40.000000,antibiotic inactivation,antibiotic inactivation,1,0
+gb|ABV71248.1|ARO:3001635|OXA-82,28.571000,antibiotic inactivation,antibiotic target replacement,0,0
+gb|CAJ19615.1|ARO:3002440|OKP-B-7,35.000000,antibiotic inactivation,antibiotic target replacement,0,0
+gb|AAX56615.1|ARO:3001004|TEM-141,33.333000,antibiotic inactivation,antibiotic inactivation,1,0
+gb|CBJ06718.1|ARO:3001042|TEM-177,33.333000,antibiotic inactivation,antibiotic inactivation,1,0
+gb|AEM44654.1|ARO:3001969|CTX-M-109,40.000000,antibiotic inactivation,antibiotic inactivation,1,0
+gb|AEB98923.1|ARO:3001482|OXA-197,28.571000,antibiotic inactivation,antibiotic target replacement,0,0
+gb|CAA37806.1|ARO:3002684|catII,22.857000,antibiotic inactivation,antibiotic inactivation,1,0
+gb|CAG25831.1|ARO:3002445|OKP-B-12,50.000000,antibiotic inactivation,antibiotic target replacement,0,0
+gb|ABW86620.2|ARO:3001941|CTX-M-80,40.000000,antibiotic inactivation,antibiotic inactivation,1,0
+gb|AAA26549.1|ARO:3002549|AAC(6')-Ic,39.286000,antibiotic inactivation,antibiotic inactivation,1,0
+gb|AKO71461.1|ARO:3004608|EreD,26.316000,antibiotic inactivation,antibiotic inactivation,1,0
+gb|ACV69996.1|ARO:3002386|BEL-2,30.769000,antibiotic inactivation,antibiotic target replacement,0,0
+gb|ACI29347.1|ARO:3002495|CTX-M-85,39.286000,antibiotic inactivation,antibiotic inactivation,1,0
+gb|AAS78754.1|ARO:3002261|IND-5,30.556000,antibiotic inactivation,antibiotic inactivation,1,0
+gb|CAA26235.1|ARO:3003061|vph,27.273000,antibiotic inactivation,antibiotic target replacement,0,0
+gb|ACT66697.1|ARO:3000846|SIM-1,44.444000,antibiotic inactivation,antibiotic inactivation,1,0
+gb|BAD95494.1|ARO:3002895|SAT-2,31.081000,antibiotic inactivation,antibiotic inactivation,1,0
+gb|AAG04518.1|ARO:3000149|FosA,47.368000,antibiotic inactivation,antibiotic inactivation,1,0
+gb|CAB42615.1|ARO:3002394|OXY-1-6,38.710000,antibiotic inactivation,antibiotic inactivation,1,0
+gb|AHA80105.1|ARO:3001841|ACT-20,28.090000,antibiotic inactivation,antibiotic inactivation,1,0
+gb|BAB72069.1|ARO:3002201|IMP-10,41.667000,antibiotic inactivation,antibiotic inactivation,1,0
+gb|CAI43419.1|ARO:3002412|OXY-5-2,38.710000,antibiotic inactivation,antibiotic inactivation,1,0
+gb|ABV31691.1|ARO:3001642|OXA-111,29.464000,antibiotic inactivation,antibiotic target replacement,0,0
+gb|AEV91553.1|ARO:3001713|OXA-214,27.027000,antibiotic inactivation,antibiotic inactivation,1,0
+gb|CAA71321.1|ARO:3001866|CTX-M-3,40.000000,antibiotic inactivation,antibiotic inactivation,1,0
+gb|AFQ23953.1|ARO:3001186|SHV-147,28.846000,antibiotic inactivation,antibiotic target replacement,0,0
+gb|ABA06587.1|ARO:3001120|SHV-65,30.769000,antibiotic inactivation,antibiotic target replacement,0,0
+gb|ACH58985.1|ARO:3002485|LRA-2,29.412000,antibiotic inactivation,antibiotic inactivation,1,0
+gb|AAW81337.1|ARO:3001614|OXA-65,28.571000,antibiotic inactivation,antibiotic target replacement,0,0
+gb|ADK35874.1|ARO:3001470|OXA-170,27.215000,antibiotic inactivation,antibiotic inactivation,1,0
+gb|AAC25500.1|ARO:3002560|AAC(6')-Iq,31.707000,antibiotic inactivation,antibiotic target replacement,0,0
+gb|AAM76670.1|ARO:3002625|ANT(4')-IIb,38.095000,antibiotic inactivation,antibiotic inactivation,1,0
+gb|ABB17185.1|ARO:3001914|CTX-M-52,40.000000,antibiotic inactivation,antibiotic inactivation,1,0
+gb|AGV10830.1|ARO:3002647|APH(3')-IIIa,27.273000,antibiotic inactivation,antibiotic target replacement,0,0
+gb|ACV32636.1|ARO:3001173|SHV-126,32.500000,antibiotic inactivation,antibiotic target replacement,0,0
+gb|AAA22562.1|ARO:3002878|BcII,35.484000,antibiotic inactivation,antibiotic target replacement,0,0
+gb|AAP43641.1|ARO:3001810|OXA-53,27.500000,antibiotic inactivation,antibiotic inactivation,1,0
+gb|ADK35870.1|ARO:3001466|OXA-166,27.215000,antibiotic inactivation,antibiotic inactivation,1,0
+gb|ABN49111.1|ARO:3001146|SHV-94,30.769000,antibiotic inactivation,antibiotic target replacement,0,0
+gb|AJA32743.1|ARO:3003148|OXA-425,28.571000,antibiotic inactivation,antibiotic target replacement,0,0
+gb|AAG29760.1|ARO:3002258|IND-2a,31.707000,antibiotic inactivation,antibiotic inactivation,1,0
+gb|CAC85660.1|ARO:3000960|TEM-93,33.333000,antibiotic inactivation,antibiotic inactivation,1,0
+gb|AER57903.1|ARO:3001500|OXA-251,35.294000,antibiotic inactivation,antibiotic inactivation,1,0
+gb|AAR97270.1|ARO:3002334|GES-5,28.000000,antibiotic inactivation,antibiotic inactivation,1,0
+gb|ABC96711.1|ARO:3001016|TEM-149,33.333000,antibiotic inactivation,antibiotic inactivation,1,0
+gb|AFQ94051.1|ARO:3001991|CTX-M-132,30.000000,antibiotic inactivation,antibiotic inactivation,1,0
+gb|ADL27533.1|ARO:3002294|VIM-24,40.000000,antibiotic inactivation,antibiotic inactivation,1,0
+gb|AID67109.1|ARO:3001495|OXA-233,31.707000,antibiotic inactivation,antibiotic inactivation,1,0
+gb|AEL88491.1|ARO:3001669|OXA-223,30.357000,antibiotic inactivation,antibiotic target replacement,0,0
+gb|AGS82587.1|ARO:3002222|IMP-31,31.818000,antibiotic inactivation,reduced permeability to antibiotic,0,0
+gb|AAK96394.1|ARO:3002240|CARB-1,33.333000,antibiotic inactivation,antibiotic inactivation,1,0
+gb|AHA80102.1|ARO:3002113|CMY-101,23.457000,antibiotic inactivation,antibiotic inactivation,1,0
+gb|AAP43642.1|ARO:3002588|AAC(6')-I30,28.235000,antibiotic inactivation,antibiotic target replacement,0,0
+gb|ABA42119.2|ARO:3000865|oleD,27.711000,antibiotic inactivation,antibiotic target replacement,0,0
+gb|AAC46343.1|ARO:3002581|AAC(6')-Ib10,31.707000,antibiotic inactivation,antibiotic inactivation,1,0
+gb|AAN75444.1|ARO:3001888|CTX-M-26,36.667000,antibiotic inactivation,antibiotic inactivation,1,0
+gb|AAC64365.1|ARO:3000230|ANT(2'')-Ia,50.000000,antibiotic inactivation,antibiotic inactivation,1,0
+gb|BAF56185.1|ARO:3002037|CMY-26,23.077000,antibiotic inactivation,antibiotic inactivation,1,0
+gb|AAK31370.1|ARO:3002022|CMY-11,28.205000,antibiotic inactivation,antibiotic target replacement,0,0
+gb|ACS44784.1|ARO:3002185|MOX-6,24.286000,antibiotic inactivation,antibiotic inactivation,1,0
+gb|CAL80726.1|ARO:3001921|CTX-M-60,40.000000,antibiotic inactivation,antibiotic inactivation,1,0
+gb|CAA38525.1|ARO:3002535|AAC(3)-IIc,30.508000,antibiotic inactivation,antibiotic target replacement,0,0
+gb|AGU69251.1|ARO:3001684|OXA-313,30.357000,antibiotic inactivation,antibiotic target replacement,0,0
+gb|AFC75523.1|ARO:3001053|TEM-193,33.333000,antibiotic inactivation,antibiotic inactivation,1,0
+gb|AHE78014.1|ARO:3001861|IMI-4,34.545000,antibiotic inactivation,antibiotic inactivation,1,0
+gb|AHL30286.1|ARO:3001568|OXA-382,25.000000,antibiotic inactivation,antibiotic target replacement,0,0
+gb|CAA26428.1|ARO:3002630|ANT(9)-Ia,33.333000,antibiotic inactivation,antibiotic target replacement,0,0
+gb|ABI53716.1|ARO:3001649|OXA-99,29.464000,antibiotic inactivation,antibiotic target replacement,0,0
+gb|ACY74743.1|ARO:3001952|CTX-M-92,43.333000,antibiotic inactivation,antibiotic inactivation,1,0
+gb|CAK12750.1|ARO:3002619|aadA22,24.806000,antibiotic inactivation,antibiotic inactivation,1,0
+gb|AGK07370.1|ARO:3001694|OXA-257,29.464000,antibiotic inactivation,antibiotic target replacement,0,0
+gb|CAA80304.1|ARO:3001406|OXA-11,31.707000,antibiotic inactivation,antibiotic inactivation,1,0
+gb|AAP74657.1|ARO:3000600|Erm(34),50.000000,antibiotic target alteration,antibiotic inactivation,0,1
+gb|AGH19769.1|ARO:3003198|rmtH,28.571000,antibiotic target alteration,antibiotic inactivation,0,1
+gb|CAB60001.1|ARO:3000326|ErmE,34.000000,antibiotic target alteration,antibiotic target replacement,0,1
+gb|BAH45481.1|ARO:3002815|clbB,25.455000,antibiotic target alteration,antibiotic target replacement,0,0
+gb|BAA03674.1|ARO:3001300|myrA,43.333000,antibiotic target alteration,antibiotic inactivation,0,1
+gb|AEP40500.1|ARO:3002912|vanN,33.429000,antibiotic target alteration,antibiotic inactivation,0,1
+gb|AAA99931.1|ARO:3003060|tsnR,27.848000,antibiotic target alteration,antibiotic target alteration,1,1
+gb|AAB05622.1|ARO:3002921|vanR_in_vanB_cl,34.404000,antibiotic target alteration,antibiotic inactivation,0,0
+gb|AAA99503.1|ARO:3003250|bcrC,26.984000,antibiotic target alteration,antibiotic inactivation,0,1
+gb|BAF80809.1|ARO:3002665|npmA,29.268000,antibiotic target alteration,antibiotic inactivation,0,1
+gb|CAM96571.1|ARO:3004605|ermZ,29.487000,antibiotic target alteration,antibiotic target replacement,0,1
+gb|CAA66307.2|ARO:3000592|ErmN,26.190000,antibiotic target alteration,antibiotic target replacement,0,1
+gb|AAC36915.1|ARO:3000593|ErmQ,34.146000,antibiotic target alteration,antibiotic inactivation,0,1
+gb|AAS79458.1|ARO:3001302|chrB,26.263000,antibiotic target alteration,antibiotic inactivation,0,1
+gb|AAR84672.1|ARO:3002925|vanR_in_vanF_cl,36.726000,antibiotic target alteration,antibiotic target replacement,0,0
+gb|ABA71732.1|ARO:3003069|vanXY_in_vanG,37.037000,antibiotic target alteration,antibiotic inactivation,0,1
+gb|ABX54687.1|ARO:3002910|vanL,37.465000,antibiotic target alteration,antibiotic inactivation,0,1
+gb|CAA44667.1|ARO:3001305|ErmU,26.471000,antibiotic target alteration,antibiotic inactivation,0,1
+gb|AAA24786.1|ARO:3000368|vanC,36.782000,antibiotic target alteration,antibiotic target alteration,1,1
+gb|CCP44758.1|ARO:3000392|Erm(37),38.710000,antibiotic target alteration,antibiotic inactivation,0,1
+gb|AAD12162.1|ARO:3001299|Sfra_tlrB_TYL,25.974000,antibiotic target alteration,antibiotic target replacement,0,1
+gb|ABX54691.1|ARO:3002927|vanR_in_vanL_cl,31.441000,antibiotic target alteration,antibiotic inactivation,0,0
+gb|AGZ55247.1|ARO:3002814|clbA,26.374000,antibiotic target alteration,reduced permeability to antibiotic,0,1
+gb|AAA88675.1|ARO:3000498|ErmF,33.333000,antibiotic target alteration,antibiotic inactivation,0,1
+gb|BAE78116.1|ARO:3003576|eptA,29.032000,antibiotic target alteration,antibiotic target alteration,1,1
+gb|AAB05624.1|ARO:3002956|vanY_in_vanB_cl,25.000000,antibiotic target alteration,antibiotic target protection,0,1
+gb|AAL27443.1|ARO:3002967|vanXY_in_vanE,31.579000,antibiotic target alteration,antibiotic target replacement,0,1
+gb|AAO82019.1|ARO:3004254|vanV_in_vanB_cl,37.500000,antibiotic target alteration,antibiotic inactivation,0,1
+gb|CAL64019.1|ARO:3003441|cfrA,37.143000,antibiotic target alteration,reduced permeability to antibiotic,0,1
+gb|CBY77552.1|ARO:3003106|Erm(42),26.667000,antibiotic target alteration,antibiotic inactivation,0,1
+gb|AAA26742.1|ARO:3001304|ErmS,26.786000,antibiotic target alteration,antibiotic inactivation,0,1
+gb|AAA65953.1|ARO:3002919|vanR_in_vanA_cl,35.371000,antibiotic target alteration,reduced permeability to antibiotic,0,0
+gb|AAM09849.1|ARO:3000005|vanD,37.571000,antibiotic target alteration,antibiotic inactivation,0,1
+gb|AHA41499.1|ARO:3002948|vanH_in_vanO_cl,30.435000,antibiotic target alteration,antibiotic inactivation,0,0
+gb|AAA98296.1|ARO:3000250|ErmC,26.596000,antibiotic target alteration,antibiotic inactivation,0,1
+gb|AAL68827.1|ARO:3000605|Erm(36),24.286000,antibiotic target alteration,antibiotic target replacement,0,1
+gb|CAP07796.1|ARO:3000860|rmtB,39.024000,antibiotic target alteration,antibiotic inactivation,0,1
+gb|AAC75089.1|ARO:3003577|ugd,30.357000,antibiotic target alteration,antibiotic inactivation,0,1
+gb|AAF86642.1|ARO:3002933|vanS_in_vanC_cl,25.893000,antibiotic target alteration,antibiotic inactivation,0,1
+gb|CAA26964.1|ARO:3000347|ErmA,35.000000,antibiotic target alteration,antibiotic target replacement,0,1
+gb|AAC37034.1|ARO:3000522|ErmG,24.800000,antibiotic target alteration,antibiotic inactivation,0,1
+gb|AAN86837.2|ARO:3000601|Erm(38),26.667000,antibiotic target alteration,antibiotic target replacement,0,1
+gb|AHH83938.1|ARO:3000013|vanB,36.544000,antibiotic target alteration,antibiotic inactivation,0,1
+gb|AAA22597.1|ARO:3000495|ErmD,47.619000,antibiotic target alteration,antibiotic inactivation,0,1
+gb|AAM09851.1|ARO:3002923|vanR_in_vanD_cl,32.035000,antibiotic target alteration,antibiotic inactivation,0,0
+gb|AAA65959.1|ARO:3002962|vanZ_in_vanA_cl,69.231000,antibiotic target alteration,antibiotic target replacement,0,0
+gb|CAA11706.1|ARO:3001303|ErmO-srmA,61.538000,antibiotic target alteration,antibiotic target replacement,0,1
+gb|AAC69327.1|ARO:3000598|Erm(31),34.615000,antibiotic target alteration,antibiotic target replacement,0,1
+gb|ABA71731.1|ARO:3002909|vanG,34.916000,antibiotic target alteration,antibiotic inactivation,0,1
+gb|AAB51440.1|ARO:3002824|ErmV,30.952000,antibiotic target alteration,antibiotic target replacement,0,1
+gb|AAC32026.1|ARO:3002823|ErmH,25.806000,antibiotic target alteration,antibiotic target replacement,0,1
+gb|AAS76623.1|ARO:3004606|erm(40),28.846000,antibiotic target alteration,antibiotic inactivation,0,0
+gb|AAC69328.1|ARO:3001265|Erm(30),39.286000,antibiotic target alteration,antibiotic target replacement,0,1
+gb|AAA98096.1|ARO:3000595|ErmT,27.500000,antibiotic target alteration,antibiotic inactivation,0,1
+gb|AGE00988.1|ARO:3002668|rmtG,44.444000,antibiotic target alteration,antibiotic target replacement,0,1
+gb|ADC55560.1|ARO:3000858|armA,38.000000,antibiotic target alteration,antibiotic target protection,0,1
+gb|AAK07612.2|ARO:3000604|Erm(35),35.294000,antibiotic target alteration,antibiotic inactivation,0,1
+gb|AAM09850.1|ARO:3002944|vanH_in_vanD_cl,26.230000,antibiotic target alteration,antibiotic target replacement,0,1
+gb|AIA09786.1|ARO:3000861|rmtC,45.833000,antibiotic target alteration,antibiotic target protection,0,1
+gb|CCF55073.1|ARO:3003205|Erm(43),37.500000,antibiotic target alteration,antibiotic target protection,0,1
+gb|AAF86219.1|ARO:3000375|ErmB,27.451000,antibiotic target alteration,antibiotic inactivation,0,1
+gb|AAU93796.1|ARO:3000594|ErmR,47.368000,antibiotic target alteration,antibiotic inactivation,0,1
+gb|AAL27442.1|ARO:3002907|vanE,35.083000,antibiotic target alteration,antibiotic target replacement,0,1
+gb|AAF36804.1|ARO:3002952|vanX_in_vanF_cl,33.333000,antibiotic target alteration,antibiotic inactivation,0,1
+gb|AAF86641.1|ARO:3002922|vanR_in_vanC_cl,36.283000,antibiotic target alteration,antibiotic inactivation,0,0
+gb|AAM09852.1|ARO:3003070|vanX_in_vanD_cl,28.049000,antibiotic target alteration,antibiotic target replacement,0,1
+gb|AAL27446.1|ARO:3002935|vanS_in_vanE_cl,26.267000,antibiotic target alteration,antibiotic inactivation,0,1
+gb|BAD63613.1|ARO:3002816|clbC,27.500000,antibiotic target alteration,antibiotic target replacement,0,1
+gb|AAG06942.1|ARO:3002985|arnA,26.772000,antibiotic target alteration,antibiotic target alteration,1,1
+gb|ABA71733.1|ARO:3002972|vanT_in_vanG_cl,25.758000,antibiotic target alteration,antibiotic target alteration,1,1
+gb|ABA71727.1|ARO:3002926|vanR_in_vanG_cl,33.047000,antibiotic target alteration,antibiotic inactivation,0,0
+gb|AAR92235.1|ARO:3000602|Erm(39),37.209000,antibiotic target alteration,antibiotic target replacement,0,1
+gb|BAA03402.1|ARO:3001306|ErmW,25.439000,antibiotic target alteration,antibiotic inactivation,0,1
+gb|CAC86410.1|ARO:3000599|Erm(33),31.429000,antibiotic target alteration,antibiotic inactivation,0,1
+gb|AHA41500.1|ARO:3002913|vanO,39.385000,antibiotic target alteration,antibiotic inactivation,0,1
+gb|AAF36803.1|ARO:3002908|vanF,36.565000,antibiotic target alteration,antibiotic inactivation,0,1
+gb|AAB05628.1|ARO:3002950|vanX_in_vanB_cl,45.000000,antibiotic target alteration,antibiotic inactivation,0,1
+gb|AAF36802.1|ARO:3002945|vanH_in_vanF_cl,37.500000,antibiotic target alteration,antibiotic target replacement,0,1
+gb|BAB20748.1|ARO:3002825|ErmY,36.364000,antibiotic target alteration,antibiotic inactivation,0,1
+gb|AHA41501.1|ARO:3002954|vanX_in_vanO_cl,33.333000,antibiotic target alteration,antibiotic inactivation,0,1
+gb|ACL82959.1|ARO:3002961|vanY_in_vanM_cl,29.310000,antibiotic target alteration,antibiotic inactivation,0,1
+gb|AAC76093.1|ARO:3002986|bacA,24.038000,antibiotic target alteration,antibiotic target replacement,0,1
+gb|ABY64751.1|ARO:3002667|rmtD,29.231000,antibiotic target alteration,antibiotic inactivation,0,1
+gb|AFJ11385.1|ARO:3002666|rmtF,31.579000,antibiotic target alteration,antibiotic inactivation,0,1
+gb|BAC20579.1|ARO:3000859|rmtA,25.600000,antibiotic target alteration,antibiotic inactivation,0,1
+gb|ACL82961.1|ARO:3002911|vanM,36.286000,antibiotic target alteration,antibiotic inactivation,0,1
+gb|AAF36805.1|ARO:3002958|vanY_in_vanF_cl,21.324000,antibiotic target alteration,antibiotic inactivation,0,1
+gb|AAA65954.1|ARO:3002931|vanS_in_vanA_cl,27.632000,antibiotic target alteration,antibiotic target alteration,1,1
+gb|AAA65956.1|ARO:3000010|vanA,36.592000,antibiotic target alteration,antibiotic inactivation,0,1
+gb|ABW06859.1|ARO:3000603|Erm(41),31.148000,antibiotic target alteration,antibiotic inactivation,0,1
+gb|WP_063978071.1|ARO:3000862|sgm,34.783000,antibiotic target alteration,antibiotic inactivation,0,1
+gb|AAC75314.1|ARO:3003578|PmrF,21.951000,antibiotic target alteration,antibiotic target replacement,0,1
+gb|ACL82962.1|ARO:3002953|vanX_in_vanM_cl,22.727000,antibiotic target alteration,antibiotic inactivation,0,1
+gb|CAX52582.1|ARO:3003324|Bsub_mprF,34.696000,antibiotic target alteration,antibiotic target alteration,1,1
+gb|CAB45459.1|ARO:3002914|vanJ,40.909000,antibiotic target alteration,antibiotic inactivation,0,1
+gb|KTE89608.1|ARO:3003723|vanI,35.097000,antibiotic target alteration,antibiotic inactivation,0,1
+gb|AJD73064.1|ARO:3001301|RlmA(II),30.159000,antibiotic target alteration,antibiotic inactivation,0,1
+gb|ACM47284.1|ARO:3002934|vanS_in_vanD_cl,27.397000,antibiotic target alteration,antibiotic target replacement,0,1
+gb|CAC99773.1|ARO:3003770|Lmon_mprF,29.265000,antibiotic target alteration,antibiotic target alteration,1,1
+gb|AAN33774.1|ARO:3003772|Bsui_mprF,37.184000,antibiotic target alteration,antibiotic target alteration,1,1
+gb|ABG86067.1|ARO:3003773|Cper_mprF,40.940000,antibiotic target alteration,antibiotic target alteration,1,1
+gb|AAN00989.1|ARO:3003774|Saga_mprF,27.836000,antibiotic target alteration,antibiotic target alteration,1,1
+gb|BAE85478.1|ARO:3003728|vanR_in_vanI_cl,34.498000,antibiotic target alteration,antibiotic target replacement,0,0
+gb|ACL19707.1|ARO:3003725|vanX_in_vanI_cl,41.379000,antibiotic target alteration,antibiotic inactivation,0,1
+gb|OPG86592.1|ARO:3004626|Erm(49),26.437000,antibiotic target alteration,antibiotic inactivation,0,1
+gb|WP_010896559.1|ARO:3004643|Erm(K),28.235000,antibiotic target alteration,antibiotic inactivation,0,0
+gb|CDF47262.1|ARO:3004649|cfr(B),37.143000,antibiotic target alteration,reduced permeability to antibiotic,0,1
+gb|ANZ79476.1|ARO:3003908|Erm(47),22.535000,antibiotic target alteration,antibiotic target protection,0,1
+gb|ACX65640.1|ARO:3003907|cipA,24.299000,antibiotic target alteration,antibiotic inactivation,0,1
+gb|AAA26779.1|ARO:3004652|Erm(O)-lrm,34.286000,antibiotic target alteration,antibiotic target replacement,0,1
+gb|ASU10319.1|ARO:3004662|MCR-3.3,24.742000,antibiotic target alteration,antibiotic target alteration,1,1
+gb|AAL02176.1|ARO:3004669|emtA,22.807000,antibiotic target alteration,antibiotic target replacement,0,1
+gb|AVZ47168.1|ARO:3004693|MCR-3.12,24.742000,antibiotic target alteration,antibiotic target alteration,1,1
+gb|ADW66527.1|ARO:3004677|rmtD2,27.692000,antibiotic target alteration,antibiotic inactivation,0,1
+gb|APB03216.1|ARO:3003982|LlmA_23S_CLI,21.905000,antibiotic target alteration,antibiotic inactivation,0,1
+gb|APM84488.1|ARO:3004685|MCR-1.5,31.081000,antibiotic target alteration,antibiotic target alteration,1,1
+gb|ATM29809.1|ARO:3004688|MCR-1.11,31.081000,antibiotic target alteration,antibiotic target alteration,1,1
+gb|WP_001572373.1|ARO:3004684|MCR-9.1,23.009000,antibiotic target alteration,antibiotic target alteration,1,0
+gb|ADA63498.1|ARO:3004678|rmtE,32.727000,antibiotic target alteration,antibiotic inactivation,0,1
+gb|AQQ11622.1|ARO:3004686|MCR-1.7,31.081000,antibiotic target alteration,antibiotic target alteration,1,1
+gb|BBB21811.1|ARO:3004689|MCR-1.12,31.081000,antibiotic target alteration,antibiotic target alteration,1,1
+gb|AVK94777.1|ARO:3004694|MCR-4.2,29.268000,antibiotic target alteration,antibiotic target replacement,0,1
+gb|ALD03565.1|ARO:3004679|rmtE2,32.727000,antibiotic target alteration,antibiotic inactivation,0,1
+gb|AQY61516.1|ARO:3004687|MCR-1.8,31.081000,antibiotic target alteration,antibiotic target alteration,1,1
+gb|AVM85874.1|ARO:3004690|MCR-1.13,31.081000,antibiotic target alteration,antibiotic target alteration,1,1
+gb|AUI38915.1|ARO:3004695|MCR-4.3,27.536000,antibiotic target alteration,antibiotic target replacement,0,1
+gb|SBZ31568.1|ARO:3004691|MCR-3.4,31.818000,antibiotic target alteration,antibiotic target alteration,1,1
+gb|AVK94779.1|ARO:3004696|MCR-4.4,29.268000,antibiotic target alteration,antibiotic target replacement,0,1
+gb|AVK94778.1|ARO:3004697|MCR-4.5,29.268000,antibiotic target alteration,antibiotic target replacement,0,1
+gb|AVM85875.1|ARO:3004698|MCR-5.2,50.000000,antibiotic target alteration,antibiotic target alteration,1,1
+gb|AAN28945.1|ARO:3003785|Ctra_murA_FOF,37.701000,antibiotic target alteration,antibiotic inactivation,0,1
+gb|WP_063964000.1|ARO:3004102|kamB,21.154000,antibiotic target alteration,antibiotic target replacement,0,1
+gb|CAL84423.1|ARO:3004146|cfrC,25.676000,antibiotic target alteration,antibiotic target replacement,0,1
+gb|ANR95875.1|ARO:3004194|MCR-1.2,31.081000,antibiotic target alteration,antibiotic target alteration,1,1
+gb|BAD59497.1|ARO:3000501|rpoB2,83.348000,antibiotic target alteration,antibiotic target alteration,1,1
+gb|AAF94731.1|ARO:3004364|almG,31.818000,antibiotic target alteration,antibiotic inactivation,0,1
+gb|EGE18576.1|ARO:3004466|ICR-Mc,34.884000,antibiotic target alteration,antibiotic target alteration,1,0
+gb|AUN87920.1|ARO:3004500|MCR-3.11,27.027000,antibiotic target alteration,antibiotic target alteration,1,1
+gb|ASK49942.1|ARO:3004501|MCR-6.1,24.031000,antibiotic target alteration,antibiotic inactivation,0,1
+gb|ASK49941.1|ARO:3004502|MCR-2.2,24.031000,antibiotic target alteration,antibiotic target alteration,1,1
+gb|AST36140.1|ARO:3004503|MCR-3.6,24.742000,antibiotic target alteration,antibiotic target alteration,1,1
+gb|ATQ63376.1|ARO:3004504|MCR-3.10,24.742000,antibiotic target alteration,antibiotic target alteration,1,1
+gb|ASU04896.1|ARO:3004505|MCR-3.5,27.027000,antibiotic target alteration,antibiotic target alteration,1,1
+gb|ASK49940.1|ARO:3004506|MCR-1.10,33.333000,antibiotic target alteration,antibiotic target alteration,1,1
+gb|AVA31022.1|ARO:3004507|MCR-1.9,31.081000,antibiotic target alteration,antibiotic target alteration,1,1
+gb|AST36144.1|ARO:3004508|MCR-3.9,24.742000,antibiotic target alteration,antibiotic target alteration,1,1
+gb|AST36143.1|ARO:3004509|MCR-3.8,24.742000,antibiotic target alteration,antibiotic target alteration,1,1
+gb|AST36141.1|ARO:3004510|MCR-3.7,24.742000,antibiotic target alteration,antibiotic target alteration,1,1
+gb|OYN70668.1|ARO:3004511|MCR-3.2,27.027000,antibiotic target alteration,antibiotic target alteration,1,1
+gb|AQK48217.1|ARO:3004513|MCR-1.6,31.081000,antibiotic target alteration,antibiotic target alteration,1,1
+gb|ANJ15621.1|ARO:3004514|MCR-1.3,31.081000,antibiotic target alteration,antibiotic target alteration,1,1
+gb|APM87143.1|ARO:3004515|MCR-1.4,40.000000,antibiotic target alteration,antibiotic target alteration,1,1
+gb|AUR80098.1|ARO:3004517|MCR-7.1,24.528000,antibiotic target alteration,antibiotic target alteration,1,1
+gb|CAB37345.2|ARO:3004592|erm(32),25.974000,antibiotic target alteration,antibiotic target replacement,0,1
+gb|WP_082741435.1|ARO:3004569|ICR-Mo,28.000000,antibiotic target alteration,antibiotic inactivation,0,1
+gb|CZT31773.1|ARO:3004094|Erm(48),41.935000,antibiotic target alteration,antibiotic target protection,0,1
+gb|AJF36617.1|ARO:3004596|erm(46),30.909000,antibiotic target alteration,antibiotic target replacement,0,1
+gb|AIX48090.1|ARO:3004599|clcD,37.143000,antibiotic target alteration,antibiotic target replacement,0,1
+gb|AXY65402.1|ARO:3005021|cfr(D),33.962000,antibiotic target alteration,antibiotic inactivation,0,1
+gb|CCI79240.1|ARO:3005047|eptB,22.642000,antibiotic target alteration,antibiotic inactivation,0,1
+gb|CDO12042.1|ARO:3005053|ArnT,25.490000,antibiotic target alteration,antibiotic target alteration,1,1
+gb|AAB60941.1|ARO:3005099|Spyo_ErmA_MLSb,33.333000,antibiotic target alteration,antibiotic target protection,0,1
+gb|WP_242934127.1|ARO:3007274|MCR-10.5,29.885000,antibiotic target alteration,antibiotic target alteration,1,1
+gb|MBO4158890.1|ARO:3007275|MCR-10.3,29.885000,antibiotic target alteration,antibiotic target alteration,1,1
+gb|AAA65958.1|ARO:3002955|vanY_in_vanA_cl,47.368000,antibiotic target alteration,antibiotic inactivation,0,1
+gb|AAF61331.1|ARO:3002966|vanXY_in_vanC,40.000000,antibiotic target alteration,antibiotic target replacement,0,1
+gb|AAA65955.1|ARO:3002942|vanH_in_vanA_cl,25.000000,antibiotic target alteration,antibiotic target alteration,1,1
+gb|AAA65957.1|ARO:3002949|vanX_in_vanA_cl,20.755000,antibiotic target alteration,antibiotic target replacement,0,1
+gb|AAB05623.1|ARO:3002932|vanS_in_vanB_cl,25.926000,antibiotic target alteration,antibiotic inactivation,0,1
+gb|AAB05626.1|ARO:3002943|vanH_in_vanB_cl,25.641000,antibiotic target alteration,antibiotic inactivation,0,1
+gb|AAL27445.1|ARO:3002924|vanR_in_vanE_cl,32.895000,antibiotic target alteration,antibiotic target replacement,0,0
+gb|AAD22403.1|ARO:3002970|vanT_in_vanC_cl,25.444000,antibiotic target alteration,antibiotic target alteration,1,1
+gb|AAB05625.1|ARO:3002964|vanW_in_vanB_cl,23.377000,antibiotic target alteration,antibiotic target protection,0,1
+gb|AAL27444.1|ARO:3002971|vanT_in_vanE_cl,36.364000,antibiotic target alteration,antibiotic target alteration,1,1
+gb|AAM09853.1|ARO:3002957|vanY_in_vanD_cl,23.810000,antibiotic target alteration,antibiotic inactivation,0,1
+gb|AAF36806.1|ARO:3002963|vanZ_in_vanF_cl,35.714000,antibiotic target alteration,antibiotic inactivation,0,1
+gb|AAR84673.1|ARO:3002936|vanS_in_vanF_cl,28.638000,antibiotic target alteration,antibiotic target protection,0,1
+gb|AKF16168.1|ARO:3003689|MCR-1.1,31.081000,antibiotic target alteration,antibiotic target alteration,1,1
+gb|ADP36409.1|ARO:3003730|Bbif_ileS_MUP,27.373000,antibiotic target alteration,antibiotic target alteration,1,1
+gb|AEY83581.1|ARO:3000510|Saur_mupB_MUP,30.795000,antibiotic target alteration,antibiotic target alteration,1,1
+gb|CAA53189.1|ARO:3000521|Saur_mupA_MUP,30.135000,antibiotic target alteration,antibiotic target alteration,1,1
+gb|MBO4150342.1|ARO:3007276|MCR-10.4,29.885000,antibiotic target alteration,antibiotic target alteration,1,1
+gb|MBO4154571.1|ARO:3007277|MCR-10.2,29.885000,antibiotic target alteration,antibiotic target alteration,1,1
+gb|CDL65151.1|ARO:3003971|Erm(44)v,37.931000,antibiotic target alteration,antibiotic inactivation,0,1
+gb|SBV31106.1|ARO:3004110|MCR-2.1,24.031000,antibiotic target alteration,antibiotic target alteration,1,1
+gb|ASF81896.1|ARO:3004139|MCR-3.1,27.027000,antibiotic target alteration,antibiotic target alteration,1,1
+gb|ASR73329.1|ARO:3004325|MCR-4.1,29.268000,antibiotic target alteration,antibiotic target replacement,0,1
+gb|ASK40551.1|ARO:3004332|MCR-5.1,35.714000,antibiotic target alteration,antibiotic target alteration,1,1
+gb|WP_041777404.1|ARO:3004480|Bado_rpoB_RIF,64.944000,antibiotic target alteration,antibiotic target alteration,1,1
+gb|AVX52225.1|ARO:3004516|MCR-8.1,27.273000,antibiotic target alteration,antibiotic target alteration,1,1
+gb|CEJ95855.1|ARO:3004595|erm(45),45.455000,antibiotic target alteration,antibiotic target protection,0,1
+gb|WP_111273846.1|ARO:3007278|MCR-3.17,24.742000,antibiotic target alteration,antibiotic target alteration,1,1
+gb|ABX54689.1|ARO:3002973|vanTm_in_vanL,50.000000,antibiotic target alteration,antibiotic target replacement,0,1
+gb|ABA71729.1|ARO:3002959|vanY_in_vanG_cl,20.354000,antibiotic target alteration,antibiotic inactivation,0,1
+gb|ABA71728.1|ARO:3002937|vanS_in_vanG_cl,30.667000,antibiotic target alteration,antibiotic inactivation,0,1
+gb|AHA41504.1|ARO:3002941|vanS_in_vanO_cl,24.576000,antibiotic target alteration,antibiotic inactivation,0,1
+gb|AEP40501.1|ARO:3002969|vanXY_in_vanN,22.619000,antibiotic target alteration,antibiotic target replacement,0,1
+gb|ABX54692.1|ARO:3002938|vanS_in_vanL_cl,28.384000,antibiotic target alteration,antibiotic inactivation,0,1
+gb|ACL82957.1|ARO:3002928|vanR_in_vanM_cl,35.808000,antibiotic target alteration,antibiotic inactivation,0,0
+gb|ABA71726.1|ARO:3004253|vanU_in_vanG_cl,26.923000,antibiotic target alteration,antibiotic target replacement,0,1
+gb|AEP40504.1|ARO:3002940|vanS_in_vanN_cl,32.900000,antibiotic target alteration,antibiotic target alteration,1,1
+gb|AEP40503.1|ARO:3002929|vanR_in_vanN_cl,34.222000,antibiotic target alteration,antibiotic target replacement,0,0
+gb|ACL82958.1|ARO:3002939|vanS_in_vanM_cl,29.596000,antibiotic target alteration,antibiotic inactivation,0,1
+gb|ABX54690.1|ARO:3002974|vanTr_in_vanL,35.135000,antibiotic target alteration,reduced permeability to antibiotic,0,1
+gb|ABA71730.1|ARO:3002965|vanW_in_vanG_cl,28.000000,antibiotic target alteration,antibiotic inactivation,0,1
+gb|AHA41505.1|ARO:3002930|vanR_in_vanO_cl,38.991000,antibiotic target alteration,antibiotic inactivation,0,0
+gb|ACL82960.1|ARO:3002947|vanH_in_vanM_cl,26.829000,antibiotic target alteration,antibiotic inactivation,0,1
+gb|ABX54688.1|ARO:3002968|vanXY_in_vanL,24.138000,antibiotic target alteration,antibiotic target replacement,0,1
+gb|AEP40502.2|ARO:3002975|vanT_in_vanN_cl,26.000000,antibiotic target alteration,antibiotic target alteration,1,0
+gb|BAE83690.1|ARO:3003724|vanW_in_vanI_cl,26.016000,antibiotic target alteration,antibiotic target alteration,1,1
+gb|BAE85481.1|ARO:3003727|vanK_in_vanI_cl,24.348000,antibiotic target alteration,reduced permeability to antibiotic,0,1
+gb|QQM99828.1|ARO:3007041|Erm(52),30.233000,antibiotic target alteration,antibiotic target protection,0,1
+gb|QKE44141.1|ARO:3007033|Erm(51),31.081000,antibiotic target alteration,antibiotic target replacement,0,1
+gb|BBJ25230.1|ARO:3007032|Erm(50),31.081000,antibiotic target alteration,antibiotic target replacement,0,1
+gb|UGY30527.1|ARO:3007070|MCR-1.33,31.081000,antibiotic target alteration,antibiotic target alteration,1,1
+gb|QDO66747.1|ARO:3007137|mcr-10.1,29.885000,antibiotic target alteration,antibiotic target alteration,1,1
+gb|WP_116786830.1|ARO:3007279|MCR-1.15,31.081000,antibiotic target alteration,antibiotic target alteration,1,1
+gb|WP_034169413.1|ARO:3007280|MCR-1.26,31.081000,antibiotic target alteration,antibiotic target alteration,1,1
+gb|QCT85452.1|ARO:3007281|MCR-5.4,35.714000,antibiotic target alteration,antibiotic target alteration,1,1
+gb|MBY8651254.1|ARO:3007188|vanH_in_vanP_cl,34.884000,antibiotic target alteration,antibiotic inactivation,0,1
+gb|MBY8651253.1|ARO:3007189|vanP,35.211000,antibiotic target alteration,antibiotic inactivation,0,1
+gb|MBY8651252.1|ARO:3007190|vanX_in_vanP_cl,23.770000,antibiotic target alteration,antibiotic target replacement,0,1
+gb|MBY8651251.1|ARO:3007191|vanR_in_vanP_cl,27.778000,antibiotic target alteration,antibiotic target replacement,0,0
+gb|MBY8651250.1|ARO:3007192|vanS_in_vanP_cl,28.636000,antibiotic target alteration,antibiotic target alteration,1,1
+gb|WP_150823497.1|ARO:3007227|MCR-8.3,24.000000,antibiotic target alteration,antibiotic target alteration,1,1
+gb|WP_118860654.1|ARO:3007228|MCR-8.4,27.273000,antibiotic target alteration,antibiotic target alteration,1,1
+gb|QIF88262.1|ARO:3007229|MCR-8.2,27.273000,antibiotic target alteration,antibiotic target alteration,1,1
+gb|WP_231236808.1|ARO:3007230|MCR-1.34,31.081000,antibiotic target alteration,antibiotic target alteration,1,1
+gb|AXI82465.1|ARO:3007231|MCR-4.6,27.536000,antibiotic target alteration,antibiotic target replacement,0,1
+gb|WP_163397051.1|ARO:3007232|MCR-1.27,31.081000,antibiotic target alteration,antibiotic target alteration,1,1
+gb|WP_106743337.1|ARO:3007233|MCR-1.18,31.081000,antibiotic target alteration,antibiotic target alteration,1,1
+gb|WP_160164897.1|ARO:3007234|MCR-1.23,31.081000,antibiotic target alteration,antibiotic target alteration,1,1
+gb|WP_140423329.1|ARO:3007235|MCR-1.20,31.081000,antibiotic target alteration,antibiotic target alteration,1,1
+gb|WP_181464119.1|ARO:3007236|MCR-1.28,31.081000,antibiotic target alteration,antibiotic target alteration,1,1
+gb|WP_140423330.1|ARO:3007237|MCR-1.21,31.081000,antibiotic target alteration,antibiotic target alteration,1,1
+gb|WP_136512110.1|ARO:3007238|MCR-1.16,31.081000,antibiotic target alteration,antibiotic target alteration,1,1
+gb|WP_148044477.1|ARO:3007239|MCR-1.22,31.081000,antibiotic target alteration,antibiotic target alteration,1,1
+gb|WP_129336087.1|ARO:3007240|MCR-1.19,31.081000,antibiotic target alteration,antibiotic target alteration,1,1
+gb|WP_188331884.1|ARO:3007241|MCR-1.29,31.081000,antibiotic target alteration,antibiotic target alteration,1,1
+gb|WP_188331885.1|ARO:3007242|MCR-1.30,29.730000,antibiotic target alteration,antibiotic target alteration,1,1
+gb|WP_160164898.1|ARO:3007243|MCR-1.24,31.081000,antibiotic target alteration,antibiotic target alteration,1,1
+gb|WP_136512111.1|ARO:3007244|MCR-1.17,31.081000,antibiotic target alteration,antibiotic target alteration,1,1
+gb|WP_213994614.1|ARO:3007245|MCR-1.31,31.081000,antibiotic target alteration,antibiotic target alteration,1,1
+gb|WP_109545052.1|ARO:3007246|MCR-1.14,31.081000,antibiotic target alteration,antibiotic target alteration,1,1
+gb|WP_160164899.1|ARO:3007247|MCR-1.25,31.081000,antibiotic target alteration,antibiotic target alteration,1,1
+gb|WP_188331892.1|ARO:3007248|MCR-3.33,24.742000,antibiotic target alteration,antibiotic target alteration,1,1
+gb|WP_111273843.1|ARO:3007249|MCR-3.14,24.742000,antibiotic target alteration,antibiotic target alteration,1,1
+gb|WP_188331896.1|ARO:3007250|MCR-3.37,24.742000,antibiotic target alteration,antibiotic target alteration,1,1
+gb|WP_039039919.1|ARO:3007251|MCR-3.38,28.571000,antibiotic target alteration,antibiotic target alteration,1,0
+gb|WP_111273844.1|ARO:3007252|MCR-3.15,24.742000,antibiotic target alteration,antibiotic target alteration,1,1
+gb|WP_017778762.1|ARO:3007253|MCR-3.27,24.742000,antibiotic target alteration,antibiotic target alteration,1,1
+gb|WP_188331891.1|ARO:3007254|MCR-3.32,40.000000,antibiotic target alteration,antibiotic target alteration,1,1
+gb|WP_188331890.1|ARO:3007255|MCR-3.31,28.571000,antibiotic target alteration,antibiotic target alteration,1,0
+gb|WP_094313523.1|ARO:3007256|MCR-3.23,27.027000,antibiotic target alteration,antibiotic target alteration,1,1
+gb|WP_188331895.1|ARO:3007257|MCR-3.36,24.742000,antibiotic target alteration,antibiotic target alteration,1,1
+gb|WP_103252528.1|ARO:3007258|MCR-3.25,24.742000,antibiotic target alteration,antibiotic target alteration,1,1
+gb|WP_094308975.1|ARO:3007259|MCR-3.22,27.027000,antibiotic target alteration,antibiotic target alteration,1,1
+gb|WP_111273845.1|ARO:3007260|MCR-3.16,24.742000,antibiotic target alteration,antibiotic target alteration,1,1
+gb|WP_140423331.1|ARO:3007261|MCR-3.26,25.510000,antibiotic target alteration,antibiotic target alteration,1,1
+gb|AWY10763.1|ARO:3007262|MCR-3.21,27.941000,antibiotic target alteration,antibiotic target alteration,1,1
+gb|WP_111273847.1|ARO:3007263|MCR-3.18,24.742000,antibiotic target alteration,antibiotic target alteration,1,1
+gb|WP_188331897.1|ARO:3007264|MCR-3.40,27.027000,antibiotic target alteration,antibiotic target alteration,1,1
+gb|WP_094321595.1|ARO:3007265|MCR-3.24,33.333000,antibiotic target alteration,antibiotic target alteration,1,1
+gb|BCG06510.1|ARO:3007266|MCR-3.20,40.000000,antibiotic target alteration,antibiotic target alteration,1,1
+gb|WP_188331894.1|ARO:3007267|MCR-3.35,24.742000,antibiotic target alteration,antibiotic target alteration,1,1
+gb|WP_188331893.1|ARO:3007268|MCR-3.34,24.742000,antibiotic target alteration,antibiotic target alteration,1,1
+gb|WP_111273842.1|ARO:3007269|MCR-3.13,24.742000,antibiotic target alteration,antibiotic target alteration,1,1
+gb|WP_150823496.1|ARO:3007270|MCR-3.28,27.027000,antibiotic target alteration,antibiotic target alteration,1,1
+gb|UUD58346.1|ARO:3007271|MCR-3.39,27.027000,antibiotic target alteration,antibiotic target alteration,1,1
+gb|WP_136512112.1|ARO:3007272|MCR-3.29,27.027000,antibiotic target alteration,antibiotic target alteration,1,1
+gb|AWM63467.1|ARO:3007273|MCR-3.19,27.027000,antibiotic target alteration,antibiotic target alteration,1,1
+gb|AXF93714.1|ARO:3007282|MCR-5.3,35.714000,antibiotic target alteration,antibiotic target alteration,1,1
+gb|WP_188331886.1|ARO:3007283|MCR-2.4,24.031000,antibiotic target alteration,antibiotic target alteration,1,1
+gb|HCJ5800995.1|ARO:3007284|MCR-2.3,24.031000,antibiotic target alteration,antibiotic target alteration,1,1
+gb|WP_219860731.1|ARO:3007285|MCR-2.8,24.031000,antibiotic target alteration,antibiotic target alteration,1,1
+gb|WP_188331887.1|ARO:3007286|MCR-2.5,24.031000,antibiotic target alteration,antibiotic target alteration,1,1
+gb|WP_188331889.1|ARO:3007287|MCR-2.7,24.031000,antibiotic target alteration,antibiotic target alteration,1,1
+gb|WP_188331888.1|ARO:3007288|MCR-2.6,24.031000,antibiotic target alteration,antibiotic target alteration,1,1
+gb|WP_213994615.1|ARO:3007289|MCR-1.32,31.081000,antibiotic target alteration,antibiotic target alteration,1,1
+gb|PNM48229.1|ARO:3007431|almF,40.909000,antibiotic target alteration,antibiotic target protection,0,0
+gb|MCO7070877.1|ARO:3007433|almE,44.118000,antibiotic target alteration,antibiotic inactivation,0,1
+gb|RHO92765.1|ARO:3005023|cfrE,31.373000,antibiotic target alteration,antibiotic inactivation,0,1
+gb|MBA2799562.1|ARO:3005221|MCR-3.41,24.742000,antibiotic target alteration,antibiotic target alteration,1,1
+gb|WP_223106954.1|ARO:3007533|MCR-4.7,27.536000,antibiotic target alteration,antibiotic target alteration,1,1
+gb|WGG63489.1|ARO:3007654|erm(56),33.333000,antibiotic target alteration,antibiotic target replacement,0,1
+gb|AAL12234.1|ARO:3003552|fusB,22.034000,antibiotic target protection,antibiotic inactivation,0,0
+gb|ACB05808.1|ARO:3003109|msrE,24.303000,antibiotic target protection,antibiotic target alteration,0,1
+gb|AFR46589.1|ARO:3002771|QnrB58,56.250000,antibiotic target protection,antibiotic inactivation,0,0
+gb|AFU25658.1|ARO:3002762|QnrB47,32.000000,antibiotic target protection,antibiotic inactivation,0,0
+gb|AEG74318.1|ARO:3002795|QnrS6,22.222000,antibiotic target protection,antibiotic target protection,1,0
+gb|AGL43627.1|ARO:3002778|QnrB66,56.250000,antibiotic target protection,antibiotic inactivation,0,0
+gb|AEL00461.1|ARO:3002753|QnrB38,47.368000,antibiotic target protection,antibiotic inactivation,0,0
+gb|CAP45903.1|ARO:3002733|QnrB18,56.250000,antibiotic target protection,antibiotic inactivation,0,0
+gb|CAA45050.1|ARO:3002828|srmB,22.306000,antibiotic target protection,antibiotic target replacement,0,1
+gb|ABG56269.1|ARO:3002724|QnrB10,47.368000,antibiotic target protection,antibiotic inactivation,0,0
+gb|ABH10964.1|ARO:3002830|vgaALC,27.723000,antibiotic target protection,antibiotic target alteration,0,1
+gb|AAZ04784.1|ARO:3002711|QnrA5,47.826000,antibiotic target protection,antibiotic inactivation,0,0
+gb|AHE41345.1|ARO:3002797|QnrS8,35.294000,antibiotic target protection,antibiotic target protection,1,0
+gb|AAL05553.1|ARO:3003206|lsaE,44.289000,antibiotic target protection,antibiotic target protection,1,1
+gb|ABX72042.1|ARO:3002727|QnrB13,32.075000,antibiotic target protection,antibiotic inactivation,0,0
+gb|AEL00458.1|ARO:3002751|QnrB36,47.368000,antibiotic target protection,antibiotic inactivation,0,0
+gb|CCI51002.2|ARO:3002767|QnrB54,47.368000,antibiotic target protection,antibiotic inactivation,0,0
+gb|ACS71747.1|ARO:3002738|QnrB23,56.250000,antibiotic target protection,antibiotic inactivation,0,0
+gb|ABO93588.1|ARO:3002715|QnrB2,32.075000,antibiotic target protection,antibiotic inactivation,0,0
+gb|ADI46626.1|ARO:3002739|QnrB24,56.250000,antibiotic target protection,antibiotic inactivation,0,0
+gb|AEQ94272.1|ARO:3002757|QnrB42,52.632000,antibiotic target protection,antibiotic inactivation,0,0
+gb|ABF47469.1|ARO:3002790|QnrS1,35.294000,antibiotic target protection,antibiotic target protection,1,0
+gb|BAN04737.1|ARO:3002774|QnrB61,47.368000,antibiotic target protection,antibiotic inactivation,0,0
+gb|AGL43632.1|ARO:3002783|QnrB71,47.368000,antibiotic target protection,antibiotic inactivation,0,0
+gb|AEG74319.1|ARO:3002794|QnrS5,38.235000,antibiotic target protection,antibiotic target protection,1,0
+gb|ABS30107.1|ARO:3002725|QnrB11,47.368000,antibiotic target protection,antibiotic inactivation,0,0
+gb|ABP87778.1|ARO:3002720|QnrB6,56.250000,antibiotic target protection,antibiotic inactivation,0,0
+gb|ADI55014.1|ARO:3002801|QnrVC4,45.833000,antibiotic target protection,antibiotic inactivation,0,0
+gb|AFD54601.1|ARO:3002764|QnrB49,32.075000,antibiotic target protection,antibiotic inactivation,0,0
+gb|CAA10975.1|ARO:3000194|tet(W),27.778000,antibiotic target protection,antibiotic target alteration,0,0
+gb|CAP45902.1|ARO:3002732|QnrB17,56.250000,antibiotic target protection,antibiotic inactivation,0,0
+gb|AHY03238.1|ARO:3002789|QnrD2,40.625000,antibiotic target protection,antibiotic inactivation,0,0
+gb|AFR46590.1|ARO:3002772|QnrB59,47.368000,antibiotic target protection,antibiotic inactivation,0,0
+gb|ABC17629.1|ARO:3002716|QnrB3,26.061000,antibiotic target protection,antibiotic inactivation,0,0
+gb|ADM52188.1|ARO:3002743|QnrB28,30.000000,antibiotic target protection,antibiotic inactivation,0,0
+gb|AGL43626.1|ARO:3002777|QnrB65,47.368000,antibiotic target protection,antibiotic inactivation,0,0
+gb|AAA26684.1|ARO:3002829|vgaA,27.976000,antibiotic target protection,antibiotic target alteration,0,1
+gb|AGK90303.1|ARO:3002734|QnrB19,47.368000,antibiotic target protection,antibiotic inactivation,0,0
+gb|AEL31272.1|ARO:3002756|QnrB41,56.250000,antibiotic target protection,antibiotic inactivation,0,0
+gb|ADW54092.1|ARO:3002761|QnrB46,32.075000,antibiotic target protection,antibiotic inactivation,0,0
+gb|ACJ24509.1|ARO:3002793|QnrS4,35.294000,antibiotic target protection,antibiotic target protection,1,0
+gb|AHF20043.1|ARO:3002798|QnrS9,35.294000,antibiotic target protection,antibiotic target protection,1,0
+gb|AEL00450.1|ARO:3002747|QnrB32,56.250000,antibiotic target protection,antibiotic inactivation,0,0
+gb|ACM50952.1|ARO:3002736|QnrB21,47.368000,antibiotic target protection,antibiotic inactivation,0,0
+gb|AAZ04783.1|ARO:3002710|QnrA4,47.826000,antibiotic target protection,antibiotic inactivation,0,0
+gb|ABW03156.3|ARO:3002721|QnrB7,56.250000,antibiotic target protection,antibiotic inactivation,0,0
+gb|ADN94685.1|ARO:3002740|QnrB25,47.368000,antibiotic target protection,antibiotic inactivation,0,0
+gb|AAZ04782.1|ARO:3002709|QnrA3,47.826000,antibiotic target protection,antibiotic inactivation,0,0
+gb|AAA20117.1|ARO:3000195|tetB(P),26.379000,antibiotic target protection,antibiotic target alteration,0,0
+gb|ACG70184.1|ARO:3002788|QnrD1,40.625000,antibiotic target protection,antibiotic target replacement,0,0
+gb|AHE41343.1|ARO:3002768|QnrB55,47.368000,antibiotic target protection,antibiotic inactivation,0,0
+gb|ABX72044.1|ARO:3002728|QnrB14,56.250000,antibiotic target protection,antibiotic inactivation,0,0
+gb|AFY16910.1|ARO:3002775|QnrB62,47.368000,antibiotic target protection,antibiotic inactivation,0,0
+gb|AEL00459.1|ARO:3002752|QnrB37,47.368000,antibiotic target protection,antibiotic inactivation,0,0
+gb|AAC32027.1|ARO:3002817|carA,20.968000,antibiotic target protection,antibiotic target replacement,0,1
+gb|AGL43631.1|ARO:3002782|QnrB70,47.368000,antibiotic target protection,antibiotic inactivation,0,0
+gb|AFH88686.1|ARO:3002763|QnrB48,56.250000,antibiotic target protection,antibiotic inactivation,0,0
+gb|ABX00624.1|ARO:3002881|lmrC,25.891000,antibiotic target protection,antibiotic target alteration,0,1
+gb|ABC86904.2|ARO:3002714|QnrB1,52.632000,antibiotic target protection,antibiotic inactivation,0,0
+gb|ACV83303.2|ARO:3002713|QnrA7,47.826000,antibiotic target protection,antibiotic inactivation,0,0
+gb|ACX92986.2|ARO:3002832|vgaD,26.899000,antibiotic target protection,antibiotic target alteration,0,1
+gb|AEL00451.1|ARO:3002748|QnrB33,28.000000,antibiotic target protection,antibiotic inactivation,0,0
+gb|AGT59159.1|ARO:3002785|QnrB73,30.000000,antibiotic target protection,antibiotic inactivation,0,0
+gb|ADM52193.1|ARO:3002744|QnrB29,56.250000,antibiotic target protection,antibiotic inactivation,0,0
+gb|AEM62764.1|ARO:3002802|QnrVC5,45.833000,antibiotic target protection,antibiotic inactivation,0,0
+gb|AEL00452.1|ARO:3002749|QnrB34,26.061000,antibiotic target protection,antibiotic inactivation,0,0
+gb|CAE18141.1|ARO:3003111|lsaB,42.886000,antibiotic target protection,antibiotic inactivation,0,1
+gb|ACS71746.1|ARO:3002737|QnrB22,47.368000,antibiotic target protection,antibiotic inactivation,0,0
+gb|CAA36304.1|ARO:3000251|msrA,30.237000,antibiotic target protection,antibiotic target protection,1,1
+gb|WP_063866109.1|ARO:3002760|QnrB45,56.250000,antibiotic target protection,antibiotic inactivation,0,0
+gb|AAL73129.1|ARO:3000616|mel,22.333000,antibiotic target protection,antibiotic target alteration,0,0
+gb|AGL43629.1|ARO:3002780|QnrB68,42.105000,antibiotic target protection,antibiotic inactivation,0,0
+gb|AFR46587.1|ARO:3002769|QnrB56,47.368000,antibiotic target protection,antibiotic inactivation,0,0
+gb|WP_063866081.1|ARO:3002755|QnrB40,32.000000,antibiotic target protection,antibiotic inactivation,0,0
+gb|ABU52984.1|ARO:3002792|QnrS3,35.294000,antibiotic target protection,antibiotic target protection,1,0
+gb|CAO82104.1|ARO:3002726|QnrB12,47.368000,antibiotic target protection,antibiotic inactivation,0,0
+gb|AAO43110.1|ARO:3000300|lsaA,66.600000,antibiotic target protection,antibiotic target protection,1,1
+gb|CBH51823.1|ARO:3000556|tet(44),24.815000,antibiotic target protection,antibiotic inactivation,0,0
+gb|CAA79727.1|ARO:3000191|tet(Q),25.380000,antibiotic target protection,antibiotic target alteration,0,0
+gb|ACH87088.1|ARO:3000196|tet(32),25.111000,antibiotic target protection,antibiotic inactivation,0,0
+gb|ABW03157.2|ARO:3002722|QnrB8,47.368000,antibiotic target protection,antibiotic inactivation,0,0
+gb|ACC54440.2|ARO:3002799|QnrVC1,41.667000,antibiotic target protection,antibiotic inactivation,0,0
+gb|AGL43630.1|ARO:3002781|QnrB69,47.368000,antibiotic target protection,antibiotic inactivation,0,0
+gb|AAA50325.1|ARO:3003036|oleB,23.606000,antibiotic target protection,antibiotic target alteration,0,1
+gb|ABX72227.1|ARO:3002730|QnrB15,56.250000,antibiotic target protection,antibiotic inactivation,0,0
+gb|ADV91011.1|ARO:3000245|RbpA,42.105000,antibiotic target protection,antibiotic inactivation,0,0
+gb|AEH59666.1|ARO:3002741|QnrB26,56.250000,antibiotic target protection,antibiotic inactivation,0,0
+gb|ADU33193.1|ARO:3002708|QnrA2,47.826000,antibiotic target protection,antibiotic inactivation,0,0
+gb|AGL43625.1|ARO:3002776|QnrB64,32.075000,antibiotic target protection,antibiotic inactivation,0,0
+gb|ABV66096.1|ARO:3002731|QnrB16,47.368000,antibiotic target protection,antibiotic inactivation,0,0
+gb|ABP88094.1|ARO:3002723|QnrB9,56.250000,antibiotic target protection,antibiotic inactivation,0,0
+gb|AGH08253.1|ARO:3002803|QnrVC6,41.667000,antibiotic target protection,antibiotic inactivation,0,0
+gb|AFU25656.1|ARO:3002765|QnrB50,47.368000,antibiotic target protection,antibiotic inactivation,0,0
+gb|ADM52186.1|ARO:3002742|QnrB27,28.000000,antibiotic target protection,antibiotic inactivation,0,0
+gb|ACK75961.1|ARO:3002787|QnrC,25.000000,antibiotic target protection,antibiotic target replacement,0,0
+gb|CBY88983.1|ARO:3002833|vgaE,26.176000,antibiotic target protection,antibiotic inactivation,0,1
+gb|AFR46588.1|ARO:3002770|QnrB57,56.250000,antibiotic target protection,antibiotic inactivation,0,0
+gb|AAA25293.1|ARO:3000192|tet(S),26.364000,antibiotic target protection,antibiotic target alteration,0,0
+gb|AAZ78355.1|ARO:3002712|QnrA6,47.826000,antibiotic target protection,antibiotic inactivation,0,0
+gb|AGL43628.1|ARO:3002779|QnrB67,47.368000,antibiotic target protection,antibiotic inactivation,0,0
+gb|ABC17630.3|ARO:3002718|QnrB4,47.368000,antibiotic target protection,antibiotic inactivation,0,0
+gb|AEA37904.1|ARO:3003112|lsaC,41.884000,antibiotic target protection,antibiotic target alteration,0,1
+gb|AEL00456.1|ARO:3002750|QnrB35,47.368000,antibiotic target protection,antibiotic inactivation,0,0
+gb|AHE41344.1|ARO:3002796|QnrS7,35.294000,antibiotic target protection,antibiotic target protection,1,0
+gb|WP_063866105.1|ARO:3002759|QnrB44,56.250000,antibiotic target protection,antibiotic inactivation,0,0
+gb|ADI81040.1|ARO:3002800|QnrVC3,41.667000,antibiotic target protection,antibiotic inactivation,0,0
+gb|ABC17628.1|ARO:3002719|QnrB5,47.368000,antibiotic target protection,antibiotic inactivation,0,0
+gb|BAB82500.1|ARO:3000186|tet(M),25.714000,antibiotic target protection,antibiotic inactivation,0,0
+gb|CAD55718.1|ARO:3000197|tet(36),24.023000,antibiotic target protection,antibiotic target alteration,0,0
+gb|AAB95639.1|ARO:3000118|vgaB,26.744000,antibiotic target protection,antibiotic target alteration,0,1
+gb|ABF47470.1|ARO:3002791|QnrS2,22.222000,antibiotic target protection,antibiotic target protection,1,0
+gb|BAG55487.1|ARO:3002735|QnrB20,32.075000,antibiotic target protection,antibiotic inactivation,0,0
+gb|AJA36815.1|ARO:3003193|QnrVC7,45.833000,antibiotic target protection,antibiotic inactivation,0,0
+gb|ADM52194.1|ARO:3002745|QnrB30,56.250000,antibiotic target protection,antibiotic inactivation,0,0
+gb|ABI50486.1|ARO:3002707|QnrA1,27.586000,antibiotic target protection,antibiotic inactivation,0,0
+gb|AHX97725.1|ARO:3002786|QnrB74,26.154000,antibiotic target protection,antibiotic inactivation,0,0
+gb|AAA26832.1|ARO:3002827|tlrC,23.748000,antibiotic target protection,antibiotic target alteration,0,1
+gb|BAN04743.1|ARO:3002773|QnrB60,47.368000,antibiotic target protection,antibiotic inactivation,0,0
+gb|WP_063866099.1|ARO:3002758|QnrB43,62.500000,antibiotic target protection,antibiotic inactivation,0,0
+gb|ADQ43424.1|ARO:3002746|QnrB31,32.075000,antibiotic target protection,antibiotic inactivation,0,0
+gb|AGN92479.1|ARO:3002784|QnrB72,47.368000,antibiotic target protection,antibiotic inactivation,0,0
+gb|AAK01167.1|ARO:3002819|msrC,25.800000,antibiotic target protection,antibiotic target protection,1,1
+gb|CBL58195.1|ARO:3002831|vgaC,27.366000,antibiotic target protection,antibiotic target alteration,0,1
+gb|AAA23033.2|ARO:3000190|tet(O),25.714000,antibiotic target protection,antibiotic target alteration,0,0
+gb|AAF01499.1|ARO:3000193|tet(T),26.979000,antibiotic target protection,antibiotic target alteration,0,0
+gb|ASE57902.1|ARO:3003731|fusD,24.324000,antibiotic target protection,antibiotic inactivation,0,0
+gb|AFM45990.1|ARO:3004624|QnrS11,35.294000,antibiotic target protection,antibiotic target protection,1,0
+gb|AGN74946.1|ARO:3003749|salA,25.349000,antibiotic target protection,antibiotic target protection,1,1
+gb|AEU11363.1|ARO:3004622|QnrS10,35.294000,antibiotic target protection,antibiotic target protection,1,0
+gb|CAG41812.1|ARO:3003733|fusC,24.194000,antibiotic target protection,antibiotic inactivation,0,0
+gb|AKA86814.1|ARO:3003746|optrA,25.564000,antibiotic target protection,antibiotic target alteration,0,1
+gb|APC93960.1|ARO:3004636|qnrE1,56.250000,antibiotic target protection,antibiotic inactivation,0,0
+gb|AQV34023.1|ARO:3004637|qnrE2,56.250000,antibiotic target protection,antibiotic inactivation,0,0
+gb|OIZ71829.1|ARO:3004625|QnrS12,35.294000,antibiotic target protection,antibiotic target protection,1,0
+gb|AZP56652.1|ARO:3004627|QnrS15,35.294000,antibiotic target protection,antibiotic target protection,1,0
+gb|AVL76727.1|ARO:3004663|FusF,37.931000,antibiotic target protection,antibiotic inactivation,0,0
+gb|AHB37625.1|ARO:3004715|Scoh_vga(E),27.311000,antibiotic target protection,antibiotic inactivation,0,1
+gb|SOX29786.1|ARO:3004730|tva(A),24.085000,antibiotic target protection,antibiotic target alteration,0,1
+gb|AMP42147.1|ARO:3004442|tet(W/N/W),27.074000,antibiotic target protection,antibiotic target alteration,0,0
+gb|AVI44920.1|ARO:3004470|poxtA,23.508000,antibiotic target protection,antibiotic inactivation,0,1
+gb|NP_388442.1|ARO:3004476|vmlR,31.590000,antibiotic target protection,antibiotic target alteration,0,1
+gb|QHW12375.1|ARO:3005087|msrF,26.987000,antibiotic target protection,reduced permeability to antibiotic,0,1
+gb|DAC81085.1|ARO:3005088|msrH,26.027000,antibiotic target protection,antibiotic target protection,1,1
+gb|MBW0770001.1|ARO:3007026|salB,26.139000,antibiotic target protection,antibiotic target alteration,0,1
+gb|MBW0764195.1|ARO:3007027|salC,26.613000,antibiotic target protection,antibiotic target alteration,0,1
+gb|WP_082039181.1|ARO:3007028|salD,26.275000,antibiotic target protection,antibiotic target alteration,0,1
+gb|WP_096809342.1|ARO:3007029|salE,26.061000,antibiotic target protection,antibiotic target alteration,0,1
+gb|AKO62872.1|ARO:3003192|QnrB80,47.368000,antibiotic target protection,antibiotic inactivation,0,0
+gb|QNR09092.1|ARO:3007042|msr(G),28.850000,antibiotic target protection,antibiotic target alteration,0,1
+gb|QQA64075.1|ARO:3007043|msr(I),29.202000,antibiotic target protection,antibiotic target alteration,0,1
+gb|AXF35727.1|ARO:3005121|lsaD,54.728000,antibiotic target protection,antibiotic target protection,1,1
+gb|CAC41371.2|ARO:3007119|tet(O/32/O),25.676000,antibiotic target protection,antibiotic target alteration,0,0
+gb|AAR29485.1|ARO:3007120|tet(O/M/O),25.564000,antibiotic target protection,antibiotic target alteration,0,0
+gb|AAR29969.1|ARO:3007121|tet(O/W),28.078000,antibiotic target protection,antibiotic target alteration,0,0
+gb|ABF69686.1|ARO:3007122|tet(O/W/32/O),27.177000,antibiotic target protection,antibiotic target alteration,0,0
+gb|AAO42740.1|ARO:3007123|tet(O/W/O),27.928000,antibiotic target protection,antibiotic target alteration,0,0
+gb|AAL09826.1|ARO:3007124|tet(W/32/O),27.424000,antibiotic target protection,antibiotic target alteration,0,0
+gb|CAA37477.1|ARO:3002891|otr(A)S.rim,26.106000,antibiotic target protection,antibiotic target alteration,0,0
+gb|AAA26830.1|ARO:3007127|otr(A)S.liv,25.481000,antibiotic target protection,antibiotic target alteration,0,0
+gb|CCA59315.1|ARO:3007208|HelR,41.667000,antibiotic target protection,antibiotic target alteration,0,0
+gb|CAQ79275.1|ARO:3004668|QnrAS,42.857000,antibiotic target protection,antibiotic inactivation,0,0
+gb|EFE09657.1|ARO:3002754|QnrB39,47.368000,antibiotic target protection,antibiotic inactivation,0,0
+gb|AKI82195.1|ARO:3003187|QnrB75,56.250000,antibiotic target protection,antibiotic inactivation,0,0
+gb|AKO62869.1|ARO:3003189|QnrB77,56.250000,antibiotic target protection,antibiotic inactivation,0,0
+gb|AKO62870.1|ARO:3003190|QnrB78,56.250000,antibiotic target protection,antibiotic inactivation,0,0
+gb|BBW41109.1|ARO:3003188|QnrB76,56.250000,antibiotic target protection,antibiotic inactivation,0,0
+gb|AJP12342.1|ARO:3007637|cplR,28.302000,antibiotic target protection,antibiotic target alteration,0,1
+gb|BAB80490.1|ARO:3007644|Cper_cplR,30.126000,antibiotic target protection,antibiotic target alteration,0,1
+gb|AKC61310.1|ARO:3007645|Cspo_cplR,27.551000,antibiotic target protection,antibiotic target alteration,0,1
+gb|AAD01868.1|ARO:3002867|dfrF,29.412000,antibiotic target replacement,antibiotic inactivation,0,0
+gb|CAA90683.1|ARO:3003012|dfrA13,29.091000,antibiotic target replacement,antibiotic inactivation,0,0
+gb|CAP69659.1|ARO:3003017|dfrA21,28.205000,antibiotic target replacement,antibiotic inactivation,0,0
+gb|CAI99385.1|ARO:3002856|dfrA24,45.714000,antibiotic target replacement,antibiotic inactivation,0,0
+gb|ACJ63260.1|ARO:3000413|sul3,35.249000,antibiotic target replacement,antibiotic target replacement,1,0
+gb|AHV80711.1|ARO:3002863|dfrA8,27.885000,antibiotic target replacement,antibiotic target replacement,1,0
+gb|BAE15963.1|ARO:3002868|dfrG,35.000000,antibiotic target replacement,antibiotic target replacement,1,0
+gb|AAA85213.1|ARO:3002866|dfrD,22.917000,antibiotic target replacement,antibiotic target replacement,1,0
+gb|AAA25550.1|ARO:3003105|dfrA3,21.239000,antibiotic target replacement,antibiotic inactivation,0,0
+gb|ABB71176.1|ARO:3003020|dfrA25,32.203000,antibiotic target replacement,antibiotic inactivation,0,0
+gb|AAK60186.1|ARO:3003014|dfrA16,26.415000,antibiotic target replacement,antibiotic inactivation,0,0
+gb|CAE53424.1|ARO:3003016|dfrA20,33.333000,antibiotic target replacement,antibiotic target replacement,1,0
+gb|ABQ47844.1|ARO:3000215|mecR1,23.333000,antibiotic target replacement,antibiotic target alteration,0,0
+gb|CAL48457.1|ARO:3002857|dfrA26,29.268000,antibiotic target replacement,antibiotic inactivation,0,0
+gb|ADO00942.1|ARO:3003023|dfrB6,36.170000,antibiotic target replacement,antibiotic inactivation,0,0
+gb|AAA82255.1|ARO:3002864|dfrB1,57.143000,antibiotic target replacement,antibiotic inactivation,0,0
+gb|CAG34233.2|ARO:3003019|dfrA23,25.664000,antibiotic target replacement,reduced permeability to antibiotic,0,0
+gb|CCC86795.1|ARO:3001209|mecC,26.829000,antibiotic target replacement,antibiotic target alteration,0,0
+gb|CAC81324.1|ARO:3003015|dfrA19,26.389000,antibiotic target replacement,antibiotic target replacement,1,0
+gb|BAB41258.1|ARO:3000124|mecI,34.091000,antibiotic target replacement,antibiotic inactivation,0,0
+gb|AAL59753.1|ARO:3000412|sul2,33.209000,antibiotic target replacement,antibiotic target replacement,1,0
+gb|ACR57831.1|ARO:3003022|dfrB3,47.619000,antibiotic target replacement,antibiotic inactivation,0,0
+gb|AEJ33969.1|ARO:3000410|sul1,31.301000,antibiotic target replacement,antibiotic inactivation,0,0
+gb|ADG84870.1|ARO:3002858|dfrA12,28.986000,antibiotic target replacement,antibiotic inactivation,0,0
+gb|ABG91835.1|ARO:3002860|dfrA17,31.250000,antibiotic target replacement,antibiotic inactivation,0,0
+gb|AGC51118.1|ARO:3000617|mecA,26.439000,antibiotic target replacement,antibiotic target alteration,0,0
+gb|AGY30828.1|ARO:3003018|dfrA22,25.676000,antibiotic target replacement,antibiotic inactivation,0,0
+gb|AAO04716.1|ARO:3002865|dfrC,28.571000,antibiotic target replacement,antibiotic target replacement,1,0
+gb|AHG97174.1|ARO:3003011|dfrA10,34.286000,antibiotic target replacement,antibiotic target replacement,1,0
+gb|EOD99669.1|ARO:3002875|dfrE,28.986000,antibiotic target replacement,antibiotic target replacement,1,0
+gb|ABB89122.1|ARO:3002861|dfrA5,24.390000,antibiotic target replacement,antibiotic target replacement,1,0
+gb|AHK10285.1|ARO:3002859|dfrA14,35.714000,antibiotic target replacement,antibiotic target replacement,1,0
+gb|BAI83385.1|ARO:3003440|mecB,26.877000,antibiotic target replacement,antibiotic target alteration,0,0
+gb|CBL80435.1|ARO:3002869|dfrK,47.059000,antibiotic target replacement,antibiotic target replacement,1,0
+gb|ABI20482.1|ARO:3003021|dfrB2,23.529000,antibiotic target replacement,antibiotic inactivation,0,0
+gb|AAP74961.2|ARO:3002854|dfrA1,26.250000,antibiotic target replacement,antibiotic inactivation,0,0
+gb|AHB39758.1|ARO:3003013|dfrA15,27.692000,antibiotic target replacement,antibiotic inactivation,0,0
+gb|ACS44716.1|ARO:3002862|dfrA7,29.310000,antibiotic target replacement,antibiotic inactivation,0,0
+gb|CAI29521.1|ARO:3004640|dfrA15b,32.609000,antibiotic target replacement,antibiotic inactivation,0,0
+gb|CAB06660.1|ARO:3004644|Pmir_dfrA6,27.907000,antibiotic target replacement,antibiotic inactivation,0,0
+gb|ABO40886.1|ARO:3004645|dfrI,35.000000,antibiotic target replacement,antibiotic inactivation,0,0
+gb|AAN85115.1|ARO:3004642|dfrA3b,29.730000,antibiotic target replacement,antibiotic target replacement,1,0
+gb|AQX82857.1|ARO:3004185|mecD,27.984000,antibiotic target replacement,antibiotic target alteration,0,0
+gb|WP_102607457.1|ARO:3004361|sul4,40.590000,antibiotic target replacement,antibiotic target replacement,1,0
+gb|ABY55281.1|ARO:3004498|dfrB4,32.353000,antibiotic target replacement,antibiotic inactivation,0,0
+gb|CAA40897.1|ARO:3004548|dfrA9,20.312000,antibiotic target replacement,reduced permeability to antibiotic,0,0
+gb|AAX46054.1|ARO:3004549|dfrB5,29.412000,antibiotic target replacement,antibiotic inactivation,0,0
+gb|ACY06082.1|ARO:3004547|dfrA6,36.232000,antibiotic target replacement,antibiotic inactivation,0,0
+gb|ACD45689.1|ARO:3004550|dfrA27,27.397000,antibiotic target replacement,antibiotic inactivation,0,0
+gb|CAT00035.1|ARO:3004551|dfrA28,35.714000,antibiotic target replacement,antibiotic inactivation,0,1
+gb|CAQ53849.2|ARO:3004552|dfrA30,26.923000,antibiotic target replacement,antibiotic target replacement,1,0
+gb|ANN23980.1|ARO:3004554|dfrA29,32.203000,antibiotic target replacement,antibiotic target replacement,1,0
+gb|ACZ52983.1|ARO:3004555|dfrA32,31.250000,antibiotic target replacement,antibiotic inactivation,0,0
+gb|ADB54781.1|ARO:3004556|dfrB7,41.176000,antibiotic target replacement,antibiotic inactivation,0,0
+gb|AAK64581.1|ARO:3004568|dfrA18,29.070000,antibiotic target replacement,antibiotic target replacement,1,0
+gb|CCC86797.1|ARO:3005046|MecI_rep,38.095000,antibiotic target replacement,antibiotic target protection,0,0
+gb|BAD88719.1|ARO:3005084|dfrA31,34.783000,antibiotic target replacement,antibiotic inactivation,0,0
+gb|ASF80997.1|ARO:3005164|dfrA35,27.273000,antibiotic target replacement,antibiotic target replacement,1,0
+gb|WP_045475347.1|ARO:3005334|DfrA42_TMP,35.135000,antibiotic target replacement,antibiotic target replacement,1,0
+gb|WP_188331861.1|ARO:3005345|DfrA43_TMP,26.214000,antibiotic target replacement,antibiotic inactivation,0,0
+gb|WP_058652112.1|ARO:3005346|DfrA34,31.818000,antibiotic target replacement,antibiotic target replacement,1,0
+gb|WP_132586462.1|ARO:3005347|DfrA37,30.769000,antibiotic target replacement,antibiotic inactivation,0,0
+gb|WP_000949574.1|ARO:3005348|DfrA36,38.235000,antibiotic target replacement,antibiotic inactivation,0,0
+gb|WP_197749399.1|ARO:3005349|DfrA38,25.490000,antibiotic target replacement,antibiotic target replacement,1,0
+gb|WP_071846200.1|ARO:3005350|DfrB9,45.000000,antibiotic target replacement,antibiotic inactivation,0,0
+gb|WP_149100971.1|ARO:3005351|DfrA39,26.136000,antibiotic target replacement,antibiotic target replacement,1,0
+gb|CAF31623.1|ARO:3005354|dfr22,26.471000,antibiotic target replacement,antibiotic target replacement,1,0
+gb|CAC8536249.1|ARO:3007456|dfrL,34.043000,antibiotic target replacement,antibiotic inactivation,0,0
+gb|ALZ46148.1|ARO:3007489|dfrB10,28.571000,antibiotic target replacement,antibiotic inactivation,0,0
+gb|PKO69073.1|ARO:3007490|dfrB11,40.000000,antibiotic target replacement,antibiotic inactivation,0,0
+gb|CAB12108.2|ARO:3003059|tmrB,27.419000,reduced permeability to antibiotic,antibiotic inactivation,0,0
+gb|AAP82271.1|ARO:3004123|Bpse_Omp38,27.577000,reduced permeability to antibiotic,reduced permeability to antibiotic,1,1
+gb|CAA09666.1|ARO:3004122|Kpne_OmpK37,69.689000,reduced permeability to antibiotic,reduced permeability to antibiotic,1,1
+gb|CDO13836.1|ARO:3005044|OmpA,39.474000,reduced permeability to antibiotic,antibiotic inactivation,0,1
+gb|QFQ03949.1|ARO:3005051|LpsB,22.826000,reduced permeability to antibiotic,antibiotic target replacement,0,0
+gb|ABG48543.1|ARO:3005052|LpsA,32.653000,reduced permeability to antibiotic,antibiotic inactivation,0,0
+gb|WKR28567.1|ARO:3007678|IreK,30.909000,reduced permeability to antibiotic,antibiotic target alteration,0,0
+gb|WMY66391.1|ARO:3007682|MdtQ,31.818000,reduced permeability to antibiotic,antibiotic target alteration,0,0
+gb|AKL79742.1|ARO:3003808|carO,26.829000,reduced permeability to antibiotic,antibiotic inactivation,0,0
+gb|AHB92962.1|ARO:3003809|Abau_OprD_IPM,36.344000,reduced permeability to antibiotic,antibiotic target replacement,0,1
+gb|YP_005226137.1|ARO:3003966|Kpne_OmpK35,52.000000,reduced permeability to antibiotic,reduced permeability to antibiotic,1,1
+gb|YP_005228001.1|ARO:3003968|Kpne_OmpK36,87.302000,reduced permeability to antibiotic,reduced permeability to antibiotic,1,1
+gb|AAX99225.1|ARO:3004124|Mcat_M35_AMX,27.586000,reduced permeability to antibiotic,reduced permeability to antibiotic,1,1
+gb|APB87301.1|ARO:3004114|porin_OmpC,76.842000,reduced permeability to antibiotic,reduced permeability to antibiotic,1,1
+gb|AID70696.1|ARO:3004117|Vcho_OmpU,23.097000,reduced permeability to antibiotic,reduced permeability to antibiotic,1,1
+gb|BAB38442.1|ARO:3004126|Ecol_LamB,73.214000,reduced permeability to antibiotic,reduced permeability to antibiotic,1,1
+gb|AAC28105.1|ARO:3004118|Vcho_OmpT,30.081000,reduced permeability to antibiotic,reduced permeability to antibiotic,1,1
+gb|AIA49384.1|ARO:3004128|Smar_Omp1,63.198000,reduced permeability to antibiotic,reduced permeability to antibiotic,1,1
+gb|NP_310518.1|ARO:3004127|Ecol_mipA,40.000000,reduced permeability to antibiotic,antibiotic inactivation,0,0

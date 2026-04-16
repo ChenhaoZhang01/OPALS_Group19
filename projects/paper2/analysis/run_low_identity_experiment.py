@@ -20,6 +20,8 @@ def parse_args() -> argparse.Namespace:
     p.add_argument("--out-csv", required=True)
     p.add_argument("--blast-bin", required=True)
     p.add_argument("--makeblastdb-bin", required=True)
+    p.add_argument("--blast-task", default="blastp", choices=["blastp", "blastp-fast"])
+    p.add_argument("--blast-threads", type=int, default=1)
     p.add_argument("--low-identity-threshold", type=float, default=40.0)
     p.add_argument("--embedding-precision", type=float, required=True)
     p.add_argument("--embedding-recall", type=float, required=True)
@@ -108,6 +110,8 @@ def main() -> int:
         subprocess.run(
             [
                 a.blast_bin,
+                "-task",
+                a.blast_task,
                 "-query",
                 str(q),
                 "-db",
@@ -118,6 +122,8 @@ def main() -> int:
                 "1",
                 "-max_hsps",
                 "1",
+                "-num_threads",
+                str(max(1, a.blast_threads)),
                 "-out",
                 str(out),
             ],

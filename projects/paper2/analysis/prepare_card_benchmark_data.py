@@ -6,6 +6,7 @@ import argparse
 import csv
 import hashlib
 import io
+import random
 import tarfile
 from collections import Counter, defaultdict
 from pathlib import Path
@@ -18,6 +19,11 @@ def parse_args() -> argparse.Namespace:
         "--query-member",
         default="./protein_fasta_protein_variant_model.fasta",
         help="TAR member path for query FASTA",
+    )
+    p.add_argument(
+        "--query-member-2",
+        default="",
+        help="Optional second TAR member path for query FASTA (merged with query-member)",
     )
     p.add_argument(
         "--db-member",
@@ -33,8 +39,26 @@ def parse_args() -> argparse.Namespace:
     p.add_argument("--max-query", type=int, default=800, help="Maximum query sequences to keep")
     p.add_argument("--max-db", type=int, default=3000, help="Maximum DB sequences to keep")
     p.add_argument("--min-class-count", type=int, default=8, help="Minimum query samples per class")
+    p.add_argument(
+        "--min-db-class-count",
+        type=int,
+        default=1,
+        help="Minimum DB samples per class",
+    )
     p.add_argument("--embedding-dim", type=int, default=128, help="Hashed k-mer embedding dimension")
     p.add_argument("--kmer", type=int, default=3, help="K-mer size for hashed embeddings")
+    p.add_argument(
+        "--augment-mutation-rates",
+        default="",
+        help="Optional comma-separated mutation rates for synthetic query augmentation, e.g. 0.2,0.4",
+    )
+    p.add_argument(
+        "--augment-copies-per-rate",
+        type=int,
+        default=0,
+        help="Synthetic copies per sequence for each mutation rate (0 disables augmentation)",
+    )
+    p.add_argument("--augmentation-seed", type=int, default=42, help="Seed for synthetic augmentation")
     p.add_argument("--out-query-fasta", required=True)
     p.add_argument("--out-db-fasta", required=True)
     p.add_argument("--out-query-labels", required=True)
@@ -64,6 +88,16 @@ def parse_fasta(text: str) -> list[tuple[str, str, str]]:
     if cur_id:
         records.append((cur_id, cur_header, "".join(seq_parts)))
     return records
+
+
+def dedupe_records(records: list[tuple[str, str, str]]) -> list[tuple[str, str, str]]:
+    # Keep the longest sequence per ID when the same ID appears across merged query sources.
+    by_id: dict[str, tuple[str, str, str]] = {}
+    for seq_id, header, seq in records:
+        prev = by_id.get(seq_id)
+        if prev is None or len(seq) > len(prev[2]):
+            by_id[seq_id] = (seq_id, header, seq)
+    return list(by_id.values())
 
 
 def extract_aro_id(header: str) -> str | None:
@@ -97,7 +131,7 @@ def load_label_map(tf: tarfile.TarFile, category: str) -> dict[str, str]:
     for row in reader:
         aro = (row.get("ARO Accession") or "").strip()
         name = (row.get(category_column) or "").strip()
-        if category == "Drug Class" and ";" in name:
+        if category in {"Drug Class", "Resistance Mechanism"} and ";" in name:
             name = name.split(";", 1)[0].strip()
         if aro and name:
             out[aro] = name
@@ -109,6 +143,33 @@ def load_label_map(tf: tarfile.TarFile, category: str) -> dict[str, str]:
 def stable_hash_int(text: str) -> int:
     h = hashlib.md5(text.encode("utf-8")).digest()
     return int.from_bytes(h[:8], "big", signed=False)
+
+
+def parse_rates(text: str) -> list[float]:
+    if not text.strip():
+        return []
+    rates: list[float] = []
+    for part in text.split(","):
+        piece = part.strip()
+        if not piece:
+            continue
+        val = float(piece)
+        if not (0.0 < val < 1.0):
+            raise ValueError(f"Mutation rates must be in (0,1): {val}")
+        rates.append(val)
+    return rates
+
+
+def mutate_sequence(seq: str, rate: float, rng: random.Random) -> str:
+    alphabet = "ACDEFGHIKLMNPQRSTVWY"
+    chars = list(seq.upper())
+    for i, ch in enumerate(chars):
+        if ch not in alphabet:
+            continue
+        if rng.random() < rate:
+            choices = [aa for aa in alphabet if aa != ch]
+            chars[i] = choices[rng.randrange(len(choices))]
+    return "".join(chars)
 
 
 def seq_to_embedding(seq: str, dim: int, k: int) -> list[float]:
@@ -159,6 +220,12 @@ def main() -> int:
             raise ValueError(f"Missing db member: {args.db_member}")
 
         query_records = parse_fasta(q_member.read().decode("utf-8", errors="ignore"))
+        if args.query_member_2:
+            q_member2 = tf.extractfile(args.query_member_2)
+            if q_member2 is None:
+                raise ValueError(f"Missing query member 2: {args.query_member_2}")
+            query_records.extend(parse_fasta(q_member2.read().decode("utf-8", errors="ignore")))
+        query_records = dedupe_records(query_records)
         db_records = parse_fasta(d_member.read().decode("utf-8", errors="ignore"))
 
     def filter_and_label(records: list[tuple[str, str, str]]) -> list[tuple[str, str, str]]:
@@ -178,12 +245,13 @@ def main() -> int:
     query_labeled = filter_and_label(query_records)
     db_labeled = filter_and_label(db_records)
 
-    query_count_by_label = Counter(label for _, label, _ in query_labeled)
-    kept_labels = {lab for lab, n in query_count_by_label.items() if n >= args.min_class_count}
-    query_labeled = [r for r in query_labeled if r[1] in kept_labels]
-
     db_count_by_label = Counter(label for _, label, _ in db_labeled)
-    shared_labels = {lab for lab in kept_labels if db_count_by_label.get(lab, 0) > 0}
+    query_count_by_label = Counter(label for _, label, _ in query_labeled)
+    shared_labels = {
+        lab
+        for lab, qn in query_count_by_label.items()
+        if qn >= args.min_class_count and db_count_by_label.get(lab, 0) >= args.min_db_class_count
+    }
     query_labeled = [r for r in query_labeled if r[1] in shared_labels]
     db_labeled = [r for r in db_labeled if r[1] in shared_labels]
 
@@ -206,13 +274,28 @@ def main() -> int:
     per_label_query_cap = max(1, args.max_query // len(labels_sorted))
     per_label_db_cap = max(1, args.max_db // len(labels_sorted))
 
-    same_source = args.query_member == args.db_member
+    same_source = args.query_member == args.db_member or args.query_member_2 == args.db_member
 
     for lab in labels_sorted:
         q_rows = by_label_query[lab]
         d_rows = by_label_db[lab]
 
-        q_pick = q_rows[:per_label_query_cap]
+        if same_source:
+            # Prefer query IDs not present in DB to avoid eroding DB class support.
+            db_ids = {seq_id for seq_id, _, _ in d_rows}
+            q_non_overlap = [r for r in q_rows if r[0] not in db_ids]
+            q_overlap = [r for r in q_rows if r[0] in db_ids]
+
+            take_non_overlap = min(per_label_query_cap, len(q_non_overlap))
+            remaining = per_label_query_cap - take_non_overlap
+
+            # Keep at least min_db_class_count examples per class in DB after overlap removal.
+            max_overlap_take = max(0, len(d_rows) - args.min_db_class_count)
+            take_overlap = min(remaining, max_overlap_take, len(q_overlap))
+
+            q_pick = q_non_overlap[:take_non_overlap] + q_overlap[:take_overlap]
+        else:
+            q_pick = q_rows[:per_label_query_cap]
         selected_query.extend(q_pick)
 
         if same_source:
@@ -223,6 +306,19 @@ def main() -> int:
 
     selected_query = selected_query[: args.max_query]
     selected_db = selected_db[: args.max_db]
+
+    rates = parse_rates(args.augment_mutation_rates)
+    if rates and args.augment_copies_per_rate > 0:
+        augmented_rows: list[tuple[str, str, str]] = []
+        for seq_id, label, seq in selected_query:
+            for rate in rates:
+                for copy_idx in range(args.augment_copies_per_rate):
+                    seed_key = f"{args.augmentation_seed}|{seq_id}|{rate}|{copy_idx}"
+                    rng = random.Random(stable_hash_int(seed_key))
+                    mut_seq = mutate_sequence(seq, rate, rng)
+                    mut_id = f"{seq_id}_mut{int(round(rate * 100)):02d}_{copy_idx + 1}"
+                    augmented_rows.append((mut_id, label, mut_seq))
+        selected_query.extend(augmented_rows)
 
     if len(selected_query) < 50:
         raise ValueError(f"Too few query samples after filtering: {len(selected_query)}")

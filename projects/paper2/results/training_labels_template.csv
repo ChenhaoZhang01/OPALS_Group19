@@ -43,179 +43,523 @@ row_index,label
 41,antibiotic efflux
 42,antibiotic efflux
 43,antibiotic efflux
-44,antibiotic inactivation
-45,antibiotic inactivation
-46,antibiotic inactivation
-47,antibiotic inactivation
-48,antibiotic inactivation
-49,antibiotic inactivation
-50,antibiotic inactivation
-51,antibiotic inactivation
-52,antibiotic inactivation
-53,antibiotic inactivation
-54,antibiotic inactivation
-55,antibiotic inactivation
-56,antibiotic inactivation
-57,antibiotic inactivation
-58,antibiotic inactivation
-59,antibiotic inactivation
-60,antibiotic inactivation
-61,antibiotic inactivation
-62,antibiotic inactivation
-63,antibiotic inactivation
-64,antibiotic inactivation
-65,antibiotic inactivation
-66,antibiotic inactivation
-67,antibiotic inactivation
-68,antibiotic inactivation
-69,antibiotic inactivation
-70,antibiotic inactivation
-71,antibiotic inactivation
-72,antibiotic inactivation
-73,antibiotic inactivation
-74,antibiotic inactivation
-75,antibiotic inactivation
-76,antibiotic inactivation
-77,antibiotic inactivation
-78,antibiotic inactivation
-79,antibiotic inactivation
-80,antibiotic inactivation
-81,antibiotic inactivation
-82,antibiotic inactivation
-83,antibiotic inactivation
-84,antibiotic inactivation
-85,antibiotic inactivation
-86,antibiotic inactivation
-87,antibiotic inactivation
-88,antibiotic target alteration
-89,antibiotic target alteration
-90,antibiotic target alteration
-91,antibiotic target alteration
-92,antibiotic target alteration
-93,antibiotic target alteration
-94,antibiotic target alteration
-95,antibiotic target alteration
-96,antibiotic target alteration
-97,antibiotic target alteration
-98,antibiotic target alteration
-99,antibiotic target alteration
-100,antibiotic target alteration
-101,antibiotic target alteration
-102,antibiotic target alteration
-103,antibiotic target alteration
-104,antibiotic target alteration
-105,antibiotic target alteration
-106,antibiotic target alteration
-107,antibiotic target alteration
-108,antibiotic target alteration
-109,antibiotic target alteration
-110,antibiotic target alteration
-111,antibiotic target alteration
-112,antibiotic target alteration
-113,antibiotic target alteration
-114,antibiotic target alteration
-115,antibiotic target alteration
-116,antibiotic target alteration
-117,antibiotic target alteration
-118,antibiotic target alteration
-119,antibiotic target alteration
-120,antibiotic target alteration
-121,antibiotic target alteration
-122,antibiotic target alteration
-123,antibiotic target alteration
-124,antibiotic target alteration
-125,antibiotic target alteration
-126,antibiotic target alteration
-127,antibiotic target alteration
-128,antibiotic target alteration
-129,antibiotic target alteration
-130,antibiotic target alteration
-131,antibiotic target alteration
-132,antibiotic target protection
-133,antibiotic target protection
-134,antibiotic target protection
-135,antibiotic target protection
-136,antibiotic target protection
-137,antibiotic target protection
-138,antibiotic target protection
-139,antibiotic target protection
-140,antibiotic target protection
-141,antibiotic target protection
-142,antibiotic target protection
-143,antibiotic target protection
-144,antibiotic target protection
-145,antibiotic target protection
-146,antibiotic target protection
-147,antibiotic target protection
-148,antibiotic target protection
-149,antibiotic target protection
-150,antibiotic target protection
-151,antibiotic target protection
-152,antibiotic target protection
-153,antibiotic target protection
-154,antibiotic target protection
-155,antibiotic target protection
-156,antibiotic target protection
-157,antibiotic target protection
-158,antibiotic target protection
-159,antibiotic target protection
-160,antibiotic target protection
-161,antibiotic target protection
-162,antibiotic target protection
-163,antibiotic target protection
-164,antibiotic target protection
-165,antibiotic target protection
-166,antibiotic target protection
-167,antibiotic target protection
-168,antibiotic target protection
-169,antibiotic target protection
-170,antibiotic target protection
-171,antibiotic target protection
-172,antibiotic target protection
-173,antibiotic target protection
-174,antibiotic target protection
-175,antibiotic target protection
-176,antibiotic target replacement
-177,antibiotic target replacement
-178,antibiotic target replacement
-179,antibiotic target replacement
-180,antibiotic target replacement
-181,antibiotic target replacement
-182,antibiotic target replacement
-183,antibiotic target replacement
-184,antibiotic target replacement
-185,antibiotic target replacement
-186,antibiotic target replacement
-187,antibiotic target replacement
-188,antibiotic target replacement
-189,antibiotic target replacement
-190,antibiotic target replacement
-191,antibiotic target replacement
-192,antibiotic target replacement
-193,antibiotic target replacement
-194,antibiotic target replacement
-195,antibiotic target replacement
-196,antibiotic target replacement
-197,antibiotic target replacement
-198,antibiotic target replacement
-199,antibiotic target replacement
-200,antibiotic target replacement
-201,antibiotic target replacement
-202,antibiotic target replacement
-203,antibiotic target replacement
-204,antibiotic target replacement
-205,antibiotic target replacement
-206,antibiotic target replacement
-207,antibiotic target replacement
-208,antibiotic target replacement
-209,antibiotic target replacement
-210,antibiotic target replacement
-211,antibiotic target replacement
-212,antibiotic target replacement
-213,antibiotic target replacement
-214,antibiotic target replacement
-215,antibiotic target replacement
-216,antibiotic target replacement
-217,antibiotic target replacement
-218,antibiotic target replacement
-219,antibiotic target replacement
+44,antibiotic efflux
+45,antibiotic efflux
+46,antibiotic efflux
+47,antibiotic efflux
+48,antibiotic efflux
+49,antibiotic efflux
+50,antibiotic efflux
+51,antibiotic efflux
+52,antibiotic efflux
+53,antibiotic efflux
+54,antibiotic efflux
+55,antibiotic efflux
+56,antibiotic efflux
+57,antibiotic efflux
+58,antibiotic efflux
+59,antibiotic efflux
+60,antibiotic efflux
+61,antibiotic efflux
+62,antibiotic efflux
+63,antibiotic efflux
+64,antibiotic efflux
+65,antibiotic efflux
+66,antibiotic efflux
+67,antibiotic efflux
+68,antibiotic efflux
+69,antibiotic efflux
+70,antibiotic efflux
+71,antibiotic efflux
+72,antibiotic efflux
+73,antibiotic efflux
+74,antibiotic efflux
+75,antibiotic efflux
+76,antibiotic efflux
+77,antibiotic efflux
+78,antibiotic efflux
+79,antibiotic efflux
+80,antibiotic efflux
+81,antibiotic efflux
+82,antibiotic efflux
+83,antibiotic efflux
+84,antibiotic efflux
+85,antibiotic efflux
+86,antibiotic efflux
+87,antibiotic efflux
+88,antibiotic efflux
+89,antibiotic efflux
+90,antibiotic efflux
+91,antibiotic efflux
+92,antibiotic efflux
+93,antibiotic efflux
+94,antibiotic efflux
+95,antibiotic efflux
+96,antibiotic efflux
+97,antibiotic efflux
+98,antibiotic efflux
+99,antibiotic efflux
+100,antibiotic efflux
+101,antibiotic efflux
+102,antibiotic efflux
+103,antibiotic efflux
+104,antibiotic efflux
+105,antibiotic efflux
+106,antibiotic efflux
+107,antibiotic efflux
+108,antibiotic efflux
+109,antibiotic efflux
+110,antibiotic efflux
+111,antibiotic efflux
+112,antibiotic efflux
+113,antibiotic efflux
+114,antibiotic efflux
+115,antibiotic efflux
+116,antibiotic efflux
+117,antibiotic efflux
+118,antibiotic efflux
+119,antibiotic efflux
+120,antibiotic efflux
+121,antibiotic efflux
+122,antibiotic efflux
+123,antibiotic efflux
+124,antibiotic efflux
+125,antibiotic efflux
+126,antibiotic efflux
+127,antibiotic efflux
+128,antibiotic efflux
+129,antibiotic efflux
+130,antibiotic efflux
+131,antibiotic efflux
+132,antibiotic efflux
+133,antibiotic efflux
+134,antibiotic efflux
+135,antibiotic efflux
+136,antibiotic efflux
+137,antibiotic efflux
+138,antibiotic efflux
+139,antibiotic efflux
+140,antibiotic efflux
+141,antibiotic efflux
+142,antibiotic efflux
+143,antibiotic efflux
+144,antibiotic efflux
+145,antibiotic efflux
+146,antibiotic efflux
+147,antibiotic efflux
+148,antibiotic efflux
+149,antibiotic efflux
+150,antibiotic efflux
+151,antibiotic efflux
+152,antibiotic efflux
+153,antibiotic efflux
+154,antibiotic efflux
+155,antibiotic efflux
+156,antibiotic efflux
+157,antibiotic efflux
+158,antibiotic efflux
+159,antibiotic efflux
+160,antibiotic efflux
+161,antibiotic efflux
+162,antibiotic efflux
+163,antibiotic efflux
+164,antibiotic efflux
+165,antibiotic efflux
+166,antibiotic efflux
+167,antibiotic efflux
+168,antibiotic efflux
+169,antibiotic efflux
+170,antibiotic efflux
+171,antibiotic efflux
+172,antibiotic efflux
+173,antibiotic efflux
+174,antibiotic efflux
+175,antibiotic efflux
+176,antibiotic efflux
+177,antibiotic efflux
+178,antibiotic efflux
+179,antibiotic efflux
+180,antibiotic efflux
+181,antibiotic efflux
+182,antibiotic efflux
+183,antibiotic efflux
+184,antibiotic efflux
+185,antibiotic efflux
+186,antibiotic efflux
+187,antibiotic efflux
+188,antibiotic efflux
+189,antibiotic efflux
+190,antibiotic efflux
+191,antibiotic efflux
+192,antibiotic efflux
+193,antibiotic efflux
+194,antibiotic efflux
+195,antibiotic efflux
+196,antibiotic efflux
+197,antibiotic efflux
+198,antibiotic efflux
+199,antibiotic efflux
+200,antibiotic efflux
+201,antibiotic efflux
+202,antibiotic efflux
+203,antibiotic efflux
+204,antibiotic efflux
+205,antibiotic efflux
+206,antibiotic efflux
+207,antibiotic efflux
+208,antibiotic efflux
+209,antibiotic efflux
+210,antibiotic efflux
+211,antibiotic efflux
+212,antibiotic efflux
+213,antibiotic efflux
+214,antibiotic efflux
+215,antibiotic efflux
+216,antibiotic efflux
+217,antibiotic efflux
+218,antibiotic efflux
+219,antibiotic efflux
+220,antibiotic efflux
+221,antibiotic efflux
+222,antibiotic efflux
+223,antibiotic efflux
+224,antibiotic efflux
+225,antibiotic efflux
+226,antibiotic efflux
+227,antibiotic efflux
+228,antibiotic efflux
+229,antibiotic efflux
+230,antibiotic efflux
+231,antibiotic efflux
+232,antibiotic efflux
+233,antibiotic efflux
+234,antibiotic efflux
+235,antibiotic efflux
+236,antibiotic efflux
+237,antibiotic efflux
+238,antibiotic efflux
+239,antibiotic efflux
+240,antibiotic efflux
+241,antibiotic efflux
+242,antibiotic efflux
+243,antibiotic efflux
+244,antibiotic efflux
+245,antibiotic efflux
+246,antibiotic efflux
+247,antibiotic efflux
+248,antibiotic efflux
+249,antibiotic efflux
+250,antibiotic efflux
+251,antibiotic efflux
+252,antibiotic efflux
+253,antibiotic efflux
+254,antibiotic efflux
+255,antibiotic efflux
+256,antibiotic efflux
+257,antibiotic efflux
+258,antibiotic efflux
+259,antibiotic efflux
+260,antibiotic efflux
+261,antibiotic efflux
+262,antibiotic efflux
+263,antibiotic efflux
+264,antibiotic efflux
+265,antibiotic efflux
+266,antibiotic efflux
+267,antibiotic efflux
+268,antibiotic efflux
+269,antibiotic efflux
+270,antibiotic efflux
+271,antibiotic efflux
+272,antibiotic efflux
+273,antibiotic efflux
+274,antibiotic efflux
+275,antibiotic efflux
+276,antibiotic efflux
+277,antibiotic target alteration
+278,antibiotic target alteration
+279,antibiotic target alteration
+280,antibiotic target alteration
+281,antibiotic target alteration
+282,antibiotic target alteration
+283,antibiotic target alteration
+284,antibiotic target alteration
+285,antibiotic target alteration
+286,antibiotic target alteration
+287,antibiotic target alteration
+288,antibiotic target alteration
+289,antibiotic target alteration
+290,antibiotic target alteration
+291,antibiotic target alteration
+292,antibiotic target alteration
+293,antibiotic target alteration
+294,antibiotic target alteration
+295,antibiotic target alteration
+296,antibiotic target alteration
+297,antibiotic target alteration
+298,antibiotic target alteration
+299,antibiotic target alteration
+300,antibiotic target alteration
+301,antibiotic target alteration
+302,antibiotic target alteration
+303,antibiotic target alteration
+304,antibiotic target alteration
+305,antibiotic target alteration
+306,antibiotic target alteration
+307,antibiotic target alteration
+308,antibiotic target alteration
+309,antibiotic target alteration
+310,antibiotic target alteration
+311,antibiotic target alteration
+312,antibiotic target alteration
+313,antibiotic target alteration
+314,antibiotic target alteration
+315,antibiotic target alteration
+316,antibiotic target alteration
+317,antibiotic target alteration
+318,antibiotic target alteration
+319,antibiotic target alteration
+320,antibiotic target alteration
+321,antibiotic target alteration
+322,antibiotic target alteration
+323,antibiotic target alteration
+324,antibiotic target alteration
+325,antibiotic target alteration
+326,antibiotic target alteration
+327,antibiotic target alteration
+328,antibiotic target alteration
+329,antibiotic target alteration
+330,antibiotic target alteration
+331,antibiotic target alteration
+332,antibiotic target alteration
+333,antibiotic target alteration
+334,antibiotic target alteration
+335,antibiotic target alteration
+336,antibiotic target alteration
+337,antibiotic target alteration
+338,antibiotic target alteration
+339,antibiotic target alteration
+340,antibiotic target alteration
+341,antibiotic target alteration
+342,antibiotic target alteration
+343,antibiotic target alteration
+344,antibiotic target alteration
+345,antibiotic target alteration
+346,antibiotic target alteration
+347,antibiotic target alteration
+348,antibiotic target alteration
+349,antibiotic target alteration
+350,antibiotic target alteration
+351,antibiotic target alteration
+352,antibiotic target alteration
+353,antibiotic target alteration
+354,antibiotic target alteration
+355,antibiotic target alteration
+356,antibiotic target alteration
+357,antibiotic target alteration
+358,antibiotic target alteration
+359,antibiotic target alteration
+360,antibiotic target alteration
+361,antibiotic target alteration
+362,antibiotic target alteration
+363,antibiotic target alteration
+364,antibiotic target alteration
+365,antibiotic target alteration
+366,antibiotic target alteration
+367,antibiotic target alteration
+368,antibiotic target alteration
+369,antibiotic target alteration
+370,antibiotic target alteration
+371,antibiotic target alteration
+372,antibiotic target alteration
+373,antibiotic target alteration
+374,antibiotic target alteration
+375,antibiotic target alteration
+376,antibiotic target alteration
+377,antibiotic target alteration
+378,antibiotic target alteration
+379,antibiotic target alteration
+380,antibiotic target alteration
+381,antibiotic target alteration
+382,antibiotic target alteration
+383,antibiotic target alteration
+384,antibiotic target alteration
+385,antibiotic target alteration
+386,antibiotic target alteration
+387,antibiotic target alteration
+388,antibiotic target alteration
+389,antibiotic target alteration
+390,antibiotic target alteration
+391,antibiotic target alteration
+392,antibiotic target alteration
+393,antibiotic target alteration
+394,antibiotic target alteration
+395,antibiotic target alteration
+396,antibiotic target alteration
+397,antibiotic target alteration
+398,antibiotic target alteration
+399,antibiotic target alteration
+400,antibiotic target alteration
+401,antibiotic target alteration
+402,antibiotic target alteration
+403,antibiotic target alteration
+404,antibiotic target alteration
+405,antibiotic target alteration
+406,antibiotic target alteration
+407,antibiotic target alteration
+408,antibiotic target alteration
+409,antibiotic target alteration
+410,antibiotic target alteration
+411,antibiotic target alteration
+412,antibiotic target alteration
+413,antibiotic target alteration
+414,antibiotic target alteration
+415,antibiotic target alteration
+416,antibiotic target alteration
+417,antibiotic target alteration
+418,antibiotic target alteration
+419,antibiotic target alteration
+420,antibiotic target alteration
+421,antibiotic target alteration
+422,antibiotic target alteration
+423,antibiotic target alteration
+424,antibiotic target alteration
+425,antibiotic target alteration
+426,antibiotic target alteration
+427,antibiotic target alteration
+428,antibiotic target alteration
+429,antibiotic target alteration
+430,antibiotic target alteration
+431,antibiotic target alteration
+432,antibiotic target alteration
+433,antibiotic target alteration
+434,antibiotic target alteration
+435,antibiotic target alteration
+436,antibiotic target alteration
+437,antibiotic target alteration
+438,antibiotic target alteration
+439,antibiotic target alteration
+440,antibiotic target alteration
+441,antibiotic target alteration
+442,antibiotic target alteration
+443,antibiotic target alteration
+444,antibiotic target alteration
+445,antibiotic target alteration
+446,antibiotic target alteration
+447,antibiotic target alteration
+448,antibiotic target alteration
+449,antibiotic target alteration
+450,antibiotic target alteration
+451,antibiotic target alteration
+452,antibiotic target alteration
+453,antibiotic target alteration
+454,antibiotic target alteration
+455,antibiotic target alteration
+456,antibiotic target alteration
+457,antibiotic target alteration
+458,antibiotic target alteration
+459,antibiotic target alteration
+460,antibiotic target alteration
+461,antibiotic target alteration
+462,antibiotic target alteration
+463,antibiotic target alteration
+464,antibiotic target alteration
+465,antibiotic target alteration
+466,antibiotic target alteration
+467,antibiotic target alteration
+468,antibiotic target alteration
+469,antibiotic target alteration
+470,antibiotic target alteration
+471,antibiotic target alteration
+472,antibiotic target alteration
+473,antibiotic target alteration
+474,antibiotic target alteration
+475,antibiotic target alteration
+476,antibiotic target alteration
+477,antibiotic target alteration
+478,antibiotic target alteration
+479,antibiotic target alteration
+480,antibiotic target alteration
+481,antibiotic target alteration
+482,antibiotic target alteration
+483,antibiotic target alteration
+484,antibiotic target alteration
+485,antibiotic target alteration
+486,antibiotic target alteration
+487,antibiotic target alteration
+488,antibiotic target alteration
+489,antibiotic target alteration
+490,antibiotic target alteration
+491,antibiotic target alteration
+492,antibiotic target alteration
+493,antibiotic target alteration
+494,antibiotic target alteration
+495,antibiotic target alteration
+496,antibiotic target alteration
+497,antibiotic target alteration
+498,antibiotic target alteration
+499,antibiotic target alteration
+500,antibiotic target alteration
+501,antibiotic target alteration
+502,antibiotic target alteration
+503,antibiotic target alteration
+504,antibiotic target alteration
+505,antibiotic target alteration
+506,antibiotic target alteration
+507,antibiotic target alteration
+508,antibiotic target alteration
+509,antibiotic target alteration
+510,antibiotic target alteration
+511,antibiotic target alteration
+512,antibiotic target alteration
+513,antibiotic target alteration
+514,antibiotic target alteration
+515,antibiotic target alteration
+516,antibiotic target alteration
+517,antibiotic target alteration
+518,antibiotic target alteration
+519,antibiotic target alteration
+520,antibiotic target alteration
+521,antibiotic target alteration
+522,antibiotic target alteration
+523,antibiotic target alteration
+524,antibiotic target alteration
+525,antibiotic target alteration
+526,antibiotic target alteration
+527,antibiotic target alteration
+528,antibiotic target alteration
+529,antibiotic target alteration
+530,antibiotic target alteration
+531,antibiotic target alteration
+532,antibiotic target alteration
+533,antibiotic target alteration
+534,antibiotic target alteration
+535,antibiotic target alteration
+536,antibiotic target alteration
+537,antibiotic target alteration
+538,antibiotic target alteration
+539,antibiotic target alteration
+540,antibiotic target alteration
+541,antibiotic target alteration
+542,antibiotic target alteration
+543,antibiotic target alteration
+544,antibiotic target alteration
+545,antibiotic target alteration
+546,antibiotic target alteration
+547,antibiotic target alteration
+548,antibiotic target alteration
+549,antibiotic target alteration
+550,antibiotic target alteration
+551,antibiotic target alteration
+552,antibiotic target alteration
+553,antibiotic target alteration
+554,antibiotic target alteration
+555,antibiotic target alteration
+556,antibiotic target alteration
+557,antibiotic target alteration
+558,antibiotic target alteration
+559,antibiotic target alteration
+560,antibiotic target alteration
+561,antibiotic target alteration
+562,antibiotic target alteration
+563,antibiotic target alteration

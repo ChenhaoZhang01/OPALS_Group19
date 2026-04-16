@@ -1,0 +1,5 @@
+scenario,method,precision,recall,f1,n
+all,BLAST_alignment,0.241341,0.241303,0.169657,1811
+all,Embedding_model,0.500000,0.500000,0.500000,1811
+low_identity_lt_40,BLAST_alignment,0.243499,0.252318,0.172985,1510
+low_identity_lt_40,Embedding_model,0.500000,0.500000,0.500000,1510

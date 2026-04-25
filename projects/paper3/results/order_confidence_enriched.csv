@@ -1,0 +1,42 @@
+sample_id,study,proposed_order,order_source,confidence,is_usable_for_lag,notes
+SRR25475464,PRJNA1000295,1,collection_date,medium,yes,source=collection_date; coverage=1.00; unique_ratio=0.25
+SRR25475465,PRJNA1000295,2,collection_date,medium,yes,source=collection_date; coverage=1.00; unique_ratio=0.25
+SRR25475469,PRJNA1000295,3,collection_date,medium,yes,source=collection_date; coverage=1.00; unique_ratio=0.25
+SRR25475470,PRJNA1000295,4,collection_date,medium,yes,source=collection_date; coverage=1.00; unique_ratio=0.25
+SRR30403276,PRJNA1149575,1,collection_date,medium,yes,source=collection_date; coverage=1.00; unique_ratio=0.50
+SRR30403277,PRJNA1149575,2,collection_date,medium,yes,source=collection_date; coverage=1.00; unique_ratio=0.50
+SRR35899523,PRJNA1341951,1,collection_date,high,yes,source=collection_date; coverage=1.00; unique_ratio=1.00
+SRR35899572,PRJNA1341956,1,collection_date,high,yes,source=collection_date; coverage=1.00; unique_ratio=1.00
+SRR35899551,PRJNA1342024,1,collection_date,high,yes,source=collection_date; coverage=1.00; unique_ratio=1.00
+SRR35899599,PRJNA1342025,1,collection_date,high,yes,source=collection_date; coverage=1.00; unique_ratio=1.00
+SRR35899562,PRJNA1342026,1,collection_date,high,yes,source=collection_date; coverage=1.00; unique_ratio=1.00
+SRR35899622,PRJNA1342125,1,collection_date,high,yes,source=collection_date; coverage=1.00; unique_ratio=1.00
+SRR35899617,PRJNA1342288,1,collection_date,high,yes,source=collection_date; coverage=1.00; unique_ratio=1.00
+SRR35899647,PRJNA1342330,1,collection_date,high,yes,source=collection_date; coverage=1.00; unique_ratio=1.00
+SRR35899621,PRJNA1342485,1,collection_date,high,yes,source=collection_date; coverage=1.00; unique_ratio=1.00
+SRR35899646,PRJNA1342515,1,collection_date,high,yes,source=collection_date; coverage=1.00; unique_ratio=1.00
+SRR35899614,PRJNA1342540,1,collection_date,high,yes,source=collection_date; coverage=1.00; unique_ratio=1.00
+SRR35899560,PRJNA1342696,1,collection_date,high,yes,source=collection_date; coverage=1.00; unique_ratio=1.00
+SRR35899498,PRJNA1343021,1,collection_date,high,yes,source=collection_date; coverage=1.00; unique_ratio=1.00
+SRR35899609,PRJNA1343173,1,collection_date,high,yes,source=collection_date; coverage=1.00; unique_ratio=1.00
+SRR639750,PRJNA184698,,none,none,no,no usable ordering field found
+SRR639752,PRJNA184698,,none,none,no,no usable ordering field found
+SRR639753,PRJNA184698,,none,none,no,no usable ordering field found
+SRR643889,PRJNA184698,,none,none,no,no usable ordering field found
+SRR643891,PRJNA184698,,none,none,no,no usable ordering field found
+SRR7299214,PRJNA475763,1,collection_date,high,yes,source=collection_date; coverage=1.00; unique_ratio=1.00
+SRR10489816,PRJNA588342,1,collection_date,medium,yes,source=collection_date; coverage=1.00; unique_ratio=0.14
+SRR10489818,PRJNA588342,2,collection_date,medium,yes,source=collection_date; coverage=1.00; unique_ratio=0.14
+SRR10489821,PRJNA588342,3,collection_date,medium,yes,source=collection_date; coverage=1.00; unique_ratio=0.14
+SRR10489826,PRJNA588342,4,collection_date,medium,yes,source=collection_date; coverage=1.00; unique_ratio=0.14
+SRR10489829,PRJNA588342,5,collection_date,medium,yes,source=collection_date; coverage=1.00; unique_ratio=0.14
+SRR10489838,PRJNA588342,6,collection_date,medium,yes,source=collection_date; coverage=1.00; unique_ratio=0.14
+SRR10489839,PRJNA588342,7,collection_date,medium,yes,source=collection_date; coverage=1.00; unique_ratio=0.14
+SRR11811727,PRJNA599167,3,collection_date,high,yes,source=collection_date; coverage=1.00; unique_ratio=0.83
+SRR11811728,PRJNA599167,2,collection_date,high,yes,source=collection_date; coverage=1.00; unique_ratio=0.83
+SRR11811733,PRJNA599167,1,collection_date,high,yes,source=collection_date; coverage=1.00; unique_ratio=0.83
+SRR11811738,PRJNA599167,4,collection_date,high,yes,source=collection_date; coverage=1.00; unique_ratio=0.83
+SRR11840535,PRJNA599167,5,collection_date,high,yes,source=collection_date; coverage=1.00; unique_ratio=0.83
+SRR11840546,PRJNA599167,6,collection_date,high,yes,source=collection_date; coverage=1.00; unique_ratio=0.83
+SRR13853495,PRJNA706165,1,collection_date,high,yes,source=collection_date; coverage=1.00; unique_ratio=1.00
+SRR13938450,PRJNA713765,1,collection_date,high,yes,source=collection_date; coverage=1.00; unique_ratio=1.00

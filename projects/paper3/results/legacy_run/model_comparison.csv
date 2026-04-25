@@ -1,0 +1,6 @@
+model,formula,r_squared,adjusted_r_squared,n
+MGE_only_with_controls,arg_t1 ~ mge_abundance + C(study) + sequencing_depth,0.998303,0.998060,33
+MGE_plus_entropy_with_controls,arg_t1 ~ mge_abundance + entropy + C(study) + sequencing_depth,0.998676,0.998431,33
+difference_model,d_arg_t1 ~ d_mge_t,0.119225,0.087769,30
+granger_base_arg_history,arg_t1 ~ arg_total + C(study) + sequencing_depth,0.999097,0.998968,33
+granger_full_arg_history_plus_mge,arg_t1 ~ arg_total + mge_abundance + C(study) + sequencing_depth,0.999124,0.998961,33

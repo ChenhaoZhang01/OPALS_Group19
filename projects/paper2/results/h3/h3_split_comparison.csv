@@ -1,0 +1,3 @@
+split,n_train,n_test,precision,recall,f1,accuracy,leakage_rate,threshold
+random_stratified_seed42,451,113,0.929808,0.929204,0.929215,0.929204,0.415929,70.0
+identity_clustered,451,113,0.951960,0.946903,0.946727,0.946903,0.000000,70.0

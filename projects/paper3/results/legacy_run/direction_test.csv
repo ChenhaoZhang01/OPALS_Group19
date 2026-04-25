@@ -1,0 +1,3 @@
+direction,formula,coefficient,std_error,p_value,ci_low,ci_high,r_squared,adjusted_r_squared,n
+forward_mge_t_to_arg_t1,arg_t1 ~ mge_abundance + C(study) + sequencing_depth,18.553611,0.589673,0.00000000,17.345719,19.761502,0.998303,0.998060,33
+reverse_arg_t_to_mge_t1,mge_t1 ~ arg_total + C(study) + sequencing_depth,0.053645,0.001446,0.00000000,0.050683,0.056607,0.998569,0.998365,33

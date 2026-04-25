@@ -1,0 +1,54 @@
+{
+  "identity_threshold": 60.0,
+  "n_total": 564,
+  "class_counts_total": {
+    "antibiotic efflux": 277,
+    "antibiotic target alteration": 287
+  },
+  "random_seed42": {
+    "precision": 0.9298079268968883,
+    "recall": 0.9292035398230089,
+    "f1": 0.9292146294940893,
+    "accuracy": 0.9292035398230089,
+    "n_train": 451,
+    "n_test": 113,
+    "class_counts_train": {
+      "antibiotic efflux": 222,
+      "antibiotic target alteration": 229
+    },
+    "class_counts_test": {
+      "antibiotic target alteration": 58,
+      "antibiotic efflux": 55
+    },
+    "leakage_rate": 0.504424778761062
+  },
+  "random_repeats": {
+    "n_splits": 20,
+    "recall_mean": 0.95,
+    "recall_std": 0.013207797837698473
+  },
+  "identity_clustered": {
+    "precision": 0.9711884753901561,
+    "recall": 0.9495798319327731,
+    "f1": 0.955755029284441,
+    "accuracy": 0.9495798319327731,
+    "n_train": 445,
+    "n_test": 119,
+    "n_clusters": 335,
+    "class_counts_train": {
+      "antibiotic efflux": 269,
+      "antibiotic target alteration": 176
+    },
+    "class_counts_test": {
+      "antibiotic efflux": 8,
+      "antibiotic target alteration": 111
+    },
+    "leakage_rate": 0.0
+  },
+  "delta_random_minus_clustered": {
+    "precision": -0.04138054849326778,
+    "recall": -0.020376292109764216,
+    "f1": -0.02654039979035172,
+    "accuracy": -0.020376292109764216
+  }
+}

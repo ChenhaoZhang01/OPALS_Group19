@@ -1,11 +1,11 @@
 #!/usr/bin/env bash
 # finish_and_batch.sh
-# 1. Wait for DIAMOND R1 on SRR27827413 to finish, then run R2
-# 2. Wait for MEGAHIT to finish, then run IntegronFinder
+# 1. Wait for any running DIAMOND R1 on SRR27827413, then run R2
+# 2. Wait for MEGAHIT, then run IntegronFinder
 # 3. Write SRR27827413 final row to quant_results.csv
-# 4. Run batch_process_all.sh for remaining 18 samples
+# 4. Run batch_process_all.sh for remaining samples (fully parallelized)
 #
-# Run in WSL2: bash /mnt/c/.../finish_and_batch.sh  (or copy to WSL)
+# Run in WSL2: bash /mnt/c/.../finish_and_batch.sh
 
 set -uo pipefail
 
@@ -21,14 +21,30 @@ KRAKEN_DB="/data/dbs/kraken2_8gb"
 ARG_DB="/data/dbs/amrfinder_diamond/AMRProt.dmnd"
 SRR="SRR27827413"
 
+# ---------------------------------------------------------------------------
+# Auto-detect hardware
+# ---------------------------------------------------------------------------
+THREADS=$(nproc)
+TOTAL_RAM_MB=$(free -m | awk '/^Mem:/{print $2}')
+DIAMOND_BLOCK=$(python3 -c "
+ram_gb = $TOTAL_RAM_MB / 1024
+block = max(0.5, round((ram_gb * 0.75 - 8) / 6, 1))
+print(block)
+")
+
+echo "============================================================"
+echo " Hardware: ${THREADS} cores | ${TOTAL_RAM_MB} MB RAM"
+echo " DIAMOND block-size: ${DIAMOND_BLOCK}"
+echo "============================================================"
+
 [[ ! -f "$QUANT_CSV" ]] && echo "sample_id,arg_total,mge_abundance,entropy" > "$QUANT_CSV"
 
-ENTROPY="6.291076"  # already computed from Bracken
+ENTROPY="6.291076"  # already computed from Bracken on previous machine
 
 echo "=== Phase 1: Wait for DIAMOND R1 to finish ==="
 while [[ ! -s "$ARG_DIR/${SRR}_r1.m8" ]]; do
-  echo "  Waiting for $ARG_DIR/${SRR}_r1.m8 (currently 0 bytes or missing)..."
-  sleep 60
+  echo "  Waiting for R1... $(date '+%H:%M')"
+  sleep 30
 done
 echo "  R1 done: $(wc -l < "$ARG_DIR/${SRR}_r1.m8") lines"
 
@@ -40,7 +56,7 @@ if [[ ! -s "$ARG_DIR/${SRR}_r2.m8" ]]; then
     --out "$ARG_DIR/${SRR}_r2.m8" \
     --outfmt 6 qseqid sseqid pident length evalue bitscore \
     --max-target-seqs 1 --evalue 1e-5 --id 70 --query-cover 60 \
-    --block-size 0.5 --threads 4 --quiet 2>/dev/null || true
+    --block-size "$DIAMOND_BLOCK" --threads "$THREADS" --quiet 2>/dev/null || true
   echo "  R2 done: $(wc -l < "$ARG_DIR/${SRR}_r2.m8" 2>/dev/null || echo 0) lines"
 fi
 
@@ -50,18 +66,18 @@ echo "  Combined ARG_TOTAL=$ARG_TOTAL"
 
 echo "=== Phase 3: Wait for MEGAHIT to finish ==="
 while [[ ! -f "$ASSEMBLE_DIR/${SRR}/final.contigs.fa" ]]; do
-  echo "  Waiting for MEGAHIT assembly... $(date '+%H:%M')"
-  sleep 300  # check every 5 minutes
+  echo "  Waiting for MEGAHIT... $(date '+%H:%M')"
+  sleep 120
 done
 echo "  MEGAHIT done: $(grep -c '>' "$ASSEMBLE_DIR/${SRR}/final.contigs.fa") contigs"
 
-echo "=== Phase 4: IntegronFinder ==="
+echo "=== Phase 4: IntegronFinder (${THREADS} CPUs) ==="
 MGE_DIR_SAMPLE="$MGE_DIR/$SRR"
 if [[ ! -d "$MGE_DIR_SAMPLE" ]]; then
   mkdir -p "$MGE_DIR_SAMPLE"
   /opt/miniforge/bin/conda run -n biotools integron_finder \
     --outdir "$MGE_DIR_SAMPLE" \
-    --cpu 4 \
+    --cpu "$THREADS" \
     --local-max \
     "$ASSEMBLE_DIR/${SRR}/final.contigs.fa" 2>/dev/null || true
 fi
@@ -76,14 +92,13 @@ fi
 echo "  MGE_ABUNDANCE=$MGE_ABUNDANCE"
 
 echo "=== Phase 5: Write SRR27827413 to quant_results.csv ==="
-# Remove any partial row for this sample first
 grep -v "^${SRR}," "$QUANT_CSV" > /tmp/quant_tmp.csv 2>/dev/null || cp "$QUANT_CSV" /tmp/quant_tmp.csv
 mv /tmp/quant_tmp.csv "$QUANT_CSV"
 echo "${SRR},${ARG_TOTAL},${MGE_ABUNDANCE},${ENTROPY}" >> "$QUANT_CSV"
 echo "  Written: ${SRR},${ARG_TOTAL},${MGE_ABUNDANCE},${ENTROPY}"
 
 echo ""
-echo "=== Phase 6: Run batch pipeline for remaining samples ==="
+echo "=== Phase 6: Run parallel batch pipeline for remaining samples ==="
 SCRIPT_DIR="$(dirname "$0")"
 bash "$SCRIPT_DIR/batch_process_all.sh"
 

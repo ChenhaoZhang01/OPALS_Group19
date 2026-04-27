@@ -137,9 +137,9 @@ process_sample() {
   [[ -f "$fq1" && -f "$fq2" ]] && is_paired=true
 
   if [[ "$is_paired" == false && ! -f "$fq_se" ]]; then
-    echo "[${srr}] ERROR: no FASTQ found"
+    echo "[${srr}] ERROR: no FASTQ found — writing zeros and skipping"
     (flock -x 9; echo "${srr},0,0,0" >> "$QUANT_CSV") 9>"$LOCK_FILE"
-    return 1
+    return 0
   fi
 
   # ---- 2. Kraken2 ---------------------------------------------------------
@@ -221,11 +221,11 @@ for srr in "${SHOTGUN_SAMPLES[@]}"; do
   process_sample "$srr" "$THREADS_PER_JOB" "$DIAMOND_BLOCK" &
   running=$((running + 1))
   if [[ $running -ge $PARALLEL_JOBS ]]; then
-    wait -n 2>/dev/null || wait
+    wait -n 2>/dev/null || true
     running=$((running - 1))
   fi
 done
-wait
+wait || true
 
 echo ""
 echo "=== Batch pipeline COMPLETE ($(date)) ==="

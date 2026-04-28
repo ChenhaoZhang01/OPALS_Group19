@@ -44,6 +44,9 @@ def parse_args() -> argparse.Namespace:
         default="",
         help="Output directory for figures (default: ../analysis/figures)",
     )
+    parser.add_argument("--within-study-out", default="", help="Output CSV for within-study lag models")
+    parser.add_argument("--loso-out", default="", help="Output CSV for leave-one-study-out analysis")
+    parser.add_argument("--diagnostics-out", default="", help="Output CSV for residual diagnostics (DW, BP)")
     return parser.parse_args()
 
 
@@ -348,6 +351,64 @@ def _make_figures(figures_dir: Path, lag1_df, diff_df, corr_rows: list[tuple[str
             plt.close()
 
 
+def _run_within_study_models(lag_df, smf_module) -> list[dict]:
+    results = []
+    for study in sorted(lag_df["study"].dropna().unique()):
+        sub = lag_df[lag_df["study"] == study].dropna(subset=["mge_abundance", "arg_t1"]).copy()
+        n_pairs = len(sub)
+        if n_pairs < 3:
+            results.append({"study": study, "coefficient": None, "std_error": None,
+                            "p_value": None, "r_squared": None, "n": n_pairs, "note": "insufficient_pairs"})
+            continue
+        try:
+            model = smf_module.ols("arg_t1 ~ mge_abundance", data=sub).fit()
+            s = _extract_model_stats(model, "mge_abundance")
+            results.append({"study": study, "coefficient": s["coefficient"], "std_error": s["std_error"],
+                            "p_value": s["p_value"], "r_squared": s["r_squared"], "n": s["rows_used"], "note": "ok"})
+        except Exception as exc:
+            results.append({"study": study, "coefficient": None, "std_error": None,
+                            "p_value": None, "r_squared": None, "n": n_pairs, "note": str(exc)})
+    return results
+
+
+def _run_loso(lag_df, forward_formula: str, smf_module) -> list[dict]:
+    results = []
+    for study in sorted(lag_df["study"].dropna().unique()):
+        sub = lag_df[lag_df["study"] != study].copy()
+        remaining_studies = sub["study"].dropna().unique()
+        sub_clean = sub.dropna(subset=["mge_abundance", "arg_t1"])
+        n = len(sub_clean)
+        if n < 5 or len(remaining_studies) < 2:
+            results.append({"left_out_study": study, "coefficient": None, "std_error": None,
+                            "p_value": None, "r_squared": None, "n": n, "note": "insufficient_data"})
+            continue
+        try:
+            model = smf_module.ols(forward_formula, data=sub).fit()
+            s = _extract_model_stats(model, "mge_abundance")
+            results.append({"left_out_study": study, "coefficient": s["coefficient"], "std_error": s["std_error"],
+                            "p_value": s["p_value"], "r_squared": s["r_squared"], "n": s["rows_used"], "note": "ok"})
+        except Exception as exc:
+            results.append({"left_out_study": study, "coefficient": None, "std_error": None,
+                            "p_value": None, "r_squared": None, "n": n, "note": str(exc)})
+    return results
+
+
+def _compute_min_detectable(model, alpha: float = 0.05, power: float = 0.80) -> tuple[float | None, int | None]:
+    try:
+        from scipy.stats import t as t_dist
+    except ImportError:
+        return None, None
+    df_resid = int(model.df_resid)
+    if df_resid < 1:
+        return None, df_resid
+    se = _safe_float(model.bse.get("mge_abundance"))
+    if se is None:
+        return None, df_resid
+    t_alpha = t_dist.ppf(1 - alpha / 2, df=df_resid)
+    t_beta = t_dist.ppf(power, df=df_resid)
+    return se * (t_alpha + t_beta), df_resid
+
+
 def main() -> int:
     args = parse_args()
 
@@ -490,6 +551,9 @@ def main() -> int:
     direction_out = Path(args.direction_out) if args.direction_out else model_out.with_name("directionality_test.csv")
     difference_out = Path(args.difference_out) if args.difference_out else model_out.with_name("difference_model.csv")
     granger_out = Path(args.granger_out) if args.granger_out else model_out.with_name("granger_test.csv")
+    within_study_out = Path(args.within_study_out) if args.within_study_out else model_out.with_name("within_study_models.csv")
+    loso_out = Path(args.loso_out) if args.loso_out else model_out.with_name("loso_results.csv")
+    diagnostics_out = Path(args.diagnostics_out) if args.diagnostics_out else model_out.with_name("residual_diagnostics.csv")
     figures_dir = (
         Path(args.figures_dir)
         if args.figures_dir
@@ -648,6 +712,68 @@ def main() -> int:
         [[lag, _format_num(corr), str(n)] for lag, corr, n in corr_rows],
     )
 
+    # Within-study models
+    within_study_rows = _run_within_study_models(lag_df, smf)
+    _write_csv(
+        within_study_out,
+        ["study", "formula", "coefficient", "std_error", "p_value", "r_squared", "n", "note"],
+        [
+            [
+                r["study"], "arg_t1 ~ mge_abundance",
+                _format_num(r["coefficient"]), _format_num(r["std_error"]),
+                _format_num(r["p_value"], digits=8) if r["p_value"] is not None else "NA",
+                _format_num(r["r_squared"]), str(r["n"]), r["note"],
+            ]
+            for r in within_study_rows
+        ],
+    )
+
+    # Leave-one-study-out
+    loso_rows = _run_loso(lag_df, forward_formula, smf)
+    _write_csv(
+        loso_out,
+        ["left_out_study", "formula", "coefficient", "std_error", "p_value", "r_squared", "n", "note"],
+        [
+            [
+                r["left_out_study"], forward_formula,
+                _format_num(r["coefficient"]), _format_num(r["std_error"]),
+                _format_num(r["p_value"], digits=8) if r["p_value"] is not None else "NA",
+                _format_num(r["r_squared"]), str(r["n"]), r["note"],
+            ]
+            for r in loso_rows
+        ],
+    )
+
+    # Residual diagnostics: Durbin-Watson + Breusch-Pagan + power analysis
+    dw_stat = None
+    bp_lm_p = None
+    min_detectable = None
+    df_resid_val = None
+    try:
+        from statsmodels.stats.stattools import durbin_watson
+        dw_stat = _safe_float(durbin_watson(forward_model.resid))
+    except Exception:
+        pass
+    try:
+        from statsmodels.stats.diagnostic import het_breuschpagan
+        _, bp_lm_p_raw, _, _ = het_breuschpagan(forward_model.resid, forward_model.model.exog)
+        bp_lm_p = _safe_float(bp_lm_p_raw)
+    except Exception:
+        pass
+    min_detectable, df_resid_val = _compute_min_detectable(forward_model)
+    _write_key_value_csv(
+        diagnostics_out,
+        [
+            ("forward_model_durbin_watson", _format_num(dw_stat)),
+            ("forward_model_breusch_pagan_p", _format_num(bp_lm_p, digits=8) if bp_lm_p is not None else "NA"),
+            ("df_residual", str(df_resid_val) if df_resid_val is not None else "NA"),
+            ("min_detectable_coefficient_80pct_power", _format_num(min_detectable) if min_detectable is not None else "NA"),
+            ("observed_mge_coefficient", _format_num(forward_stats["coefficient"])),
+            ("observed_mge_ci_low", _format_num(forward_stats["ci_low"])),
+            ("observed_mge_ci_high", _format_num(forward_stats["ci_high"])),
+        ],
+    )
+
     _make_figures(figures_dir, lag_df, diff_df, corr_rows)
 
     print(f"Rows used: {rows_used}")
@@ -659,6 +785,9 @@ def main() -> int:
     print(f"Wrote difference model: {difference_out}")
     print(f"Wrote Granger-style test: {granger_out}")
     print(f"Wrote correlation: {corr_out}")
+    print(f"Wrote within-study models: {within_study_out}")
+    print(f"Wrote LOSO results: {loso_out}")
+    print(f"Wrote residual diagnostics: {diagnostics_out}")
     print(f"Figures dir: {figures_dir}")
     return 0
 

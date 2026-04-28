@@ -1,0 +1,4 @@
+study,formula,coefficient,std_error,p_value,r_squared,n,note
+PRJNA1071831_Drag,arg_t1 ~ mge_abundance,30.992893,57.879620,0.68702461,0.222836,3,ok
+PRJNA1071831_Mech,arg_t1 ~ mge_abundance,94.544088,310.437607,0.81179814,0.084879,3,ok
+PRJNA599167_WGA,arg_t1 ~ mge_abundance,-32.954540,47.344788,0.50610984,0.057103,10,ok

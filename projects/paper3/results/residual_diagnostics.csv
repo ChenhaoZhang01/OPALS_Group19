@@ -1,0 +1,8 @@
+metric,value
+forward_model_durbin_watson,2.101751
+forward_model_breusch_pagan_p,0.30258231
+df_residual,9
+min_detectable_coefficient_80pct_power,117.889363
+observed_mge_coefficient,21.570083
+observed_mge_ci_low,-63.211062
+observed_mge_ci_high,106.351228

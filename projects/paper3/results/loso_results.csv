@@ -1,0 +1,4 @@
+left_out_study,formula,coefficient,std_error,p_value,r_squared,n,note
+PRJNA1071831_Drag,arg_t1 ~ mge_abundance + C(study) + sequencing_depth,4.224057,77.754693,0.95819385,0.685588,11,ok
+PRJNA1071831_Mech,arg_t1 ~ mge_abundance + C(study) + sequencing_depth,20.768799,30.956478,0.52379450,0.759331,11,ok
+PRJNA599167_WGA,arg_t1 ~ mge_abundance + C(study) + sequencing_depth,31.798921,64.291142,0.66986759,0.357590,6,ok

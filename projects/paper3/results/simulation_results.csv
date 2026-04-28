@@ -1,0 +1,14 @@
+metric,value
+n_simulations,2000
+naive_r2_median,0.8476
+naive_r2_mean,0.8357
+naive_r2_p25,0.7944
+naive_r2_p75,0.8921
+naive_r2_pct_above_0.5,99.8
+naive_r2_pct_above_0.7,94.0
+naive_mge_p_pct_sig_0.05,11.9
+diff_r2_median,0.0714
+diff_r2_mean,0.1331
+diff_r2_p75,0.1937
+observed_naive_r2,0.720
+observed_diff_r2,0.020

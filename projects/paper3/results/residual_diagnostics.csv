@@ -6,3 +6,6 @@ min_detectable_coefficient_80pct_power,117.889363
 observed_mge_coefficient,21.570083
 observed_mge_ci_low,-63.211062
 observed_mge_ci_high,106.351228
+bootstrap_mge_ci_low_2.5pct,-98.140896
+bootstrap_mge_ci_high_97.5pct,161.898942
+bootstrap_mge_median,19.086224

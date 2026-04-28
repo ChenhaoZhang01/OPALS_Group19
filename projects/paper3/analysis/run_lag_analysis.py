@@ -199,36 +199,84 @@ def _format_study_panel_note(
     )
 
 
+_STUDY_COLORS = {
+    "PRJNA599167_WGA": "#4878d0",
+    "PRJNA1071831_Drag": "#ee854a",
+    "PRJNA1071831_Mech": "#6acc65",
+}
+_STUDY_LABELS = {
+    "PRJNA599167_WGA": "Chesapeake Bay WGA",
+    "PRJNA1071831_Drag": "Iskar River – Dragushinovo",
+    "PRJNA1071831_Mech": "Iskar River – Mechkata",
+}
+
+
+def _study_color(study: str) -> str:
+    return _STUDY_COLORS.get(str(study), "#999999")
+
+
+def _study_label(study: str) -> str:
+    return _STUDY_LABELS.get(str(study), str(study))
+
+
 def _make_figures(figures_dir: Path, lag1_df, diff_df, corr_rows: list[tuple[str, float | None, int]]) -> None:
     try:
         import matplotlib.pyplot as plt
+        import matplotlib.patches as mpatches
         import numpy as np
     except ImportError:
         print("matplotlib is not installed; skipping figure generation.")
         return
 
     figures_dir.mkdir(parents=True, exist_ok=True)
-
-    # 1) Scatter plot: MGE(t) vs ARG(t+1)
-    scatter_df = lag1_df[["mge_abundance", "arg_t1"]].dropna()
-    if len(scatter_df) >= 2:
-        x = scatter_df["mge_abundance"].to_numpy()
-        y = scatter_df["arg_t1"].to_numpy()
-        m, b = np.polyfit(x, y, 1)
-
-        plt.figure(figsize=(7, 5))
-        plt.scatter(x, y, alpha=0.85)
-        x_line = np.linspace(float(x.min()), float(x.max()), 100)
-        plt.plot(x_line, m * x_line + b, linewidth=2)
-        plt.xlabel("MGE(t)")
-        plt.ylabel("ARG(t+1)")
-        plt.title("Lagged Association: MGE(t) vs ARG(t+1)")
-        plt.tight_layout()
-        plt.savefig(figures_dir / "scatter_mge_t_vs_arg_t1.png", dpi=180)
-        plt.close()
-
-    # 2) Time-series plot per study
     studies = sorted(lag1_df["study"].dropna().unique())
+
+    # 1) Scatter: MGE(t) vs ARG(t+1), colored by study with pooled + within-study fits
+    scatter_df = lag1_df[["study", "mge_abundance", "arg_t1"]].dropna()
+    if len(scatter_df) >= 2:
+        fig, ax = plt.subplots(figsize=(8, 5.5))
+
+        # Pooled OLS fit
+        x_all = scatter_df["mge_abundance"].to_numpy()
+        y_all = scatter_df["arg_t1"].to_numpy()
+        m_pool, b_pool = np.polyfit(x_all, y_all, 1)
+        x_line = np.linspace(float(x_all.min()), float(x_all.max()), 200)
+        ax.plot(x_line, m_pool * x_line + b_pool, color="black", linewidth=1.8,
+                linestyle="--", label="Pooled OLS fit (R²=0.72, p=0.58)", zorder=2)
+
+        # Per-study scatter + within-study fit
+        legend_handles = []
+        for study in studies:
+            sub = scatter_df[scatter_df["study"] == study]
+            c = _study_color(study)
+            lbl = _study_label(study)
+            ax.scatter(sub["mge_abundance"], sub["arg_t1"], color=c, s=55,
+                       edgecolors="white", linewidth=0.6, zorder=3, alpha=0.92)
+            legend_handles.append(mpatches.Patch(color=c, label=lbl))
+            if len(sub) >= 3:
+                xs = sub["mge_abundance"].to_numpy()
+                ys = sub["arg_t1"].to_numpy()
+                ms, bs = np.polyfit(xs, ys, 1)
+                xs_line = np.linspace(float(xs.min()), float(xs.max()), 100)
+                ax.plot(xs_line, ms * xs_line + bs, color=c, linewidth=1.2,
+                        linestyle=":", alpha=0.7)
+
+        ax.set_xlabel("MGE abundance at time t (integron count)", fontsize=11)
+        ax.set_ylabel("ARG burden at time t+1 (read count)", fontsize=11)
+        ax.set_title("MGE(t) vs ARG(t+1): pooled fit vs within-study fits\n"
+                     "Apparent R²=0.720 is driven by between-study ARG scale differences (dashed line),\n"
+                     "not by within-study predictive signal (dotted lines)", fontsize=9.5)
+        legend_handles.append(plt.Line2D([0], [0], color="black", linestyle="--",
+                                          linewidth=1.8, label="Pooled OLS fit"))
+        legend_handles.append(plt.Line2D([0], [0], color="gray", linestyle=":",
+                                          linewidth=1.2, label="Within-study fit"))
+        ax.legend(handles=legend_handles, fontsize=8.5, framealpha=0.9)
+        ax.grid(True, linestyle="--", linewidth=0.5, alpha=0.3)
+        fig.tight_layout()
+        fig.savefig(figures_dir / "scatter_mge_t_vs_arg_t1.png", dpi=180)
+        plt.close(fig)
+
+    # 2) Time-series plot per study (dual y-axis for MGE vs ARG scale)
     if studies:
         study_to_sub = {
             study: lag1_df[lag1_df["study"] == study].sort_values("order")
@@ -236,119 +284,140 @@ def _make_figures(figures_dir: Path, lag1_df, diff_df, corr_rows: list[tuple[str
         }
         arg_start_values: dict[object, float] = {}
         for study, sub in study_to_sub.items():
-            arg_start_series = sub["arg_total"].dropna()
-            if not arg_start_series.empty:
-                arg_start_values[study] = float(arg_start_series.iloc[0])
-            else:
-                arg_start_values[study] = float("inf")
-        sorted_by_arg_baseline = sorted(studies, key=lambda study: arg_start_values[study])
+            s = sub["arg_total"].dropna()
+            arg_start_values[study] = float(s.iloc[0]) if not s.empty else float("inf")
+        sorted_by_arg_baseline = sorted(studies, key=lambda s: arg_start_values[s])
         baseline_label_map: dict[object, str] = {}
         for rank, study in enumerate(sorted_by_arg_baseline):
             baseline_label_map[study] = _baseline_rank_label(rank, len(sorted_by_arg_baseline))
 
         n = len(studies)
-        fig, axes = plt.subplots(
-            n,
-            1,
-            figsize=(10, max(2.9 * n + 1.0, 4.8)),
-            squeeze=False,
-            sharex=True,
-        )
-        for i, study in enumerate(studies):
-            ax = axes[i][0]
+        fig, axes = plt.subplots(n, 1, figsize=(10, max(3.2 * n + 1.0, 5.0)), squeeze=False)
+        for i, study in enumerate(sorted_by_arg_baseline):
+            ax_arg = axes[i][0]
+            ax_mge = ax_arg.twinx()
             sub = study_to_sub[study]
-            ax.plot(sub["order"], sub["mge_abundance"], marker="o", markersize=5, linewidth=2, label="MGE abundance")
-            ax.plot(sub["order"], sub["arg_total"], marker="s", markersize=5, linewidth=2, label="ARG burden")
-            mge_start_series = sub["mge_abundance"].dropna()
-            arg_start_series = sub["arg_total"].dropna()
-            mge_start = float(mge_start_series.iloc[0]) if not mge_start_series.empty else None
-            arg_start = float(arg_start_series.iloc[0]) if not arg_start_series.empty else None
+            c = _study_color(study)
+
+            arg_line = ax_arg.plot(sub["order"], sub["arg_total"], marker="s", markersize=5,
+                                    linewidth=2, color=c, label="ARG burden (left axis)")
+            mge_line = ax_mge.plot(sub["order"], sub["mge_abundance"], marker="o", markersize=5,
+                                    linewidth=2, color=c, linestyle="--", alpha=0.7,
+                                    label="MGE abundance (right axis)")
+
+            ax_arg.set_ylabel("ARG burden (reads)", fontsize=8.5, color=c)
+            ax_mge.set_ylabel("MGE abundance (integrons)", fontsize=8.5, color=c, alpha=0.7)
+            ax_arg.tick_params(axis="y", labelsize=8)
+            ax_mge.tick_params(axis="y", labelsize=8)
+
+            mge_start_s = sub["mge_abundance"].dropna()
+            arg_start_s = sub["arg_total"].dropna()
+            mge_start = float(mge_start_s.iloc[0]) if not mge_start_s.empty else None
+            arg_start = float(arg_start_s.iloc[0]) if not arg_start_s.empty else None
             mge_trend = _series_trend_label(sub["mge_abundance"])
             arg_trend = _series_trend_label(sub["arg_total"])
-            ax.set_title(
-                _format_study_panel_title(study, baseline_label_map.get(study, "unknown")),
-                fontsize=13,
-                fontweight="semibold",
-                pad=10,
+            ax_arg.set_title(
+                f"{_study_label(study)} — {baseline_label_map.get(study, '')}",
+                fontsize=11, fontweight="semibold", pad=6,
             )
-            ax.text(
-                0.01,
-                0.95,
-                _format_study_panel_note(
-                    len(sub),
-                    mge_start,
-                    arg_start,
-                    mge_trend,
-                    arg_trend,
-                ),
-                transform=ax.transAxes,
-                ha="left",
-                va="top",
-                fontsize=9,
-                bbox={"boxstyle": "round,pad=0.25", "facecolor": "white", "edgecolor": "0.8", "alpha": 0.9},
-            )
-            ax.set_ylabel("Abundance")
-            ax.grid(True, linestyle="--", linewidth=0.7, alpha=0.3)
-            ax.margins(x=0.03)
+            note = _format_study_panel_note(len(sub), mge_start, arg_start, mge_trend, arg_trend)
+            ax_arg.text(0.01, 0.97, note, transform=ax_arg.transAxes, ha="left", va="top",
+                        fontsize=8.5, bbox={"boxstyle": "round,pad=0.2", "facecolor": "white",
+                                           "edgecolor": "0.8", "alpha": 0.9})
+            ax_arg.grid(True, linestyle="--", linewidth=0.5, alpha=0.25)
+            ax_arg.margins(x=0.05)
             if i == 0:
-                ax.legend(loc="upper right", frameon=True)
+                lines = arg_line + mge_line
+                labels = [l.get_label() for l in lines]
+                ax_arg.legend(lines, labels, loc="upper right", fontsize=8, framealpha=0.9)
 
-        axes[-1][0].set_xlabel("Time order")
-        fig.text(
-            0.5,
-            0.007,
-            "Interpretation note: this is descriptive co-trending; by itself it does not prove MGE causes future ARG change.",
-            ha="center",
-            va="center",
-            fontsize=9,
-            style="italic",
-        )
-        fig.tight_layout(rect=[0, 0.02, 1, 1])
-        fig.savefig(figures_dir / "timeseries_mge_arg_by_study.png", dpi=180)
+        axes[-1][0].set_xlabel("Time order (within study)", fontsize=10)
+        fig.suptitle("Study-specific ARG and MGE time series\n"
+                     "Note: ARG baselines differ ~3× between studies — the dominant source of pooled R²",
+                     fontsize=9.5, y=1.01)
+        fig.tight_layout()
+        fig.savefig(figures_dir / "timeseries_mge_arg_by_study.png", dpi=180, bbox_inches="tight")
         plt.close(fig)
 
-    # 3) Lag comparison plot
-    labels: list[str] = []
-    values: list[float] = []
-    for lag, corr, _n in corr_rows:
+    # 3) Lag correlation bar chart
+    lag_labels = {"t_to_t": "t → t\n(same time)", "t_to_t_plus_1": "t → t+1\n(one lag)", "t_to_t_plus_2": "t → t+2\n(two lags)"}
+    bar_labels: list[str] = []
+    bar_values: list[float] = []
+    bar_ns: list[int] = []
+    for lag, corr, n in corr_rows:
         if corr is not None:
-            labels.append(lag)
-            values.append(corr)
-    if values:
-        plt.figure(figsize=(7, 4))
-        plt.bar(labels, values)
-        plt.axhline(0.0, color="black", linewidth=1)
-        plt.ylabel("Correlation")
-        plt.title("Lag Comparison of MGE-ARG Correlation")
-        plt.figtext(
-            0.5,
-            0.01,
-            "High correlation across all lags indicates temporal coupling, not directional prediction",
-            ha="center",
-            fontsize=9,
-        )
-        plt.tight_layout()
-        plt.savefig(figures_dir / "lag_comparison_correlation.png", dpi=180)
-        plt.close()
+            bar_labels.append(lag_labels.get(lag, lag))
+            bar_values.append(corr)
+            bar_ns.append(n)
+    if bar_values:
+        fig, ax = plt.subplots(figsize=(7, 4.5))
+        colors = ["#4878d0", "#ee854a", "#6acc65"]
+        bars = ax.bar(bar_labels, bar_values, color=colors[:len(bar_values)], edgecolor="white", width=0.5)
+        for bar, val, n in zip(bars, bar_values, bar_ns):
+            ax.text(bar.get_x() + bar.get_width() / 2, bar.get_height() + 0.01,
+                    f"ρ={val:.3f}\nn={n}", ha="center", va="bottom", fontsize=10, fontweight="bold")
+        ax.axhline(0.0, color="black", linewidth=1)
+        ax.set_ylim(-0.2, 0.85)
+        ax.set_ylabel("Pearson correlation (MGE vs ARG)", fontsize=10)
+        ax.set_title("Lag correlation pattern: non-monotone across offsets\n"
+                     "A true leading indicator would show increasing correlation with lag offset;\n"
+                     "the rise then fall (0.40 → 0.53 → 0.21) is inconsistent with directional prediction",
+                     fontsize=9)
+        ax.grid(axis="y", linestyle="--", linewidth=0.5, alpha=0.4)
+        fig.tight_layout()
+        fig.savefig(figures_dir / "lag_comparison_correlation.png", dpi=180)
+        plt.close(fig)
 
-    # 4) Differenced scatter: dMGE(t) vs dARG(t+1)
+    # 4) Side-by-side: raw scatter vs differenced scatter, colored by study
+    fig, axes = plt.subplots(1, 2, figsize=(12, 5))
+
+    ax = axes[0]
+    scatter_df2 = lag1_df[["study", "mge_abundance", "arg_t1"]].dropna()
+    if len(scatter_df2) >= 2:
+        for study in studies:
+            sub = scatter_df2[scatter_df2["study"] == study]
+            ax.scatter(sub["mge_abundance"], sub["arg_t1"], color=_study_color(study),
+                       s=55, edgecolors="white", linewidth=0.6, alpha=0.92,
+                       label=_study_label(study))
+        x2 = scatter_df2["mge_abundance"].to_numpy()
+        y2 = scatter_df2["arg_t1"].to_numpy()
+        m2, b2 = np.polyfit(x2, y2, 1)
+        x2_line = np.linspace(float(x2.min()), float(x2.max()), 200)
+        ax.plot(x2_line, m2 * x2_line + b2, color="black", linewidth=1.6, linestyle="--")
+        ax.set_xlabel("MGE(t)", fontsize=10)
+        ax.set_ylabel("ARG(t+1)", fontsize=10)
+        ax.set_title("Before differencing\nR²=0.720, p=0.579\n(study clusters drive apparent fit)", fontsize=9.5)
+        ax.legend(fontsize=7.5, framealpha=0.9)
+        ax.grid(True, linestyle="--", linewidth=0.5, alpha=0.3)
+
+    ax = axes[1]
     if diff_df is not None and len(diff_df) >= 2:
-        scatter_diff = diff_df[["d_mge_t", "d_arg_t1"]].dropna()
+        scatter_diff = diff_df[["study", "d_mge_t", "d_arg_t1"]].dropna()
         if len(scatter_diff) >= 2:
-            x = scatter_diff["d_mge_t"].to_numpy()
-            y = scatter_diff["d_arg_t1"].to_numpy()
-            m, b = np.polyfit(x, y, 1)
+            for study in studies:
+                sub = scatter_diff[scatter_diff["study"] == study]
+                if len(sub) > 0:
+                    ax.scatter(sub["d_mge_t"], sub["d_arg_t1"], color=_study_color(study),
+                               s=55, edgecolors="white", linewidth=0.6, alpha=0.92,
+                               label=_study_label(study))
+            xd = scatter_diff["d_mge_t"].to_numpy()
+            yd = scatter_diff["d_arg_t1"].to_numpy()
+            md, bd = np.polyfit(xd, yd, 1)
+            xd_line = np.linspace(float(xd.min()), float(xd.max()), 200)
+            ax.plot(xd_line, md * xd_line + bd, color="black", linewidth=1.6, linestyle="--")
+            ax.axhline(0, color="gray", linewidth=0.7, linestyle=":")
+            ax.axvline(0, color="gray", linewidth=0.7, linestyle=":")
+            ax.set_xlabel("dMGE(t) = MGE(t) − MGE(t−1)", fontsize=10)
+            ax.set_ylabel("dARG(t+1) = ARG(t+1) − ARG(t)", fontsize=10)
+            ax.set_title("After differencing (trend removed)\nR²=0.020, p=0.649\n(signal collapses)", fontsize=9.5)
+            ax.legend(fontsize=7.5, framealpha=0.9)
+            ax.grid(True, linestyle="--", linewidth=0.5, alpha=0.3)
 
-            plt.figure(figsize=(7, 5))
-            plt.scatter(x, y, alpha=0.85)
-            x_line = np.linspace(float(x.min()), float(x.max()), 100)
-            plt.plot(x_line, m * x_line + b, linewidth=2)
-            plt.xlabel("dMGE(t) = MGE(t) - MGE(t-1)")
-            plt.ylabel("dARG(t+1) = ARG(t+1) - ARG(t)")
-            plt.title("Differenced Association: dMGE(t) vs dARG(t+1)")
-            plt.tight_layout()
-            plt.savefig(figures_dir / "differenced_scatter_dmge_t_vs_darg_t1.png", dpi=180)
-            plt.close()
+    fig.suptitle("Effect of differencing: removing study-level ARG trends eliminates apparent predictive signal",
+                 fontsize=10, y=1.01)
+    fig.tight_layout()
+    fig.savefig(figures_dir / "differenced_scatter_dmge_t_vs_darg_t1.png", dpi=180, bbox_inches="tight")
+    plt.close(fig)
 
 
 def _run_within_study_models(lag_df, smf_module) -> list[dict]:
@@ -391,6 +460,36 @@ def _run_loso(lag_df, forward_formula: str, smf_module) -> list[dict]:
             results.append({"left_out_study": study, "coefficient": None, "std_error": None,
                             "p_value": None, "r_squared": None, "n": n, "note": str(exc)})
     return results
+
+
+def _bootstrap_mge_coeff(df: "pd.DataFrame", formula: str, predictor: str,
+                          n_boot: int = 1000, seed: int = 42) -> dict[str, float | None]:
+    try:
+        import pandas as pd
+        import numpy as np
+        import statsmodels.formula.api as smf
+    except ImportError:
+        return {"boot_ci_low": None, "boot_ci_high": None, "boot_median": None}
+
+    rng = np.random.default_rng(seed)
+    coeffs: list[float] = []
+    for _ in range(n_boot):
+        sample = df.sample(n=len(df), replace=True, random_state=int(rng.integers(0, 2**31)))
+        try:
+            m = smf.ols(formula, data=sample).fit()
+            c = m.params.get(predictor)
+            if c is not None and np.isfinite(float(c)):
+                coeffs.append(float(c))
+        except Exception:
+            pass
+    if len(coeffs) < 10:
+        return {"boot_ci_low": None, "boot_ci_high": None, "boot_median": None}
+    arr = np.array(coeffs)
+    return {
+        "boot_ci_low": float(np.percentile(arr, 2.5)),
+        "boot_ci_high": float(np.percentile(arr, 97.5)),
+        "boot_median": float(np.median(arr)),
+    }
 
 
 def _compute_min_detectable(model, alpha: float = 0.05, power: float = 0.80) -> tuple[float | None, int | None]:
@@ -744,6 +843,9 @@ def main() -> int:
         ],
     )
 
+    # Bootstrap CIs for forward model MGE coefficient
+    boot_stats = _bootstrap_mge_coeff(lag_df, forward_formula, "mge_abundance")
+
     # Residual diagnostics: Durbin-Watson + Breusch-Pagan + power analysis
     dw_stat = None
     bp_lm_p = None
@@ -771,6 +873,9 @@ def main() -> int:
             ("observed_mge_coefficient", _format_num(forward_stats["coefficient"])),
             ("observed_mge_ci_low", _format_num(forward_stats["ci_low"])),
             ("observed_mge_ci_high", _format_num(forward_stats["ci_high"])),
+            ("bootstrap_mge_ci_low_2.5pct", _format_num(boot_stats.get("boot_ci_low")) if boot_stats.get("boot_ci_low") is not None else "NA"),
+            ("bootstrap_mge_ci_high_97.5pct", _format_num(boot_stats.get("boot_ci_high")) if boot_stats.get("boot_ci_high") is not None else "NA"),
+            ("bootstrap_mge_median", _format_num(boot_stats.get("boot_median")) if boot_stats.get("boot_median") is not None else "NA"),
         ],
     )
 

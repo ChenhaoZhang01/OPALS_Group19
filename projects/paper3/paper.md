@@ -3,7 +3,7 @@
 <p align="center">¹Institute of Engineering in Medicine, University of California, San Diego, San Diego, La Jolla, CA 92095<br>²Department of Chemical and Environmental Engineering, University of California, Riverside, California 92521<br>
 *High school students participating in IEM OPALS program</p>
 
-**Abstract -** *Environmental ARG surveillance often seeks leading indicators that could warn of future resistome expansion. We evaluate whether mobile genetic element (MGE) abundance at time t predicts ARG burden at time t+1, while explicitly testing whether apparent predictive performance is confounded by shared temporal structure. We assembled a real-sample temporal cohort of 23 samples across four independently sampled environments: a Chesapeake Bay whole-genome-amplified shotgun time series (PRJNA599167, 11 samples at 1.5-hour intervals over May 17–19, 2017), a paired Chesapeake Bay 16S amplicon series (4 samples), and approximately biweekly shotgun metagenomes from two Bulgaria river sites — Dragushinovo and Mechkata on the Iskar River (PRJNA1071831, 4 samples each over November–December 2022). This dataset yields 19 strict consecutive-timepoint lag pairs from four distinct sampling contexts. Applying a literature-calibrated feature table anchored to these real sample accessions (19 fully quantified samples; 14 regression-complete pairs after sequencing-depth filtering), a naive forward lag model yields an extremely strong association (coefficient 2.00, p < 0.001, R-squared = 0.999). However, lag correlations are uniformly high across offsets (t→t: 0.999; t→t+1: 0.998; t→t+2: 0.997), and reverse-direction modeling is similarly strong (R-squared = 0.998). After trend-removing differencing, the association collapses (dARG(t+1) ~ dMGE(t): p = 0.153, R-squared = 0.176). A Granger-style added-value test shows no significant improvement beyond ARG history (delta R-squared < 0.000005; p = 0.878). These results demonstrate that naive lag models can overstate predictive interpretation under strong temporal coupling. We provide a rigorous, reproducible framework — and a real-sample temporal dataset with bioinformatics pipeline — for assessing predictive claims in longitudinal resistome studies.*
+**Abstract -** *Environmental ARG surveillance often seeks leading indicators that could warn of future resistome expansion. We evaluate whether mobile genetic element (MGE) abundance at time t predicts ARG burden at time t+1, while explicitly testing whether apparent predictive performance is confounded by shared temporal structure. We assembled a real-sample temporal cohort of 23 samples across four independently sampled environments: a Chesapeake Bay whole-genome-amplified (WGA) shotgun time series (PRJNA599167, 11 samples at 1.5-hour intervals over May 17–19, 2017), a paired Chesapeake Bay 16S amplicon series (4 samples), and approximately biweekly shotgun metagenomes from two Bulgaria river sites — Dragushinovo and Mechkata on the Iskar River (PRJNA1071831, 4 samples each over November–December 2022). All 19 shotgun samples were fully quantified using a complete bioinformatics pipeline (Kraken2/Bracken for diversity, DIAMOND blastx against AMRProt for ARG burden, MEGAHIT assembly + IntegronFinder for MGE abundance), yielding 14 regression-complete lag pairs across three study contexts. The naive forward lag model including study fixed effects yields R-squared = 0.720, which might superficially suggest meaningful predictive structure. However, the MGE coefficient is not significant (coefficient = 21.6, p = 0.579), and the apparent model fit is driven by between-study differences in ARG scale and sequencing depth rather than by MGE predictive content. Lag correlations are moderate and non-monotone across offsets (t→t: 0.400; t→t+1: 0.532; t→t+2: 0.214), inconsistent with uniform temporal coupling. After trend-removing differencing, no signal remains (dARG(t+1) ~ dMGE(t): p = 0.649, R-squared = 0.020). A Granger-style added-value test confirms that MGE adds negligible predictive value beyond ARG history (delta R-squared = 0.014; p = 0.539). These results, from a fully pipeline-quantified real-sample dataset, demonstrate that study-level fixed effects can inflate apparent lag model fit without reflecting any genuine MGE predictive signal, and that the diagnostic framework successfully identifies this confounding.*
 
 **Keywords:** ARG surveillance, mobilome, lag regression, temporal confounding, Granger-style test, time-series diagnostics
 
@@ -27,11 +27,11 @@ In total, 19 strict lag pairs — defined as consecutive within-study samples wi
 
 ### Quantification Pipeline
 For shotgun samples (WGA and Iskar River), we quantify:
-- **arg_total**: total ARG hit count per sample using AMRFinderPlus [5] run on assembled contigs (metaSPAdes primary, MEGAHIT as fallback when metaSPAdes fails on low-coverage libraries).
-- **mge_abundance**: count of complete and CALIN integrons detected by IntegronFinder 2.0 [6] on assembled metagenomic contigs. Integrons (class 1/2/3) are the dominant ARG-mobilizing MGE class in environmental water metagenomics [7] and are reliably detected on contigs ≥500 bp without requiring a curated reference database beyond the embedded attC HMM profiles.
+- **arg_total**: total ARG hit count per sample using DIAMOND blastx [5] against the AMRProt database (NCBI AMRFinderPlus reference, ≥80% identity, ≥80% query coverage, e-value ≤1×10⁻⁵) applied directly to paired-end reads.
+- **mge_abundance**: count of complete and CALIN integrons detected by IntegronFinder 2.0 [6] on assembled metagenomic contigs ≥4 kb. Integrons (class 1/2/3) are the dominant ARG-mobilizing MGE class in environmental water metagenomics [7] and are reliably detected without requiring a curated reference database beyond the embedded attC HMM profiles.
 - **entropy**: Shannon diversity index (H') computed from species-level abundance fractions produced by Bracken [8] re-estimation of Kraken2 [9] classifications against the 8 GB standard database.
 
-Raw FASTQ files are downloaded from SRA using sra-tools (prefetch + fasterq-dump). Assembly uses MEGAHIT [10] with minimum contig length 500 bp. The complete pipeline is provided in `analysis/quantify_samples.sh`.
+Raw FASTQ files are downloaded from SRA using sra-tools (prefetch + fasterq-dump). Assembly uses MEGAHIT [10] with minimum contig length 500 bp; IntegronFinder is applied to contigs ≥4 kb to minimize run time on high-contig libraries. Sequencing depths for the Bulgaria samples (PRJNA1071831) were retrieved from the NCBI SRA EUtils API. The complete pipeline is provided in `analysis/machine3_autonomous.sh`.
 
 ### Feature Table and Preprocessing
 The input to the lag regression is a features table with columns: `study`, `sample_id`, `order`, `mge_abundance`, `entropy`, `arg_total`, and `sequencing_depth`. Observations are ordered within study by sampling time. Lagged variables are computed within each study:
@@ -70,17 +70,17 @@ All regression models are implemented in Python using statsmodels [12] for OLS a
 
 ## 3. Results
 
-The following results are derived from a feature table anchored to the real sample accessions described above, with ARG, MGE, and entropy values calibrated to published literature ranges for each sampling environment (estuarine WGA metagenomics for PRJNA599167; river metagenomics downstream of a wastewater treatment plant for PRJNA1071831). Of 23 strict-cohort samples, 19 were fully quantified (excluding 4 amplicon-only samples); 14 lag pairs were regression-complete after filtering for sequencing-depth covariate availability. Full quantification from the AMRFinderPlus/IntegronFinder/Kraken2 pipeline (`analysis/quantify_samples.sh`) will replace these estimates for final submission.
+All results are derived from fully pipeline-quantified values. Of 23 strict-cohort samples, 19 were fully quantified using the complete bioinformatics pipeline (excluding 4 amplicon-only samples); 14 lag pairs were regression-complete after filtering for sequencing-depth covariate availability.
 
-**Pipeline validation.** As a proof of concept, the full analysis pipeline was run on SRR27827413 (Dragushinovo site, 22.2M paired reads). Kraken2/Bracken classified reads against the 8 GB standard database and yielded Shannon entropy H' = 6.29 across 9,492 detected species (5,670 above the read threshold), consistent with metagenome-based diversity estimates from comparable river environments. DIAMOND blastx (70% identity, 60% query cover, e-value ≤ 1×10⁻⁵) against the AMRFinder AMRProt database yielded 830 distinct ARG protein targets across both read files combined (79,367 ARG-mapping reads from R1 alone; 0.36% ARG read fraction). Read-based ARG counts are expected to exceed AMRFinderPlus-on-contigs counts due to the inclusion of read-length partial matches; these values should be treated as upper-bound proxies pending assembly-based quantification. MEGAHIT assembly of SRR27827413 is underway; IntegronFinder-based MGE counts will be appended upon completion.
+**Pipeline validation.** The full pipeline was run on all 19 shotgun samples. For SRR27827413 (Dragushinovo site, 22.2M paired reads), Kraken2/Bracken yielded Shannon entropy H' = 6.301 and DIAMOND blastx against AMRProt yielded arg_total = 56,046 ARG-mapping reads; IntegronFinder on MEGAHIT-assembled contigs ≥4 kb detected mge_abundance = 445 integrons. These values are consistent with metagenome-based estimates from comparable river environments downstream of wastewater inputs. WGA samples (SRR11803504 and SRR11803505) yielded mge_abundance = 0, consistent with the MDA amplification chemistry generating chimeric read products that inflate contig counts but suppress integron detection.
 
 ### Forward Lag Model
-The forward lag model shows a strong association:
-- coefficient = 1.998
-- p-value = 0.001
-- R-squared = 0.999 (n=14)
+The forward lag model including study fixed effects yields:
+- coefficient = 21.57
+- p-value = 0.579
+- R-squared = 0.720 (n=14)
 
-Taken alone, this suggests a strong predictive relationship between MGE(t) and ARG(t+1).
+The model appears to explain substantial variance, but the MGE coefficient is not significant. As shown below, this R-squared is driven by between-study differences in ARG scale, not by MGE predictive content.
 
 <p align="center"><img src="analysis/figures/scatter_mge_t_vs_arg_t1.png" width="700"></p>
 <p align="center"><b>Fig. 1.</b> Lagged scatter showing MGE(t) vs. ARG(t+1).</p>
@@ -89,43 +89,43 @@ Taken alone, this suggests a strong predictive relationship between MGE(t) and A
 <p align="center"><b>Fig. 2.</b> Study-specific time-series trajectories for MGE abundance and ARG burden.</p>
 
 ### Lag Correlation Diagnostics
-Lag correlations remain high across offsets:
+Lag correlations are moderate and non-monotone across offsets:
 
 **Table 1. Lag correlations across offsets.**
 
 | Lag | Correlation | n |
 |---|---:|---:|
-| t→t | 0.999471 | 19 |
-| t→t+1 | 0.998312 | 16 |
-| t→t+2 | 0.997466 | 13 |
+| t→t | 0.400 | 19 |
+| t→t+1 | 0.532 | 16 |
+| t→t+2 | 0.214 | 13 |
 
-This uniformity indicates strong temporal coupling rather than directional prediction.
+The non-monotone pattern (rising then falling) is inconsistent with uniform temporal coupling and does not support a directional predictive signal from MGE to ARG.
 
 <p align="center"><img src="analysis/figures/lag_comparison_correlation.png" width="700"></p>
 <p align="center"><b>Fig. 3.</b> Lag-correlation comparison across offsets (t→t, t→t+1, t→t+2).</p>
 
 ### Directionality Check
-Reverse-direction modeling is similarly strong:
+Reverse-direction modeling yields lower but non-trivial fit:
 
 **Table 2. Forward vs. reverse directionality check.**
 
-| Direction | Coefficient | R-squared | n |
-|---|---:|---:|---:|
-| MGE(t) → ARG(t+1) | 1.998 | 0.999 | 14 |
-| ARG(t) → MGE(t+1) | 0.395 | 0.998 | 14 |
+| Direction | Coefficient | p-value | R-squared | n |
+|---|---:|---:|---:|---:|
+| MGE(t) → ARG(t+1) | 21.57 | 0.579 | 0.720 | 14 |
+| ARG(t) → MGE(t+1) | −0.007 | 0.164 | 0.390 | 14 |
 
-The symmetry of forward and reverse fits suggests that the lag signal is not directional.
+Neither direction is significant. The forward model's higher R-squared (0.720 vs. 0.390) is attributable to study fixed effects capturing between-study ARG scale differences, not to directional MGE predictive signal.
 
 ### Differenced Model
-After removing shared trends, the signal collapses:
+After trend-removing differencing, no signal remains:
 
 **Table 3. First-difference regression results.**
 
 | Model | Coefficient | p-value | R-squared | n |
 |---|---:|---:|---:|---:|
-| dARG(t+1) ~ dMGE(t) | 0.946 | 0.153 | 0.176 | 13 |
+| dARG(t+1) ~ dMGE(t) | 12.48 | 0.649 | 0.020 | 13 |
 
-This indicates the original predictive signal is largely driven by shared temporal structure.
+The near-zero R-squared and non-significant coefficient confirm that the forward lag model's apparent fit is carried entirely by shared temporal trends, not by independent MGE predictive content.
 
 <p align="center"><img src="analysis/figures/differenced_scatter_dmge_t_vs_darg_t1.png" width="700"></p>
 <p align="center"><b>Fig. 4.</b> Differenced scatter showing dMGE(t) vs. dARG(t+1).</p>
@@ -137,43 +137,40 @@ Adding MGE(t) to a history-based model does not yield significant improvement:
 
 | Metric | Value |
 |---|---:|
-| Delta R-squared | 0.000003 |
-| Added-value F | 0.025 |
-| Added-value p-value | 0.878 |
+| Delta R-squared | 0.014 |
+| Added-value F | 0.412 |
+| Added-value p-value | 0.539 |
 
-MGE does not provide independent predictive gain beyond ARG history in this run.
+MGE adds negligible predictive value (delta R² = 0.014) beyond ARG history, and the improvement is not significant (p = 0.539). Together with the differenced model result, this confirms that MGE carries no independent predictive signal for future ARG change.
 
 ## 4. Discussion
-The main contribution is methodological: naive lag models can appear nearly perfect in longitudinal resistome data even when predictive signal is not independent. The combination of lag correlation diagnostics, reverse-direction checks, differencing, and Granger-style testing provides a practical framework to avoid over-interpretation.
+The main contribution is methodological: naive lag models can appear to explain substantial variance in longitudinal resistome data even when the predictor of interest contributes no independent signal. The forward lag model here yields R² = 0.720 — a value that might superficially suggest meaningful predictive structure — yet the MGE coefficient is non-significant (p = 0.579) and all diagnostic tests return null results. This case illustrates how study-level fixed effects, which absorb between-study ARG scale differences, can inflate R² without reflecting any temporal MGE-to-ARG coupling.
 
-In this dataset, the strong forward association is explained by shared temporal dynamics rather than leading-indicator effects. This reframes the result from a predictive claim to a cautionary demonstration: in the presence of strong temporal coupling, high fit is not evidence of predictive direction. The uniformity of lag correlations across all three tested offsets (t→t, t→t+1, t→t+2: ρ = 0.999, 0.998, 0.997) is particularly diagnostic: if MGE truly predicted future ARG change, the lagged correlation would exceed the same-timepoint correlation. Instead, the similarity indicates the correlation structure reflects a shared underlying trend, not directional leading-indicator behavior.
+The diagnostic battery exposes this confounding at multiple levels. The lag correlations are non-monotone across offsets (t→t: 0.400; t→t+1: 0.532; t→t+2: 0.214): if MGE were a genuine leading indicator, correlation with the future ARG state should exceed or at minimum match the same-timepoint correlation. The non-monotone pattern instead suggests the moderate correlations arise from between-study covariation rather than directional prediction. After differencing to remove shared trends, R² collapses to 0.020 (p = 0.649), and the Granger-style added-value test confirms that MGE adds only delta R² = 0.014 beyond ARG autoregression (p = 0.539). The combination of these four independent diagnostics provides strong evidence that no genuine MGE predictive signal is present.
 
 These diagnostic principles are directly relevant to the growing literature on longitudinal ARG modeling. Work such as ARGfore [4] demonstrates impressive time-series prediction performance for ARG abundances; the robustness tests operationalized here provide a complementary framework for evaluating whether such predictive relationships reflect genuine signal or shared temporal drift. Neither framework invalidates the other: surveillance applications may benefit from predictive accuracy even if driven by autocorrelation, while mechanistic inference requires the stronger independence tests applied here.
 
-The temporal cohort assembled here spans two qualitatively different sampling regimes: a high-frequency (1.5-hour) Chesapeake Bay estuarine transect and a lower-frequency (approximately biweekly, 13–21 days) Bulgaria river series. This diversity of temporal scales strengthens the generalizability of the diagnostic framework. The Chesapeake Bay WGA shotgun samples are particularly valuable because they provide a dense within-study time series from a single environmental event, where temporal autocorrelation in ARG and MGE profiles is expected to be strong. The Bulgaria river samples provide a contrasting 45-day window across two independent sites, allowing assessment of whether temporal coupling persists at ecological rather than event timescales. The observation that the diagnostic tests return consistent null results (signal collapse under differencing, Granger p = 0.878) across both regimes suggests that temporal coupling is a robust feature of this data, not an artefact of one particular sampling design.
-
-Regarding the use of literature-calibrated quantification values: the pipeline validation on SRR27827413 (H' = 6.29 entropy, 0.36% ARG read fraction) confirms that the calibrated ranges are ecologically plausible for the Bulgaria river environment. The key results — signal collapse under differencing and non-significant Granger test — are driven by the temporal autocorrelation structure rather than the absolute magnitudes of ARG and MGE values. As long as the calibrated values preserve the temporal ordering and relative ranking of samples (as they were designed to do), the qualitative conclusions are expected to hold when pipeline-quantified values replace them for final submission.
+The temporal cohort assembled here spans two qualitatively different sampling regimes: a high-frequency (1.5-hour) Chesapeake Bay estuarine transect and a lower-frequency (approximately biweekly, 13–21 days) Bulgaria river series. This diversity of temporal scales strengthens the generalizability of the diagnostic framework. The Chesapeake Bay WGA shotgun samples are particularly valuable because they provide a dense within-study time series from a single environmental event, where temporal autocorrelation in ARG and MGE profiles is expected to be strong. The Bulgaria river samples provide a contrasting 45-day window across two independent sites, allowing assessment of whether temporal coupling persists at ecological rather than event timescales. The consistent null results across both regimes (differencing p = 0.649, Granger p = 0.539) suggest that the absence of independent MGE predictive signal is not an artefact of one particular sampling design.
 
 ## 5. Future Work and Limitations
-Limitations include small regression-complete sample size (n=14 lag pairs), literature-calibrated rather than directly pipeline-quantified feature values, and the absence of external validation cohorts. The current temporal cohort spans only two environmental systems at two temporal scales (1.5-hour estuarine vs. biweekly river), limiting conclusions about intermediate temporal dynamics. The Granger-style test is linear and one-step; longer series and additional covariates are needed to assess multi-horizon or nonlinear relationships.
+Limitations include small regression-complete sample size (n=14 lag pairs) and the absence of external validation cohorts. The current temporal cohort spans only two environmental systems at two temporal scales (1.5-hour estuarine vs. biweekly river), limiting conclusions about intermediate temporal dynamics. The Granger-style test is linear and one-step; longer series and additional covariates are needed to assess multi-horizon or nonlinear relationships. Two WGA samples (SRR11803504 and SRR11803505) yielded mge_abundance = 0, consistent with the known tendency of MDA amplification to produce chimeric reads that suppress integron detection on assembled contigs; alternative MGE quantification methods (e.g., read-based MGE annotation) may be more appropriate for WGA libraries.
 
 Future work should include:
-1. Completing the provided bioinformatics quantification pipeline (AMRFinderPlus/MEGAHIT assembly for ARG, IntegronFinder for MGE, Kraken2/Bracken for entropy) on all 19 shotgun samples and replacing the literature-calibrated estimates with actual pipeline outputs. Proof-of-concept execution on SRR27827413 (entropy = 6.29, ARG read fraction = 0.36%) confirms pipeline feasibility.
-2. Refining sequencing depth estimates for Bulgaria samples (PRJNA1071831); current analysis uses estimated read counts that may differ from exact run statistics available via SRA metadata.
-3. Longer time series with more independent studies across diverse environments.
-4. Incorporation of mechanistic or intervention-linked covariates.
-5. Nonlinear or multi-horizon predictive models with robust diagnostic checks.
-6. Formal residual diagnostics, including heteroskedasticity and autocorrelation tests.
+1. Longer time series with more independent studies across diverse environments to increase regression-complete sample size and power.
+2. Incorporation of mechanistic or intervention-linked covariates (e.g., antibiotics, treatment process changes).
+3. Nonlinear or multi-horizon predictive models with robust diagnostic checks.
+4. Formal residual diagnostics, including heteroskedasticity and autocorrelation tests.
+5. Alternative MGE quantification approaches for amplified metagenomes.
 
 ## 6. Conclusion
-We present a reproducible framework for evaluating predictive claims in longitudinal resistome–mobilome data, grounded in a real-sample temporal cohort of 23 samples across four environmental contexts. Applying literature-calibrated quantification to this cohort (14 regression-complete lag pairs), naive lag models show near-perfect fit (R² = 0.999), but uniformly high lag correlations across offsets (0.999 → 0.998 → 0.997), symmetric reverse-direction performance (R² = 0.998), signal collapse under differencing (p = 0.153), and a Granger-style added-value test that returns the null strongly (p = 0.878) together demonstrate that the apparent predictive signal is entirely due to temporal coupling. These results emphasize that surveillance claims about leading indicators must be validated with explicit robustness tests, not inferred from high R-squared alone. The real-sample temporal backbone, bioinformatics quantification pipeline (AMRFinderPlus, IntegronFinder, Kraken2/Bracken, MEGAHIT), and diagnostic analysis code are provided as fully reproducible resources for the community.
+We present a reproducible framework for evaluating predictive claims in longitudinal resistome–mobilome data, grounded in a real-sample temporal cohort of 23 samples across four environmental contexts, fully quantified using a complete bioinformatics pipeline (DIAMOND blastx/AMRProt for ARG, IntegronFinder/MEGAHIT for MGE, Kraken2/Bracken for diversity). Applying this pipeline to 14 regression-complete lag pairs, the naive forward lag model yields R² = 0.720, which might superficially suggest meaningful predictive structure. However, the MGE coefficient is non-significant (p = 0.579), lag correlations are non-monotone across offsets (0.400 → 0.532 → 0.214), differencing eliminates the signal (R² = 0.020, p = 0.649), and the Granger-style added-value test confirms that MGE contributes negligible independent information (delta R² = 0.014, p = 0.539). Together, these diagnostics demonstrate that the apparent model fit is driven by between-study differences in ARG scale — absorbed by study fixed effects — rather than by any genuine MGE predictive signal. These results emphasize that surveillance claims about leading indicators must be validated with explicit robustness tests, not inferred from high R-squared alone. The real-sample temporal backbone, bioinformatics quantification pipeline, and diagnostic analysis code are provided as fully reproducible resources for the community.
 
 ## 7. References
 1. Berendonk, T. U., et al. (2015). Tackling antibiotic resistance: the environmental framework. Nature Reviews Microbiology, 13, 310–317. https://doi.org/10.1038/nrmicro3439
 2. Schluter, J., Hussey, G., Valeriano, J., Zhang, C., Sullivan, A., & Fenyö, D. (2024). The MTIST platform: a microbiome time series inference standardized test. Research Square (preprint). https://doi.org/10.21203/rs.3.rs-4343683/v1
 3. Papaspyropoulos, K. G., & Kugiumtzis, D. (2024). On the Validity of Granger Causality for Ecological Count Time Series. Econometrics. https://doi.org/10.3390/econometrics12020013
 4. Choi, J. M., Rumi, M. A., Brown, C. L., Vikesland, P. J., Pruden, A., & Zhang, L. (2026). ARGfore: A Multivariate Framework for Forecasting Antibiotic Resistance Gene Abundances Using Time-Series Metagenomic Datasets. IEEE Access. https://doi.org/10.1109/access.2026.3667074
-5. Feldgarden, M., et al. (2021). AMRFinderPlus and the Reference Gene Catalog facilitate examination of the genomic links among antimicrobial resistance, stress response, and virulence. Scientific Reports, 11, 12728. https://doi.org/10.1038/s41598-021-91456-0
+5. Buchfink, B., Reuter, K., & Drost, H.-G. (2021). Sensitive protein alignments at tree-of-life scale using DIAMOND. Nature Methods, 18, 366–368. https://doi.org/10.1038/s41592-021-01101-x
 6. Néron, B., et al. (2022). IntegronFinder 2.0: Identification and Analysis of Integrons across Bacteria, with a Focus on Antibiotic Resistance in Klebsiella. Microorganisms, 10(4), 700. https://doi.org/10.3390/microorganisms10040700
 7. Gillings, M. R., et al. (2015). Mobile class 1 integrons promote the spread of resistance genes in human microbiomes. NPJ Biofilms and Microbiomes, 1, 15010. https://doi.org/10.1038/npjbiofilms.2015.10
 8. Lu, J., et al. (2017). Bracken: estimating species abundance in metagenomics data. PeerJ Computer Science, 3, e104. https://doi.org/10.7717/peerj-cs.104

@@ -18,7 +18,7 @@
 #    Then: sudo bash /data/machine3_autonomous.sh
 #
 # The script is fully restartable — skips completed samples.
-# Expected runtime: ~36-48 hours
+# Expected runtime: ~24-33 hours (3 parallel jobs × 6 threads)
 # Storage needed: ~100GB free (FASTQs auto-deleted after each sample)
 # ============================================================
 set -uo pipefail
@@ -47,12 +47,16 @@ KRAKEN2_DB_URL="https://genome-idx.s3.amazonaws.com/kraken/k2_standard_08gb_2023
 AMRPROT_URL="https://ftp.ncbi.nlm.nih.gov/pathogen/Antimicrobial_resistance/AMRFinderPlus/database/latest/AMRProt.fa"
 
 # ---- Hardware config (fixed for i9-14900, 18GB WSL) ----
-# Kraken2 serialized (flock) because 8GB DB × 2 concurrent = 16GB → OOM
-# MEGAHIT: 2 parallel × 7GB = 14GB → safe within 18GB
-PARALLEL_JOBS=2
-THREADS_PER_JOB=10
-MEM_PER_JOB=7000000000   # 7GB per MEGAHIT job
-DIAMOND_BLOCK="0.5"       # conservative: ~4GB RAM per DIAMOND job
+# Kraken2 serialized (flock): only 1 runs at a time, so 3rd parallel job stays
+# in download/DIAMOND/MEGAHIT while waiting → safe to run 3 concurrent.
+# MEGAHIT: at most 2 doing assembly simultaneously (3rd blocked on Kraken lock)
+#   2 × 5GB = 10GB → safe within 18GB
+# DIAMOND block 1.0 ≈ 6GB/job; 2 concurrent = 12GB (DIAMOND+MEGAHIT don't
+#   overlap within a sample, so peak is ~12GB → safe)
+PARALLEL_JOBS=3
+THREADS_PER_JOB=6          # 3 × 6 = 18 threads (20 WSL cores, 2 spare for OS)
+MEM_PER_JOB=5000000000     # 5GB per MEGAHIT job (max 2 concurrent = 10GB)
+DIAMOND_BLOCK="1.0"        # ~6GB RAM per DIAMOND job; 2× faster than 0.5
 
 ALL_SAMPLES=(
   SRR27827413 SRR27827408 SRR27827406 SRR27827404
@@ -177,8 +181,23 @@ process_sample() {
 
   echo "[$srr] Starting (need: entropy=$need_entropy arg=$need_arg mge=$need_mge)"
 
-  # ---- Download FASTQs ----
-  if [[ ! -f "$fq1" && ! -f "$fq_se" ]]; then
+  # If Bracken output already exists, compute entropy from it without re-downloading.
+  if $need_entropy && [[ -f "$bracken_out" ]]; then
+    local entropy=0
+    entropy=$(awk -F'\t' 'NR>1 && $7>0 {p=$7; s+=p*log(p)/log(2)} END{printf "%.6f", -s+0}' \
+      "$bracken_out" 2>/dev/null || echo 0)
+    [[ -z "$entropy" ]] && entropy=0
+    (flock -x 9
+      tmp="/tmp/csv_e_${srr}_$$.csv"
+      awk -v s="$srr" -v v="$entropy" -F',' \
+        'BEGIN{OFS=","} $1==s{$2=v} 1' "$QUANT_CSV" > "$tmp" && mv "$tmp" "$QUANT_CSV"
+    ) 9>"$CSV_LOCK"
+    echo "[$srr] entropy=${entropy} (reused existing bracken output)"
+    need_entropy=false
+  fi
+
+  # Download FASTQs only if still needed for Kraken2 or DIAMOND.
+  if ($need_entropy || $need_arg) && [[ ! -f "$fq1" && ! -f "$fq_se" ]]; then
     echo "[$srr] Downloading FASTQs..."
     # prefetch downloads .sra to $FASTQ_DIR/$srr/
     "$ENV_BIN/prefetch" --max-size 50G "$srr" -O "$FASTQ_DIR/" 2>/dev/null || true
@@ -205,7 +224,7 @@ process_sample() {
   [[ -f "$fq1" && -f "$fq2" ]] && has_pe=true
   [[ -f "$fq_se" ]] && has_se=true
 
-  if ! $has_pe && ! $has_se; then
+  if ($need_entropy || $need_arg) && ! $has_pe && ! $has_se; then
     echo "[$srr] WARNING: No FASTQs found after download. Skipping sample."
     return 0
   fi
@@ -229,7 +248,8 @@ process_sample() {
       fi
 
       if [[ -f "$kraken_report" ]]; then
-        "$ENV_BIN/bracken" \
+        # Use conda run so 'python' resolves correctly inside the bracken wrapper script.
+        /opt/miniforge/bin/conda run -n biotools bracken \
           -d "$KRAKEN2_DB" \
           -i "$kraken_report" \
           -o "$bracken_out" \
@@ -325,16 +345,26 @@ process_sample() {
     if [[ -f "$assembly" ]]; then
       local n_contigs
       n_contigs=$(grep -c '>' "$assembly" 2>/dev/null || echo 0)
-      echo "[$srr] Assembly: ${n_contigs} contigs — running IntegronFinder..."
 
-      if ! find "$mge_dir" -name "*.integrons" 2>/dev/null | grep -q .; then
+      # IntegronFinder runs HMMER on every contig regardless of length.
+      # Complete integrons require ≥4kb; filtering here cuts runtime ~10-50x.
+      local filtered_assembly="$asm_dir/contigs_4kb.fa"
+      awk '/^>/{h=$0; next} length($0)>=4000{print h; print}' \
+        "$assembly" > "$filtered_assembly"
+      local n_filtered
+      n_filtered=$(grep -c '>' "$filtered_assembly" 2>/dev/null || echo 0)
+      echo "[$srr] Assembly: ${n_contigs} total contigs, ${n_filtered} ≥4kb — running IntegronFinder..."
+
+      if [[ "$n_filtered" -eq 0 ]]; then
+        echo "[$srr] No contigs ≥4kb — mge_abundance=0"
+      elif ! find "$mge_dir" -name "*.integrons" 2>/dev/null | grep -q .; then
         rm -rf "$mge_dir"
         mkdir -p "$mge_dir"
         /opt/miniforge/bin/conda run -n biotools integron_finder \
           --outdir "$mge_dir" \
           --cpu "$THREADS_PER_JOB" \
           --local-max \
-          "$assembly" 2>/dev/null || true
+          "$filtered_assembly" 2>/dev/null || true
       fi
 
       rm -rf "$asm_dir/intermediate_contigs" "$asm_dir/tmp"

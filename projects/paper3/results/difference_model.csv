@@ -1,2 +1,2 @@
 formula,coefficient,std_error,p_value,ci_low,ci_high,r_squared,adjusted_r_squared,n
-d_arg_t1 ~ d_mge_t,4.545455,2.334786,0.06164897,-0.237137,9.328047,0.119225,0.087769,30
+d_arg_t1 ~ d_mge_t,12.482539,26.636745,0.64849020,-46.144541,71.109618,0.019573,-0.069556,13

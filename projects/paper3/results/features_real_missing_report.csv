@@ -1,5 +1,5 @@
 sample_id,study,reason
-SRR11811727,PRJNA599167,missing_metric_fields:arg_total|mge_abundance
-SRR11811728,PRJNA599167,missing_metric_fields:arg_total|mge_abundance
-SRR11811733,PRJNA599167,missing_metric_fields:arg_total|mge_abundance
-SRR11811738,PRJNA599167,missing_metric_fields:arg_total|mge_abundance
+SRR11811727,PRJNA599167,sample_id_not_found_in_quant
+SRR11811728,PRJNA599167,sample_id_not_found_in_quant
+SRR11811733,PRJNA599167,sample_id_not_found_in_quant
+SRR11811738,PRJNA599167,sample_id_not_found_in_quant

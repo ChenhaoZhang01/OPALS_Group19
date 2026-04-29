@@ -16,4 +16,4 @@ projects/*/raw_reads/
 projects/*/assemblies/
 projects/*/proteins/
 projects/*/results/arg_hits/
-projects/*/analysis/figures/
+# projects/*/analysis/figures/  # unignored so paper figures are tracked

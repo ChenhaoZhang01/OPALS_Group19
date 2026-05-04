@@ -263,9 +263,6 @@ def _make_figures(figures_dir: Path, lag1_df, diff_df, corr_rows: list[tuple[str
 
         ax.set_xlabel("MGE abundance at time t (integron count)", fontsize=11)
         ax.set_ylabel("ARG burden at time t+1 (read count)", fontsize=11)
-        ax.set_title("MGE(t) vs ARG(t+1): pooled fit vs within-study fits\n"
-                     "Apparent R²=0.720 is driven by between-study ARG scale differences (dashed line),\n"
-                     "not by within-study predictive signal (dotted lines)", fontsize=9.5)
         legend_handles.append(plt.Line2D([0], [0], color="black", linestyle="--",
                                           linewidth=1.8, label="Pooled OLS fit"))
         legend_handles.append(plt.Line2D([0], [0], color="gray", linestyle=":",
@@ -332,9 +329,6 @@ def _make_figures(figures_dir: Path, lag1_df, diff_df, corr_rows: list[tuple[str
                 ax_arg.legend(lines, labels, loc="upper right", fontsize=8, framealpha=0.9)
 
         axes[-1][0].set_xlabel("Time order (within study)", fontsize=10)
-        fig.suptitle("Study-specific ARG and MGE time series\n"
-                     "Note: ARG baselines differ ~3× between studies — the dominant source of pooled R²",
-                     fontsize=9.5, y=1.01)
         fig.tight_layout()
         fig.savefig(figures_dir / "timeseries_mge_arg_by_study.png", dpi=180, bbox_inches="tight")
         plt.close(fig)
@@ -359,10 +353,6 @@ def _make_figures(figures_dir: Path, lag1_df, diff_df, corr_rows: list[tuple[str
         ax.axhline(0.0, color="black", linewidth=1)
         ax.set_ylim(-0.2, 0.85)
         ax.set_ylabel("Pearson correlation (MGE vs ARG)", fontsize=10)
-        ax.set_title("Lag correlation pattern: non-monotone across offsets\n"
-                     "A true leading indicator would show increasing correlation with lag offset;\n"
-                     "the rise then fall (0.40 → 0.53 → 0.21) is inconsistent with directional prediction",
-                     fontsize=9)
         ax.grid(axis="y", linestyle="--", linewidth=0.5, alpha=0.4)
         fig.tight_layout()
         fig.savefig(figures_dir / "lag_comparison_correlation.png", dpi=180)
@@ -386,7 +376,6 @@ def _make_figures(figures_dir: Path, lag1_df, diff_df, corr_rows: list[tuple[str
         ax.plot(x2_line, m2 * x2_line + b2, color="black", linewidth=1.6, linestyle="--")
         ax.set_xlabel("MGE(t)", fontsize=10)
         ax.set_ylabel("ARG(t+1)", fontsize=10)
-        ax.set_title("Before differencing\nR²=0.720, p=0.579\n(study clusters drive apparent fit)", fontsize=9.5)
         ax.legend(fontsize=7.5, framealpha=0.9)
         ax.grid(True, linestyle="--", linewidth=0.5, alpha=0.3)
 
@@ -409,12 +398,9 @@ def _make_figures(figures_dir: Path, lag1_df, diff_df, corr_rows: list[tuple[str
             ax.axvline(0, color="gray", linewidth=0.7, linestyle=":")
             ax.set_xlabel("dMGE(t) = MGE(t) − MGE(t−1)", fontsize=10)
             ax.set_ylabel("dARG(t+1) = ARG(t+1) − ARG(t)", fontsize=10)
-            ax.set_title("After differencing (trend removed)\nR²=0.020, p=0.649\n(signal collapses)", fontsize=9.5)
             ax.legend(fontsize=7.5, framealpha=0.9)
             ax.grid(True, linestyle="--", linewidth=0.5, alpha=0.3)
 
-    fig.suptitle("Effect of differencing: removing study-level ARG trends eliminates apparent predictive signal",
-                 fontsize=10, y=1.01)
     fig.tight_layout()
     fig.savefig(figures_dir / "differenced_scatter_dmge_t_vs_darg_t1.png", dpi=180, bbox_inches="tight")
     plt.close(fig)

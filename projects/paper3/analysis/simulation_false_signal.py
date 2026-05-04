@@ -155,11 +155,6 @@ def main() -> int:
         import matplotlib.pyplot as plt
 
         fig, axes = plt.subplots(2, 2, figsize=(12, 8), sharey="row")
-        fig.suptitle(
-            "Diagnostic framework calibration: null scenario (A) vs true signal scenario (B)\n"
-            f"Same study structure, N={N_SIMS} synthetic datasets each. Scenario B: ARG(t+1) = baseline + {TRUE_BETA}·MGE(t) + noise",
-            fontsize=10, y=1.01,
-        )
 
         BLUE   = "#4878d0"
         GREEN  = "#6acc65"
@@ -183,7 +178,7 @@ def main() -> int:
             if col == 0:
                 _annotate_observed(ax, 0.720, "Observed R² = 0.720")
             pct = _pct_above(res["naive_r2"], 0.70)
-            ax.set_title(f"{title}\nNaive model R²  |  {pct:.0f}% runs > 0.70", fontsize=9.5)
+            ax.set_title(f"{title}", fontsize=9.5)
             ax.set_xlabel("R² — naive model: ARG(t+1) ~ MGE(t) + C(study)", fontsize=9)
             ax.set_ylabel("Count" if col == 0 else "", fontsize=9)
             ax.legend(fontsize=8.5)
@@ -202,7 +197,7 @@ def main() -> int:
                        label=f"Median = {med:.2f}")
             if col == 0:
                 _annotate_observed(ax, 0.020, "Observed R² = 0.020")
-            ax.set_title(f"{title}\nDifferenced model R²", fontsize=9.5)
+            ax.set_title(f"{title}", fontsize=9.5)
             ax.set_xlabel("R² — differenced: dARG(t+1) ~ dMGE(t)", fontsize=9)
             ax.set_ylabel("Count" if col == 0 else "", fontsize=9)
             ax.legend(fontsize=8.5)

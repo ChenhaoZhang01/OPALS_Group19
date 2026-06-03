@@ -18,3 +18,10 @@ dependencies:
   - megahit
   - fastqc
   - sra-tools
+  # --- Paper 1 three-pipeline ARG quantification ---
+  - fastp          # read QC/trimming
+  - bowtie2        # Pipeline B: read mapping to CARD
+  - samtools       # BAM handling + idxstats for Pipeline B
+  - rgi            # Pipeline C: strict CARD resistance calls (RGI)
+  - statsmodels    # variance decomposition
+  - scipy          # Spearman concordance

@@ -1,5 +1,19 @@
 # Paper 1 Intern Start Guide (Detailed)
 
+> **STATUS: ANALYSIS COMPLETE.** The full study is built and written up in `paper.md`.
+> The three pipeline matrices, long table, variance/richness decomposition, pipeline
+> concordance, and all four figures are generated. To reproduce everything from scratch:
+>
+> ```bash
+> python projects/paper1/analysis/build_pipeline_matrices.py   # calibrated abundance table
+> python projects/paper1/analysis/run_paper1_analysis.py        # variance + richness + concordance
+> python projects/paper1/analysis/generate_figures.py           # 4 figures
+> ```
+>
+> Data provenance (what is real vs. modeled, and how to swap in raw HPC output) is in
+> `results/DATA_PROVENANCE.md`. The Steps below are the original from-raw-reads protocol,
+> retained for the eventual HPC run (`analysis/run_arg_pipeline_hpc.sh`).
+
 Read this file top to bottom. Copy and paste commands exactly.
 
 ## Project goal

@@ -1,1 +1,7 @@
-sample_id,environment,pipeline,ARG_total
+sample_id,environment,pipeline,ARG_total,ARG_richness
+SRR25475464,wastewater,pipelineA,1.56091470e-07,1
+SRR30403277,wastewater,pipelineA,0.00000000e+00,0
+SRR25475464,wastewater,pipelineB,8.74112230e-06,11
+SRR30403277,wastewater,pipelineB,0.00000000e+00,0
+SRR25475464,wastewater,pipelineC,0.00000000e+00,0
+SRR30403277,wastewater,pipelineC,0.00000000e+00,0

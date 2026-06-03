@@ -8,8 +8,8 @@ log1p outcome: False
 Dep. Variable:              ARG_total   R-squared:                       0.432
 Model:                            OLS   Adj. R-squared:                  0.290
 Method:                 Least Squares   F-statistic:                     3.047
-Date:                Tue, 07 Apr 2026   Prob (F-statistic):             0.0701
-Time:                        11:12:07   Log-Likelihood:                -458.33
+Date:                Mon, 25 May 2026   Prob (F-statistic):             0.0701
+Time:                        14:04:18   Log-Likelihood:                -458.33
 No. Observations:                  16   AIC:                             924.7
 Df Residuals:                      12   BIC:                             927.7
 Df Model:                           3                                         

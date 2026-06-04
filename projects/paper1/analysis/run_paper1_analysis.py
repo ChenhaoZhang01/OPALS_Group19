@@ -71,7 +71,13 @@ def main() -> int:
     df["ARG_total"] = pd.to_numeric(df["ARG_total"], errors="coerce")
     df["ARG_richness"] = pd.to_numeric(df["ARG_richness"], errors="coerce")
     df = df.dropna(subset=["ARG_total"]).copy()
-    df["log_ARG_total"] = np.log10(df["ARG_total"])
+    # Pseudocount for zeros: some pipelines (notably assembly-based) detect no ARG in
+    # low-signal samples, giving ARG_total = 0. Add half the smallest positive
+    # normalized abundance before the log10 transform (standard zero-handling for
+    # log-scale abundance models).
+    positive = df.loc[df["ARG_total"] > 0, "ARG_total"]
+    pseudocount = float(positive.min() / 2.0) if not positive.empty else 1e-9
+    df["log_ARG_total"] = np.log10(df["ARG_total"] + pseudocount)
 
     # 1. Variance partition of log abundance and of richness.
     va = variance_partition(df, "log_ARG_total", outdir / "variance_decomposition.csv")

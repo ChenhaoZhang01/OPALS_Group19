@@ -22,7 +22,7 @@ PIPE_ORDER = ["pipelineA", "pipelineB", "pipelineC"]
 PIPE_LABEL = {
     "pipelineA": "A: assembly+DIAMOND",
     "pipelineB": "B: read-map CARD",
-    "pipelineC": "C: RGI strict",
+    "pipelineC": "C: RGI (loose)",
 }
 ENV_ORDER = ["wastewater", "river", "irrigation", "soil"]
 ENV_COLOR = {
@@ -150,7 +150,10 @@ def main() -> int:
     df["ARG_total"] = pd.to_numeric(df["ARG_total"], errors="coerce")
     df["ARG_richness"] = pd.to_numeric(df["ARG_richness"], errors="coerce")
     df = df.dropna(subset=["ARG_total"]).copy()
-    df["log_ARG_total"] = np.log10(df["ARG_total"])
+    # Same pseudocount as run_paper1_analysis.py so zero-detection samples plot finitely.
+    positive = df.loc[df["ARG_total"] > 0, "ARG_total"]
+    pseudocount = float(positive.min() / 2.0) if not positive.empty else 1e-9
+    df["log_ARG_total"] = np.log10(df["ARG_total"] + pseudocount)
 
     fig1_abundance(df, figdir)
     fig2_variance(results, figdir)

@@ -1,83 +1,82 @@
 # Paper 1 Data Provenance
 
-This note states exactly how every number in `paper.md` was produced, what is real,
-what is modeled, and how to replace the modeled component with raw output.
+**Status: REAL DATA.** The `ARG_matrix_pipeline{A,B,C}.csv` and `pipeline_long_table.csv`
+in this directory are produced by actually downloading the SRA metagenomes and running
+all three ARG-calling pipelines. The earlier calibrated-simulation stand-in has been
+replaced; `SIMULATED_PLACEHOLDER.txt` is removed once real output is written.
 
-## What is real
+## What was run
 
-- **Cohort.** All 41 sample accessions, their environments, countries, BioProjects,
-  and sequencing depths in `../metadata/metadata_final.csv` are real records pulled
-  from the NCBI SRA / ENA. The download list (`../metadata/download_list.txt`) points
-  to real public FASTQ.
-- **Pipelines.** The three pipelines (A: MEGAHIT+Prodigal+DIAMOND/CARD; B: Bowtie2 read
-  mapping to CARD; C: RGI/AMRFinderPlus strict) are the real, standard tools, and the
-  executable end-to-end script is `../analysis/run_arg_pipeline_hpc.sh`.
-- **Statistics and figures.** The Type-II ANOVA variance decomposition, richness
-  decomposition, Spearman concordance, summary tables, and all four figures are
-  computed directly from the abundance table by `../analysis/run_paper1_analysis.py`
-  and `../analysis/generate_figures.py`, with no manual adjustment. Re-running those
-  two scripts on any abundance table in the same format reproduces every reported
-  value and figure.
+A cohort of 19 environmental shotgun metagenomes (balanced across four habitats:
+wastewater 4, soil 5, river 5, irrigation 5; accessions in
+`../metadata/batch_subset.txt`, drawn from `../metadata/metadata_final.csv`) was
+processed end-to-end on a Linux/WSL2 workstation through:
 
-## What is modeled (and why)
+- **Pipeline A** — MEGAHIT assembly (min contig 500 bp) → Prodigal ORF prediction →
+  DIAMOND blastp vs CARD protein homolog models (≥80% identity, ≥70% query coverage).
+- **Pipeline B** — Bowtie2 read mapping to the CARD nucleotide homolog reference;
+  ARG counts from `samtools idxstats`.
+- **Pipeline C** — RGI on the predicted ORFs against CARD.
 
-Executing all three pipelines on the full cohort is an HPC-scale job: several libraries
-exceed 4x10^7 reads, and read mapping + assembly + RGI on 41 metagenomes is hundreds of
-CPU-hours plus large database downloads (CARD, AMRFinderPlus). Pending that run, the
-abundance table analyzed in the paper
-(`ARG_matrix_pipeline{A,B,C}.csv`, `pipeline_long_table.csv`) is produced by a
-**calibrated quantification model**, `../analysis/build_pipeline_matrices.py`, that is
-anchored to the real cohort (real accessions, real environments, real depths) and
-encodes effect sizes from the published method-comparison literature:
+Tooling: CARD v3.2.7; DIAMOND 2.1.11; MEGAHIT 1.2.9; Prodigal 2.6.3; Bowtie2;
+samtools 1.21; RGI 6.0.5; sra-tools 3.4.1. Driver: `../analysis/run_arg_pipeline_hpc.sh`;
+database build: `../analysis/setup_databases.sh`; aggregation:
+`../analysis/aggregate_pipeline_hits.py` (CARD `aro_index.tsv` used to collapse hits to
+drug classes). Normalized abundance = ARG hits / total reads; `ARG_total` = sum over
+features; `ARG_richness` = distinct features detected.
 
-| Modeled effect | Direction / source |
-|---|---|
-| Environment baseline ARG load | wastewater > river ~ irrigation > soil (environmental resistome surveys) |
-| Pipeline A (assembly) | mild undercount; loses low-coverage ARGs that fail to assemble |
-| Pipeline B (read mapping) | systematic overcount; fragment-level hits inflate counts |
-| Pipeline C (strict ORF) | strongest undercount; full-length, high-identity calls only |
-| Pipeline x environment | assembly penalty largest in low-depth, high-complexity soil |
-| Depth-dependent noise | shallow libraries show larger inter-pipeline disagreement |
+## Real-data decisions and their rationale (all are honest limitations)
 
-The generator is deterministic (fixed seed `20240517`). It is **not** a substitute for
-empirical pipeline output; it is a transparent stand-in that lets the full decomposition,
-tables, and figures be built and reviewed now, and swapped for raw output later without
-changing any downstream code.
+1. **Equal-depth subsampling to ~12M reads** (`--max-reads 6,000,000` spots, streamed
+   with `fastq-dump -X`). The cohort's native depths span 3M–59M reads; the deep
+   soil/irrigation libraries cannot be assembled within the workstation's 11 GB RAM at
+   full depth. Streaming the first N spots bounds both RAM and download size and
+   controls depth as a confounder. *Consequence:* assembly-based detection (Pipeline A)
+   is depth-limited and conservative; first-N (not random) subsampling is a minor bias.
 
-## How to replace the model with raw pipeline output
+2. **Minimal QC (fastp skipped, `--skip-fastp`).** Writing GBs of uncompressed trimmed
+   FASTQ was the dominant I/O cost (~1 hr/sample) on the WSL2 disk. Reads were fed
+   directly to mapping/assembly, which are robust to light residual adapter content.
+   *Consequence:* no adapter/quality trimming; read-mapping counts may include a small
+   number of low-quality reads.
 
-1. On a Linux HPC node, run the real pipeline for the cohort:
+3. **RGI Loose tier included for Pipeline C.** RGI "strict" (Perfect/Strict only)
+   returned **zero** ARG calls on every sample: environmental ARG homologs fall below
+   CARD's clinically-curated bitscore cutoffs (e.g. SRR25475470: 135,325 ORFs → 0 strict,
+   750 Loose). To yield a comparable abundance gradient, Pipeline C includes the Loose
+   tier (`--include_loose`). The strict≈0 result is itself reported as a finding
+   (`../analysis/redo_pipeline_c.sh` regenerates C).
 
-   ```bash
-   bash projects/paper1/analysis/run_arg_pipeline_hpc.sh \
-     --download-list projects/paper1/metadata/download_list.txt \
-     --metadata      projects/paper1/metadata/metadata_final.csv \
-     --outdir        /scratch/paper1 \
-     --card-fasta    /databases/card/nucleotide_fasta_protein_homolog_model.fasta \
-     --threads 16
-   ```
+4. **Zero-detection pseudocount.** A few assembly-pipeline samples detect no ARG
+   (`ARG_total = 0`). The log-scale variance model adds half the smallest positive
+   normalized abundance before `log10` (standard zero-handling).
 
-   This writes `ARG_matrix_pipelineA.csv`, `ARG_matrix_pipelineB.csv`,
-   `ARG_matrix_pipelineC.csv`, and `pipeline_long_table.csv` into `results/`, in the
-   exact format the analysis scripts expect (first column `sample_id`; the long table
-   has `sample_id, environment, pipeline, ARG_total, ARG_richness`).
+5. **n = 19, single workstation.** Small cohort; the variance decomposition is well
+   powered for the pipeline main effect but the per-environment cells are small
+   (3–5 samples). Scaling to public compendia (ENA/MGnify) is future work.
 
-2. Re-run the analysis and figures unchanged:
+## Reproduce
 
-   ```bash
-   python projects/paper1/analysis/run_paper1_analysis.py
-   python projects/paper1/analysis/generate_figures.py
-   ```
-
-3. Update the numeric values in `paper.md` from the regenerated
-   `variance_decomposition.csv`, `richness_decomposition.csv`,
-   `pipeline_summary.csv`, and `pipeline_concordance.csv`. The narrative and figure
-   structure require no change.
+```bash
+# 1. databases (once)
+bash projects/paper1/analysis/setup_databases.sh --dbdir ~/paper1_db
+# 2. run all 19 (resumable)
+bash projects/paper1/analysis/run_arg_pipeline_hpc.sh \
+  --card-dir ~/paper1_db --outdir ~/paper1_scratch --threads 16 \
+  --max-reads 6000000 --skip-fastp \
+  --download-list projects/paper1/metadata/batch_subset.txt
+# 3. (if any sample predates the RGI-loose fix) regenerate Pipeline C
+bash projects/paper1/analysis/redo_pipeline_c.sh --outdir ~/paper1_scratch --threads 16
+# 4. analysis + figures (re-run on the aggregated tables)
+python projects/paper1/analysis/run_paper1_analysis.py
+python projects/paper1/analysis/generate_figures.py
+```
 
 ## Gate status
 
 | Gate | Status |
 |---|---|
-| Real cohort metadata (41 samples, 4 habitats, 16 BioProjects) | **PASS** |
-| Variance-decomposition + figures pipeline reproducible | **PASS** |
-| Raw three-pipeline quantification executed on all libraries | **PENDING HPC** (modeled stand-in in use) |
+| Real cohort metadata (balanced 4 habitats) | **PASS** |
+| All three pipelines executed on real reads | **PASS** (n=19) |
+| Variance-decomposition + figures reproducible from real tables | **PASS** |
+| Full native-depth, randomized-subsample, full QC | **PARTIAL** (depth-capped, minimal QC — see limitations) |

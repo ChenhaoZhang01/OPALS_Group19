@@ -36,6 +36,7 @@ ONLY=""            # run a single accession (smoke test)
 KEEP_INTERMEDIATE=0  # 1 = keep reads/assembly (uses a lot of disk)
 MAX_READS=""       # if set, stream only the first N spots/pairs (equal-depth subsample)
 MEM_FRAC=0.85      # megahit memory cap as fraction of system RAM
+SKIP_FASTP=0       # 1 = feed raw reads directly (skip QC; avoids heavy uncompressed I/O)
 
 while [[ $# -gt 0 ]]; do
   case "$1" in
@@ -47,6 +48,7 @@ while [[ $# -gt 0 ]]; do
     --only)          ONLY="$2"; shift 2;;
     --max-reads)     MAX_READS="$2"; shift 2;;
     --mem-frac)      MEM_FRAC="$2"; shift 2;;
+    --skip-fastp)    SKIP_FASTP=1; shift;;
     --keep-intermediate) KEEP_INTERMEDIATE=1; shift;;
     *) echo "Unknown arg: $1" >&2; exit 2;;
   esac
@@ -87,14 +89,22 @@ process_sample() {
         fasterq-dump "$SRR" -O "$OUTDIR/reads" -e "$THREADS" --split-files
       fi
     fi
-    local R1t="${R1%.fastq}.tr.fastq" R2t="${R2%.fastq}.tr.fastq"
     local PAIRED=1; [[ -s "$R2" ]] || PAIRED=0
-    if [[ "$PAIRED" -eq 1 ]]; then
-      fastp -i "$R1" -I "$R2" -o "$R1t" -O "$R2t" -w "$THREADS" \
-            -j "$OUTDIR/logs/$SRR.fastp.json" -h "$OUTDIR/logs/$SRR.fastp.html"
+    local R1t R2t
+    if [[ "$SKIP_FASTP" -eq 1 ]]; then
+      # Use raw reads directly: avoids writing GBs of uncompressed trimmed FASTQ,
+      # which is the dominant I/O cost on the WSL2 disk. ARG read-mapping/assembly
+      # are robust to light residual adapter content.
+      R1t="$R1"; R2t="$R2"
     else
-      fastp -i "$R1" -o "$R1t" -w "$THREADS" \
-            -j "$OUTDIR/logs/$SRR.fastp.json" -h "$OUTDIR/logs/$SRR.fastp.html"
+      R1t="${R1%.fastq}.tr.fastq"; R2t="${R2%.fastq}.tr.fastq"
+      if [[ "$PAIRED" -eq 1 ]]; then
+        fastp -i "$R1" -I "$R2" -o "$R1t" -O "$R2t" -w "$THREADS" \
+              -j "$OUTDIR/logs/$SRR.fastp.json" -h "$OUTDIR/logs/$SRR.fastp.html"
+      else
+        fastp -i "$R1" -o "$R1t" -w "$THREADS" \
+              -j "$OUTDIR/logs/$SRR.fastp.json" -h "$OUTDIR/logs/$SRR.fastp.html"
+      fi
     fi
     local n1; n1=$(( $(wc -l < "$R1t") / 4 ))
     local TOTAL_READS; TOTAL_READS=$(( PAIRED == 1 ? n1 * 2 : n1 ))

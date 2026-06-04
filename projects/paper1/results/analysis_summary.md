@@ -4,32 +4,32 @@
 
 | Factor | SS | df | F | p | Variance % |
 |---|---:|---:|---:|---:|---:|
-| pipeline | 6.171 | 2 | 139.83 | 4.68e-31 | 32.2 |
-| environment | 9.661 | 3 | 145.95 | 2.26e-38 | 50.4 |
-| pipeline:environment | 0.892 | 6 | 6.74 | 4.17e-06 | 4.7 |
-| residual | 2.449 | 111 |  |  | 12.8 |
+| pipeline | 41.15 | 2 | 98.73 | 3.49e-17 | 57.0 |
+| environment | 13.66 | 3 | 21.84 | 7.05e-09 | 18.9 |
+| pipeline:environment | 7.95 | 6 | 6.36 | 6.71e-05 | 11.0 |
+| residual | 9.379 | 45 |  |  | 13.0 |
 
-- Environment explains **50.4%** of variance in log ARG abundance.
-- Pipeline explains **32.2%**.
-- Pipeline x environment interaction explains **4.7%**.
-- Residual (sample-level) **12.8%**.
+- Environment explains **18.9%** of variance in log ARG abundance.
+- Pipeline explains **57.0%**.
+- Pipeline x environment interaction explains **11.0%**.
+- Residual (sample-level) **13.0%**.
 
 ## Richness decomposition (number of ARG classes detected)
 
-- Pipeline explains **44.7%** of richness variance (environment **0.7%**).
+- Pipeline explains **29.6%** of richness variance (environment **24.7%**).
 
 ## Per-pipeline summary
 
 | Pipeline | n | Mean ARG_total | Median ARG_total | Mean richness |
 |---|---:|---:|---:|---:|
-| pipelineA | 41 | 3.532e-03 | 2.947e-03 | 11.6 |
-| pipelineB | 41 | 6.451e-03 | 5.949e-03 | 14.2 |
-| pipelineC | 41 | 2.102e-03 | 1.986e-03 | 8.7 |
+| pipelineA | 19 | 1.556e-06 | 3.919e-07 | 5.9 |
+| pipelineB | 19 | 8.204e-05 | 2.667e-06 | 17.1 |
+| pipelineC | 19 | 8.688e-05 | 5.975e-05 | 22.1 |
 
 ## Pairwise pipeline concordance
 
 | Pair | Spearman rho | p | Median fold-difference |
 |---|---:|---:|---:|
-| pipelineA vs pipelineB | 0.855 | 1.11e-12 | 2.02x |
-| pipelineA vs pipelineC | 0.748 | 1.91e-08 | 0.67x |
-| pipelineB vs pipelineC | 0.655 | 3.37e-06 | 0.33x |
+| pipelineA vs pipelineB | 0.483 | 3.64e-02 | 6.80x |
+| pipelineA vs pipelineC | 0.715 | 5.84e-04 | 152.47x |
+| pipelineB vs pipelineC | 0.189 | 4.39e-01 | 22.41x |

@@ -1,0 +1,13 @@
+country,site,method,arg_class,gene,selective_log_removal,n
+Germany,Bliesen,qPCR,sulfonamide,sul1,0.18194192630466097,2
+Germany,Bliesen,qPCR,tetracycline,tetW,0.7917556568931408,2
+Germany,Bliesen,qPCR,MLS,ermB,1.2066882012952989,2
+Germany,Bliesen,qPCR,beta-lactam,blaAmpC,0.6127863884267669,2
+Taiwan,Taiwan,qPCR,sulfonamide,Sul1,-0.05435766232259275,1
+Slovakia,Slovakia,qPCR,sulfonamide,Sul1,-0.23888208891513668,1
+Taiwan,Taiwan,qPCR,tetracycline,tetM,0.3601514477826378,1
+Slovakia,Slovakia,qPCR,tetracycline,tetM,-0.16272729749769974,1
+Taiwan,Taiwan,qPCR,MLS,ermB,0.6989700043360189,1
+Slovakia,Slovakia,qPCR,MLS,ermB,0.07760485781266976,1
+Taiwan,Taiwan,qPCR,beta-lactam,blaTEM,-0.30930252162997107,1
+Slovakia,Slovakia,qPCR,beta-lactam,blaTEM,0.5942346538160058,1

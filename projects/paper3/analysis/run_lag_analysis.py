@@ -323,6 +323,11 @@ def _make_figures(figures_dir: Path, lag1_df, diff_df, corr_rows: list[tuple[str
                                            "edgecolor": "0.8", "alpha": 0.9})
             ax_arg.grid(True, linestyle="--", linewidth=0.5, alpha=0.25)
             ax_arg.margins(x=0.05)
+            # add top headroom on both axes so the series never run through the
+            # top-left note box or the top-right legend
+            for ax_ in (ax_arg, ax_mge):
+                lo, hi = ax_.get_ylim()
+                ax_.set_ylim(lo, lo + (hi - lo) * 1.35)
             if i == 0:
                 lines = arg_line + mge_line
                 labels = [l.get_label() for l in lines]

@@ -125,7 +125,7 @@ To test whether the framework can distinguish genuine signal from confounding, w
 | Within-WGA coeff median | −0.1 | +149 | −33.0 |
 | % within-WGA coeff positive | 50% | 98% | — |
 
-The naive model yields R²>0.70 in 94% of null runs and 99% of true-signal runs — it cannot distinguish the two scenarios. The differenced model and within-study coefficient decisively separate them. The observed real data — differenced R²=0.020, within-WGA coeff=−33.0 — matches Scenario A closely and is entirely inconsistent with Scenario B.
+The naive model yields R²>0.70 in 94% of null runs and 99% of true-signal runs — it cannot distinguish the two scenarios (Fig. 5, top row). The differenced model and within-study coefficient decisively separate them (Fig. 5, bottom row). The observed real data — differenced R²=0.020, within-WGA coeff=−33.0 — matches Scenario A closely and is entirely inconsistent with Scenario B.
 
 <p align="center"><img src="analysis/figures/simulation_false_signal.png" width="850"></p>
 <p align="center">Fig. 5: Calibration simulation. Top row: naive lag model R² distributions — both scenarios produce R²>0.70 most of the time; the observed 0.720 (orange dotted line) falls in the Scenario A range. Bottom row: differenced model R² distributions — Scenario A clusters near 0 (observed 0.020 matches) while Scenario B spreads toward 1 (median 0.69). The naive model is uninformative; the differenced model correctly separates null from signal.</p>

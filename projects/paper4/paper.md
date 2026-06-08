@@ -27,10 +27,9 @@ For cross-site context we use community-normalized influent and effluent ARG rel
 
 For each German treatment line *X*, gene *g*, and campaign, with *C* the geometric-mean concentration over replicates and *R* = *C*(g)/*C*(16S):
 
-```
-absolute removal  = log10( C_OUT / C_X )
-selective removal = log10( R_OUT / R_X )      (16S-normalized)
-```
+absolute removal = log₁₀(*C*<sub>OUT</sub> / *C*<sub>X</sub>)
+
+selective removal = log₁₀(*R*<sub>OUT</sub> / *R*<sub>X</sub>) (16S-normalized)
 
 Positive values denote reduction; values at or below zero denote no removal or enrichment. The biomass gap (mean absolute removal minus mean selective removal) measures how much of a line's apparent removal is only biomass loss. For each line we report the mean over four campaigns with a 95% confidence interval (Student's *t* and a campaign bootstrap). With four campaigns we report intervals rather than p-values and compare lines through paired within-campaign contrasts. For the cross-site comparison, selective removal is log10(influent_norm / effluent_norm) per site and class. All analyses and figures are scripted and openly available (see Data and code availability).
 
@@ -48,7 +47,7 @@ The conventional plant removed most of every target (2.1 to 3.5 log₁₀ from i
 This ranking is an artifact of biomass. After normalization to 16S rRNA, the constructed wetland's selective removal fell to 0.55 log₁₀ (a biomass gap of 1.45), while ozonation + GAC rose to the top at **1.11 log₁₀ (95% CI 0.35–1.87)**, removing ARGs more selectively than GAC alone (paired difference 0.81, 95% CI 0.45–1.17; Tables 1 and 2, Fig. 2). The constructed wetland's small selective effect with a large biomass gap is consistent with physical capture, and the ozonation + GAC line's small gap is consistent with chemical oxidation that degrades resistance genes directly.
 
 <p align="center"><img src="analysis/figures/fig3_biomass_vs_selective.png" width="600"></p>
-<p align="center">Fig. 2: Absolute and 16S-normalized mean ARG removal per line. Error bars are 95% CIs over the four campaigns (exact values in Table 1). The constructed wetland's large biomass gap is consistent with removal dominated by bacterial capture; the ozonation + GAC line's small gap is consistent with selective ARG destruction.</p>
+<p align="center">Fig. 2: Absolute and 16S-normalized mean ARG removal per line. Error bars are 95% CIs over the four campaigns (exact values in Table 1). Stars over the selective (red) bars mark removal different from zero by a one-sample t-test (ns p≥0.05, * p<0.05, ** p<0.01, *** p<0.001, **** p<0.0001; n = 4 campaigns). The biomass gap (absolute minus selective removal) is 1.4, 0.6, and 0.4 log₁₀ for the constructed wetland, GAC, and ozonation + GAC: the constructed wetland's large gap is consistent with removal dominated by bacterial capture, and the ozonation + GAC line's small gap is consistent with selective ARG destruction.</p>
 
 ### 3.2 Ozonation + GAC removes ARGs but does not measurably reduce the integron
 
@@ -57,7 +56,7 @@ The ozonation + GAC line removed ARGs selectively but did not measurably reduce 
 Two contrasts are statistically resolved in this dataset: ozonation + GAC's selective ARG removal exceeds zero (95% CI 0.35–1.87) and exceeds that of GAC alone (paired difference 0.81, 95% CI 0.45–1.17). The result that ozonation + GAC did not measurably reduce *intI1* is also supported, because its interval brackets zero. The stronger *intI1* depletion by the constructed wetland is suggestive only; with four campaigns the integron rankings among lines are not statistically resolved (Table 2).
 
 <p align="center"><img src="analysis/figures/fig4_integron_retention.png" width="640"></p>
-<p align="center">Fig. 3: 16S-normalized removal of ARGs (mean) versus the class-1 integron intI1 by line. Error bars are 95% CIs over the four campaigns. Ozonation + GAC reduced ARGs but did not measurably reduce intI1 (its CI brackets zero); the constructed wetland showed the largest integron depletion, although with overlapping intervals this is not statistically resolved (n = 4 campaigns).</p>
+<p align="center">Fig. 3: 16S-normalized removal of ARGs (mean) versus the class-1 integron intI1 by line. Error bars are 95% CIs over the four campaigns. Stars over each bar mark removal different from zero by a one-sample t-test, and the bracket marks the paired GAC versus ozonation + GAC contrast (ns p≥0.05, * p<0.05, ** p<0.01, *** p<0.001, **** p<0.0001; n = 4 campaigns). Ozonation + GAC reduced ARGs significantly (*) but did not measurably reduce intI1 (ns); the constructed wetland showed the largest integron depletion, but with overlapping intervals this is not statistically resolved.</p>
 
 <p align="center"><img src="analysis/figures/fig2_removal_by_line_gene.png" width="900"></p>
 <p align="center">Fig. 4: Per-gene log₁₀ removal by line, absolute (left) and 16S-normalized (right). Ozonation + GAC's selective removal is concentrated in ermB and tetW and is near zero for sul2 and intI1.</p>
@@ -98,7 +97,7 @@ This limitation is not unique to the German site. Scored on the same community-n
 
 These results show that lowering ARG abundance is not the same as removing resistance. The metric used most often to evaluate wastewater treatment, absolute ARG copies, ranked the constructed wetland best, but normalization showed that its effect was mostly the physical capture of bacteria rather than selective depletion of resistance. Ozonation + GAC reduced resistance per unit community. The choice of metric reversed the ranking of technologies, not just the magnitudes.
 
-Ozonation + GAC reduced ARGs but did not measurably reduce the class-1 integron, so an effluent that looks cleaner by ARG count can still carry the integron, a marker associated with horizontal-transfer potential. This pattern is consistent with ozone oxidizing accessible DNA and reducing several resistance genes while integron-bearing organisms in the surviving or regrowing post-ozonation GAC biofilm are retained. It is also consistent with the constructed wetland depleting the integron more through physical retention and competition in the wetland matrix. We did not test these mechanisms, and *intI1* is a screening marker for mobility potential, not a measurement of transfer. The next experiments are metagenomic localization of *intI1* and its cassette context before and after each line, partitioning of intracellular and extracellular DNA across ozonation, identification of the integron-carrying taxa, and conjugation or transfer assays that turn the *intI1* signal into a transfer-rate endpoint.
+Ozonation + GAC reduced ARGs but did not measurably reduce the class-1 integron, so an effluent that looks cleaner by ARG count can still carry the integron, a marker associated with horizontal-transfer potential. This pattern is consistent with ozone oxidizing accessible DNA and reducing several resistance genes while integron-bearing organisms in the surviving or regrowing post-ozonation GAC biofilm are retained. It is also consistent with the constructed wetland depleting the integron more through physical retention and competition in the wetland matrix. We did not test these mechanisms, and *intI1* is a screening marker for mobility potential, not a measurement of transfer. Several experiments could follow. One is to sequence the DNA around *intI1* before and after each line, to see which resistance genes sit on the integron. Another is to measure how much *intI1* is inside living cells versus free-floating in the water across ozonation. A third is to identify which bacteria carry the integron. A fourth is to run mating (conjugation) tests that measure how often the integron actually moves between bacteria, which would turn *intI1* from a marker into a measured transfer rate.
 
 Wastewater ARG monitoring should change what it reports. We recommend a standard reporting package for each treatment stage:
 

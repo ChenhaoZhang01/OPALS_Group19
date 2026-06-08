@@ -67,10 +67,13 @@ def ci_row(vals: np.ndarray) -> dict:
         t_lo, t_hi = mean - half, mean + half
         boots = [np.mean(RNG.choice(vals, n, replace=True)) for _ in range(NBOOT)]
         b_lo, b_hi = np.percentile(boots, [2.5, 97.5])
+        # one-sample t-test vs 0; for a difference array this is the paired test.
+        p_vs_zero = float(stats.ttest_1samp(vals, 0.0).pvalue)
     else:
-        t_lo = t_hi = b_lo = b_hi = np.nan
+        t_lo = t_hi = b_lo = b_hi = p_vs_zero = np.nan
     return {"mean": mean, "sd": sd, "n": n,
-            "t_ci_lo": t_lo, "t_ci_hi": t_hi, "boot_ci_lo": b_lo, "boot_ci_hi": b_hi}
+            "t_ci_lo": t_lo, "t_ci_hi": t_hi, "boot_ci_lo": b_lo, "boot_ci_hi": b_hi,
+            "p_vs_zero": p_vs_zero}
 
 
 def main() -> int:
@@ -82,7 +85,7 @@ def main() -> int:
             r = ci_row(data[(line, metric)]); r.update({"line": line, "metric": metric})
             rows.append(r)
     unc = pd.DataFrame(rows)[["line", "metric", "mean", "sd", "n",
-                              "t_ci_lo", "t_ci_hi", "boot_ci_lo", "boot_ci_hi"]]
+                              "t_ci_lo", "t_ci_hi", "boot_ci_lo", "boot_ci_hi", "p_vs_zero"]]
     unc.to_csv(RESULTS / "uncertainty_by_line.csv", index=False)
 
     # paired within-campaign line contrasts
@@ -93,7 +96,8 @@ def main() -> int:
             r = ci_row(diff); r.update({"contrast": f"{a}-{b}", "metric": metric})
             pair_rows.append(r)
     pair = pd.DataFrame(pair_rows)[["contrast", "metric", "mean", "sd", "n",
-                                    "t_ci_lo", "t_ci_hi", "boot_ci_lo", "boot_ci_hi"]]
+                                    "t_ci_lo", "t_ci_hi", "boot_ci_lo", "boot_ci_hi", "p_vs_zero"]]
+    pair = pair.rename(columns={"p_vs_zero": "p_paired"})
     pair.to_csv(RESULTS / "pairwise_line_diff.csv", index=False)
 
     L = ["# German-site uncertainty (n = 4 campaigns; CIs, not p-values)\n",
